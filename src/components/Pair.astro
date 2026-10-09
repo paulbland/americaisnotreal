@@ -1,0 +1,14 @@
+---
+import type { Day } from "../data/schema.ts";
+import StoryCard from "./StoryCard.astro";
+
+interface Props {
+  day: Day;
+}
+const { day } = Astro.props;
+---
+
+<section class="pair" aria-label="Today's pair">
+  <StoryCard story={day.genius} />
+  <StoryCard story={day.facepalm} />
+</section>

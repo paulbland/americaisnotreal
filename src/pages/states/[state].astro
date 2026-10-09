@@ -1,0 +1,49 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../layouts/Base.astro";
+import StoryList from "../../components/StoryList.astro";
+import { STATE_CODES, type StateCode } from "../../data/schema.ts";
+import { asOf, days } from "../../lib/data.ts";
+import { plural } from "../../lib/format.ts";
+import { breadcrumbLd } from "../../lib/seo.ts";
+import { LABELS, SITE } from "../../lib/site.ts";
+import { statePath, stateName, stateSlug } from "../../lib/states.ts";
+import { storiesIn } from "../../lib/stats.ts";
+
+export const getStaticPaths = (() =>
+  STATE_CODES.filter((code) =>
+    days.some((d) => d.genius.state === code || d.facepalm.state === code),
+  ).map((code) => ({
+    params: { state: stateSlug(code) },
+    props: { code },
+  }))) satisfies GetStaticPaths;
+
+const { code } = Astro.props as { code: StateCode };
+const name = stateName(code);
+const stories = storiesIn(days, (s) => s.state === code);
+const genius = stories.filter((s) => s.story.side === "genius").length;
+const facepalm = stories.length - genius;
+---
+
+<Base
+  title={`${name} · ${SITE.name}`}
+  description={`${plural(stories.length, "story", "stories")} from ${name}: ${genius} ${LABELS.genius.toLowerCase()}, ${facepalm} ${LABELS.facepalm.toLowerCase()}. Each with its sources.`}
+  path={statePath(code)}
+  ogImage={`/og/state-${stateSlug(code)}.png`}
+  ogImageAlt={name}
+  modified={asOf}
+  jsonLd={[
+    breadcrumbLd([
+      { name: "States", path: "/states" },
+      { name, path: statePath(code) },
+    ]),
+  ]}
+>
+  <div class="day-head">
+    <h1>{name}</h1>
+    <p class="tagline">
+      {genius} {LABELS.genius.toLowerCase()} · {facepalm} {LABELS.facepalm.toLowerCase()}
+    </p>
+  </div>
+  <StoryList stories={stories} />
+</Base>

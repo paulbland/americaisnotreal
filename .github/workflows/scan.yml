@@ -1,0 +1,83 @@
+name: Daily scan
+
+# Finds, verifies and publishes the day's pair (see scripts/scan.ts). The data
+# change goes through a PR that this workflow merges itself once the same checks
+# as CI pass. Merging deploys (Vercel). Every run commits that day's scan log, so
+# the site's "last checked" date is always true.
+#
+# One-time setup:
+#   1. Repo secret ANTHROPIC_API_KEY.
+#   2. Settings → Actions → General → Workflow permissions: "Read and write",
+#      and tick "Allow GitHub Actions to create and approve pull requests".
+#   3. Don't require PR reviews on main (or exempt github-actions[bot]).
+
+on:
+  schedule:
+    # 10:00 UTC is 06:00 Eastern in summer and 05:00 in winter.
+    - cron: "0 10 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Scan date (YYYY-MM-DD); blank for today"
+        required: false
+
+concurrency:
+  group: daily-scan
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+
+      - name: Scan
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SCAN_NOTIFY: "@${{ github.repository_owner }}"
+        run: |
+          if [ -n "${{ inputs.date }}" ]; then
+            npm run scan -- --date=${{ inputs.date }}
+          else
+            npm run scan
+          fi
+
+      - name: Gate (same checks as CI)
+        run: |
+          npm run validate
+          npm run check
+          npm test
+          npm run build
+
+      - name: Open and merge PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="scan/$(date -u +%F)-${{ github.run_id }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add src/data
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git commit -m "$(cat scan-output/title.txt)"
+          git push -u origin "$branch"
+          gh pr create --base main --head "$branch" \
+            --title "$(cat scan-output/title.txt)" --body-file scan-output/pr-body.md
+          gh pr merge "$branch" --squash --delete-branch
+
+      - name: Notify search engines (IndexNow)
+        continue-on-error: true
+        run: node scripts/indexnow.ts

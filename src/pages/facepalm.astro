@@ -1,0 +1,29 @@
+---
+import Base from "../layouts/Base.astro";
+import StoryList from "../components/StoryList.astro";
+import { asOf, days } from "../lib/data.ts";
+import { plural } from "../lib/format.ts";
+import { breadcrumbLd } from "../lib/seo.ts";
+import { SITE } from "../lib/site.ts";
+import { onSide } from "../lib/stats.ts";
+
+const stories = onSide(days, "facepalm");
+---
+
+<Base
+  title={`Facepalm · ${SITE.name}`}
+  description="Every facepalm story so far: what people in the United States are also capable of, one a day, each with its sources."
+  path="/facepalm"
+  ogImage="/og/facepalm.png"
+  ogImageAlt="Facepalm"
+  modified={asOf}
+  jsonLd={[breadcrumbLd([{ name: "Facepalm", path: "/facepalm" }])]}
+>
+  <div class="day-head">
+    <h1>Facepalm</h1>
+    <p class="tagline">
+      {plural(stories.length, "story", "stories")} · <a href="/genius">see the other side</a>
+    </p>
+  </div>
+  {stories.length ? <StoryList stories={stories} /> : <p class="empty">Nothing yet.</p>}
+</Base>

@@ -1,0 +1,25 @@
+---
+import type { PlacedStory } from "../lib/stats.ts";
+import { formatDate } from "../lib/format.ts";
+import { LABELS } from "../lib/site.ts";
+import { dayPath } from "../lib/seo.ts";
+import { place } from "../lib/states.ts";
+
+interface Props {
+  stories: PlacedStory[];
+}
+const { stories } = Astro.props;
+---
+
+<ol class="story-list" reversed>
+  {stories.map(({ story, date }) => (
+    <li>
+      <span class="when">{formatDate(date)}</span>
+      <span class="what">
+        <span class={`tag tag--${story.side}`}>{LABELS[story.side]}</span>
+        <a href={`${dayPath(date)}#${story.side}`}>{story.headline}</a>
+        <span class="where"> · {place(story.city, story.state)}</span>
+      </span>
+    </li>
+  ))}
+</ol>

@@ -1,0 +1,70 @@
+---
+import type { Story } from "../data/schema.ts";
+import { CATEGORY_LABELS, categoryPath } from "../lib/categories.ts";
+import { formatDate } from "../lib/format.ts";
+import { LABELS } from "../lib/site.ts";
+import { place, statePath } from "../lib/states.ts";
+
+interface Props {
+  story: Story;
+  /** Where the headline links, if anywhere. */
+  href?: string;
+  headingLevel?: "h2" | "h3";
+}
+const { story, href, headingLevel = "h2" } = Astro.props;
+const Heading = headingLevel;
+const quoteSource = story.sources.find((s) => s.url === story.quote.sourceUrl);
+---
+
+<article class={`story story--${story.side}`} id={story.side}>
+  <p class="kicker">
+    <span>{LABELS[story.side]}</span>
+    <span class="where">
+      {story.state === "US" ? (
+        "Nationwide"
+      ) : (
+        <>
+          {story.city ? `${story.city}, ` : ""}
+          <a href={statePath(story.state)}>{place(null, story.state)}</a>
+        </>
+      )}
+      {" · "}
+      <a href={categoryPath(story.category)}>{CATEGORY_LABELS[story.category]}</a>
+    </span>
+  </p>
+  <Heading>{href ? <a href={href}>{story.headline}</a> : story.headline}</Heading>
+  <p class="summary">{story.summary}</p>
+  <blockquote>
+    <p>“{story.quote.text}”</p>
+    {quoteSource && (
+      <cite>
+        <a href={quoteSource.url} rel="noopener">
+          {quoteSource.publisher}
+        </a>
+      </cite>
+    )}
+  </blockquote>
+  <div class="sources">
+    <p class="kicker">Sources</p>
+    <ul>
+      {story.sources.map((s) => (
+        <li>
+          <span class="pub">{s.publisher}</span>
+          {" · "}
+          <a href={s.url} rel="noopener">
+            {s.title}
+          </a>
+          {s.date ? <span class="meta"> · {formatDate(s.date)}</span> : null}
+          {s.archiveUrl && (
+            <>
+              {" · "}
+              <a class="archived" href={s.archiveUrl} rel="noopener">
+                archived
+              </a>
+            </>
+          )}
+        </li>
+      ))}
+    </ul>
+  </div>
+</article>

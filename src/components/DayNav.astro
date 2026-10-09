@@ -1,0 +1,28 @@
+---
+import { formatDate } from "../lib/format.ts";
+import { neighbours } from "../lib/data.ts";
+import { dayPath } from "../lib/seo.ts";
+
+interface Props {
+  date: string;
+}
+const { prev, next } = neighbours(Astro.props.date);
+---
+
+<nav class="day-nav" aria-label="Days">
+  <span>
+    {prev && (
+      <a href={dayPath(prev)} rel="prev">
+        ← {formatDate(prev.date)}
+      </a>
+    )}
+  </span>
+  <a href="/archive">Archive</a>
+  <span>
+    {next && (
+      <a href={dayPath(next)} rel="next">
+        {formatDate(next.date)} →
+      </a>
+    )}
+  </span>
+</nav>

@@ -1,0 +1,153 @@
+---
+import Base from "../layouts/Base.astro";
+import { asOf } from "../lib/data.ts";
+import { breadcrumbLd, faqLd } from "../lib/seo.ts";
+import { LABELS, SITE } from "../lib/site.ts";
+
+const faqs = [
+  {
+    q: "How are the two stories chosen?",
+    a: "Every morning an automated scan searches an allowlist of accepted US news publishers for stories reported in the previous day or two. It proposes up to four candidates for each side, ranked. Each candidate is then checked independently; the first on each side to pass every check is published. If either side has no survivor, nothing is published that day.",
+  },
+  {
+    q: "What counts as a genius story?",
+    a: "A specific, completed, verifiable achievement in the United States: a scientific result, an engineering or medical first, a major prize, a record, a rescue or civic fix that took real ingenuity. Not product launches, funding rounds, stock moves, marketing or predictions.",
+  },
+  {
+    q: "What counts as a facepalm story?",
+    a: "A specific, verifiable act of foolishness in the United States that was its own consequence, reported straight by credible outlets. Never a story where anyone was killed, injured or hospitalised, where the subject is under 18 or a victim of a crime, where the behaviour suggests a mental-health crisis, addiction or disability, or where the joke is poverty, immigration status, religion or a group of people.",
+  },
+  {
+    q: "Who fact-checks the stories?",
+    a: "Three layers. Deterministic code rejects anything whose sources are off the allowlist, that lacks two independent publishers, that uses loaded wording, or that trips the no-victims rules. A second, adversarial model then tries to reject the story and must approve it. Finally, two verbatim quotes, one from each publisher, are matched mechanically against the live pages. A story that fails any step is not published, and the scan log says why.",
+  },
+  {
+    q: "Are politicians included?",
+    a: "Yes, for concrete acts in office that two accepted outlets reported as news, never for their views. The site keeps the running count of political facepalm stories about Democrats and Republicans within one of each other; when one side is ahead, the scan may not run another story about that party until the other catches up.",
+  },
+  {
+    q: "What if a story is wrong?",
+    a: `Open an issue on GitHub. A day can be corrected or removed by hand, and every correction is logged on that day's page. The scan can never edit or delete a published day on its own.`,
+  },
+];
+---
+
+<Base
+  title={`Methodology · ${SITE.name}`}
+  description="How the daily pair is found, what qualifies for each side, the no-victims rules, and the three layers of fact-checking every story passes before it is published."
+  path="/methodology"
+  ogImage="/og/methodology.png"
+  ogImageAlt="Methodology"
+  modified={asOf}
+  jsonLd={[breadcrumbLd([{ name: "Methodology", path: "/methodology" }]), faqLd(faqs)]}
+>
+  <div class="day-head">
+    <h1>Methodology</h1>
+    <p class="tagline">How stories are chosen and checked</p>
+  </div>
+  <div class="prose">
+    <p>
+      {SITE.name} publishes one pair of true stories a day. Both happened in the United States. Both
+      were reported as news by at least two accepted publishers. Both are summarised in our own
+      words, without commentary, and linked to their sources. The labels are ours; the facts are
+      theirs.
+    </p>
+
+    <h2>What qualifies</h2>
+    <p>
+      <strong>{LABELS.genius}.</strong> A specific, completed, verifiable achievement by a person,
+      team or institution: a scientific result, an engineering or medical first, a Nobel, MacArthur,
+      Lasker, Breakthrough or Pulitzer prize, a record, a rescue or civic fix that took real
+      ingenuity, a child or amateur who did something experts could not. Not product launches,
+      funding rounds, stock prices, marketing, celebrity news, opinion or "could one day"
+      speculation. A press release alone is never enough.
+    </p>
+    <p>
+      <strong>{LABELS.facepalm}.</strong> A specific, verifiable act of foolishness that was its own
+      consequence: a voluntary, avoidable decision or act, reported straight by credible outlets,
+      that a reader will recognise without being told. A council that bans something that doesn't
+      exist. A bill that misspells the state. A company that recalls its own recall.
+    </p>
+
+    <h2>What is never run on the facepalm side</h2>
+    <ul>
+      <li>Any story where someone was killed, injured or hospitalised.</li>
+      <li>Any story whose subject is under 18.</li>
+      <li>
+        Any story whose subject is the victim of a crime, or any crime with a victim other than the
+        perpetrator.
+      </li>
+      <li>
+        Any behaviour that suggests a mental-health crisis, addiction, dementia or disability.
+      </li>
+      <li>
+        Any story where the joke is poverty, immigration status, religion or a group of people.
+      </li>
+      <li>Satire, hoaxes, social-media posts, or anything from a tabloid or aggregator.</li>
+    </ul>
+    <p>
+      Private individuals may be named only when they are adults, the act was their own, and at
+      least two accepted publishers already name them. Otherwise the act is described without a
+      name.
+    </p>
+
+    <h2>Politics</h2>
+    <p>
+      Politicians and officials are included for what they did or said in office, never for their
+      views: a bill, a vote, a ruling, a public statement with consequences, reported by two
+      accepted outlets as news. The site tracks the party of every political facepalm story and
+      keeps the counts for Democrats and Republicans within one of each other. When one party is
+      ahead, the scan is not allowed to run another story about it until the other catches up.
+    </p>
+
+    <h2>Sources</h2>
+    <p>
+      Every story cites at least two sources from different publishers on a fixed allowlist: the
+      wire services, national newspapers and broadcasters, major regional papers of record,
+      network-owned local stations, public radio and the science press. Official announcements
+      (government, universities, prize bodies) may be one of the two sources but never both. The
+      allowlist is public in the repository. Tabloids, satire sites, aggregators, press-release
+      wires, social media and Wikipedia are never cited. Each source is also saved to the Wayback
+      Machine when the story is published, and the archived copy is linked.
+    </p>
+
+    <h2>The three checks</h2>
+    <ol>
+      <li>
+        <strong>Rules in code.</strong> The story must fit a strict schema; its sources must be on
+        the allowlist and from two different publishers; its headline and summary may not use loaded
+        words; a facepalm story may not mention anyone hurt, anyone under 18, or any of the excluded
+        situations. Any failure rejects it before a model is asked.
+      </li>
+      <li>
+        <strong>An adversarial review.</strong> A second, independent model is given the story and
+        told to find reasons it should not run. It opens every source, checks every fact against the
+        page, and must approve. "Uncertain" is treated as a rejection.
+      </li>
+      <li>
+        <strong>Verbatim quotes.</strong> Each story carries two short quotations, one from each of
+        two different publishers. Both are matched mechanically against the live pages. A paraphrase
+        fails.
+      </li>
+    </ol>
+    <p>
+      The <a href="/log">scan log</a> lists every candidate the scan considered, and why each one
+      was published or set aside.
+    </p>
+
+    <h2>Corrections</h2>
+    <p>
+      The scan can publish a day; it can never edit or remove one. Corrections are made by hand and
+      logged on the day's page. To report an error,{" "}
+      <a href={`${SITE.repoUrl}/issues`}>open an issue</a>.
+    </p>
+
+    <h2>Questions</h2>
+    {faqs.map((f) => (
+      <>
+        <h3>{f.q}</h3>
+        <p>{f.a}</p>
+      </>
+    ))}
+  </div>
+</Base>

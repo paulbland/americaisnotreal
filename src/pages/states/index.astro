@@ -1,0 +1,65 @@
+---
+import Base from "../../layouts/Base.astro";
+import { asOf, days } from "../../lib/data.ts";
+import { breadcrumbLd } from "../../lib/seo.ts";
+import { LABELS, SITE } from "../../lib/site.ts";
+import { statePath, stateName } from "../../lib/states.ts";
+import { byState } from "../../lib/stats.ts";
+
+const rows = byState(days);
+const top = rows.find((r) => r.state !== "US");
+const description = top
+  ? `Which states produce the most genius and the most facepalm stories. ${stateName(top.state)} leads with ${top.total} so far.`
+  : "Which states produce the most genius and the most facepalm stories.";
+---
+
+<Base
+  title={`States · ${SITE.name}`}
+  description={description}
+  path="/states"
+  ogImage="/og/states.png"
+  ogImageAlt="States"
+  modified={asOf}
+  jsonLd={[breadcrumbLd([{ name: "States", path: "/states" }])]}
+>
+  <div class="day-head">
+    <h1>By state</h1>
+    <p class="tagline">Where the stories come from</p>
+  </div>
+  {rows.length === 0 ? (
+    <p class="empty">Nothing yet.</p>
+  ) : (
+    <table class="ranks">
+      <thead>
+        <tr>
+          <th scope="col">State</th>
+          <th scope="col" class="num">
+            {LABELS.genius}
+          </th>
+          <th scope="col" class="num">
+            {LABELS.facepalm}
+          </th>
+          <th scope="col" class="num">
+            Total
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((r) => (
+          <tr>
+            <td>
+              <a href={statePath(r.state)}>{stateName(r.state)}</a>
+            </td>
+            <td class="num">{r.genius}</td>
+            <td class="num">{r.facepalm}</td>
+            <td class="num">{r.total}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )}
+  <p class="meta" style="margin-top: 1.5rem">
+    "Nationwide" is a story about a federal body or the whole country. Counts are stories, not
+    judgements: a big state produces more of both.
+  </p>
+</Base>

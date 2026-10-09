@@ -1,0 +1,52 @@
+---
+import Base from "../layouts/Base.astro";
+import { asOf, days } from "../lib/data.ts";
+import { breadcrumbLd, countLine } from "../lib/seo.ts";
+import { SITE } from "../lib/site.ts";
+---
+
+<Base
+  title={`About · ${SITE.name}`}
+  description={`${SITE.name} puts one brilliant and one baffling true story from the United States side by side, every day. ${SITE.tagline}`}
+  path="/about"
+  ogImage="/og/about.png"
+  ogImageAlt="About"
+  modified={asOf}
+  jsonLd={[breadcrumbLd([{ name: "About", path: "/about" }])]}
+>
+  <div class="day-head">
+    <h1>About</h1>
+    <p class="tagline">{SITE.tagline}</p>
+  </div>
+  <div class="prose">
+    <p>
+      In the same news cycle, someone in America wins a Nobel Prize for a new way of editing DNA and
+      someone else in America marries a tree. Both are true. Both are reported by serious
+      newspapers. They sit three stories apart on the same front page, and nobody comments on the
+      distance between them.
+    </p>
+    <p>
+      This site does nothing but measure that distance. Every day it finds one story that shows what
+      people in this country are capable of, and one that shows what they are also capable of, and
+      puts them next to each other. There is no commentary. The content speaks for itself, and
+      readers make up their own minds.
+    </p>
+    <p>
+      The pair is found and checked automatically, with rules that are stricter than most
+      newsrooms': two independent accepted publishers per story, an adversarial second review, and
+      verbatim quotes matched against the live pages. The <a href="/methodology">methodology</a>{" "}
+      explains all of it, and the <a href="/log">scan log</a> shows every candidate that was
+      considered and why it was or wasn't published. So far: {countLine(days)}.
+    </p>
+    <p>
+      {SITE.name} is independent and automated. It takes no money from any publisher or party, runs
+      no comments, and sets no cookies. The code and every published day live in a public repository
+      at <a href={SITE.repoUrl}>GitHub</a>. Headlines and summaries are licensed{" "}
+      <a href={SITE.license.url}>{SITE.license.name}</a>; the articles it links to belong to their
+      publishers.
+    </p>
+    <p>
+      Made by <a href="https://paulblandfilms.com">Paul Bland</a>.
+    </p>
+  </div>
+</Base>

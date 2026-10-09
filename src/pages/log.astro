@@ -1,0 +1,47 @@
+---
+import Base from "../layouts/Base.astro";
+import { asOf, scans } from "../lib/data.ts";
+import { formatDate, plural } from "../lib/format.ts";
+import { breadcrumbLd, dayPath } from "../lib/seo.ts";
+import { SITE } from "../lib/site.ts";
+---
+
+<Base
+  title={`Scan log · ${SITE.name}`}
+  description="Every daily scan: what was published, what was considered and set aside, and why."
+  path="/log"
+  ogImage="/og/log.png"
+  ogImageAlt="Scan log"
+  modified={asOf}
+  noindex
+  jsonLd={[breadcrumbLd([{ name: "Scan log", path: "/log" }])]}
+>
+  <div class="day-head">
+    <h1>Scan log</h1>
+    <p class="tagline">{plural(scans.length, "scan")}</p>
+  </div>
+  <p class="prose">
+    Every candidate the daily scan looked at seriously, and what happened to it. A story is
+    published only when it passes every check in the <a href="/methodology">methodology</a>; the
+    rest are listed here so the process is auditable.
+  </p>
+  {scans.map((s) => (
+    <section class="section" id={s.date}>
+      <h2>
+        {s.published ? <a href={dayPath(s.date)}>{formatDate(s.date)}</a> : formatDate(s.date)}
+        {!s.published && <span class="meta"> · no pair published</span>}
+      </h2>
+      <p>{s.summary}</p>
+      <ul class="meta">
+        {s.candidates.map((c) => (
+          <li>
+            <strong>{c.side}</strong> · {c.outcome}: {c.headline} — {c.reason}
+          </li>
+        ))}
+      </ul>
+      <p class="meta">
+        {s.model} · {s.searches} searches
+      </p>
+    </section>
+  ))}
+</Base>

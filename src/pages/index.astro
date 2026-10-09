@@ -1,0 +1,57 @@
+---
+import Base from "../layouts/Base.astro";
+import DayNav from "../components/DayNav.astro";
+import Pair from "../components/Pair.astro";
+import Share from "../components/Share.astro";
+import { asOf, days, latest } from "../lib/data.ts";
+import { formatDate, formatLongDate } from "../lib/format.ts";
+import { dayLd, dayPath, homeDescription, websiteLd } from "../lib/seo.ts";
+import { SITE } from "../lib/site.ts";
+
+const title = latest
+  ? `${SITE.name}: ${latest.genius.headline} / ${latest.facepalm.headline}`
+  : `${SITE.name}: ${SITE.tagline}`;
+const jsonLd = [websiteLd(), ...(latest ? dayLd(latest) : [])];
+const shareText = latest
+  ? `${latest.genius.headline}. Also: ${latest.facepalm.headline}. ${SITE.tagline}`
+  : SITE.tagline;
+---
+
+<Base
+  title={title}
+  description={homeDescription(days)}
+  path="/"
+  ogImage="/og/home.png"
+  ogImageAlt={latest ? `${latest.genius.headline} / ${latest.facepalm.headline}` : SITE.tagline}
+  jsonLd={jsonLd}
+  modified={asOf}
+>
+  <div class="day-head">
+    <h1>{latest ? formatLongDate(latest.date) : SITE.name}</h1>
+    <p class="tagline">{SITE.tagline}</p>
+  </div>
+  {latest ? (
+    <>
+      <Pair day={latest} />
+      <Share url={new URL(dayPath(latest), SITE.url).href} text={shareText} />
+      <DayNav date={latest.date} />
+      {latest.date !== asOf && (
+        <p class="meta">
+          The news was last checked on {formatDate(asOf)}; no pair met the standard that day, so the
+          most recent one stays up. The <a href="/log">scan log</a> says why.
+        </p>
+      )}
+    </>
+  ) : (
+    <div class="empty">
+      <p>
+        Every day, two true stories from the United States: one that shows what people here are
+        capable of, and one that shows what they are also capable of. The first pair arrives with
+        the first daily scan.
+      </p>
+      <p class="meta">
+        How stories are chosen and checked: <a href="/methodology">methodology</a>.
+      </p>
+    </div>
+  )}
+</Base>

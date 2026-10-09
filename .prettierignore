@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.astro/
+.vercel/
+src/data/
+package-lock.json
+scan-output/

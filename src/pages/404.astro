@@ -1,0 +1,20 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE } from "../lib/site.ts";
+---
+
+<Base
+  title={`Not found · ${SITE.name}`}
+  description="That page doesn't exist."
+  path="/404"
+  ogImage="/og/home.png"
+  ogImageAlt={SITE.name}
+  noindex
+>
+  <div class="day-head">
+    <h1>Not found</h1>
+  </div>
+  <p class="empty">
+    That page doesn't exist. Try <a href="/">today</a> or the <a href="/archive">archive</a>.
+  </p>
+</Base>

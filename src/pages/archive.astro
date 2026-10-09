@@ -1,0 +1,62 @@
+---
+import Base from "../layouts/Base.astro";
+import { asOf, days } from "../lib/data.ts";
+import { formatDate, monthName } from "../lib/format.ts";
+import { breadcrumbLd, countLine, dayPath } from "../lib/seo.ts";
+import { LABELS, SITE } from "../lib/site.ts";
+import { place } from "../lib/states.ts";
+
+const months = new Map<string, typeof days>();
+for (const d of days) {
+  const key = d.date.slice(0, 7);
+  months.set(key, [...(months.get(key) ?? []), d]);
+}
+---
+
+<Base
+  title={`Archive · ${SITE.name}`}
+  description={`Every day's pair so far: ${countLine(days)}, each with its sources.`}
+  path="/archive"
+  ogImage="/og/archive.png"
+  ogImageAlt="Archive"
+  modified={asOf}
+  jsonLd={[breadcrumbLd([{ name: "Archive", path: "/archive" }])]}
+>
+  <div class="day-head">
+    <h1>Archive</h1>
+    <p class="tagline">{countLine(days)}</p>
+  </div>
+  {days.length === 0 && (
+    <p class="empty">Nothing yet. The first pair arrives with the first scan.</p>
+  )}
+  {[...months.entries()].map(([key, list]) => (
+    <section class="section">
+      <h2>
+        {monthName(Number(key.slice(5)))} {key.slice(0, 4)}
+      </h2>
+      {list.map((d) => (
+        <div class="archive-day">
+          <span class="when">
+            <a href={dayPath(d)}>{formatDate(d.date)}</a>
+          </span>
+          <span class="what">
+            <span class="tag tag--genius kicker" style="color: var(--genius)">
+              {LABELS.genius}
+            </span>
+            <br />
+            <a href={`${dayPath(d)}#genius`}>{d.genius.headline}</a>
+            <span class="meta"> · {place(d.genius.city, d.genius.state)}</span>
+          </span>
+          <span class="what">
+            <span class="tag tag--facepalm kicker" style="color: var(--facepalm)">
+              {LABELS.facepalm}
+            </span>
+            <br />
+            <a href={`${dayPath(d)}#facepalm`}>{d.facepalm.headline}</a>
+            <span class="meta"> · {place(d.facepalm.city, d.facepalm.state)}</span>
+          </span>
+        </div>
+      ))}
+    </section>
+  ))}
+</Base>

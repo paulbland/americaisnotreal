@@ -1,0 +1,57 @@
+---
+import Base from "../../layouts/Base.astro";
+import { CATEGORY_LABELS, categoryPath } from "../../lib/categories.ts";
+import { asOf, days } from "../../lib/data.ts";
+import { breadcrumbLd } from "../../lib/seo.ts";
+import { LABELS, SITE } from "../../lib/site.ts";
+import { byCategory } from "../../lib/stats.ts";
+
+const rows = byCategory(days);
+---
+
+<Base
+  title={`Categories · ${SITE.name}`}
+  description="Genius and facepalm stories by subject: science, government, animals, business and more."
+  path="/categories"
+  ogImage="/og/categories.png"
+  ogImageAlt="Categories"
+  modified={asOf}
+  jsonLd={[breadcrumbLd([{ name: "Categories", path: "/categories" }])]}
+>
+  <div class="day-head">
+    <h1>By category</h1>
+    <p class="tagline">What the stories are about</p>
+  </div>
+  {rows.length === 0 ? (
+    <p class="empty">Nothing yet.</p>
+  ) : (
+    <table class="ranks">
+      <thead>
+        <tr>
+          <th scope="col">Category</th>
+          <th scope="col" class="num">
+            {LABELS.genius}
+          </th>
+          <th scope="col" class="num">
+            {LABELS.facepalm}
+          </th>
+          <th scope="col" class="num">
+            Total
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((r) => (
+          <tr>
+            <td>
+              <a href={categoryPath(r.category)}>{CATEGORY_LABELS[r.category]}</a>
+            </td>
+            <td class="num">{r.genius}</td>
+            <td class="num">{r.facepalm}</td>
+            <td class="num">{r.total}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )}
+</Base>

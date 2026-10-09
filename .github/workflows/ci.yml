@@ -1,0 +1,30 @@
+name: CI
+
+# Gates every PR on the checks a production deploy depends on:
+#   1. prettier     — formatting (data files are exempt; validate enforces theirs)
+#   2. astro check  — types across .astro and .ts
+#   3. validate     — every day meets the schema, sourcing and editorial rules
+#   4. vitest       — schema, rules, stats, SEO wording and verification helpers
+#   5. astro build  — full static build, including share images
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          # 24+: scripts run as TypeScript via Node's native type stripping.
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run check
+      - run: npm run validate
+      - run: npm test
+      - run: npm run build

@@ -1,0 +1,65 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../layouts/Base.astro";
+import DayNav from "../components/DayNav.astro";
+import Pair from "../components/Pair.astro";
+import Share from "../components/Share.astro";
+import type { Day } from "../data/schema.ts";
+import { days } from "../lib/data.ts";
+import { formatDate, formatLongDate } from "../lib/format.ts";
+import { breadcrumbLd, dayDescription, dayLd, dayPath, dayTitle } from "../lib/seo.ts";
+import { SITE } from "../lib/site.ts";
+
+export const getStaticPaths = (() =>
+  days.map((day) => ({ params: { date: day.date }, props: { day } }))) satisfies GetStaticPaths;
+
+const { day } = Astro.props as { day: Day };
+const url = new URL(dayPath(day), SITE.url).href;
+const corrections = day.history.filter((h) => !h.change.startsWith("Published"));
+---
+
+<Base
+  title={`${dayTitle(day)} · ${SITE.name}`}
+  description={dayDescription(day)}
+  path={dayPath(day)}
+  ogImage={`/og/${day.date}.png`}
+  ogImageAlt={`${day.genius.headline} / ${day.facepalm.headline}`}
+  ogType="article"
+  published={day.publishedAt}
+  modified={day.publishedAt}
+  jsonLd={[
+    ...dayLd(day),
+    breadcrumbLd([
+      { name: "Archive", path: "/archive" },
+      { name: formatDate(day.date), path: dayPath(day) },
+    ]),
+  ]}
+>
+  <div class="day-head">
+    <h1>{formatLongDate(day.date)}</h1>
+    <p class="tagline">{SITE.tagline}</p>
+  </div>
+  <Pair day={day} />
+  <Share
+    url={url}
+    text={`${day.genius.headline}. Also: ${day.facepalm.headline}. ${SITE.tagline}`}
+  />
+  <DayNav date={day.date} />
+  {corrections.length > 0 && (
+    <section class="section prose">
+      <h2>Corrections</h2>
+      <ul>
+        {corrections.map((h) => (
+          <li>
+            <strong>{formatDate(h.date)}:</strong> {h.change}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+  <p class="meta">
+    Published {formatDate(day.publishedAt.slice(0, 10))} by the daily scan. Both stories passed the
+    checks in the <a href="/methodology">methodology</a>; the{" "}
+    <a href={`/log#${day.date}`}>scan log</a> lists the candidates that didn't.
+  </p>
+</Base>
