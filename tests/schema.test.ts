@@ -46,3 +46,13 @@ describe("schema", () => {
     expect(DaySchema.safeParse(d).success).toBe(false);
   });
 });
+
+describe("bench", () => {
+  it("accepts a verified story with the date it was verified", async () => {
+    const { BenchSchema } = await import("../src/data/schema.ts");
+    expect(
+      BenchSchema.safeParse([{ story: fixtureDay.genius, verifiedOn: "2026-01-15" }]).success,
+    ).toBe(true);
+    expect(BenchSchema.safeParse([{ story: fixtureDay.genius }]).success).toBe(false);
+  });
+});
