@@ -176,7 +176,8 @@ export const CandidateOutcomeSchema = z
   .object({
     side: SideSchema,
     headline: z.string().min(1),
-    outcome: z.enum(["published", "rejected", "deferred", "unused"]),
+    /** benched = passed every check but had no partner that day; kept for a later day. */
+    outcome: z.enum(["published", "benched", "rejected", "deferred", "unused"]),
     reason: z.string().min(1),
   })
   .strict();
@@ -196,3 +197,18 @@ export const ScanLogSchema = z
   })
   .strict();
 export type ScanLog = z.infer<typeof ScanLogSchema>;
+
+/**
+ * A story that passed every check but had no partner on its day. The next scan
+ * may pair it with a fresh story on the other side, as long as its event is
+ * still within the seven-day window. Internal: never rendered on its own.
+ */
+export const BenchEntrySchema = z
+  .object({
+    story: StorySchema,
+    /** The scan date on which it was verified. */
+    verifiedOn: IsoDateSchema,
+  })
+  .strict();
+export type BenchEntry = z.infer<typeof BenchEntrySchema>;
+export const BenchSchema = z.array(BenchEntrySchema);

@@ -40,6 +40,9 @@ Change one and you almost certainly need to change the others.
 
 - `src/data/days/{date}.json`: one file per published day. Dates are permanent URLs (`/2026-10-09`).
 - `src/data/scans/{date}.json`: one log per scan run, published or not; the newest sets "last checked".
+- `src/data/bench.json`: stories that passed every check but had no partner that day. The next
+  scan may pair one with a fresh story on the other side while its event is still inside the
+  seven-day window; older entries are pruned on every write. Never rendered on its own.
 - Files must be canonical `JSON.stringify(x, null, 2) + "\n"` (validate enforces it; Prettier ignores `src/data/`).
 - Story slugs are unique across all days; a source URL may be cited on only one day.
 - Counts are computed at build time. Never hard-code a number anywhere.
@@ -51,13 +54,15 @@ Change one and you almost certainly need to change the others.
 candidates per side. Each candidate, in order, must pass: the schema and repo rules; the
 party-balance rule; an independent adversarial Claude review; and a mechanical check that
 its quote and a corroborating quote appear verbatim on two different publishers' live
-pages. The first survivor on each side is published as the pair; if either side has none,
-nothing is published and the log says why. Sources are saved to the Wayback Machine at
+pages. The first survivor on each side is published as the pair. A side with no fresh survivor
+may take the newest usable story from the bench; if a side still has none, nothing is
+published, any verified story on the other side goes to the bench, and the log says why. Sources are saved to the Wayback Machine at
 publish time. The workflow re-runs validate/check/test/build, opens a PR and merges it
 itself. After the merge, `scripts/indexnow.ts` waits for the deploy and pings IndexNow.
 
-Budget: 40 discovery searches plus up to 3 verifications per side at 8 searches each,
-roughly $1.50 to $3 a day.
+Budget: 60 discovery searches (facepalm first, since it is the harder side to source) plus
+up to 3 verifications per side at 8 searches each, roughly $2 to $4 a day. The first real
+run on 2026-10-09 cost $1.71 and took six minutes.
 
 ## Editorial rules (non-negotiable)
 

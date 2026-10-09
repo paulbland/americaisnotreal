@@ -20,11 +20,13 @@ import fs from "node:fs";
 import path from "node:path";
 import { z } from "zod";
 import {
+  BenchSchema,
   DaySchema,
   PartySchema,
   ScanLogSchema,
   SIDES,
   StoryObject,
+  type BenchEntry,
   type Day,
   type ScanLog,
   type Side,
@@ -33,7 +35,7 @@ import {
 import { partyBalance } from "../src/lib/stats.ts";
 import { archiveUrl } from "./lib/archive.ts";
 import { fetchPageText, urlKey } from "./lib/fetch.ts";
-import { canonicalJson, dayFile, ROOT, scanFile, writeJson } from "./lib/files.ts";
+import { BENCH_FILE, canonicalJson, dayFile, ROOT, scanFile, writeJson } from "./lib/files.ts";
 import { checkRepo, storyProblems } from "./lib/integrity.ts";
 import { DISCOVERY_SYSTEM, discoveryTask, VERIFIER_SYSTEM, verifierTask } from "./lib/prompts.ts";
 import { containsQuote, hostOf } from "./lib/verify.ts";
@@ -248,6 +250,7 @@ async function consider(
   candidate: Candidate,
   side: Side,
   days: Day[],
+  bench: BenchEntry[],
   discoveryFetched: Map<string, string>,
 ): Promise<Outcome> {
   const { corroboration, ...storyInput } = candidate;
@@ -260,7 +263,10 @@ async function consider(
   const problems = storyProblems(parsed.data);
   if (problems.length) return { status: "rejected", reason: problems.join("; ") };
 
-  const usedSlugs = new Set(days.flatMap((d) => SIDES.map((s) => d[s].slug)));
+  const usedSlugs = new Set([
+    ...days.flatMap((d) => SIDES.map((s) => d[s].slug)),
+    ...bench.map((b) => b.story.slug),
+  ]);
   if (usedSlugs.has(story.slug)) return { status: "rejected", reason: `slug already used` };
   const usedUrls = new Set(
     days.flatMap((d) => SIDES.flatMap((s) => d[s].sources.map((x) => urlKey(x.url)))),
@@ -328,6 +334,7 @@ async function pickSide(
   side: Side,
   raw: unknown[],
   days: Day[],
+  bench: BenchEntry[],
   fetched: Map<string, string>,
 ): Promise<SideResult> {
   const log: ScanLog["candidates"] = [];
@@ -351,7 +358,7 @@ async function pickSide(
     }
     console.log(`Checking ${side}: ${headline}`);
     try {
-      const outcome = await consider(parsed.data, side, days, fetched);
+      const outcome = await consider(parsed.data, side, days, bench, fetched);
       if (outcome.status === "published") {
         story = outcome.story;
         log.push({ side, headline, outcome: "published", reason: "passed every check" });
@@ -387,6 +394,10 @@ async function main() {
     throw new Error(`${DATE} is already published; corrections are made by hand.`);
   }
   const days = [...repo.days].sort((a, b) => b.date.localeCompare(a.date));
+  // Bench entries are usable while their event is still inside the window for this date.
+  const weekAgo = new Date(Date.parse(DATE) - 7 * 86_400_000).toISOString().slice(0, 10);
+  const usable = (b: BenchEntry) => b.story.eventDate >= weekAgo && b.story.eventDate <= DATE;
+  const bench = repo.bench;
   const since = new Date(Date.parse(DATE) - 14 * 86_400_000).toISOString().slice(0, 10);
   const recent = days.filter((d) => d.date >= since && d.date <= DATE).slice(0, 14);
   const recentScans = repo.scans.filter((s) => s.date >= since && s.date <= DATE);
@@ -394,18 +405,62 @@ async function main() {
   console.log(`Discovery for ${DATE} (${MODEL})…`);
   const discovery = await runAgent({
     system: DISCOVERY_SYSTEM,
-    task: discoveryTask({ date: DATE, recent, recentScans, allowedParties: allowedParties(days) }),
+    task: discoveryTask({
+      date: DATE,
+      recent,
+      recentScans,
+      allowedParties: allowedParties(days),
+      bench: bench.filter(usable),
+    }),
     finalTool: SUBMIT_CANDIDATES,
     accept: ReceivedCandidatesSchema,
     effort: "high",
-    maxSearches: Number(process.env.SCAN_MAX_SEARCHES ?? 40),
-    maxFetches: 40,
+    maxSearches: Number(process.env.SCAN_MAX_SEARCHES ?? 60),
+    maxFetches: 50,
   });
   const raw = discovery.input;
 
-  const genius = await pickSide("genius", raw.genius, days, discovery.fetched);
-  const facepalm = await pickSide("facepalm", raw.facepalm, days, discovery.fetched);
+  // Facepalm first: it is the side that most often comes up empty.
+  const facepalm = await pickSide("facepalm", raw.facepalm, days, bench, discovery.fetched);
+  const genius = await pickSide("genius", raw.genius, days, bench, discovery.fetched);
+
+  // A side with no fresh survivor may take the newest usable story from the bench.
+  const fromBench: Partial<Record<Side, BenchEntry>> = {};
+  for (const side of SIDES) {
+    const result = side === "genius" ? genius : facepalm;
+    if (result.story) continue;
+    const entry = bench
+      .filter((b) => b.story.side === side && usable(b))
+      .sort((a, b) => b.verifiedOn.localeCompare(a.verifiedOn))[0];
+    if (!entry) continue;
+    result.story = entry.story;
+    fromBench[side] = entry;
+    result.log.push({
+      side,
+      headline: entry.story.headline,
+      outcome: "published",
+      reason: `from the bench (verified ${entry.verifiedOn})`,
+    });
+  }
   const published = Boolean(genius.story && facepalm.story);
+
+  // A verified story with no partner goes to the bench for a later day.
+  const benched: BenchEntry[] = [];
+  if (!published) {
+    for (const side of SIDES) {
+      const result = side === "genius" ? genius : facepalm;
+      if (!result.story || fromBench[side]) continue;
+      benched.push({ story: result.story, verifiedOn: DATE });
+      const entry = result.log.find((c) => c.outcome === "published");
+      if (entry) {
+        entry.outcome = "benched";
+        entry.reason =
+          "passed every check; kept for a later day because the other side had no story";
+      }
+    }
+  }
+  const usedSlugs = new Set(Object.values(fromBench).map((b) => b.story.slug));
+  const nextBench = [...bench.filter((b) => !usedSlugs.has(b.story.slug) && usable(b)), ...benched];
 
   let day: Day | null = null;
   if (genius.story && facepalm.story) {
@@ -427,9 +482,12 @@ async function main() {
     ...raw.passed.map((p) => ({ ...p, outcome: "rejected" as const })),
   ];
   const missing = SIDES.filter((s) => !(s === "genius" ? genius.story : facepalm.story));
+  const benchNote = benched.length
+    ? ` The verified ${benched.map((b) => b.story.side).join(" and ")} story is on the bench for a later day.`
+    : "";
   const summary = published
     ? `${raw.summary} Pair published.`
-    : `${raw.summary} No ${missing.join(" or ")} story met the standard; nothing published.`;
+    : `${raw.summary} No ${missing.join(" or ")} story met the standard; nothing published.${benchNote}`;
   const log: ScanLog = ScanLogSchema.parse({
     date: DATE,
     startedAt,
@@ -471,6 +529,7 @@ async function main() {
   }
   if (day) writeJson(dayFile(DATE), day);
   writeJson(scanFile(DATE), log);
+  writeJson(BENCH_FILE, BenchSchema.parse(nextBench));
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const title = day
     ? `scan: ${DATE}, ${day.genius.slug} / ${day.facepalm.slug}`

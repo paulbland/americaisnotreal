@@ -2,7 +2,13 @@
  * Prompts for the daily scan. The system prompts are static (so they cache);
  * everything that changes day to day goes in the task message.
  */
-import { CATEGORIES, STATE_CODES, type Day, type ScanLog } from "../../src/data/schema.ts";
+import {
+  CATEGORIES,
+  STATE_CODES,
+  type BenchEntry,
+  type Day,
+  type ScanLog,
+} from "../../src/data/schema.ts";
 import { ACCEPTED_PUBLISHERS, BANNED_HOSTS } from "./verify.ts";
 
 const RULES = `
@@ -11,7 +17,7 @@ America Is Not Real (americaisnotreal.com) publishes one pair of true stories ev
 
 # What qualifies
 Both stories must have HAPPENED IN THE UNITED STATES (the 50 states, DC or Puerto Rico). An American abroad does not count; a foreign national doing something in Ohio does.
-Both must be reported by at least two accepted publishers (list below), as news, not opinion. The event or announcement must be recent: within the last 7 days, and reported on or within a day of the scan date.
+Both must be reported by at least two accepted publishers (list below), as news, not opinion. The event or announcement must be recent: within the last 7 days, and reported within the 3 days up to and including the scan date.
 
 GENIUS: a specific, verifiable achievement by a person, team or institution. Scientific discoveries and published results; engineering and medical firsts; Nobel, MacArthur, Lasker, Breakthrough, Pulitzer and similar prizes; a record-setting feat; a rescue or civic fix that took real ingenuity; a child, student or amateur who did something experts could not. NOT: product launches, funding rounds, stock prices, marketing, celebrity news, opinion columns, or "could one day" speculation. A press release alone is not enough.
 
@@ -47,7 +53,7 @@ Call the submit_candidates tool exactly once, at the end.
 - "facepalm": up to 4 candidate stories for the facepalm side, best first. Rank by how clearly the act is its own consequence, how well sourced it is, and how safely it clears every exclusion above.
 - "passed": stories you looked at seriously and set aside, with a short neutral reason (not in the US; only one accepted source; a victim; a minor; satire; too old). Published in the scan log, so be specific and never cruel.
 Each candidate is verified independently by another model and by mechanical checks, and the first candidate on each side to pass is published, so give real alternates. Prefer variety: different states and categories from the recent days listed in the task, and the two sides should not be about the same event.
-Spend your searches roughly half on each side. Searching the accepted publishers directly (site: queries) works well; so do phrasings like "scientists", "first ever", "awarded", "Nobel", "breakthrough" for genius, and "sheriff's office said", "city council", "lawmaker", "recall", "accidentally", "mistakenly", "sues" for facepalm. Open at least two pages for every candidate you submit.`;
+Do the FACEPALM side first and give it at least half of your searches: it is the harder side to source, and a day with no facepalm story publishes nothing. Then do the genius side. If the task says a side already has a verified story on the bench, you may still propose better fresh candidates for it, but spend most of your effort on the other side. Searching the accepted publishers directly (site: queries) works well; so do phrasings like "scientists", "first ever", "awarded", "Nobel", "breakthrough" for genius, and "sheriff's office said", "city council", "lawmaker", "recall", "accidentally", "mistakenly", "sues" for facepalm. Open at least two pages for every candidate you submit.`;
 
 export const VERIFIER_SYSTEM = `You are the independent fact-checker for America Is Not Real. Another model has proposed the story below for tomorrow's page. Your job is to find reasons it should NOT be published. You have web search and web fetch; open every source URL in the proposal.
 
@@ -77,8 +83,9 @@ export function discoveryTask(opts: {
   recent: Day[];
   recentScans: ScanLog[];
   allowedParties: string[];
+  bench: BenchEntry[];
 }): string {
-  const { date, recent, recentScans, allowedParties } = opts;
+  const { date, recent, recentScans, allowedParties, bench } = opts;
   const passed = recentScans.flatMap((s) =>
     s.candidates
       .filter((c) => c.outcome !== "published")
@@ -90,7 +97,10 @@ export function discoveryTask(opts: {
       : allowedParties.join(", ");
   return `The scan date is ${date}. Find candidate stories for that day's page.
 
-Look for stories REPORTED on ${date} or the day before, about events in the last 7 days. If the scan date is in the past, search as of that date and ignore anything reported after it.
+Look for stories REPORTED in the 3 days up to and including ${date}, about events in the last 7 days. If the scan date is in the past, search as of that date and ignore anything reported after it.
+
+## Already verified and waiting on the bench (don't re-propose these)
+${bench.map((b) => `- ${b.story.side}: "${b.story.headline}" (event ${b.story.eventDate})`).join("\n") || "(none)"}
 
 Political facepalm stories: parties currently allowed = ${parties}. (The site keeps the running balance of political facepalm stories within one of each other.)
 

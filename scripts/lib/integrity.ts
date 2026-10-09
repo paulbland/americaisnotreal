@@ -3,16 +3,19 @@
  * accepted hosts, slug uniqueness and the editorial lints. Run by validate,
  * the tests and the scan (before and after it writes anything).
  */
+import fs from "node:fs";
 import { z } from "zod";
 import {
+  BenchSchema,
   DaySchema,
   ScanLogSchema,
   SIDES,
+  type BenchEntry,
   type Day,
   type ScanLog,
   type Story,
 } from "../../src/data/schema.ts";
-import { canonicalJson, DAYS_DIR, readDir, SCANS_DIR } from "./files.ts";
+import { BENCH_FILE, canonicalJson, DAYS_DIR, readDir, SCANS_DIR } from "./files.ts";
 import {
   editorialisingTerms,
   facepalmBlockedTerms,
@@ -67,6 +70,7 @@ export function dayProblems(d: Day): string[] {
 export interface RepoCheck {
   days: Day[];
   scans: ScanLog[];
+  bench: BenchEntry[];
   errors: string[];
 }
 
@@ -105,5 +109,22 @@ export function checkRepo(): RepoCheck {
     if (f.text !== canonicalJson(f.json)) errors.push(`scans/${f.name}.json: not canonical JSON`);
     scans.push(parsed.data);
   }
-  return { days, scans, errors };
+  const bench: BenchEntry[] = [];
+  if (fs.existsSync(BENCH_FILE)) {
+    const text = fs.readFileSync(BENCH_FILE, "utf8");
+    const parsed = BenchSchema.safeParse(JSON.parse(text));
+    if (!parsed.success) errors.push(`bench.json: ${z.prettifyError(parsed.error)}`);
+    else {
+      if (text !== canonicalJson(parsed.data)) errors.push("bench.json: not canonical JSON");
+      for (const entry of parsed.data) {
+        const slug = entry.story.slug;
+        const seen = slugs.get(slug);
+        if (seen) errors.push(`bench.json: slug "${slug}" already used on ${seen}`);
+        slugs.set(slug, "the bench");
+        errors.push(...storyProblems(entry.story).map((p) => `bench.json: ${p}`));
+        bench.push(entry);
+      }
+    }
+  }
+  return { days, scans, bench, errors };
 }

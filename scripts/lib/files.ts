@@ -6,6 +6,7 @@ import { fileURLToPath } from "node:url";
 export const ROOT = fileURLToPath(new URL("../..", import.meta.url));
 export const DAYS_DIR = path.join(ROOT, "src", "data", "days");
 export const SCANS_DIR = path.join(ROOT, "src", "data", "scans");
+export const BENCH_FILE = path.join(ROOT, "src", "data", "bench.json");
 
 /** The one serialisation every data file must use, so diffs stay minimal. */
 export function canonicalJson(data: unknown): string {
