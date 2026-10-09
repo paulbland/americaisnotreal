@@ -8,6 +8,7 @@ import {
   type BenchEntry,
   type Day,
   type ScanLog,
+  type Side,
 } from "../../src/data/schema.ts";
 import { ACCEPTED_PUBLISHERS, BANNED_HOSTS } from "./verify.ts";
 
@@ -21,7 +22,7 @@ Both must be reported by at least two accepted publishers (list below), as news,
 
 GENIUS: a specific, verifiable achievement by a person, team or institution. Scientific discoveries and published results; engineering and medical firsts; Nobel, MacArthur, Lasker, Breakthrough, Pulitzer and similar prizes; a record-setting feat; a rescue or civic fix that took real ingenuity; a child, student or amateur who did something experts could not. NOT: product launches, funding rounds, stock prices, marketing, celebrity news, opinion columns, or "could one day" speculation. A press release alone is not enough.
 
-FACEPALM: a specific, verifiable act of foolishness that is its own consequence. A voluntary, avoidable decision or act, reported straight by credible outlets, that the reader will recognise without being told. A council that bans something that doesn't exist; a lawmaker whose bill misspells the state; a company that recalls its own recall; an adult who marries a tree, sues the sun, or locks himself in the thing he was stealing. NOT: tragedy, cruelty, or anyone's misfortune. Never run a facepalm story where anyone was killed, injured or hospitalised; where the subject is under 18; where the subject is a victim of a crime; where the behaviour suggests a mental-health crisis, addiction, dementia or disability; where the joke is poverty, immigration status, religion or a group of people; or where a crime has a victim other than the perpetrator. Private individuals may be the subject only if they are adults, the act was their own, and at least two accepted publishers already name them; otherwise describe the act without a name (subject "unnamed") and give at least a city. Politicians and officials are fair game for what they DID or SAID in office, never for their views: a concrete act (a bill, a vote, a ruling, a public statement with consequences) that two accepted outlets reported as news. The site tracks the party balance of political facepalm stories and the task will say which parties are currently allowed.
+FACEPALM: a specific, verifiable act of foolishness or avoidable blunder that is its own consequence, reported straight by credible outlets, that the reader will recognise without being told. Two kinds qualify. (1) A person's own voluntary act: an adult who marries a tree, sues the sun, or locks himself in the thing he was stealing. (2) An institutional or official blunder: a county that mails ballots a week early, an agency that misspells its own name on the sign, a council that bans something that doesn't exist, a lawmaker whose bill misspells the state, a company that recalls its own recall, a city that pays its staff at the wrong year's rates. Institutional blunders qualify even when they were accidents, and "the vendor did it" does not disqualify a story about the body that hired and failed to check the vendor; the subject is then the institution ("official-or-institution" or "business"), never the clerk. A story reported first by one outlet and then picked up by others is fine as long as two accepted publishers reported it in their own words. NOT: tragedy, cruelty, or anyone's misfortune. Never run a facepalm story where anyone was killed, injured or hospitalised; where the subject is under 18; where the subject is a victim of a crime; where the behaviour suggests a mental-health crisis, addiction, dementia or disability; where the joke is poverty, immigration status, religion or a group of people; or where a crime has a victim other than the perpetrator. Private individuals may be the subject only if they are adults, the act was their own, and at least two accepted publishers already name them; otherwise describe the act without a name (subject "unnamed") and give at least a city. Politicians and officials are fair game for what they DID or SAID in office, never for their views: a concrete act (a bill, a vote, a ruling, a public statement with consequences) that two accepted outlets reported as news. The site tracks the party balance of political facepalm stories and the task will say which parties are currently allowed.
 
 # Sources
 Every story needs at least two sources from DIFFERENT publishers on this list (subdomains OK): ${ACCEPTED_PUBLISHERS.join(", ")}.
@@ -48,12 +49,10 @@ export const DISCOVERY_SYSTEM = `You run the daily scan for America Is Not Real.
 ${RULES}
 
 # Your output
-Call the submit_candidates tool exactly once, at the end.
-- "genius": up to 4 candidate stories for the genius side, best first. Rank by how clearly the achievement is established and how well it will stand next to the facepalm story.
-- "facepalm": up to 4 candidate stories for the facepalm side, best first. Rank by how clearly the act is its own consequence, how well sourced it is, and how safely it clears every exclusion above.
+Each run covers ONE side, named in the task. The other side is searched by a separate run, so never spend effort on it and never assume anything about it. Call the submit_candidates tool exactly once, at the end.
+- "candidates": up to 4 candidate stories for the requested side, best first. For genius, rank by how clearly the achievement is established. For facepalm, rank by how clearly the act or blunder is its own consequence, how well sourced it is, and how safely it clears every exclusion above.
 - "passed": stories you looked at seriously and set aside, with a short neutral reason (not in the US; only one accepted source; a victim; a minor; satire; too old). Published in the scan log, so be specific and never cruel.
-Each candidate is verified independently by another model and by mechanical checks, and the first candidate on each side to pass is published, so give real alternates. Prefer variety: different states and categories from the recent days listed in the task, and the two sides should not be about the same event.
-Do the FACEPALM side first and give it at least half of your searches: it is the harder side to source, and a day with no facepalm story publishes nothing. Then do the genius side. If the task says a side already has a verified story on the bench, you may still propose better fresh candidates for it, but spend most of your effort on the other side. Searching the accepted publishers directly (site: queries) works well; so do phrasings like "scientists", "first ever", "awarded", "Nobel", "breakthrough" for genius, and "sheriff's office said", "city council", "lawmaker", "recall", "accidentally", "mistakenly", "sues" for facepalm. Open at least two pages for every candidate you submit.`;
+Each candidate is verified independently by another model and by mechanical checks, and the first candidate to pass is published, so give real alternates; a day with an empty side publishes nothing. Prefer variety: different states and categories from the recent days listed in the task. Searching the accepted publishers directly (site: queries) works well; so do phrasings like "scientists", "first ever", "awarded", "Nobel", "breakthrough" for genius, and "sheriff's office said", "city council", "county", "lawmaker", "recall", "accidentally", "mistakenly", "sues", "apologizes" for facepalm. Open at least two pages for every candidate you submit. Stop searching once you have four solid candidates with two accepted sources each.`;
 
 export const VERIFIER_SYSTEM = `You are the independent fact-checker for America Is Not Real. Another model has proposed the story below for tomorrow's page. Your job is to find reasons it should NOT be published. You have web search and web fetch; open every source URL in the proposal.
 
@@ -80,34 +79,40 @@ function recentLine(d: Day): string {
 
 export function discoveryTask(opts: {
   date: string;
+  side: Side;
   recent: Day[];
   recentScans: ScanLog[];
   allowedParties: string[];
   bench: BenchEntry[];
 }): string {
-  const { date, recent, recentScans, allowedParties, bench } = opts;
+  const { date, side, recent, recentScans, allowedParties, bench } = opts;
   const passed = recentScans.flatMap((s) =>
     s.candidates
-      .filter((c) => c.outcome !== "published")
-      .map((c) => `- (${s.date}) ${c.side}: ${c.headline} — ${c.reason}`),
+      .filter((c) => c.side === side && (c.outcome === "rejected" || c.outcome === "deferred"))
+      .map((c) => `- (${s.date}) ${c.headline} — ${c.reason}`),
   );
   const parties =
     allowedParties.length === 0
       ? "none: today's facepalm story must not be about a politician at all"
       : allowedParties.join(", ");
-  return `The scan date is ${date}. Find candidate stories for that day's page.
+  return `The scan date is ${date}. This run covers the ${side.toUpperCase()} side only. Find candidate ${side} stories for that day's page.
 
 Look for stories REPORTED in the 3 days up to and including ${date}, about events in the last 7 days. If the scan date is in the past, search as of that date and ignore anything reported after it.
 
-## Already verified and waiting on the bench (don't re-propose these)
-${bench.map((b) => `- ${b.story.side}: "${b.story.headline}" (event ${b.story.eventDate})`).join("\n") || "(none)"}
+## Already verified and waiting on the bench for this side (don't re-propose these; fresh candidates are still welcome)
+${
+  bench
+    .filter((b) => b.story.side === side)
+    .map((b) => `- "${b.story.headline}" (event ${b.story.eventDate})`)
+    .join("\n") || "(none)"
+}
 
 Political facepalm stories: parties currently allowed = ${parties}. (The site keeps the running balance of political facepalm stories within one of each other.)
 
 ## The last 14 published days, to avoid repeats and keep variety
 ${recent.map(recentLine).join("\n") || "(none yet)"}
 
-## Candidates set aside in the last 14 days, so you don't re-propose them without new facts
+## ${side} candidates set aside in the last 14 days, so you don't re-propose them without new facts
 ${passed.join("\n") || "(none)"}
 
 Finish by calling submit_candidates.`;
