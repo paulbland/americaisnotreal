@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-06",
+  "startedAt": "2026-10-10T12:51:26.290Z",
+  "finishedAt": "2026-10-10T12:57:43.866Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: Facepalm scan for 2026-10-06. Search capacity ran out partway through, so there is only one candidate. It is solid: the Maricopa County, Ariz., vendor that mailed 3,126 early ballots six days ahead of schedule. Two accepted publishers cover it (KJZZ and KTAR), I opened both pages, and both quotes matched the page text exactly. The event (Oct. 1 mailing, announced Oct. 4) falls within the window for this scan date. The subject is the institution (the county recorder's office and the vendor it hired), not a politician, so party is null. Other stories in the window were set aside: some lacked accepted sources, others fell after the scan date or weren't clear blunders. Genius: I'm submitting no genius candidates for the 2026-10-06 scan. The tool limit was reached before I could open two accepted-publisher pages for any lead, and I won't put forward a story or quote I haven't checked against an opened page. The best lead for a later run is the Air Force Academy push-up record (around Oct. 3–5, Colorado Springs). It needs coverage found on an accepted outlet such as gazette.com, koaa.com or kdvr.com. The second is the Sky Elements drone-show record (around Oct. 4–5, Texas), which needs accepted Texas outlets. The Halzen physics Nobel is in the window but is already published for Oct. 10, and Deisseroth is already on the bench. Pair published.",
+  "published": true,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "Stanford's Karl Deisseroth shares the 2026 Nobel Prize in medicine for optogenetics",
+      "outcome": "published",
+      "reason": "from the bench (verified 2026-10-05)"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Maricopa County's vendor mails 3,126 early ballots six days before the scheduled mailing date",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Champaign County, Ill., suspends early voting; about 600 voters get replacement ballots after ballot errors",
+      "outcome": "rejected",
+      "reason": "In the date window, but the only coverage found was on outlets not on the accepted list (WCIA, IPM Newsroom, Fox Illinois, Capitol News Illinois, NPR Illinois, plus Yahoo republications). I found no accepted publisher before search capacity ran out."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Calaveras County, Calif., voter pamphlets printed with wrong candidate statements",
+      "outcome": "rejected",
+      "reason": "In the date window, but the ABC10 video page couldn't be fetched. The other coverage (Union Democrat, FOX40, myMotherLode, Calaveras Enterprise, Yahoo) isn't on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "PepsiCo recalls more than 122,000 cases of Gatorade over undeclared food dyes",
+      "outcome": "rejected",
+      "reason": "Well sourced (CBS News, ABC, 6abc, News4Jax), but it's a routine FDA labeling recall with a possible health angle, not a clear self-evident blunder."
+    },
+    {
+      "side": "facepalm",
+      "headline": "State audit finds $160 million error in Iowa DOT financial reporting",
+      "outcome": "rejected",
+      "reason": "The only coverage found was WHO 13, KCAU and a Yahoo republication, none of them on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Pender County, N.C., sends incorrect property tax bills",
+      "outcome": "rejected",
+      "reason": "The only coverage found (Port City Daily, Oct. 6) isn't on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Philadelphia police say an AI system submitted a false homicide tip to their unsolved-murder website",
+      "outcome": "rejected",
+      "reason": "Appears to have been reported around Oct. 9–10, 2026, after the scan date."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Inglewood, Calif., November ballot misspells a candidate's name",
+      "outcome": "rejected",
+      "reason": "Appears to have been reported after the scan date, and the only source found (The LA Local) isn't on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Nearly 600 Floyd County, Ind., voters receive incorrect ballots",
+      "outcome": "rejected",
+      "reason": "Reported Oct. 9, 2026 (LPM), after the scan date."
+    },
+    {
+      "side": "genius",
+      "headline": "Francis Halzen (UW-Madison) wins 2026 Nobel Prize in physics for IceCube neutrino work",
+      "outcome": "rejected",
+      "reason": "Inside the window (announced Oct. 6), but it is already the published genius story for 2026-10-10. Not re-proposed."
+    },
+    {
+      "side": "genius",
+      "headline": "U.S. Air Force Academy cadets break the Guinness record for simultaneous push-ups, previously held by Navy (Colorado Springs, CO)",
+      "outcome": "rejected",
+      "reason": "Appears to fall inside the window (around Oct. 3–5). The only coverage found in search results was KRDO, Fox21, Yahoo and the academy's own release, and none of them is an accepted news publisher. The tool limit was reached before an accepted second source could be found or any page opened."
+    },
+    {
+      "side": "genius",
+      "headline": "Sky Elements drone show in Texas sets Guinness records with 71,207 drone launches in a week",
+      "outcome": "rejected",
+      "reason": "Coverage found was DroneDJ, AV Interactive, RedShark, DroneXL and Colombia One, none of them accepted publishers. No pages were opened before the tool limit was reached, and the exact date and city were not confirmed. It is also partly a company showcase."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Illinois physicists find signs of pair density waves persisting above the superconducting transition in uranium ditelluride",
+      "outcome": "rejected",
+      "reason": "The ScienceDaily page is dated Oct. 7, after the scan date. The phys.org page and the journal publication date were not opened or confirmed. Illinois was also the genius state on 2026-10-04."
+    },
+    {
+      "side": "genius",
+      "headline": "Megan Eckert sets women's six-day world record and overall American record",
+      "outcome": "rejected",
+      "reason": "Seen only on iRunFar, Marathon Handbook and Trail Runner, none of which is accepted. The race location (possibly outside the US) and the date were not confirmed before the tool limit was reached."
+    },
+    {
+      "side": "genius",
+      "headline": "Stanford-designed molecule turns a lymphoma-driving protein into a cancer 'kill switch' in mice",
+      "outcome": "rejected",
+      "reason": "ScienceDaily page dated Oct. 7, after the scan date. It is a mouse result, and the publication date and a second accepted source were not confirmed."
+    },
+    {
+      "side": "genius",
+      "headline": "Early mammal fossil suggests ancestors could chew, swallow and suckle (NPR)",
+      "outcome": "rejected",
+      "reason": "The NPR story is dated Oct. 7, after the scan date. The lead institution and a second accepted source were not checked."
+    },
+    {
+      "side": "genius",
+      "headline": "Yale researchers find the epilepsy drug lacosamide may help reverse osteoarthritis damage",
+      "outcome": "rejected",
+      "reason": "ScienceDaily page dated Oct. 8, after the scan date. It is a preliminary 'may help' result with no second source."
+    }
+  ]
+}
