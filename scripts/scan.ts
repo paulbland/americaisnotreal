@@ -444,8 +444,8 @@ async function main() {
   // One discovery run per side, each with its own search budget, so neither side can
   // starve the other. Facepalm gets more: it is the harder side to source.
   const budgets: Record<Side, number> = {
-    facepalm: Number(process.env.SCAN_MAX_SEARCHES_FACEPALM ?? 40),
-    genius: Number(process.env.SCAN_MAX_SEARCHES_GENIUS ?? 25),
+    facepalm: Number(process.env.SCAN_MAX_SEARCHES_FACEPALM ?? 60),
+    genius: Number(process.env.SCAN_MAX_SEARCHES_GENIUS ?? 30),
   };
   const discover = (side: Side) => {
     console.log(`Discovery for ${DATE}, ${side} side (${MODEL}, ${budgets[side]} searches)…`);
@@ -463,7 +463,7 @@ async function main() {
       accept: ReceivedCandidatesSchema,
       effort: "high",
       maxSearches: budgets[side],
-      maxFetches: 40,
+      maxFetches: 60,
     });
   };
   const [facepalmDiscovery, geniusDiscovery] = await Promise.all([

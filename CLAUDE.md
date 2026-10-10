@@ -61,7 +61,7 @@ published, any verified story on the other side goes to the bench, and the log s
 publish time. The workflow re-runs validate/check/test/build, opens a PR and merges it
 itself. After the merge, `scripts/indexnow.ts` waits for the deploy and pings IndexNow.
 
-Budget: 40 facepalm and 25 genius discovery searches (facepalm is the harder side to source)
+Budget: 60 facepalm and 30 genius discovery searches (facepalm is the harder side to source)
 plus up to 3 verifications per side at 8 searches each, roughly $2 to $4 a day. The first real
 run on 2026-10-09 cost $1.71 and took six minutes.
 
