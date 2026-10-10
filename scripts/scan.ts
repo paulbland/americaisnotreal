@@ -431,7 +431,9 @@ async function main() {
   const usable = (b: BenchEntry) => b.story.eventDate >= weekAgo && b.story.eventDate <= DATE;
   const bench = repo.bench;
   const since = new Date(Date.parse(DATE) - 14 * 86_400_000).toISOString().slice(0, 10);
-  const recent = days.filter((d) => d.date >= since && d.date <= DATE).slice(0, 14);
+  // Days on both sides of the date, so a backfill run also avoids stories already used later.
+  const until = new Date(Date.parse(DATE) + 14 * 86_400_000).toISOString().slice(0, 10);
+  const recent = days.filter((d) => d.date >= since && d.date <= until).slice(0, 28);
   // A rerun of the same date starts fresh: its earlier log would only confuse discovery.
   const recentScans = repo.scans.filter((s) => s.date >= since && s.date < DATE);
 

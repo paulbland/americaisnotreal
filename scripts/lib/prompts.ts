@@ -110,7 +110,7 @@ ${
 
 Political facepalm stories: parties currently allowed = ${parties}. (The site keeps the running balance of political facepalm stories within one of each other.)
 
-## The last 14 published days, to avoid repeats and keep variety
+## Published days near this date (before and after), to avoid repeats and keep variety
 ${recent.map(recentLine).join("\n") || "(none yet)"}
 
 ## ${side} candidates set aside in the last 14 days, so you don't re-propose them without new facts
