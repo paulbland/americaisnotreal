@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-06",
+  "genius": {
+    "slug": "stanford-karl-deisseroth-wins-2026-nobel-medicine-optogenetics",
+    "side": "genius",
+    "headline": "Stanford's Karl Deisseroth shares the 2026 Nobel Prize in medicine for optogenetics",
+    "summary": "Karl Deisseroth, a Stanford University and Howard Hughes Medical Institute professor, was named on Oct. 5 as a joint winner of the 2026 Nobel Prize in Physiology or Medicine with Germany's Peter Hegemann and Georg Nagel. Deisseroth put the gene for a light-sensitive algae protein into rodent neurons, making it possible to switch specific brain cells on and off with light. The technique, known as optogenetics, is now widely used to study how the brain works.",
+    "quote": {
+      "text": "Karl Deisseroth, Peter Hegemann, and Georg Nagel are the joint recipients of the 2026 Nobel Prize in Physiology or Medicine",
+      "sourceUrl": "https://www.statnews.com/2026/10/05/nobel-prize-medicine-2026-winner-deisseroth-hegemann-nagel/"
+    },
+    "state": "CA",
+    "city": "Stanford",
+    "category": "medicine",
+    "subject": "public-figure",
+    "party": null,
+    "eventDate": "2026-10-05",
+    "sources": [
+      {
+        "url": "https://www.statnews.com/2026/10/05/nobel-prize-medicine-2026-winner-deisseroth-hegemann-nagel/",
+        "publisher": "STAT",
+        "title": "2026 Nobel Prize in Medicine awarded for brain research tool called optogenetics",
+        "date": "2026-10-05",
+        "archiveUrl": "https://web.archive.org/web/20261010125637/https://www.statnews.com/2026/10/05/nobel-prize-medicine-2026-winner-deisseroth-hegemann-nagel/"
+      },
+      {
+        "url": "https://www.nature.com/articles/d41586-026-03091-2",
+        "publisher": "Nature",
+        "title": "Medicine Nobel awarded for brain 'switch' that controls neurons with light",
+        "date": "2026-10-05",
+        "archiveUrl": "https://web.archive.org/web/20261010125647/https://www.nature.com/articles/d41586-026-03091-2?error=cookies_not_supported&code=e54e7101-ab1b-46e9-be70-2bf4063c2e50"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "maricopa-county-vendor-mails-3126-ballots-six-days-early",
+    "side": "facepalm",
+    "headline": "Maricopa County's vendor mails 3,126 early ballots six days before the scheduled mailing date",
+    "summary": "Runbeck Election Services, the vendor Maricopa County, Ariz., uses to mail early ballots, sent 3,126 ballots to the Postal Service on Oct. 1, six days before the scheduled Oct. 7 mailing, according to the county recorder's office. The office said it had not authorized the early mailing and only learned of it afterward. County officials said the ballots went to the correct voters and remain valid.",
+    "quote": {
+      "text": "Over 3,000 ballots were mistakenly sent to Maricopa County voters six days before the scheduled mailing date this Wednesday",
+      "sourceUrl": "https://www.kjzz.org/elections/2026-10-06/over-3-000-maricopa-county-ballots-mistakenly-mailed-days-before-early-voting-heres-what-to-know"
+    },
+    "state": "AZ",
+    "city": "Phoenix",
+    "category": "government",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-10-01",
+    "sources": [
+      {
+        "url": "https://www.kjzz.org/elections/2026-10-06/over-3-000-maricopa-county-ballots-mistakenly-mailed-days-before-early-voting-heres-what-to-know",
+        "publisher": "KJZZ",
+        "title": "Over 3,000 Maricopa County ballots mistakenly mailed days before early voting. Here's what to know",
+        "date": "2026-10-06",
+        "archiveUrl": "https://web.archive.org/web/20261010125709/https://www.kjzz.org/elections/2026-10-06/over-3-000-maricopa-county-ballots-mistakenly-mailed-days-before-early-voting-heres-what-to-know"
+      },
+      {
+        "url": "https://ktar.com/arizona-politics-news/election/donald-trump-ballots-early",
+        "publisher": "KTAR News",
+        "title": "Donald Trump criticizes early Maricopa County ballots",
+        "date": "2026-10-05",
+        "archiveUrl": "https://web.archive.org/web/20261006090014/https://ktar.com/arizona-politics-news/election/donald-trump-ballots-early"
+      }
+    ]
+  },
+  "publishedAt": "2026-10-10T12:57:43.866Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-10-10",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
