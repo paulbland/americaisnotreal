@@ -377,7 +377,8 @@ async function pickSide(
     const headline =
       (item as { headline?: unknown } | null)?.headline?.toString() ?? "(malformed candidate)";
     if (!parsed.success) {
-      log.push({ side, headline, outcome: "rejected", reason: "malformed candidate" });
+      const why = z.prettifyError(parsed.error).split("\n").slice(0, 3).join(" ");
+      log.push({ side, headline, outcome: "rejected", reason: `malformed candidate: ${why}` });
       continue;
     }
     if (story) {

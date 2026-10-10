@@ -99,6 +99,17 @@ export const QuoteSchema = z
   })
   .strict();
 
+/**
+ * Sentences end with . ! or ? followed by a space and a capital letter, except after
+ * common abbreviations, so "$3.5 million", "Oct. 6" and "U.S. agencies" don't count.
+ */
+export function sentenceCount(text: string): number {
+  const abbreviations =
+    /(?<!\b(?:Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sept?|Oct|Nov|Dec|Dr|Mr|Mrs|Ms|St|Gov|Sen|Rep|Lt|Col|Gen|Jr|Sr|No|vs|Inc|Co|Corp|U\.S|D\.C)\.)/;
+  const boundary = new RegExp(abbreviations.source + String.raw`(?<=[.!?]["”’)]?)\s+(?=["“‘(]?[A-Z])`);
+  return text.trim().split(boundary).length;
+}
+
 export const StoryObject = z
   .object({
     /** Permanent id, kebab-case, unique across every day. */
@@ -106,7 +117,7 @@ export const StoryObject = z
     side: SideSchema,
     /** Our own headline: plain, factual, no adjectives doing the work. */
     headline: z.string().min(20).max(110),
-    /** Two or three sentences in our words. No opinion, no jokes. */
+    /** Two or three sentences in our words (four at most). No opinion, no jokes. */
     summary: z.string().min(120).max(600),
     quote: QuoteSchema,
     state: StateSchema,
@@ -129,8 +140,8 @@ export const StorySchema = StoryObject.superRefine((s, ctx) => {
   if (!s.sources.some((x) => x.url === s.quote.sourceUrl)) {
     ctx.addIssue({ code: "custom", message: "quote.sourceUrl must be one of the sources" });
   }
-  if (s.summary.split(/(?<=[.!?])\s+/).length > 4) {
-    ctx.addIssue({ code: "custom", message: "summary is longer than three sentences" });
+  if (sentenceCount(s.summary) > 4) {
+    ctx.addIssue({ code: "custom", message: "summary is longer than four sentences" });
   }
 });
 export type Story = z.infer<typeof StorySchema>;
