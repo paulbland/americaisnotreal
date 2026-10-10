@@ -520,7 +520,9 @@ async function main() {
       }
     }
   }
-  const usedSlugs = new Set(Object.values(fromBench).map((b) => b.story.slug));
+  // A bench entry leaves the bench only when it is actually published; a day that
+  // borrowed it and still found no partner must leave it for the next day.
+  const usedSlugs = new Set(published ? Object.values(fromBench).map((b) => b.story.slug) : []);
   const nextBench = [...bench.filter((b) => !usedSlugs.has(b.story.slug) && usable(b)), ...benched];
 
   let day: Day | null = null;
