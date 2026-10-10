@@ -1,113 +1,131 @@
 {
   "date": "2026-09-26",
-  "startedAt": "2026-10-10T01:32:33.078Z",
-  "finishedAt": "2026-10-10T01:37:48.111Z",
+  "startedAt": "2026-10-10T13:20:47.057Z",
+  "finishedAt": "2026-10-10T13:28:37.386Z",
   "model": "claude-opus-5-5",
-  "searches": 66,
-  "summary": "Facepalm: Facepalm scan for 2026-09-26 (window 2026-09-20 to 09-26). My search allowance ran out early, so I'm submitting only one fully verified candidate. It is San Diego's trash-fee billing error, admitted on September 23 and reported by KPBS and NBC 7 San Diego. I opened both pages and checked both quotes against the page text. Montgomery County, MD's misprinted voter guides fit the date window, but I could open only one accepted source, so I set it aside. Most other results I found fell outside the window. Genius: Genius scan for 2026-09-26. My search allowance ran out early, so I worked from ScienceDaily and Space.com listings, using journal DOIs as second sources. I'm submitting two candidates. Each has a peer-reviewed paper published inside the window and two different accepted publishers: (1) a Duke-led trapped-ion quantum simulation of string breaking, in Nature Physics on Sept 23 (NC); (2) a Purdue-led study of Perseverance rover data showing three separate episodes of water in Jezero Crater, including hot fluids, in Communications Earth & Environment on Sept 21 (IN). I opened the Nature pages through dx.doi.org links that redirect to the nature.com addresses cited. Several bigger stories fell outside the window or failed on location. No facepalm story met the standard; nothing published. The verified genius story is on the bench for a later day.",
+  "searches": 90,
+  "summary": "Facepalm: Facepalm scan for 2026-09-26 (window Sept. 20–26). My search budget ran out partway through, so this run produces only one candidate. It is the Texas Department of Public Safety failing to forward voter registration records to counties. Votebeat broke the story on Sept. 22, and it was confirmed by FOX 4 (Sept. 23), the Texas Tribune (Sept. 24) and KUT (Sept. 25). All four pages were opened. The subject is the institution, so no party is set. Several other leads were set aside: they happened after the scan date, had no accepted sources, or involved a victim. Genius: GENIUS scan for 2026-09-26, covering 2026-09-20 to 2026-09-26. I'm submitting no candidates. My search and fetch tools hit their usage limit partway through the scan. Of the US stories I could check, none had two opened pages from different accepted publishers that also fell inside the date window. Pages I did open: Space.com's September archive and about ten of its articles, ScienceDaily's top news plus 11 release pages, the Science News homepage and 10 of its articles, and one Nature Astronomy paper. Two leads looked promising but each had only one opened accepted source. The first is a University of Arizona-led JWST study on early-universe metals (Nature Astronomy, Sept. 24; Space.com, Sept. 25). The second is a Stanford study recording phonon quantum jumps (ScienceDaily, Sept. 22). A re-run with tools available could check whether Nature, phys.org or other outlets carry either one with dates inside the window. MacArthur Fellows were announced Sept. 29, after the scan date. No genius story met the standard; nothing published. The verified facepalm story is on the bench for a later day.",
   "published": false,
   "candidates": [
     {
-      "side": "genius",
-      "headline": "Duke-led team uses a 13-ion quantum simulator to watch particle 'strings' break and new pairs form",
+      "side": "facepalm",
+      "headline": "Texas DPS fails to send counties voter registrations dating back to October 2025",
       "outcome": "benched",
       "reason": "passed every check; kept for a later day because the other side had no story"
     },
     {
-      "side": "genius",
-      "headline": "Purdue-led study of Perseverance data finds three separate episodes of water, including hot fluids, at Jezero Crater",
+      "side": "facepalm",
+      "headline": "MARTA says clerical error paid an ex-station cleaner $620,000 in unearned overtime",
       "outcome": "rejected",
-      "reason": "malformed candidate"
+      "reason": "First reported Sept. 28, after the scan date; no accepted coverage found within the window."
     },
     {
       "side": "facepalm",
-      "headline": "San Diego puts incorrect trash fees on tens of thousands of residents' property tax bills",
+      "headline": "Fargo Public Schools sends 'secure the building' alert to all families by mistake",
       "outcome": "rejected",
-      "reason": "fails the schema: ✖ summary is longer than three sentences"
+      "reason": "Happened Sept. 30, after the scan date."
     },
     {
       "side": "facepalm",
-      "headline": "Montgomery County, MD voter guides list wrong polling place and party for 11 precincts",
+      "headline": "Missouri Lottery corrects posted Pick 4 numbers after players thought they had won",
       "outcome": "rejected",
-      "reason": "In the date window (September 22–23), but I opened only one accepted source (foxbaltimore.com, a WJLA syndication). The WUSA9 page wouldn't load, and the county .gov page I found was a 2024 statement, so it doesn't meet the two-source rule."
+      "reason": "Only sources found (KMOV/KFVS) are not on the accepted list; the story centres on individual players' losses."
     },
     {
       "side": "facepalm",
-      "headline": "Maricopa County mails over 3,000 ballots six days early",
+      "headline": "McLean County, Ill., administrative error leads some residents to pay more in taxes",
       "outcome": "rejected",
-      "reason": "Reported October 6, 2026, which is after the scan date."
-    },
-    {
-      "side": "facepalm",
-      "headline": "Wayne County, MI voters to get new mail ballots after printing error",
-      "outcome": "rejected",
-      "reason": "Reported October 2, 2026, which is after the scan date; sources found were not on the accepted list."
+      "reason": "Only non-accepted outlets found (25 News, WGLT); fewer than two accepted publishers."
     },
     {
       "side": "facepalm",
       "headline": "Calaveras County reprints voter pamphlets after candidate statement error",
       "outcome": "rejected",
-      "reason": "Appears to be after the scan date, and the only copy found was on Yahoo, which isn't allowed."
+      "reason": "Reported around Oct. 4–5, after the scan date."
     },
     {
       "side": "facepalm",
-      "headline": "Maryland city fixes sign misspelled for 20 years",
+      "headline": "Roselle, N.J., welcome sign misspelling to be taken down",
       "outcome": "rejected",
-      "reason": "Appears to be reported around October 4, after the scan date; I couldn't verify it further."
+      "reason": "Coverage dated Sept. 30 or later, after the scan date; no accepted publisher found."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Clerical error leads to wrong woman's arrest in Jessamine County, Ky.",
+      "outcome": "rejected",
+      "reason": "The subject is the victim of the error; excluded."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Montgomery County, Md., voter guides printed with errors",
+      "outcome": "rejected",
+      "reason": "Already published on 2026-09-28."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Arizona-led JWST study finds galaxies spread heavy elements 500 million years after the Big Bang",
+      "outcome": "rejected",
+      "reason": "Only one accepted source was opened (Space.com, Sept. 25). Tools ran out before a second accepted publisher could be checked; the ScienceDaily write-up appears to be dated after the scan date."
+    },
+    {
+      "side": "genius",
+      "headline": "Stanford team records quantum jumps of sound in a mechanical resonator",
+      "outcome": "rejected",
+      "reason": "Only one accepted source was opened (ScienceDaily, Sept. 22). The Science paper may have come out before Sept. 20, and I couldn't confirm its date or a second outlet."
+    },
+    {
+      "side": "genius",
+      "headline": "IAS scholar co-leads study finding a universal accretion rate for black hole jets",
+      "outcome": "rejected",
+      "reason": "Too old. The Nature Astronomy paper came out Sept. 17, before the window. The study was also co-led with Curtin University in Australia."
+    },
+    {
+      "side": "genius",
+      "headline": "NASA's Hubble Space Telescope completes its 200,000th orbit",
+      "outcome": "rejected",
+      "reason": "The orbit was completed Sept. 19, before the window, and I couldn't confirm when NASA announced it. Only Space.com was opened."
+    },
+    {
+      "side": "genius",
+      "headline": "High school teacher's find yields first adult T. rex trackway in North Dakota",
+      "outcome": "rejected",
+      "reason": "Too old. The paper came out Sept. 8 in the Journal of Vertebrate Paleontology, outside the 7-day window."
+    },
+    {
+      "side": "genius",
+      "headline": "UC Berkeley-linked team shows lead in ink makes burned Herculaneum-style scrolls readable by X-ray",
+      "outcome": "rejected",
+      "reason": "Too old. The PLOS One paper came out Sept. 16, and only ScienceDaily was opened."
+    },
+    {
+      "side": "genius",
+      "headline": "Stanford Medicine study finds the brain develops from two separate progenitor systems",
+      "outcome": "rejected",
+      "reason": "Too old. The Nature Neuroscience paper came out Sept. 18, before the window."
+    },
+    {
+      "side": "genius",
+      "headline": "First black-hole-powered microblazar identified in the Milky Way",
+      "outcome": "rejected",
+      "reason": "Not a US-led result: the team was led from Europe (JIVE/ASTRON)."
+    },
+    {
+      "side": "genius",
+      "headline": "OSIRIS-REx Bennu samples show the asteroid formed between hot and cold regions",
+      "outcome": "rejected",
+      "reason": "Not a US-led result: the analysis was led by ETH Zurich, and the Space.com article is dated Sept. 27, after the scan date."
+    },
+    {
+      "side": "genius",
+      "headline": "Engineered roses produce a true blue color",
+      "outcome": "rejected",
+      "reason": "Not in the US: the work was done by Suntory researchers in Japan."
     },
     {
       "side": "genius",
       "headline": "2026 MacArthur Fellows named",
       "outcome": "rejected",
-      "reason": "Announced September 29, 2026, after the scan date."
-    },
-    {
-      "side": "genius",
-      "headline": "SpaceX Starship reaches orbit for the first time on Flight 14",
-      "outcome": "rejected",
-      "reason": "Launched September 28, 2026, after the scan date."
-    },
-    {
-      "side": "genius",
-      "headline": "Stanford study finds the human brain develops from two distinct cellular systems",
-      "outcome": "rejected",
-      "reason": "Paper published in Nature Neuroscience on September 18, 2026, before the 7-day window."
-    },
-    {
-      "side": "genius",
-      "headline": "University of Chicago shows non-Abelian anyons can perform universal quantum computation",
-      "outcome": "rejected",
-      "reason": "Nature paper published July 15, 2026; the September write-up is not the event date."
-    },
-    {
-      "side": "genius",
-      "headline": "Astronomers identify first microblazar in the Milky Way",
-      "outcome": "rejected",
-      "reason": "Led by a European team (JIVE/ASTRON); no US location."
-    },
-    {
-      "side": "genius",
-      "headline": "Single CRISPR treatment halves LDL cholesterol for a year (Cleveland Clinic)",
-      "outcome": "rejected",
-      "reason": "Only news page found is dated September 27, 2026, after the scan date; no second source opened."
-    },
-    {
-      "side": "genius",
-      "headline": "Stanford researchers record real-time quantum jumps of sound",
-      "outcome": "rejected",
-      "reason": "Could not open the Science paper to confirm its publication date fell within the window; only one source."
-    },
-    {
-      "side": "genius",
-      "headline": "MIT insect-scale flying robot gets about 450% faster with AI controller",
-      "outcome": "rejected",
-      "reason": "Could not open the journal page to confirm the publication date; only one accepted source."
-    },
-    {
-      "side": "genius",
-      "headline": "OSIRIS-REx samples show Bennu formed from 'fire and ice'",
-      "outcome": "rejected",
-      "reason": "Only accepted page found is dated September 27, 2026, after the scan date."
+      "reason": "Announced Sept. 29, after the scan date."
     }
   ]
 }
