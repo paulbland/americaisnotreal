@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-04",
+  "genius": {
+    "slug": "illinois-crop-scientist-kaiyu-guan-named-2026-macarthur-fellow",
+    "side": "genius",
+    "headline": "University of Illinois crop scientist Kaiyu Guan is named a 2026 MacArthur Fellow",
+    "summary": "Kaiyu Guan, the Levenick Professor of Sustainability at the University of Illinois Urbana-Champaign, was named a 2026 MacArthur Fellow on Sept. 29, receiving an unrestricted $800,000 stipend. According to the university, his research is building a predictive science of agriculture by integrating field and satellite observations, process models, artificial intelligence and supercomputing.",
+    "quote": {
+      "text": "Kaiyu Guan, 41, Urbana, Illinois, a University of Illinois Urbana-Champaign environmental scientist helping farmers predict and optimize crop yields through data and machine learning.",
+      "sourceUrl": "https://www.wral.com/news/ap/bea43-the-macarthur-foundation-s-genius-fellows-the-full-2026-class-list/"
+    },
+    "state": "IL",
+    "city": "Urbana",
+    "category": "science",
+    "subject": "private-individual",
+    "party": null,
+    "eventDate": "2026-09-29",
+    "sources": [
+      {
+        "url": "https://www.wral.com/news/ap/bea43-the-macarthur-foundation-s-genius-fellows-the-full-2026-class-list/",
+        "publisher": "WRAL (Associated Press)",
+        "title": "The MacArthur Foundation's 'genius' fellows: The full 2026 class list",
+        "date": "2026-09-29"
+      },
+      {
+        "url": "https://news.illinois.edu/u-of-i-researcher-and-alumus-both-named-2026-macarthur-fellows/",
+        "publisher": "University of Illinois News Bureau",
+        "title": "U. of I. researcher and alumnus both named 2026 MacArthur Fellows",
+        "date": "2026-09-29",
+        "archiveUrl": "https://web.archive.org/web/20261010023710/https://news.illinois.edu/u-of-i-researcher-and-alumus-both-named-2026-macarthur-fellows/"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "seattle-overpays-police-13-million-using-2020-pay-rates",
+    "side": "facepalm",
+    "headline": "Seattle overpays police $13 million after using 2020 pay rates to calculate a 2024 raise",
+    "summary": "The City of Seattle overpaid more than 900 Seattle Police Officers Guild members a combined $13.1 million in June when it paid a negotiated 6% retroactive raise for 2024, according to the mayor's office. The city said staff calculated backpay for the beginning of 2024 using 2020 base rates instead of 2024 rates, which officials called a manual data oversight. The city now plans to bargain with the union over how members will repay the money.",
+    "quote": {
+      "text": "In calculating the backpay for the beginning of 2024, staff used base rates from 2020 rather than 2024.",
+      "sourceUrl": "https://www.fox13seattle.com/news/seattle-police-department-overpaid-13m-payroll-error"
+    },
+    "state": "WA",
+    "city": "Seattle",
+    "category": "government",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-10-01",
+    "sources": [
+      {
+        "url": "https://www.fox13seattle.com/news/seattle-police-department-overpaid-13m-payroll-error",
+        "publisher": "FOX 13 Seattle",
+        "title": "Seattle Police Department overpaid $13M due to payroll error, city says",
+        "date": "2026-10-01"
+      },
+      {
+        "url": "https://komonews.com/news/local/city-of-seattle-wants-to-claw-back-13-million-in-overpayments-to-police-officers-katie-wilson-police-chief-search-law-enforcement-budget",
+        "publisher": "KOMO News",
+        "title": "City of Seattle wants to claw back $13 million in overpayments to police officers",
+        "date": "2026-10-01"
+      }
+    ]
+  },
+  "publishedAt": "2026-10-10T02:40:16.473Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-10-10",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
