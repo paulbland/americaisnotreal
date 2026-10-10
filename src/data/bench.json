@@ -1,41 +1,47 @@
 [
   {
     "story": {
-      "slug": "colorado-800000-ballots-wrongly-include-passenger-rail-tax-question",
+      "slug": "texas-dps-fails-to-send-voter-registrations-to-counties",
       "side": "facepalm",
-      "headline": "About 800,000 Colorado ballots wrongly include the Front Range Passenger Rail tax question",
-      "summary": "About 800,000 voters outside the Front Range Passenger Rail District in Adams, Arapahoe, Douglas and Weld counties were sent ballots that include Issue 7A, the district's proposed sales tax. The district apologized to the four county clerks' offices, saying its new boundaries were not communicated through the usual channels. The Secretary of State's office says only votes from eligible district residents will be counted.",
+      "headline": "Texas DPS fails to send counties voter registrations dating back to October 2025",
+      "summary": "The Texas Department of Public Safety did not send county registrars voter registration applications and updates submitted through its online driver's license portal, Votebeat reported Sept. 22. Some records dated to October 2025, and DPS said a third-party vendor's software update cut off parts of them. By Sept. 24, seven counties had confirmed receiving more than 178,000 backlogged records, less than two weeks before the Oct. 5 registration deadline.",
       "quote": {
-        "text": "The Front Range Passenger Rail District apologized in a letter to the four county clerks offices for a lack of communication that led to the error.",
-        "sourceUrl": "https://www.cpr.org/2026/10/07/front-range-passenger-rail-incorrect-ballots/"
+        "text": "DPS failed to send the applications, which were submitted by voters through its online driver’s license portal, to county voter registrars for processing, according to an email sent to county officials and provided to Votebeat.",
+        "sourceUrl": "https://www.votebeat.org/texas/2026/09/22/voter-registration-applications-unprocessed-dps-error/"
       },
-      "state": "CO",
+      "state": "TX",
       "city": null,
       "category": "government",
       "subject": "official-or-institution",
       "party": null,
-      "eventDate": "2026-10-07",
+      "eventDate": "2026-09-22",
       "sources": [
         {
-          "url": "https://www.cpr.org/2026/10/07/front-range-passenger-rail-incorrect-ballots/",
-          "publisher": "Colorado Public Radio",
-          "title": "800,000 voters in Colorado will see ballots that incorrectly include the Front Range Passenger Rail measure",
-          "date": "2026-10-07"
+          "url": "https://www.votebeat.org/texas/2026/09/22/voter-registration-applications-unprocessed-dps-error/",
+          "publisher": "Votebeat",
+          "title": "Unknown number of Texas voter registrations went unprocessed due to DPS error",
+          "date": "2026-09-22"
         },
         {
-          "url": "https://www.cbsnews.com/colorado/news/colorado-voters-ballot-question-2026-not-supposed-to-be-there/",
-          "publisher": "CBS News Colorado",
-          "title": "Some Colorado voters will see a ballot question in 2026 that's not supposed to be there",
-          "date": "2026-10-07"
+          "url": "https://www.fox4news.com/news/texas-dps-voter-registration-error",
+          "publisher": "FOX 4 Dallas-Fort Worth",
+          "title": "Texas DPS voter registration error leaves thousands of applications unprocessed ahead of midterm deadline",
+          "date": "2026-09-23"
         },
         {
-          "url": "https://gazette.com/2026/10/07/ballot-issue-for-passenger-rail-on-more-ballots-than-it-should-be/",
-          "publisher": "Colorado Springs Gazette",
-          "title": "800,000 voters wrongly sent ballots with passenger rail tax question",
-          "date": "2026-10-07"
+          "url": "https://www.texastribune.org/2026/09/24/dps-voter-registration-applications-error-paul-bettencourt-team/",
+          "publisher": "The Texas Tribune",
+          "title": "Key GOP lawmaker says state should have caught error that delayed at least 178,000 Texas voter registrations",
+          "date": "2026-09-24"
+        },
+        {
+          "url": "https://www.kut.org/austin/2026-09-25/texas-dps-voter-registration-applications-failed-to-send",
+          "publisher": "KUT 90.5",
+          "title": "Austin-area counties race to process thousands of delayed voter registrations",
+          "date": "2026-09-25"
         }
       ]
     },
-    "verifiedOn": "2026-10-09"
+    "verifiedOn": "2026-09-26"
   }
 ]
