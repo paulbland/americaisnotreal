@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "story": {
+      "slug": "colorado-800000-ballots-wrongly-include-passenger-rail-tax-question",
+      "side": "facepalm",
+      "headline": "About 800,000 Colorado ballots wrongly include the Front Range Passenger Rail tax question",
+      "summary": "About 800,000 ballots in Adams, Arapahoe, Douglas and Weld counties include Issue 7A, a proposed sales tax for Front Range Passenger Rail, though those voters live outside the rail district and can't vote on it. A joint statement from the state and the county clerks' association said the rail district didn't adequately tell counties about its updated boundaries after a 2026 law change. The district apologized to the clerks, and the Secretary of State said only eligible votes on 7A will be counted.",
+      "quote": {
+        "text": "The Front Range Passenger Rail District apologized in a letter to the four county clerks offices for a lack of communication that led to the error.",
+        "sourceUrl": "https://www.cpr.org/2026/10/07/front-range-passenger-rail-incorrect-ballots/"
+      },
+      "state": "CO",
+      "city": null,
+      "category": "government",
+      "subject": "official-or-institution",
+      "party": null,
+      "eventDate": "2026-10-07",
+      "sources": [
+        {
+          "url": "https://www.cpr.org/2026/10/07/front-range-passenger-rail-incorrect-ballots/",
+          "publisher": "Colorado Public Radio",
+          "title": "800,000 voters in Colorado will see ballots that incorrectly include the Front Range Passenger Rail measure",
+          "date": "2026-10-07"
+        },
+        {
+          "url": "https://gazette.com/2026/10/07/ballot-issue-for-passenger-rail-on-more-ballots-than-it-should-be/",
+          "publisher": "The Gazette",
+          "title": "800,000 voters wrongly sent ballots with passenger rail tax question",
+          "date": "2026-10-07"
+        }
+      ]
+    },
+    "verifiedOn": "2026-10-07"
+  }
+]
