@@ -1,41 +1,131 @@
 {
   "date": "2026-10-09",
-  "startedAt": "2026-10-09T21:32:19.794Z",
-  "finishedAt": "2026-10-09T21:36:13.114Z",
+  "startedAt": "2026-10-10T13:13:05.659Z",
+  "finishedAt": "2026-10-10T13:19:52.712Z",
   "model": "claude-opus-5-5",
-  "searches": 60,
-  "summary": "Scan for 2026-10-09 ended early because the search tool hit its usage limit after about 40 queries, almost all of them on the facepalm side. No facepalm candidate cleared every rule. The leads I found either have victims or injuries, are clerical or vendor errors like the ones already set aside, or are a single outlet's story republished by a sister station. I did not get to search the genius side. The earlier log shows the genius slot was already filled today (Deisseroth Nobel), and I found no other genius story to propose. Both sides are empty rather than risk an unverified story. No genius or facepalm story met the standard; nothing published.",
+  "searches": 95,
+  "summary": "Facepalm: Facepalm scan for 2026-10-09 (window Oct 3–9). Three candidates, all institutional ballot errors, each backed by two opened accepted sources. (1) Colorado: about 800,000 ballots in four counties wrongly include the Front Range Passenger Rail tax question (CPR, CBS Colorado, Gazette). (2) Athens-Clarke County, Ga.: a mailing-list error sends a second absentee ballot to 1,154 voters (WSB-TV, CBS Atlanta). (3) Oxford, Maine: a printer's packaging error sends some voters the wrong ballot style (Press Herald, WGME). Several items set aside earlier only for timing now fall inside the window. Search capacity ran out before I found a non-election alternate. Genius: GENIUS scan for 2026-10-09 (window Oct 3–9). I'm submitting one candidate, and it has a sourcing caveat. A Science paper published Oct. 8 by Hawaiian Volcano Observatory (USGS) scientists analyzes Kilauea's 54 lava fountains. I opened and checked the Science News article (Oct. 8). The second source, Phys.org (Oct. 9), returned 'url_not_accessible' every time I tried to open it. Its URL and text, including the corroboration passage, come only from the search tool's copy of the page. So this candidate does not fully meet the rule that two pages must be opened, and the mechanical check against Phys.org may fail. Ars Technica also covered the study (found through a link on an aggregator), but the fetch tool would not open it. My search quota ran out early in the run, which limited how many alternates I could find and source. Most other in-window items were outside the US, published before the window, or had only one accepted source. No genius story met the standard; nothing published. The verified facepalm story is on the bench for a later day.",
   "published": false,
   "candidates": [
     {
-      "side": "facepalm",
-      "headline": "Louisville councilwoman apologizes for posting photo of wrong man in viral road-rage case",
-      "outcome": "rejected",
-      "reason": "A third party was harmed (an uninvolved man was publicly misidentified), and the underlying Sept. 30 fight left a woman injured. Fails the victim and injury exclusions."
+      "side": "genius",
+      "headline": "Science study of Kilauea's 54 lava fountains finds the summit swells and tilts before each one",
+      "outcome": "deferred",
+      "reason": "quote not found on page (sciencenews.org)"
     },
     {
       "side": "facepalm",
-      "headline": "Second Louisville councilwoman says she 'overreacted' to road-rage video",
-      "outcome": "rejected",
-      "reason": "Tied to the same violent incident with an injured party. A statement walking back an earlier reaction is not a clear self-contained act."
+      "headline": "About 800,000 Colorado ballots wrongly include the Front Range Passenger Rail tax question",
+      "outcome": "benched",
+      "reason": "passed every check; kept for a later day because the other side had no story"
     },
     {
       "side": "facepalm",
-      "headline": "Maricopa County vendor mails 3,126 ballots a week early",
-      "outcome": "rejected",
-      "reason": "The county attributes it to an error by its printing vendor, a clerical mistake rather than a voluntary act, like the Oxford, Maine and Kendall County ballot stories already set aside. The 12News page could not be opened and KTAR is not on the accepted list, so only KJZZ was confirmed."
+      "headline": "Athens-Clarke County mails a second absentee ballot to 1,154 voters after a mailing-list error",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
     },
     {
       "side": "facepalm",
-      "headline": "Man arrested at Miami airport with 10 live birds in his underwear",
-      "outcome": "rejected",
-      "reason": "Live animals were sewn into tubes, so there are victims other than the perpetrator. The ABC11 page is a republished ABC News story (same canonical URL), so there is only one independent accepted publisher."
+      "headline": "Printer's packaging error sends some Oxford, Maine, voters ballots meant for another town",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
     },
     {
       "side": "facepalm",
-      "headline": "Atlanta robbery suspect allegedly steals police cruiser and crashes into tanker truck",
+      "headline": "Nearly 600 Floyd County, Ind., voters get early ballots missing the county commissioner race",
       "outcome": "rejected",
-      "reason": "The underlying robbery has a victim other than the perpetrator."
+      "reason": "In the date window (Oct. 6–9). I opened only one accepted source (LPM). The WHAS11 page couldn't be reached twice, and WDRB and News and Tribune aren't on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Anthropic AI model submits a false homicide tip to the Philadelphia police website",
+      "outcome": "rejected",
+      "reason": "The story centers on an unsolved homicide, so a killing is involved. That falls under the exclusion even though the error itself hurt no one."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Kendall County, Ill., sends 300 wrong mail-in ballots to two precincts",
+      "outcome": "rejected",
+      "reason": "The ballots were mailed Sept. 24, before the window. I found only one accepted source (Shaw Local)."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Champaign County, Ill., suspends early voting after ballot errors",
+      "outcome": "rejected",
+      "reason": "Coverage is still only on outlets not on the accepted list (WCIA, IPM Newsroom, Fox Illinois, News-Gazette, Capitol News Illinois, Yahoo)."
+    },
+    {
+      "side": "facepalm",
+      "headline": "UnitedHealthcare letters wrongly tell members eight clinicians had died",
+      "outcome": "rejected",
+      "reason": "The letters are dated Sept. 11, and the Star Tribune first reported it around Oct. 1. Both are before the 7-day window."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Utah Health and Harvard team find phage proteases trigger CBASS bacterial immunity (Science)",
+      "outcome": "rejected",
+      "reason": "The only source opened was ScienceDaily (Oct. 9). The Science publication date (vol. 394, issue 6819) could not be confirmed as inside the window, and no second accepted source was opened."
+    },
+    {
+      "side": "genius",
+      "headline": "Webb studies 21 extreme debris disks as signs of planet-scale collisions (Space Science Institute, Boulder)",
+      "outcome": "rejected",
+      "reason": "According to the NASA write-up carried by ScienceDaily, the paper was published in The Astrophysical Journal on Oct. 1, which is before the window."
+    },
+    {
+      "side": "genius",
+      "headline": "NASA's SpaceX Crew-12 splashes down off Los Angeles after 237 days in space (Oct. 8)",
+      "outcome": "rejected",
+      "reason": "A routine crew return rather than a specific new achievement. The only sources opened were ScienceDaily and NASA, and SpaceX was a recent genius subject."
+    },
+    {
+      "side": "genius",
+      "headline": "CHIME telescope detects hydrogen glow from 9 billion years ago on its own",
+      "outcome": "rejected",
+      "reason": "A Canadian telescope and a University of British Columbia-led team. Not in the US."
+    },
+    {
+      "side": "genius",
+      "headline": "Physicists create and observe 'Bethe strings' predicted in 1931",
+      "outcome": "rejected",
+      "reason": "Research by the University of Innsbruck in Austria. Not in the US."
+    },
+    {
+      "side": "genius",
+      "headline": "Golden-yellow coral prompts a new octocoral family",
+      "outcome": "rejected",
+      "reason": "Found on seamounts off Costa Rica. Not in the US."
+    },
+    {
+      "side": "genius",
+      "headline": "Protist found with a genetic code where UAA and UAG code for different amino acids",
+      "outcome": "rejected",
+      "reason": "Research by the Earlham Institute in the UK. Not in the US."
+    },
+    {
+      "side": "genius",
+      "headline": "Stanford's Sergiu Pașca team grows human cortical organoids filling a mouse cortex (Nature)",
+      "outcome": "rejected",
+      "reason": "The paper and its coverage date to mid-September 2026. Only the print issue is dated Oct. 8, so it is too old."
+    },
+    {
+      "side": "genius",
+      "headline": "Quadruped robot runs a marathon on a single battery charge (Nature)",
+      "outcome": "rejected",
+      "reason": "Developed by KAIST in South Korea, and published online in September. Not in the US and too old."
+    },
+    {
+      "side": "genius",
+      "headline": "U.S. Air Force Academy cadets break the Guinness record for simultaneous push-ups (Colorado Springs, CO)",
+      "outcome": "rejected",
+      "reason": "Still no accepted publisher found. The coverage is KRDO, Fox21 and the academy's own release, and the academy page could not be opened."
+    },
+    {
+      "side": "genius",
+      "headline": "Navi Pillay wins the 2026 Nobel Peace Prize (Oct. 9)",
+      "outcome": "rejected",
+      "reason": "The laureate is a South African former UN human rights chief. Not in the US."
     }
   ]
 }
