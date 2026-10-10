@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-10",
+  "startedAt": "2026-10-10T01:11:02.425Z",
+  "finishedAt": "2026-10-10T01:18:05.830Z",
+  "model": "claude-opus-5-5",
+  "searches": 66,
+  "summary": "Facepalm: Facepalm scan for 2026-10-10. Partway through, the search tool hit its usage limit, and later the fetch tool did too. That forced me to work only from pages linked off ones I had already opened, and it cut coverage well short. One candidate meets the rules: South Portland, Maine, has to reprint about 19,000 municipal ballots because a vendor transposed digits in the bond total. I opened the Portland Press Herald and WGME pages for it. Caveat: both outlets first reported it on Oct. 7, and the Press Herald updated its story on Oct. 8, so it is at the very edge of the 3-day reporting window. Also, earlier runs set aside vendor ballot misprints. The rules say institutional blunders count even when the vendor made the error, but the verifier may see it differently. Five other stories were looked at and set aside below. Genius: Genius scan for 2026-10-10 ended with no candidates. Search ran out partway through the run, so I could only open pages I had already found. The strongest leads were this week's Nobel Prizes to scientists in the US: physics to Francis Halzen (UW-Madison) and medicine to Karl Deisseroth (Stanford). The news pages I could open on both were all published Oct 5–6, which is outside the reporting window of Oct 8–10, so they don't meet the rules. The other Nobels this week went to people outside the US. Everything else I found was either outside the US, too old, or not a clear achievement. Rather than submit stories that break the rules, I'm submitting none. If the Nobel stories get fresh news coverage dated in the window, a later run could reconsider them. No genius or facepalm story met the standard; nothing published.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "facepalm",
+      "headline": "South Portland ballots list $150 million bond as $105 million; 19,000 to be reprinted",
+      "outcome": "rejected",
+      "reason": "Headline misstates the facts: it calls this a '$150 million bond' listed as '$105 million'. The Press Herald says the ballots 'accurately stated the bond principal and estimated interest'. Only the printed total of the two (principal plus estimated interest) was wrong: $105,398,500 instead of $150,398,500. The bond itself is not $150 million, and the bond amount was not misprinted. WGME also describes the figure as 'the total cost of the bond and estimated interest'. A corrected headline would read something like 'South Portland ballots list bond's $150.4M total cost, including interest, as $105.4M'.; Summary is loose for the same reason: 'total cost of a public safety bond' leaves out that the figure combines principal and estimated interest. It should say so to match the sources.; Recency: both accepted sources were first published on 2026-10-07: WGME at 04:55 UTC and the Press Herald at 20:43 UTC. The Press Herald was only modified on 10-08. With a scan date of 2026-10-10, the reporting window of 'the 3 days up to and including the scan date' is arguably 10-08 to 10-10, which these first publications fall outside. This is borderline at best.; eventDate 2026-10-06 is plausible but not directly confirmed. The city's announcement page (southportland.gov newsflash 598) could not be fetched, and the Press Herald only says the city announced it 'this week'. Early voting began Monday 10-05, before the error was found, and WGME published at 12:55 AM ET on 10-07, so the announcement was on 10-05 or 10-06."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Paul LePage files congressional financial disclosure almost five months late",
+      "outcome": "rejected",
+      "reason": "I could only open one accepted source (Portland Press Herald, Oct. 9). The outlet that broke the story, The Washington Sun, is not on the accepted list, and I could not reach a second accepted outlet to confirm."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Maine attorney general's office accidentally emails confidential case report to outside addresses",
+      "outcome": "rejected",
+      "reason": "The report covered about 90 homicide cases, and the office had to warn victims' families, so third parties are affected. Only one accepted source was confirmed (Portland Press Herald)."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Man stays on his boat off Dauphin Island as Hurricane Isaias approaches",
+      "outcome": "rejected",
+      "reason": "The outcome was unknown when it was reported, and there is a real risk of injury in a hurricane. Only one accepted source was confirmed (WDBJ7, republishing WALA)."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Arlington County apologizes after its emergency alert account reposts an anti-immigrant post",
+      "outcome": "rejected",
+      "reason": "The only coverage found was ARLnow and Washingtonian, neither of which is on the accepted list. The subject also touches immigration, which needs extra care."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Wayne County, Michigan, sends new mail ballots to 8,500 voters after a printing error",
+      "outcome": "rejected",
+      "reason": "Too old: first reported Sept. 29 to Oct. 2, outside the 3-day reporting window."
+    },
+    {
+      "side": "genius",
+      "headline": "UW-Madison physicist Francis Halzen wins 2026 Nobel Prize in Physics for IceCube neutrino work",
+      "outcome": "rejected",
+      "reason": "Announced Oct 6, so the event is recent enough. But every accepted news page I opened (Inside Higher Ed, PBS/AP, WISN) is dated Oct 6, before the Oct 8–10 reporting window."
+    },
+    {
+      "side": "genius",
+      "headline": "Stanford's Karl Deisseroth shares 2026 Nobel Prize in Physiology or Medicine for optogenetics",
+      "outcome": "rejected",
+      "reason": "Announced Oct 5. The accepted news pages I opened (ABC7 News, Boston.com) are dated Oct 5–6, before the Oct 8–10 reporting window. The co-laureates are German."
+    },
+    {
+      "side": "genius",
+      "headline": "2026 Nobel Prize in Chemistry awarded to Henri Kagan and Kenso Soai",
+      "outcome": "rejected",
+      "reason": "Not in the US: the laureates are at institutions in France and Japan."
+    },
+    {
+      "side": "genius",
+      "headline": "Anne Carson wins 2026 Nobel Prize in Literature",
+      "outcome": "rejected",
+      "reason": "Canadian laureate; not an event that happened in the US."
+    },
+    {
+      "side": "genius",
+      "headline": "Navi Pillay wins 2026 Nobel Peace Prize",
+      "outcome": "rejected",
+      "reason": "Not in the US."
+    },
+    {
+      "side": "genius",
+      "headline": "MacArthur Foundation names 2026 fellows",
+      "outcome": "rejected",
+      "reason": "Announced Sept 29; too old for this scan."
+    },
+    {
+      "side": "genius",
+      "headline": "NASA's SpaceX Crew-12 splashes down off Los Angeles after 237 days",
+      "outcome": "rejected",
+      "reason": "A routine crew return rather than a specific record or first. The only in-window accepted source I found was ScienceDaily, which reposts NASA's own press release."
+    },
+    {
+      "side": "genius",
+      "headline": "Instagram photo leads scientists to a new giant water lily species",
+      "outcome": "rejected",
+      "reason": "The discovery happened in Colombia, not the US."
+    },
+    {
+      "side": "genius",
+      "headline": "Scientists find an organism with a genetic code that breaks a near-universal rule",
+      "outcome": "rejected",
+      "reason": "Research by the UK's Earlham Institute; not in the US."
+    }
+  ]
+}
