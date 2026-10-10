@@ -1,0 +1,119 @@
+{
+  "date": "2026-09-27",
+  "startedAt": "2026-10-10T01:38:43.366Z",
+  "finishedAt": "2026-10-10T01:46:27.162Z",
+  "model": "claude-opus-5-5",
+  "searches": 65,
+  "summary": "Facepalm: I'm submitting two facepalm candidates for 2026-09-27. Both are government billing or election-mailing errors from September 21–23, and each is checked against pages I opened. (1) San Diego's trash-fee error on about 87,000 property tax bills (CA), sourced to KPBS and NBC San Diego. Last run it was set aside only because the summary ran past three sentences; I've rewritten it as two. (2) Montgomery County, MD voter guides that listed the wrong polling place and party for 11 precincts. Last run it was set aside because the county .gov statement looked like it was from 2024. I opened it this time and it is dated Wednesday, September 23, 2026, so it can be the official source alongside foxbaltimore.com. All four quote and corroboration passages match the opened pages exactly. I ran out of search calls partway through, so there are only two candidates and no further alternates. Genius: Scan for 2026-09-27 (window 2026-09-21 to 09-27), genius side. Partway through, the search and fetch tools hit their usage limit, so most leads could not be backed by a second source. One candidate is fully sourced: the Purdue-led Perseverance study of the Margin Unit, published September 21 and confirmed by Space.com (Sept 24) and NASA JPL (Sept 21). A Sept 26 run set it aside only because the entry was malformed. Its facts and dates are now confirmed and the entry is correctly formed. Several other leads were set aside for lack of a second accepted source, a non-US lead, or dates outside the window. Pair published.",
+  "published": true,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "Purdue-led Perseverance study finds Jezero Crater rocks met water three times, once as hot fluid",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "San Diego puts incorrect trash fees on about 87,000 accounts' property tax bills",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Montgomery County, Maryland voter guides list wrong polling place and party in 11 precincts",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Maricopa County mails over 3,000 ballots days before early voting",
+      "outcome": "rejected",
+      "reason": "Reported October 5–6, 2026, which is after the scan date."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Wayne County, MI communities mail new absentee ballots after printing error",
+      "outcome": "rejected",
+      "reason": "Reported September 29 to October 2, 2026, which is after the scan date."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Kane County, IL processing error produces about 2,000 duplicate mail ballots",
+      "outcome": "rejected",
+      "reason": "First found in a September 29 report on shawlocal.com, which isn't an accepted publisher, and that date is after the scan date."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Athens-Clarke County mails second absentee ballot to 1,154 voters",
+      "outcome": "rejected",
+      "reason": "Announced around October 8, 2026, which is after the scan date."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Roselle, NJ welcome sign spelling error",
+      "outcome": "rejected",
+      "reason": "Reported September 30, 2026, after the scan date, and the only source found (News 12) isn't an accepted publisher."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Denver installs street sign reading 'Califorina'",
+      "outcome": "rejected",
+      "reason": "Reported in August 2026, outside the 7-day window."
+    },
+    {
+      "side": "genius",
+      "headline": "OSIRIS-REx samples show Bennu formed from 'fire and ice'",
+      "outcome": "rejected",
+      "reason": "Space.com (Sept 27) credits the work to Maria Schönbächler's ETH Zurich lab in Switzerland; no US lead institution."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Arizona-led JWST study finds early galaxies dispersed heavy elements 500 million years after the Big Bang",
+      "outcome": "rejected",
+      "reason": "Published Sept 24 in Nature Astronomy, but the only accepted source opened was Space.com; the other linked statement is on EurekAlert, which is not allowed. No second accepted source."
+    },
+    {
+      "side": "genius",
+      "headline": "Simulations show large icy moons can keep subsurface oceans after being smashed apart (University of Maryland)",
+      "outcome": "rejected",
+      "reason": "Paper published in Nature Astronomy on August 20, 2026, before the 7-day window."
+    },
+    {
+      "side": "genius",
+      "headline": "Hubble Space Telescope completes its 200,000th orbit",
+      "outcome": "rejected",
+      "reason": "Milestone reached September 19, before the window; also an operational milestone rather than a new achievement."
+    },
+    {
+      "side": "genius",
+      "headline": "PsychAD Consortium (Mount Sinai-led) publishes single-cell brain atlas across eight disorders in Nature",
+      "outcome": "rejected",
+      "reason": "Only nature.com pages opened (paper and News & Views, same publisher); no second accepted publisher found."
+    },
+    {
+      "side": "genius",
+      "headline": "UC Berkeley scientists use lead traces in ancient ink to read burned papyrus scrolls by X-ray",
+      "outcome": "rejected",
+      "reason": "Only a ScienceDaily page (dated Sept 26) was opened; the publication date and a second accepted source could not be confirmed."
+    },
+    {
+      "side": "genius",
+      "headline": "Cleveland Clinic CRISPR therapy halves LDL cholesterol for a year",
+      "outcome": "rejected",
+      "reason": "Cleveland Clinic announced the results August 28, 2026; the September write-ups are not the event date."
+    },
+    {
+      "side": "genius",
+      "headline": "Amateur astronomer finds 25-km impact crater while searching maps for a camping spot",
+      "outcome": "rejected",
+      "reason": "Crater is in Quebec, Canada; not in the US."
+    },
+    {
+      "side": "genius",
+      "headline": "First globular-cluster stellar stream found beyond the Milky Way",
+      "outcome": "rejected",
+      "reason": "Led by the University of Copenhagen; no US lead institution."
+    }
+  ]
+}
