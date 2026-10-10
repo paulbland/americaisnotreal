@@ -1,113 +1,131 @@
 {
   "date": "2026-09-29",
-  "startedAt": "2026-10-10T01:54:01.900Z",
-  "finishedAt": "2026-10-10T02:00:38.409Z",
+  "startedAt": "2026-10-10T13:29:27.606Z",
+  "finishedAt": "2026-10-10T13:35:45.929Z",
   "model": "claude-opus-5-5",
-  "searches": 69,
-  "summary": "Facepalm: Facepalm scan for 2026-09-29 (window Sept 23–29): I have no candidates to submit. The search tool hit its usage limit partway through, and the fetch tool only opens URLs that had already come up in results, so I couldn't find second sources. Of the stories I did find, the only one in the date window that hasn't already been published (new absentee ballots in three Wayne County, Mich., communities after a printing error, Sept 29) had just one source, WDIV/ClickOnDetroit, which isn't an accepted publisher. Everything else was outside the window, already published, or excluded. I'd suggest re-running this side with full search capacity. The best lead is to look for accepted coverage of the Wayne County ballot reprint dated on or before Sept 29 (freep.com, detroitnews.com, wxyz.com, fox2detroit.com, mlive.com, michiganpublic.org). Genius: Genius scan for 2026-09-29. My web search allowance ran out early in the run, and later page fetches stopped working too, so I mostly searched through Space.com's September archive, ScienceDaily listings, Smithsonian Smart News and the press releases they link to. One candidate meets every rule: the University of Chicago-led JWST detection of an atmosphere on the lava world HD 3167 b, with a UChicago announcement (Sept 23) and a Space.com report (Sept 29). Several other stories were set aside for date, location or sourcing reasons. The biggest of these is Starship reaching orbit on Sept 28: it is in the window, but I could only open Space.com pages for it, so it has no second accepted publisher. No genius or facepalm story met the standard; nothing published.",
+  "searches": 96,
+  "summary": "Facepalm: Facepalm scan for 2026-09-29. Search budget ran out partway through the run. Only one fresh story met every rule: Stanford admitted that its dining office used AI to alter a student photo for campus ads, which broke the university's own AI policy (Inside Higher Ed and Fox News, both Sept. 23). Most of the ballot-error stories found were reported after the scan date, were already published or benched, lacked two accepted sources, or involved a party that isn't currently allowed. Genius: Scan for 2026-09-29 (genius). My search budget ran out early, so I worked mainly from the Space.com September archive and the official university pages linked from it. The strongest candidate is a UChicago-led JWST study, announced Sept. 23 in The Astrophysical Journal Letters, that found an atmosphere on HD 3167 b, the coldest lava world yet shown to have one. The second is a weaker alternate: a Yale-led simulation study, announced Sept. 23, on wandering black holes. The 2026 MacArthur Fellows (announced Sept. 29) are within the window, but I could not open an accepted news page for any fellow not already published. No genius story met the standard; nothing published.",
   "published": false,
   "candidates": [
     {
       "side": "genius",
-      "headline": "UChicago-led team finds an atmosphere on HD 3167 b, the coldest lava world yet known to have one",
+      "headline": "UChicago-led team finds an atmosphere on HD 3167 b, the coldest lava world known to have one",
       "outcome": "rejected",
-      "reason": "Fails the 7-day freshness rule. The paper (Coy et al., ApJL 1005 L77, DOI 10.3847/2041-8213/ae7f23) was published by the journal on July 9, 2026, according to IOPscience (received April 13, accepted June 13). The arXiv preprint has been public since April 13, 2026, and v2 with the DOI was posted July 4. The scan date is 2026-09-29, so the result came out about 11 to 12 weeks earlier. The only Sept. 23 item is a UChicago News Q&A feature, adapted from a Physical Sciences Division article, about a paper that was already published.; The summary says the result was 'reported in The Astrophysical Journal Letters, announced Sept. 23'. That suggests the journal publication or announcement was new on Sept. 23, which is wrong. It came out July 9. The eventDate of 2026-09-23 is wrong for the same reason.; Minor: the headline says flatly that the planet is 'known to have' an atmosphere. The sources only call it 'evidence' and 'strong evidence'."
+      "reason": "Fails the 7-day freshness rule. The study ('Evidence for an Atmosphere on the Ultra-short-period Super-Earth HD 3167 b', Coy et al., ApJL 1005 L77) was published by The Astrophysical Journal Letters on 2026 July 9, according to the IOPscience article page in search results. A preprint (arXiv 2604.11911) was out in April 2026. The site's rules count journal publications from the day they were announced, and that is 82 days before the 2026-09-29 scan date. The UChicago News piece dated Sept 23 is a later promotional write-up of an old result (itself 'adapted from' an earlier Physical Sciences Division article), and the Space.com piece of Sept 29 just follows it. The proposed eventDate of 2026-09-23 misrepresents when the achievement happened.; Overstatement: the summary says the team 'used the James Webb Space Telescope to show that HD 3167 b ... has an atmosphere', and the headline says it 'finds an atmosphere' on 'the coldest lava world known to have one'. The paper's title and the university's own wording are more careful: 'evidence for an atmosphere', 'coldest lava world found so far with evidence of an atmosphere', and 'strong evidence'. Rewording could fix this, but it can't fix the date problem.; Minor: the summary says the day side 'is cooler than it would be without one'. The source says it is 'noticeably cooler than its expected maximum', which the researchers take as evidence of an atmosphere."
+    },
+    {
+      "side": "genius",
+      "headline": "Yale-led study finds galaxy mergers send black holes wandering for billions of years",
+      "outcome": "rejected",
+      "reason": "Too old for the 7-day window. The paper (Weller et al. 2026, ApJL 1008, L54, DOI 10.3847/2041-8213/ae9c38) was published on 2026-09-07. The IOPscience listing says 'Published 2026 September 7', and Space.com, the proposal's own source, says 'The team's research was published on Sept. 7 in The Astrophysical Journal Letters.' The scan date is 2026-09-29, so the window runs from Sept 23 to Sept 29. Our rules count journal publications from the day they are published, which makes this 22 days old. An arXiv preprint (2607.09853) and Astrobites coverage (Aug 11) also show the result was public before that.; The eventDate of 2026-09-23 is wrong. That is the date of Yale's own news release, not the date of the publication. A later university press release does not restart the clock on a three-week-old paper.; Minor: the headline says mergers 'send' black holes wandering for billions of years. This is a simulation result, and the sources say black holes 'can be displaced'. If it ran, it would need hedging ('can send', 'simulation suggests')."
     },
     {
       "side": "facepalm",
-      "headline": "Sumpter Township, Van Buren Township and Belleville, Mich., mail new absentee ballots after printing error",
+      "headline": "Stanford says its dining office broke university AI policy by altering a student photo used in campus ads",
       "outcome": "rejected",
-      "reason": "In the date window (reported Sept 29, 2026), but the only page I opened was WDIV/ClickOnDetroit, which isn't on the accepted list. Search capacity ran out before I could find a second accepted source."
+      "reason": "stanford-dining-ad-uses-ai-altered-student-photo-against-own-policy: facepalm story mentions student; see the no-victims rule"
     },
     {
       "side": "facepalm",
-      "headline": "Montgomery County, Md., voter guides list wrong polling place or party in 11 precincts",
-      "outcome": "rejected",
-      "reason": "Already published as the facepalm story for 2026-09-28."
+      "headline": "Texas DPS fails to send counties voter registrations dating back to October 2025",
+      "outcome": "published",
+      "reason": "from the bench (verified 2026-09-26)"
     },
     {
       "side": "facepalm",
-      "headline": "Fargo schools send emergency alert to all families by mistake",
+      "headline": "Several Michigan clerks miss the Sept. 24 deadline to mail absentee ballots (Antrim, Presque Isle counties)",
       "outcome": "rejected",
-      "reason": "Appears to have been reported around Sept 30, 2026, after the scan date. The InForum page also couldn't be opened, and North Dakota is the only state involved, so I couldn't verify it."
+      "reason": "Within the date window (Votebeat, Sept. 29), but the only other coverage found was on outlets not on the accepted list (Michigan Advance, Interlochen Public Radio, Hoodline)."
     },
     {
       "side": "facepalm",
-      "headline": "Port St. Lucie man arrested after calling 911 to report a stabbing police say he committed",
+      "headline": "Sen. John Fetterman calls himself a 'lifelong Republican' at the Texas Tribune Festival",
       "outcome": "rejected",
-      "reason": "The crime has a victim who was injured, which is excluded."
+      "reason": "A spoken slip rather than an act in office with consequences, and the senator's known post-stroke speech-processing issues raise a disability concern. Only one accepted outlet (Fox News) was found reporting the slip."
     },
     {
       "side": "facepalm",
-      "headline": "New Jersey governor announces more problems found in the state's voter registration system",
+      "headline": "Sen. Eric Schmitt's perjury claim against Jack Smith rests on a Hawks/Hawkeyes mix-up",
       "outcome": "rejected",
-      "reason": "Announced Oct 7, 2026, after the scan date."
+      "reason": "Republican subject; the party isn't currently allowed under the political balance rule."
     },
     {
       "side": "facepalm",
-      "headline": "Street sign near Rochester airport reads 'Hanger Road'",
+      "headline": "Ken Paxton campaign typo",
       "outcome": "rejected",
-      "reason": "Reported in August 2026, outside the 7-day window."
+      "reason": "Republican subject; the party isn't currently allowed, and only a non-accepted source (HuffPost) was found."
     },
     {
       "side": "facepalm",
-      "headline": "ICE sends letter about selling an Atlanta Highway warehouse to the wrong city",
+      "headline": "Man calls 911 to get out of paying for a Red Lobster meal in Douglas County, Ga.",
       "outcome": "rejected",
-      "reason": "Reported around Oct 5, 2026, after the scan date, and the source isn't on the accepted list."
+      "reason": "An alleged crime with a victim other than the perpetrator (the restaurant); the WSB-TV report is also dated Sept. 30, after the scan date."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Whitesboro, Texas, billing glitch overcharged electricity customers for decades",
+      "outcome": "rejected",
+      "reason": "Reported Sept. 30, after the scan date; the only source found (KXII) is not on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Hagerstown, Md., fixes 'Municpal Stadium' sign 20 years later",
+      "outcome": "rejected",
+      "reason": "An old AP story resurfaced on a syndication page; the event is not recent."
     },
     {
       "side": "genius",
-      "headline": "SpaceX Starship reaches orbit and deploys satellites for the first time on Flight 14 (Starbase, TX)",
+      "headline": "Princeton's Ellora Derenoncourt and Elizabeth Ellis named 2026 MacArthur Fellows",
       "outcome": "rejected",
-      "reason": "Inside the window (Sept 28), but every page I opened was from Space.com, and the only other links went to spacex.com. No second accepted publisher."
+      "reason": "Announced Sept. 29, within the window, but only the Princeton page could be opened. The NPR and Washington Post pages could not be fetched, and the other coverage found (Forbes, Yahoo, local AP reprints) is not on the accepted list."
     },
     {
       "side": "genius",
-      "headline": "Syracuse-led team describes 'fire amoeba' from Lassen Volcanic National Park that reproduces at 63°C",
+      "headline": "UC San Diego nanoengineer Liangfang Zhang named 2026 MacArthur Fellow",
       "outcome": "rejected",
-      "reason": "The Cell paper was published Sept 22, according to NASA. That is outside a strict seven-day window ending Sept 29. The Space.com write-up also wrongly calls the amoeba multi-celled."
+      "reason": "Only the UC San Diego page was opened. The KPBS story is dated Oct. 1, after the scan date, and no other accepted news page could be opened."
     },
     {
       "side": "genius",
-      "headline": "Yale simulations suggest wandering black holes carry records of their home galaxies",
+      "headline": "NYU team finds human genome resilient to a day of simulated microgravity",
       "outcome": "rejected",
-      "reason": "I could not open the Yale release, so there is only one accepted source. It is also a simulation result described mainly as what 'could' happen."
+      "reason": "Only one source opened (Space.com, Sept. 29). The NYU release could not be fetched, and the publication date is unconfirmed."
     },
     {
       "side": "genius",
-      "headline": "IAS-co-led study finds black holes of every size launch jets at the same critical feeding rate",
+      "headline": "Simulations link JWST 'Little Red Dots' to overfed black holes",
       "outcome": "rejected",
-      "reason": "The IAS announced it September 17, which is before the window."
+      "reason": "Not a US result: the work was led by the Max Planck Institute for Astrophysics in Germany. The Nature paper also came out Sept. 16, before the window."
     },
     {
       "side": "genius",
-      "headline": "Diver finds 1,000-year-old dugout canoe in Pewaukee Lake, Wisconsin",
+      "headline": "Longest satellite record shows 12.5 trillion tons of polar ice lost since the 1970s",
       "outcome": "rejected",
-      "reason": "All the coverage I found (Milwaukee Journal Sentinel Sept 30, WPR Oct 1, Smithsonian Oct 6) was published after the scan date."
+      "reason": "Not a US result: the study was led by Northumbria University in the UK."
     },
     {
       "side": "genius",
-      "headline": "Simulations show JWST 'Little Red Dots' may be overfeeding black holes",
+      "headline": "Exoplanet GJ 3090 b found orbiting backward around its star",
       "outcome": "rejected",
-      "reason": "Led by the Max Planck Institute for Astrophysics in Germany. No US lead institution."
+      "reason": "Not a US result: the team was at the University of Geneva. Space.com covered it Sept. 22, before the window."
     },
     {
       "side": "genius",
-      "headline": "Satellite record shows 12.5 trillion tons of polar ice lost since the 1970s",
+      "headline": "Studies suggest Enceladus plumes could carry detectable microbial signatures",
       "outcome": "rejected",
-      "reason": "Led by Northumbria University in the UK. No US lead institution."
+      "reason": "Not a US result: the lead author is at Freie Universität Berlin."
     },
     {
       "side": "genius",
-      "headline": "Exoplanet found orbiting its star in the wrong direction",
+      "headline": "Caltech-led team reconstructs 27 years of a blazar's jets",
       "outcome": "rejected",
-      "reason": "Led by the University of Geneva. Not a US institution."
+      "reason": "Too old: Space.com covered it Sept. 21, before the window, and only one source was opened."
     },
     {
       "side": "genius",
-      "headline": "University of Arizona-led JWST study finds early universe was enriched with heavy elements sooner than thought",
+      "headline": "Texas A&M study finds creatine builds muscle in middle-aged adults without exercise",
       "outcome": "rejected",
-      "reason": "Already set aside on Sept 27 for lacking a second accepted source. The only other link on the Space.com page is still to EurekAlert."
+      "reason": "A supplement trial rather than a clear achievement. Only ScienceDaily was opened, and the journal publication date is unconfirmed."
     }
   ]
 }
