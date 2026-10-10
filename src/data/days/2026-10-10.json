@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-10",
+  "genius": {
+    "slug": "uw-madison-halzen-wins-nobel-physics-icecube-neutrinos",
+    "side": "genius",
+    "headline": "UW-Madison physicist Francis Halzen wins Nobel Prize in physics for IceCube neutrino work",
+    "summary": "On October 6, Francis Halzen won the 2026 Nobel Prize in physics. He has been on the University of Wisconsin-Madison faculty since 1972 and is principal investigator of the IceCube Neutrino Observatory. According to the Nobel committee, his work was instrumental to building IceCube, which uses Antarctic ice as a neutrino detector and glimpsed the first high-energy neutrinos from faraway galaxies. Halzen is 82 and is the sixth physicist connected to UW-Madison to win a Nobel.",
+    "quote": {
+      "text": "UW-Madison professor Francis Halzen has won the 2026 Nobel Prize in physics for his work on the IceCube Neutrino Observatory and the discovery of high-energy neutrinos from space.",
+      "sourceUrl": "https://www.wisn.com/article/francis-halzen-nobel-prize-physics-uw-madison/74056890"
+    },
+    "state": "WI",
+    "city": "Madison",
+    "category": "science",
+    "subject": "public-figure",
+    "party": null,
+    "eventDate": "2026-10-06",
+    "sources": [
+      {
+        "url": "https://www.wisn.com/article/francis-halzen-nobel-prize-physics-uw-madison/74056890",
+        "publisher": "WISN 12",
+        "title": "UW-Madison professor Francis Halzen wins 2026 Nobel Prize in physics",
+        "date": "2026-10-06",
+        "archiveUrl": "https://web.archive.org/web/20261010012712/https://www.wisn.com/article/francis-halzen-nobel-prize-physics-uw-madison/74056890"
+      },
+      {
+        "url": "https://www.pbs.org/newshour/science/watch-live-winner-of-the-2026-nobel-prize-in-physics-is",
+        "publisher": "PBS News",
+        "title": "WATCH: Nobel Prize in physics awarded to Francis Halzen for demystifying neutrinos",
+        "date": "2026-10-06",
+        "archiveUrl": "https://web.archive.org/web/20261010012712/https://www.pbs.org/newshour/science/watch-live-winner-of-the-2026-nobel-prize-in-physics-is"
+      },
+      {
+        "url": "https://www.wpr.org/news/uw-madison-professor-francis-halzen-ghost-particles-antarctic-ice-wins-nobel-prize-for-physics",
+        "publisher": "WPR (Associated Press)",
+        "title": "UW-Madison professor who hunts mysterious particles in Antarctic ice wins Nobel Prize for physics",
+        "date": "2026-10-06",
+        "archiveUrl": "https://web.archive.org/web/20261010012709/https://www.wpr.org/news/uw-madison-professor-francis-halzen-ghost-particles-antarctic-ice-wins-nobel-prize-for-physics"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "south-portland-reprints-ballots-after-bond-total-transposed",
+    "side": "facepalm",
+    "headline": "South Portland has 19,000 ballots reprinted after bond total is listed as $105 million, not $150 million",
+    "summary": "South Portland, Maine, is having 19,000 municipal ballots reprinted after a public safety bond question for a new police and fire station listed the total of principal and estimated interest as $105,398,500 instead of $150,398,500. The city said its printer transposed a number. Early voting had already started; ballots already cast will count, and voters can ask for a new ballot if they want to change their vote.",
+    "quote": {
+      "text": "While we submitted the correct total of $150,398,500, they mistakenly transposed a number and listed $105,398,500 on the ballot",
+      "sourceUrl": "https://www.pressherald.com/2026/10/07/south-portland-having-ballots-reprinted-after-bond-question-typo/"
+    },
+    "state": "ME",
+    "city": "South Portland",
+    "category": "government",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-10-06",
+    "sources": [
+      {
+        "url": "https://www.pressherald.com/2026/10/07/south-portland-having-ballots-reprinted-after-bond-question-typo/",
+        "publisher": "Portland Press Herald",
+        "title": "South Portland having municipal ballots reprinted to fix typo on bond question",
+        "date": "2026-10-07",
+        "archiveUrl": "https://web.archive.org/web/20261010012754/https://www.pressherald.com/2026/10/07/south-portland-having-ballots-reprinted-after-bond-question-typo/"
+      },
+      {
+        "url": "https://wgme.com/news/local/south-portland-municipal-ballots-being-replaced-after-printing-errors-maine-elections-politics",
+        "publisher": "WGME",
+        "title": "South Portland municipal ballots being replaced after printing errors",
+        "date": "2026-10-07",
+        "archiveUrl": "https://web.archive.org/web/20261010012754/https://wgme.com/news/local/south-portland-municipal-ballots-being-replaced-after-printing-errors-maine-elections-politics"
+      }
+    ]
+  },
+  "publishedAt": "2026-10-10T01:27:55.006Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-10-10",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
