@@ -23,12 +23,21 @@ describe("schema", () => {
     expect(StorySchema.safeParse(s).success).toBe(false);
   });
 
-  it("rejects a summary longer than three sentences", () => {
+  it("rejects a summary longer than four sentences", () => {
     const s = {
       ...fixtureDay.genius,
-      summary: "One is here. Two is here. Three is here. Four is here. Five is here now.",
+      summary: "One is here. Two is here. Three is here. Four is here. Five is here now too.",
     };
     expect(StorySchema.safeParse(s).success).toBe(false);
+  });
+
+  it("counts sentences without tripping on abbreviations or figures", async () => {
+    const { sentenceCount } = await import("../src/data/schema.ts");
+    expect(
+      sentenceCount("It cost $3.5 million. The U.S. agency said so on Oct. 6. Nobody objected."),
+    ).toBe(3);
+    expect(sentenceCount("One. Two. Three. Four. Five.")).toBe(5);
+    expect(sentenceCount("“Quoted.” Then a second.")).toBe(2);
   });
 
   it("rejects a day whose sides are swapped", () => {

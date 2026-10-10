@@ -400,6 +400,13 @@ export const ACCEPTED_PUBLISHERS = [
   "cbs46.com",
   "atlantanewsfirst.com",
   "wgcl.com",
+  // Stations and newsrooms the scan kept finding good stories on
+  "clickondetroit.com",
+  "koin.com",
+  "ktar.com",
+  "shawlocal.com",
+  "votebeat.org",
+  "wdiv.com",
   // Public radio
   "wnyc.org",
   "wbur.org",
