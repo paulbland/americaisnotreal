@@ -67,15 +67,13 @@ const PassedSchema = z
 /** Candidates are checked one at a time later, so one malformed entry can't sink the rest. */
 const ReceivedCandidatesSchema = z.object({
   summary: z.string(),
-  genius: z.array(z.unknown()).default([]),
-  facepalm: z.array(z.unknown()).default([]),
+  candidates: z.array(z.unknown()).default([]),
   passed: z.array(PassedSchema).default([]),
 });
 
 const SubmittedCandidatesSchema = z.object({
   summary: z.string().min(1),
-  genius: z.array(CandidateSchema).max(4),
-  facepalm: z.array(CandidateSchema).max(4),
+  candidates: z.array(CandidateSchema).max(4),
   passed: z.array(PassedSchema),
 });
 
@@ -96,7 +94,7 @@ function inputSchema(schema: z.ZodType): Anthropic.Beta.BetaTool.InputSchema {
 const SUBMIT_CANDIDATES: Anthropic.Beta.BetaTool = {
   name: "submit_candidates",
   description:
-    "Submit today's candidate stories. Call exactly once, at the end. Up to four per side, best first; an empty side is allowed when nothing qualifies.",
+    "Submit the candidate stories for the requested side. Call exactly once, at the end. Up to four, best first; an empty list is allowed when nothing qualifies.",
   input_schema: inputSchema(SubmittedCandidatesSchema),
 };
 
@@ -400,29 +398,52 @@ async function main() {
   const bench = repo.bench;
   const since = new Date(Date.parse(DATE) - 14 * 86_400_000).toISOString().slice(0, 10);
   const recent = days.filter((d) => d.date >= since && d.date <= DATE).slice(0, 14);
-  const recentScans = repo.scans.filter((s) => s.date >= since && s.date <= DATE);
+  // A rerun of the same date starts fresh: its earlier log would only confuse discovery.
+  const recentScans = repo.scans.filter((s) => s.date >= since && s.date < DATE);
 
-  console.log(`Discovery for ${DATE} (${MODEL})…`);
-  const discovery = await runAgent({
-    system: DISCOVERY_SYSTEM,
-    task: discoveryTask({
-      date: DATE,
-      recent,
-      recentScans,
-      allowedParties: allowedParties(days),
-      bench: bench.filter(usable),
-    }),
-    finalTool: SUBMIT_CANDIDATES,
-    accept: ReceivedCandidatesSchema,
-    effort: "high",
-    maxSearches: Number(process.env.SCAN_MAX_SEARCHES ?? 60),
-    maxFetches: 50,
-  });
-  const raw = discovery.input;
+  // One discovery run per side, each with its own search budget, so neither side can
+  // starve the other. Facepalm gets more: it is the harder side to source.
+  const budgets: Record<Side, number> = {
+    facepalm: Number(process.env.SCAN_MAX_SEARCHES_FACEPALM ?? 40),
+    genius: Number(process.env.SCAN_MAX_SEARCHES_GENIUS ?? 25),
+  };
+  const discover = (side: Side) => {
+    console.log(`Discovery for ${DATE}, ${side} side (${MODEL}, ${budgets[side]} searches)…`);
+    return runAgent({
+      system: DISCOVERY_SYSTEM,
+      task: discoveryTask({
+        date: DATE,
+        side,
+        recent,
+        recentScans,
+        allowedParties: allowedParties(days),
+        bench: bench.filter(usable),
+      }),
+      finalTool: SUBMIT_CANDIDATES,
+      accept: ReceivedCandidatesSchema,
+      effort: "high",
+      maxSearches: budgets[side],
+      maxFetches: 40,
+    });
+  };
+  const [facepalmDiscovery, geniusDiscovery] = await Promise.all([
+    discover("facepalm"),
+    discover("genius"),
+  ]);
+  const fetched = new Map([...facepalmDiscovery.fetched, ...geniusDiscovery.fetched]);
+  const raw = {
+    summary: `Facepalm: ${facepalmDiscovery.input.summary} Genius: ${geniusDiscovery.input.summary}`,
+    passed: [...facepalmDiscovery.input.passed, ...geniusDiscovery.input.passed],
+  };
 
-  // Facepalm first: it is the side that most often comes up empty.
-  const facepalm = await pickSide("facepalm", raw.facepalm, days, bench, discovery.fetched);
-  const genius = await pickSide("genius", raw.genius, days, bench, discovery.fetched);
+  const facepalm = await pickSide(
+    "facepalm",
+    facepalmDiscovery.input.candidates,
+    days,
+    bench,
+    fetched,
+  );
+  const genius = await pickSide("genius", geniusDiscovery.input.candidates, days, bench, fetched);
 
   // A side with no fresh survivor may take the newest usable story from the bench.
   const fromBench: Partial<Record<Side, BenchEntry>> = {};

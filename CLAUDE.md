@@ -50,8 +50,8 @@ Change one and you almost certainly need to change the others.
 
 ## The daily scan (`scripts/scan.ts`, `.github/workflows/scan.yml`)
 
-10:00 UTC (6am Eastern in summer). Claude Opus 5.5 with web search proposes up to four ranked
-candidates per side. Each candidate, in order, must pass: the schema and repo rules; the
+10:00 UTC (6am Eastern in summer). Claude Opus 5.5 with web search runs once per side, in
+parallel, each with its own search budget, and proposes up to four ranked candidates. Each candidate, in order, must pass: the schema and repo rules; the
 party-balance rule; an independent adversarial Claude review; and a mechanical check that
 its quote and a corroborating quote appear verbatim on two different publishers' live
 pages. The first survivor on each side is published as the pair. A side with no fresh survivor
@@ -60,14 +60,15 @@ published, any verified story on the other side goes to the bench, and the log s
 publish time. The workflow re-runs validate/check/test/build, opens a PR and merges it
 itself. After the merge, `scripts/indexnow.ts` waits for the deploy and pings IndexNow.
 
-Budget: 60 discovery searches (facepalm first, since it is the harder side to source) plus
-up to 3 verifications per side at 8 searches each, roughly $2 to $4 a day. The first real
+Budget: 40 facepalm and 25 genius discovery searches (facepalm is the harder side to source)
+plus up to 3 verifications per side at 8 searches each, roughly $2 to $4 a day. The first real
 run on 2026-10-09 cost $1.71 and took six minutes.
 
 ## Editorial rules (non-negotiable)
 
 - Both stories happened in the United States. Americans abroad don't count.
-- Facepalm: nobody killed, injured or hospitalised; no minors; no crime victims; no
+- Facepalm: a person's own voluntary act, or an institutional or official blunder (accidents
+  count for institutions, never for private individuals). Nobody killed, injured or hospitalised; no minors; no crime victims; no
   mental-health, addiction or disability; no jokes about poverty, immigration, religion or
   groups. Private individuals only if adults, their own act, already named by two accepted
   publishers; otherwise "unnamed" with a city.
