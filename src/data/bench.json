@@ -31,5 +31,44 @@
       ]
     },
     "verifiedOn": "2026-10-02"
+  },
+  {
+    "story": {
+      "slug": "ncar-sea-ice-scientist-marika-holland-named-macarthur-fellow",
+      "side": "genius",
+      "headline": "NSF NCAR climate scientist Marika Holland of Boulder is named a 2026 MacArthur Fellow",
+      "summary": "Marika Holland, a senior scientist at the NSF National Center for Atmospheric Research in Boulder, Colorado, was named on Sept. 29 as one of 20 MacArthur Fellows for 2026. She studies polar sea ice and its interactions with the global climate, and has worked on developing improved sea ice models for climate simulations. The fellowship carries a no-strings-attached $800,000 award paid over five years.",
+      "quote": {
+        "text": "Marika Holland, a senior scientist at the U.S. National Science Foundation National Center for Atmospheric Research (NSF NCAR), has been named a 2026 MacArthur Fellow.",
+        "sourceUrl": "https://news.ucar.edu/133093/nsf-ncar-scientist-marika-holland-named-macarthur-fellow"
+      },
+      "state": "CO",
+      "city": "Boulder",
+      "category": "science",
+      "subject": "private-individual",
+      "party": null,
+      "eventDate": "2026-09-29",
+      "sources": [
+        {
+          "url": "https://news.ucar.edu/133093/nsf-ncar-scientist-marika-holland-named-macarthur-fellow",
+          "publisher": "NCAR & UCAR News",
+          "title": "NSF NCAR scientist Marika Holland named a MacArthur Fellow",
+          "date": "2026-09-29"
+        },
+        {
+          "url": "https://www.bostonglobe.com/2026/09/29/business/macarthur-foundations-genius-fellows-full-2026-class-list/",
+          "publisher": "The Boston Globe",
+          "title": "MacArthur Foundation announces 2026 'genius grant' winners",
+          "date": "2026-09-29"
+        },
+        {
+          "url": "https://www.macfound.org/fellows/class-of-2026/marika-holland",
+          "publisher": "MacArthur Foundation",
+          "title": "Marika Holland - MacArthur Foundation",
+          "date": "2026-09-29"
+        }
+      ]
+    },
+    "verifiedOn": "2026-10-03"
   }
 ]
