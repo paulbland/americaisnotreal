@@ -1,125 +1,131 @@
 {
   "date": "2026-10-02",
-  "startedAt": "2026-10-10T02:17:43.416Z",
-  "finishedAt": "2026-10-10T02:23:13.014Z",
+  "startedAt": "2026-10-10T13:38:03.814Z",
+  "finishedAt": "2026-10-10T13:45:32.503Z",
   "model": "claude-opus-5-5",
-  "searches": 65,
-  "summary": "Facepalm: Facepalm scan for 2026-10-02 (window 2026-09-26 to 2026-10-02). No candidate met every rule, so this run submits none. The search tool hit its usage limit partway through. Most election-blunder stories it surfaced were first reported after the scan date: Maricopa County, Colorado's passenger-rail ballot question, Calaveras County, Oxford County in Maine, Athens-Clarke County, Pender County and Kendall County. The few stories inside the window had no coverage from accepted publishers, or I couldn't open the pages. The Maryland sign story from the earlier scan logs was checked again, but the page couldn't be opened. Stories from earlier scan logs that were already set aside were not proposed again without new facts. Genius: Genius scan for 2026-10-02 (window Sept 26 to Oct 2). The search and fetch tool limits ran out partway through the scan, so many leads could only be checked against one page. Only one candidate cleared the two-source rule: NC State's Plant Armor fabric cover, which raised strawberry yields up to 3.56 times. NC State announced it on Sept 29; the sources are the university release and ScienceDaily (Oct 1). One date issue: the journal Agriculture published the paper on Sept 25, one day before the window. The candidate is dated to the announcement, and the summary says so. Other leads were set aside because they had only one accepted source, came out too early or too late, or were led from outside the US. No genius or facepalm story met the standard; nothing published.",
+  "searches": 93,
+  "summary": "Facepalm: Facepalm scan for 2026-10-02 (window Sept 26 – Oct 2). I'm submitting no candidates: nothing I found met every rule. Most of the institutional blunders I turned up were either outside the window or covered only by outlets not on the accepted list. Several were already published or already set aside. The search budget ran out partway through the scan, and the one in-window follow-up from an accepted outlet (Texas Tribune, Oct. 1) couldn't be opened. Genius: Genius scan for 2026-10-02. My search budget ran out early, and later the page-fetch budget did too, so the shortlist is thin. I'm submitting two candidates, and both rely on an official page plus ScienceDaily. (1) NASA said on Sept. 30 that the Roman Space Telescope passed its fine-guidance tests and that its coronagraph saw light for the first time. This is a commissioning milestone, so the verifier may judge it too routine to count as an achievement. (2) NC State's Plant Armor fabric raised strawberry yields up to 3.56 times in tunnel field tests. NC State announced it Sept. 29, but the journal paper came out Sept. 25, one day before the strict 7-day window, so it may fail on freshness. The strongest lead I found was Crew-13 setting a record for the fastest U.S. trip to the ISS on Oct. 1. I couldn't submit it: the only post-docking coverage I could open was from Space.com, and I had no budget left to find a second publisher. Several other leads were too old or not US-led. No facepalm story met the standard; nothing published. The verified genius story is on the bench for a later day.",
   "published": false,
   "candidates": [
     {
       "side": "genius",
-      "headline": "NC State fabric cover raises strawberry yields up to 3.56 times in tunnel field tests",
-      "outcome": "rejected",
-      "reason": "fails the schema: ✖ summary is longer than three sentences"
+      "headline": "NASA's Roman Space Telescope passes pointing tests and its coronagraph sees cosmic light for the first time",
+      "outcome": "benched",
+      "reason": "passed every check; kept for a later day because the other side had no story"
+    },
+    {
+      "side": "genius",
+      "headline": "NC State researchers' 'Plant Armor' fabric raises strawberry yields up to 3.56 times in field tests",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
     },
     {
       "side": "facepalm",
-      "headline": "Some Michigan voters, including in Antrim and Presque Isle counties, still lack absentee ballots after clerks miss the state mailing deadline",
+      "headline": "Texas DPS error leaves tens of thousands of voter registration applications unprocessed",
       "outcome": "rejected",
-      "reason": "In the date window (Sept 29–30, 2026), but the only coverage found was Votebeat, Michigan Advance, Interlochen Public Radio, Hoodline and syndicated radio sites. None of them is on the accepted list, and search capacity ran out before I could find an accepted second source."
+      "reason": "The error was first reported Sept. 22, before the window, and the Votebeat piece I opened was published Sept. 25. The one in-window follow-up (Texas Tribune, Oct. 1, on delays flagged months earlier) couldn't be fetched. The story is also about voters possibly losing their registrations, which is closer to harm than a self-contained blunder."
     },
     {
       "side": "facepalm",
-      "headline": "Antrim County, Mich., clerk faces recall effort after the state removed her voter-file access",
+      "headline": "Knox County, Ind., voting machines re-programmed a third time over ballot error",
       "outcome": "rejected",
-      "reason": "Michigan Public (Sept 30) is accepted, but the story centers on contested allegations and a recall campaign, not a clear self-evident blunder, and it has a partisan election-administration angle. I found no second accepted source."
+      "reason": "In the window (Oct. 2), but the only coverage found was WWBL, WZDM, the Vincennes Sun-Commercial and WTWO/MyWabashValley, none on the accepted list. The WWBL page couldn't be opened."
     },
     {
       "side": "facepalm",
-      "headline": "About 800,000 Colorado voters get ballots wrongly including the Front Range Passenger Rail tax question",
+      "headline": "California voter guides mailed with pages 57–120 missing after printer error",
       "outcome": "rejected",
-      "reason": "Reported Oct 7, 2026 (CPR, Gazette, 9News), which is after the scan date."
+      "reason": "In the window (Sept. 29), but the only source found was KESQ, which isn't on the accepted list. The Secretary of State's office said only two voters had reported it."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Maine Senate nominee Troy Jackson apologizes for remarks about Jewish Mainers' views on Gaza",
+      "outcome": "rejected",
+      "reason": "The story is about remarks concerning a religious group, which the rules exclude. It's also about a candidate's views, not a concrete act in office."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Nassau County Republican mailers attribute a quote to Democrats who say they never said it",
+      "outcome": "rejected",
+      "reason": "Republican subject, which the current balance rule doesn't allow. Coverage is also dated after the scan date."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Maine 'packaging error' sends wrong ballots to some Oxford County voters",
+      "outcome": "rejected",
+      "reason": "Reported Oct. 7, after the scan date."
     },
     {
       "side": "facepalm",
       "headline": "Pender County, N.C., sends incorrect property tax bills",
       "outcome": "rejected",
-      "reason": "Reported Oct 6, 2026, after the scan date, and the source found (Port City Daily) isn't on the accepted list."
+      "reason": "Reported Oct. 6, after the scan date. The only source found (Port City Daily) isn't on the accepted list."
     },
     {
       "side": "facepalm",
-      "headline": "Maine says a packaging error sent wrong ballots to some Oxford County voters",
+      "headline": "300 wrong mail-in ballots sent to two Kendall County, Ill., precincts",
       "outcome": "rejected",
-      "reason": "Reported Oct 7–8, 2026 (Press Herald), after the scan date."
-    },
-    {
-      "side": "facepalm",
-      "headline": "Toledo repaves a street after the city says the first attempt did not meet quality standards",
-      "outcome": "rejected",
-      "reason": "Reported Sept 22, 2026, before the 7-day window; only one accepted source found (13abc)."
-    },
-    {
-      "side": "facepalm",
-      "headline": "Maryland city fixes a sign misspelled for 20 years",
-      "outcome": "rejected",
-      "reason": "Appears to have been reported around Oct 4, after the scan date. The Tucson.com AP republication couldn't be opened to confirm the date."
+      "reason": "Reported Oct. 9, after the scan date. The only source found (Shaw Local) isn't an accepted publisher."
     },
     {
       "side": "genius",
-      "headline": "SpaceX Crew-13 docks at the ISS 7 hours 55 minutes after launch, the fastest trip by a US spacecraft (Oct. 1, FL)",
+      "headline": "SpaceX Crew-13 docks at the ISS 7 hours 55 minutes after launch, the fastest trip by a U.S. spacecraft",
       "outcome": "rejected",
-      "reason": "Only one accepted source was opened (Space.com); the other page found was SpacePolicyOnline, which is not an accepted publisher. The SpaceX official quoted also credited the record largely to favourable orbital timing ('We got lucky this time'). The previous day's genius story was also about SpaceX."
+      "reason": "Inside the window (Oct. 1, Florida), but Space.com was the only accepted publisher I could open with post-docking coverage. The ScienceDaily pages are pre-launch NASA advisories that only predict a record. My search and fetch budgets ran out before I could find a second outlet. Worth retrying."
     },
     {
       "side": "genius",
-      "headline": "NASA's Roman Space Telescope takes its first coronagraph observation (Goddard, MD)",
+      "headline": "Stanford chemist Song Lin named 2026 MacArthur Fellow",
       "outcome": "rejected",
-      "reason": "Only the ScienceDaily page (Oct 2) was opened. The NASA blog could not be fetched before the tool limit was reached. First light was Sept 22, before the window; NASA announced it Sept 30. It is also arguably an operational commissioning step."
+      "reason": "Announced Sept. 29, inside the window, but the only page I opened was Stanford's own release. The NPR list pages are blocked from fetching, and the other coverage I found (C&EN, Harvard Magazine, Stanford Daily, Yahoo) is not on the accepted list."
     },
     {
       "side": "genius",
-      "headline": "Illinois professor Kaiyu Guan named 2026 MacArthur Fellow",
+      "headline": "ASU-led study finds black hole jets light up gas far beyond their galaxies",
       "outcome": "rejected",
-      "reason": "Only the University of Illinois release was opened. No accepted news page could be found or opened before the tool limit was reached."
+      "reason": "Too old. ASU's release is dated Sept. 24, before the window. Space.com (Oct. 2) and ScienceDaily (Sept. 30) only came later."
     },
     {
       "side": "genius",
-      "headline": "UT Austin researchers re-date Oklahoma's Ames impact crater to about 370 million years ago",
+      "headline": "Cornell team finds human brain gene BC200 can still jump through DNA",
       "outcome": "rejected",
-      "reason": "The ScienceDaily page is dated Oct 4, after the scan date. The other coverage found was on Gizmodo, Yahoo and Starlust, none of which are accepted."
+      "reason": "Too old. According to the Cornell release, the Science paper came out Sept. 24, and ScienceDaily's write-up is dated Oct. 5, after the scan date."
     },
     {
       "side": "genius",
-      "headline": "Physicists identify 'octupolar' magnetism",
+      "headline": "Oregon State light-activated material makes hydrogen from water",
       "outcome": "rejected",
-      "reason": "Led by the University of Toronto; not in the US. The phys.org page could not be opened."
+      "reason": "The only accepted news page, from ScienceDaily, is dated Oct. 4, after the scan date. I couldn't confirm the JACS publication date."
     },
     {
       "side": "genius",
-      "headline": "Two studies boost case that Enceladus's ocean could support life",
+      "headline": "UT Austin dates buried Oklahoma impact crater 100 million years later than thought",
       "outcome": "rejected",
-      "reason": "Led by Freie Universität Berlin; no US lead institution."
+      "reason": "Too old. The paper came out in July in Meteoritics & Planetary Science, and the ScienceDaily page is dated Oct. 4."
     },
     {
       "side": "genius",
-      "headline": "UChicago team finds electrons slowing to a crawl in a charge-ordered state in Fe5GeTe2",
+      "headline": "MEGATRON simulations show how the first stars changed the universe",
       "outcome": "rejected",
-      "reason": "The Science Advances paper is in volume 12, issue 32, which suggests August publication, before the window. Only ScienceDaily was opened."
+      "reason": "Not US-led: the project is led by the University of Bath in the UK, with UChicago as a collaborator."
     },
     {
       "side": "genius",
-      "headline": "University at Buffalo study links RNA's 2'-OH group to droplet formation relevant to the origin of life",
+      "headline": "ALMA images twin planets forming around WISPIT 2",
       "outcome": "rejected",
-      "reason": "The university release is dated August 2026, before the window."
+      "reason": "Not US-led: according to Space.com, the image and analysis came from MPIA in Germany."
     },
     {
       "side": "genius",
-      "headline": "MIT finds a hidden cancer risk of the keto diet; Cornell finds a human brain gene that can jump through DNA",
+      "headline": "Superfluid-helium qubit proposed to cut quantum errors 100-fold",
       "outcome": "rejected",
-      "reason": "The ScienceDaily pages for both are dated Oct 5, after the scan date, and no second source was opened."
+      "reason": "Not in the US: the work came from the University of Surrey in the UK."
     },
     {
       "side": "genius",
-      "headline": "Washington State University-led modified niclosamide shows promise against endometriosis in mice",
+      "headline": "Megan Eckert sets women's 6-day running world record",
       "outcome": "rejected",
-      "reason": "Only one accepted source was opened (Nature news, Oct 1). It is also an early mouse result described as what 'could' happen."
-    },
-    {
-      "side": "genius",
-      "headline": "Harvard-led study finds transplanted hearts adjust to the recipient's biological age",
-      "outcome": "rejected",
-      "reason": "Unreviewed bioRxiv preprint, and only one accepted source was opened (Nature news, Sept 28)."
+      "reason": "The only source found was iRunFar, which is not an accepted publisher, and the race location was not confirmed to be in the US."
     }
   ]
 }

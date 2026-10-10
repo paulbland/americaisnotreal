@@ -1,47 +1,35 @@
 [
   {
     "story": {
-      "slug": "texas-dps-fails-to-send-voter-registrations-to-counties",
-      "side": "facepalm",
-      "headline": "Texas DPS fails to send counties voter registrations dating back to October 2025",
-      "summary": "The Texas Department of Public Safety did not send county registrars voter registration applications and updates submitted through its online driver's license portal, Votebeat reported Sept. 22. Some records dated to October 2025, and DPS said a third-party vendor's software update cut off parts of them. By Sept. 24, seven counties had confirmed receiving more than 178,000 backlogged records, less than two weeks before the Oct. 5 registration deadline.",
+      "slug": "nasa-roman-telescope-coronagraph-first-light-guidance-tests",
+      "side": "genius",
+      "headline": "NASA's Roman Space Telescope passes pointing tests and its coronagraph sees cosmic light for the first time",
+      "summary": "NASA said on Sept. 30 that the Nancy Grace Roman Space Telescope's fine-guidance system passed tests from Sept. 15 to 21, and that its Coronagraph Instrument took in cosmic light for the first time on Sept. 22. According to NASA, the tests showed Roman can hold steady to better than 1/100,000 of a degree, roughly like keeping a laser on a U.S. dime from about 150 miles away. Roman's guiding instrument systems lead is based at NASA's Goddard Space Flight Center in Greenbelt, Maryland.",
       "quote": {
-        "text": "DPS failed to send the applications, which were submitted by voters through its online driver’s license portal, to county voter registrars for processing, according to an email sent to county officials and provided to Votebeat.",
-        "sourceUrl": "https://www.votebeat.org/texas/2026/09/22/voter-registration-applications-unprocessed-dps-error/"
+        "text": "Then on Sept. 22, the mission’s Coronagraph Instrument opened its eyes to cosmic light for the very first time.",
+        "sourceUrl": "https://science.nasa.gov/blogs/roman/2026/09/30/nasa-checks-roman-guidance-system-takes-first-coronagraph-observation/"
       },
-      "state": "TX",
-      "city": null,
-      "category": "government",
+      "state": "MD",
+      "city": "Greenbelt",
+      "category": "space",
       "subject": "official-or-institution",
       "party": null,
-      "eventDate": "2026-09-22",
+      "eventDate": "2026-09-30",
       "sources": [
         {
-          "url": "https://www.votebeat.org/texas/2026/09/22/voter-registration-applications-unprocessed-dps-error/",
-          "publisher": "Votebeat",
-          "title": "Unknown number of Texas voter registrations went unprocessed due to DPS error",
-          "date": "2026-09-22"
+          "url": "https://science.nasa.gov/blogs/roman/2026/09/30/nasa-checks-roman-guidance-system-takes-first-coronagraph-observation/",
+          "publisher": "NASA",
+          "title": "NASA Checks Roman Guidance System, Takes First Coronagraph Observation",
+          "date": "2026-09-30"
         },
         {
-          "url": "https://www.fox4news.com/news/texas-dps-voter-registration-error",
-          "publisher": "FOX 4 Dallas-Fort Worth",
-          "title": "Texas DPS voter registration error leaves thousands of applications unprocessed ahead of midterm deadline",
-          "date": "2026-09-23"
-        },
-        {
-          "url": "https://www.texastribune.org/2026/09/24/dps-voter-registration-applications-error-paul-bettencourt-team/",
-          "publisher": "The Texas Tribune",
-          "title": "Key GOP lawmaker says state should have caught error that delayed at least 178,000 Texas voter registrations",
-          "date": "2026-09-24"
-        },
-        {
-          "url": "https://www.kut.org/austin/2026-09-25/texas-dps-voter-registration-applications-failed-to-send",
-          "publisher": "KUT 90.5",
-          "title": "Austin-area counties race to process thousands of delayed voter registrations",
-          "date": "2026-09-25"
+          "url": "https://www.sciencedaily.com/releases/2026/10/261001214057.htm",
+          "publisher": "ScienceDaily",
+          "title": "NASA’s Roman telescope just opened its planet-hunting eye",
+          "date": "2026-10-02"
         }
       ]
     },
-    "verifiedOn": "2026-09-26"
+    "verifiedOn": "2026-10-02"
   }
 ]
