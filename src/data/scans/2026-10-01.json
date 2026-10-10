@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-01",
+  "startedAt": "2026-10-10T02:08:59.480Z",
+  "finishedAt": "2026-10-10T02:16:47.921Z",
+  "model": "claude-opus-5-5",
+  "searches": 65,
+  "summary": "Facepalm: Scan for 2026-10-01 (facepalm). I ran out of search capacity early, so there are only two candidates. Both are in the date window, and each has two opened sources from different publishers, with quotes checked against the fetched text. 1) The White House AI accord that Trump posted on Sept 29 gives his title as \"President of the Unites States.\" Sources: TechCrunch and KOMO (National News Desk). 2) Sen. Eric Schmitt accused Jack Smith of attending an Atlanta Hawks game at the Sept 29 Senate Judiciary hearing. Smith had been at an Iowa Hawkeyes game in Maryland. Sources: KCUR/St. Louis Public Radio and CBS News. Both candidates are Republican political stories. I rechecked several earlier set-asides; none had gained a second accepted source. Genius: Genius scan for 2026-10-01 (window Sept 24 to Oct 1). The top pick is SpaceX's Starship reaching orbit for the first time on Flight 14 (Sept 28, Starbase, TX). It is sourced from CBS News and TechCrunch, with Space.com as a third source. The alternates are 2026 MacArthur Fellows announced Sept 29 and are from states other than Texas, the state used on 9/30: Kaiyu Guan (IL; Chicago Sun-Times plus the AP list on WRAL), Ellora Derenoncourt (NJ; PBS/AP plus Princeton's announcement) and Marika Holland (CO; the AP list on WRAL plus UCAR's announcement). The search tool hit its usage limit early, so no further science/journal stories were checked. Pair published.",
+  "published": true,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "SpaceX's Starship reaches orbit for the first time on its 14th test flight from Starbase, Texas",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "genius",
+      "headline": "University of Illinois crop scientist Kaiyu Guan is named a 2026 MacArthur Fellow",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "genius",
+      "headline": "Princeton economist Ellora Derenoncourt is named a 2026 MacArthur Fellow",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "genius",
+      "headline": "Boulder sea ice scientist Marika Holland is named a 2026 MacArthur Fellow",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "White House AI safety accord signed by Trump and tech CEOs lists him as 'President of the Unites States'",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Sen. Eric Schmitt questions Jack Smith about an Atlanta Hawks game; Smith says it was an Iowa Hawkeyes game",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Belleville, Sumpter and Van Buren Township, Mich., absentee ballots reprinted after library board race omitted",
+      "outcome": "rejected",
+      "reason": "Already published as the facepalm story for 2026-09-30 (Wayne County ballot reprint)."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Kane County, Ill., processing error produces about 2,000 duplicate mail ballots",
+      "outcome": "rejected",
+      "reason": "In the date window (Sept 29), but search again turned up only the county press release, the Daily Herald and Shaw Local. Neither paper is on the accepted list, so there is no accepted news publisher."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Fargo schools 'secure building' alert sent to all families by mistake",
+      "outcome": "rejected",
+      "reason": "In the date window (Sept 30), but the only coverage found was Valley News Live, InForum (previously couldn't be fetched) and radio station sites not on the accepted list. I didn't open a second accepted source."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Yankton County, S.D., pauses absentee voting over ballot wording error",
+      "outcome": "rejected",
+      "reason": "In the date window (Sept 25), but all coverage found is on outlets not on the accepted list (Dakota News Now, KELOLAND, KTIV, KCAU, Yankton Press & Dakotan, KYNT)."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Washoe County warns of ballot mailing error",
+      "outcome": "rejected",
+      "reason": "In the date window (Sept 29), but the only coverage found is KOLO, which isn't on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Roselle, N.J., welcome sign misspelled",
+      "outcome": "rejected",
+      "reason": "The only coverage found was News 12, Shore News Network and a Yahoo republication. None is accepted, and I couldn't locate the original publisher's page."
+    },
+    {
+      "side": "genius",
+      "headline": "SpaceX Starship reaches orbit (ABC News version)",
+      "outcome": "rejected",
+      "reason": "The ABC News page is served from abcnews.com, not the listed abcnews.go.com, so CBS News and TechCrunch were used instead."
+    },
+    {
+      "side": "genius",
+      "headline": "UChicago physicist Vincenzo Vitelli named 2026 MacArthur Fellow",
+      "outcome": "rejected",
+      "reason": "The only coverage found, apart from the AP list and the university's own release, was from Block Club Chicago and WTTW, which are not accepted publishers. Illinois is already covered by the Guan candidate."
+    },
+    {
+      "side": "genius",
+      "headline": "UB sociologist Holly Jean Buck named 2026 MacArthur Fellow",
+      "outcome": "rejected",
+      "reason": "No accepted local news page was found. The search results were the university release and non-accepted outlets."
+    },
+    {
+      "side": "genius",
+      "headline": "LA artist Rodney McMillian named MacArthur Fellow (LAist)",
+      "outcome": "rejected",
+      "reason": "The LAist page appears to be dated after the scan date and was not opened."
+    },
+    {
+      "side": "genius",
+      "headline": "Maaza Mengiste wins MacArthur grant (WEMU)",
+      "outcome": "rejected",
+      "reason": "WEMU is not an accepted publisher and its page is dated Oct. 2, after the scan date."
+    }
+  ]
+}
