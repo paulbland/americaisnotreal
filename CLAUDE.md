@@ -52,7 +52,8 @@ Change one and you almost certainly need to change the others.
 
 10:00 UTC (6am Eastern in summer). Claude Opus 5.5 with web search runs once per side, in
 parallel, each with its own search budget, and proposes up to four ranked candidates. Each candidate, in order, must pass: the schema and repo rules; the
-party-balance rule; an independent adversarial Claude review; and a mechanical check that
+party-balance rule; an independent adversarial Claude review (which may supply corrected headline or summary
+wording, re-checked by the same lints); and a mechanical check that
 its quote and a corroborating quote appear verbatim on two different publishers' live
 pages. The first survivor on each side is published as the pair. A side with no fresh survivor
 may take the newest usable story from the bench; if a side still has none, nothing is
