@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-27",
+  "genius": {
+    "slug": "purdue-perseverance-study-finds-three-water-episodes-jezero-crater",
+    "side": "genius",
+    "headline": "Purdue-led Perseverance study finds Mars rocks in Jezero Crater met water at least three times",
+    "summary": "A study led by Purdue University research scientist Candice Bedford, published September 21 in Communications Earth & Environment, used NASA Perseverance rover measurements of more than 185 bedrock targets in Jezero Crater's Margin Unit. According to NASA, the igneous rocks were altered by water on at least three separate occasions, the last involving hot water that left fluorite-bearing veins.",
+    "quote": {
+      "text": "Mineral veins containing calcium sulfate and fluorite formed in the eastern Margin Unit, suggesting that hot water once circulated through the volcanic rocks.",
+      "sourceUrl": "https://www.space.com/astronomy/mars/mars-constantly-throws-surprises-at-you-perseverance-rover-finds-evidence-of-ancient-hot-water-in-red-planet-crater"
+    },
+    "state": "IN",
+    "city": "West Lafayette",
+    "category": "space",
+    "subject": "group",
+    "party": null,
+    "eventDate": "2026-09-21",
+    "sources": [
+      {
+        "url": "https://www.space.com/astronomy/mars/mars-constantly-throws-surprises-at-you-perseverance-rover-finds-evidence-of-ancient-hot-water-in-red-planet-crater",
+        "publisher": "Space.com",
+        "title": "'Mars constantly throws surprises at you': Perseverance rover finds evidence of ancient hot water in Red Planet crater",
+        "date": "2026-09-24",
+        "archiveUrl": "https://web.archive.org/web/20261010014505/https://www.space.com/astronomy/mars/mars-constantly-throws-surprises-at-you-perseverance-rover-finds-evidence-of-ancient-hot-water-in-red-planet-crater"
+      },
+      {
+        "url": "https://www.jpl.nasa.gov/news/nasa-discovery-reveals-complex-water-systems-on-early-mars/",
+        "publisher": "NASA Jet Propulsion Laboratory",
+        "title": "NASA Discovery Reveals Complex Water Systems on Early Mars",
+        "date": "2026-09-21"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "san-diego-trash-fee-error-87000-property-tax-bills",
+    "side": "facepalm",
+    "headline": "San Diego puts incorrect trash fees on about 87,000 accounts' property tax bills",
+    "summary": "The City of San Diego said a technical error put incorrect city trash fees on county property tax bills for about 87,000 accounts, with some homeowners overcharged by hundreds or even thousands of dollars. Mayor Todd Gloria called the error unacceptable and said corrected information would go to the county so revised bills could be issued before the Nov. 1 payment deadline.",
+    "quote": {
+      "text": "The city of San Diego admits it recently made a mistake, incorrectly billing tens of thousands of residents for the city’s trash fees on their property tax bills.",
+      "sourceUrl": "https://www.kpbs.org/news/politics/2026/09/23/san-diego-incorrectly-charges-tens-of-thousands-of-residents-for-city-trash-fees"
+    },
+    "state": "CA",
+    "city": "San Diego",
+    "category": "government",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-09-23",
+    "sources": [
+      {
+        "url": "https://www.kpbs.org/news/politics/2026/09/23/san-diego-incorrectly-charges-tens-of-thousands-of-residents-for-city-trash-fees",
+        "publisher": "KPBS",
+        "title": "San Diego incorrectly charges tens of thousands of residents for city trash fees",
+        "date": "2026-09-23",
+        "archiveUrl": "https://web.archive.org/web/20261010014600/https://www.kpbs.org/news/politics/2026/09/23/san-diego-incorrectly-charges-tens-of-thousands-of-residents-for-city-trash-fees"
+      },
+      {
+        "url": "https://www.nbcsandiego.com/news/local/thousands-san-diegans-overcharged-city-trash-fee-billing-error-property-tax/4077623/",
+        "publisher": "NBC 7 San Diego",
+        "title": "City error caused inflated trash fees on thousands of San Diego property tax bills",
+        "date": "2026-09-23",
+        "archiveUrl": "https://web.archive.org/web/20261010014559/https://www.nbcsandiego.com/news/local/thousands-san-diegans-overcharged-city-trash-fee-billing-error-property-tax/4077623/"
+      }
+    ]
+  },
+  "publishedAt": "2026-10-10T01:46:27.162Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-10-10",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
