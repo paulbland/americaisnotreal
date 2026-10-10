@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-30",
+  "genius": {
+    "slug": "texas-state-anthropologist-kate-spradley-named-macarthur-fellow",
+    "side": "genius",
+    "headline": "Texas State forensic anthropologist Kate Spradley is named a 2026 MacArthur Fellow",
+    "summary": "On Sept. 29, the MacArthur Foundation named Kate Spradley of Texas State University in San Marcos one of its 20 fellows for 2026. Each fellowship carries $800,000 paid over five years. According to the university, she was selected for her work as founder and director of Operation Identification, which works to identify and repatriate human remains found along the Texas-Mexico border.",
+    "quote": {
+      "text": "Kate Spradley, 53, San Marcos, Texas, a forensic anthropologist at Texas State University working to identify and repatriate the remains of migrants who perished along the Texas-Mexico border",
+      "sourceUrl": "https://www.wsls.com/business/2026/09/29/the-macarthur-foundations-genius-fellows-the-full-2026-class-list/"
+    },
+    "state": "TX",
+    "city": "San Marcos",
+    "category": "science",
+    "subject": "private-individual",
+    "party": null,
+    "eventDate": "2026-09-29",
+    "sources": [
+      {
+        "url": "https://www.wsls.com/business/2026/09/29/the-macarthur-foundations-genius-fellows-the-full-2026-class-list/",
+        "publisher": "WSLS 10 (Associated Press)",
+        "title": "The MacArthur Foundation’s ‘genius’ fellows: The full 2026 class list",
+        "date": "2026-09-29",
+        "archiveUrl": "https://web.archive.org/web/20261010020642/https://www.wsls.com/business/2026/09/29/the-macarthur-foundations-genius-fellows-the-full-2026-class-list/"
+      },
+      {
+        "url": "https://news.txst.edu/accolades-and-achievements/2026/txst-anthropologist-kate-spradley-named-macarthur-foundation-genius-grant-recipient.html",
+        "publisher": "Texas State University",
+        "title": "TXST anthropologist Kate Spradley named MacArthur Foundation ‘Genius Grant’ recipient for 2026",
+        "date": "2026-09-29",
+        "archiveUrl": "https://web.archive.org/web/20261010020644/https://news.txst.edu/accolades-and-achievements/2026/txst-anthropologist-kate-spradley-named-macarthur-foundation-genius-grant-recipient.html"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "wayne-county-reprints-absentee-ballots-library-board-error",
+    "side": "facepalm",
+    "headline": "Wayne County, Mich., reprints absentee ballots for three communities after library board race error",
+    "summary": "Wayne County, Michigan, election officials say absentee ballots mailed to voters in Belleville, Sumpter Township and Van Buren Township listed a library board candidate in the wrong race. The county clerk's office said the partial-term candidate was placed in the full-term race, and new ballots are being printed and mailed. CBS Detroit reported the error could affect close to 10,000 ballots.",
+    "quote": {
+      "text": "A printing error was discovered on absentee ballots in multiple Wayne County communities.",
+      "sourceUrl": "https://www.fox2detroit.com/news/absentee-ballot-michigan-election-error-belleville-sumpter-van-buren-township"
+    },
+    "state": "MI",
+    "city": "Belleville",
+    "category": "government",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-09-29",
+    "sources": [
+      {
+        "url": "https://www.fox2detroit.com/news/absentee-ballot-michigan-election-error-belleville-sumpter-van-buren-township",
+        "publisher": "FOX 2 Detroit",
+        "title": "Absentee ballot printing error in Belleville, Sumpter and Van Buren Twp",
+        "date": "2026-09-29",
+        "archiveUrl": "https://web.archive.org/web/20261003063729/https://www.fox2detroit.com/news/absentee-ballot-michigan-election-error-belleville-sumpter-van-buren-township"
+      },
+      {
+        "url": "https://www.cbsnews.com/detroit/news/absentee-voters-new-ballots-belleville-library-board/",
+        "publisher": "CBS News Detroit",
+        "title": "Thousands of voters to receive new ballots after omission of Belleville library board races",
+        "date": "2026-09-30",
+        "archiveUrl": "https://web.archive.org/web/20261010020756/https://www.cbsnews.com/detroit/news/absentee-voters-new-ballots-belleville-library-board/"
+      }
+    ]
+  },
+  "publishedAt": "2026-10-10T02:08:17.660Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-10-10",
+      "change": "Published by the daily scan."
+    }
+  ]
+}

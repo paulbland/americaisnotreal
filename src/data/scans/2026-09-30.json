@@ -1,0 +1,107 @@
+{
+  "date": "2026-09-30",
+  "startedAt": "2026-10-10T02:01:20.673Z",
+  "finishedAt": "2026-10-10T02:08:17.660Z",
+  "model": "claude-opus-5-5",
+  "searches": 65,
+  "summary": "Facepalm: Search capacity ran out partway through the scan. I found one candidate with two accepted sources: Wayne County, Mich., is reprinting absentee ballots for Belleville, Sumpter Township and Van Buren Township after a library board race error (FOX 2 Detroit, Sept 29; CBS Detroit, Sept 30). Both pages were opened and both quotes checked verbatim. Other stories in the window were set aside because I could only open one accepted source for each. Genius: Genius scan for 2026-09-30. Three candidates found, with every page opened and every quote checked against the fetched text. (1) SpaceX Starship reaches orbit for the first time on Flight 14 from Starbase, TX, on Sept 28. Sources are CBS News and TechCrunch. The Space.com-only problem from earlier runs is now fixed. (2) Texas State's Kate Spradley named a 2026 MacArthur Fellow, announced Sept 29, inside the window for this scan date. Sources are the AP list as republished by WSLS and the Texas State release. (3) UIUC's Kaiyu Guan named a 2026 MacArthur Fellow. Sources are the AP list via WSLS and the Illinois News Bureau. The search tool limit was hit partway through, so other leads (Space.com and ScienceDaily items from the window) could not be checked against a second source. Pair published.",
+  "published": true,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "SpaceX's Starship reaches orbit for the first time on its 14th flight from Starbase, Texas",
+      "outcome": "rejected",
+      "reason": "fails the schema: ✖ summary is longer than three sentences"
+    },
+    {
+      "side": "genius",
+      "headline": "Texas State forensic anthropologist Kate Spradley is named a 2026 MacArthur Fellow",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "genius",
+      "headline": "University of Illinois environmental scientist Kaiyu Guan is named a 2026 MacArthur Fellow",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Wayne County, Mich., reprints absentee ballots for three communities after library board race error",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "AI safety pledge signed by President Trump and tech leaders spells 'Unites States'",
+      "outcome": "rejected",
+      "reason": "In the date window (Sept 29–30). I opened only one accepted source (TechCrunch). The Hill page couldn't be reached, the Guardian page couldn't be fetched, and the other outlets that covered it (Washington Times, 10News) aren't on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Kane County, Ill., processing error produces about 2,000 duplicate mail ballots",
+      "outcome": "rejected",
+      "reason": "In the date window (Sept 29). The only sources I could open were the county's press release and the Daily Herald, which isn't on the accepted list. I found no accepted news publisher."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Fargo Public Schools 'secure building' alert sent to all families by mistake",
+      "outcome": "rejected",
+      "reason": "In the date window (Sept 30), but the InForum page couldn't be fetched. The other coverage (Valley News Live, KFGO) isn't on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Sen. Eric Schmitt mixes up an Iowa Hawkeyes game with an Atlanta Hawks game at Jack Smith hearing",
+      "outcome": "rejected",
+      "reason": "In the date window (Sept 29). I opened only one accepted page, a short CBS News video page. The Hill, Politico, CNN and The Athletic pages couldn't be fetched."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Yankton County, S.D., pauses absentee voting over ballot wording error",
+      "outcome": "rejected",
+      "reason": "In the date window (Sept 25), but all coverage found was on outlets not on the accepted list (KELOLAND, Dakota News Now, KTIV, Yankton Press & Dakotan, KYNT)."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Washoe County warns of ballot mailing error",
+      "outcome": "rejected",
+      "reason": "In the date window (Sept 29), but the only coverage found was KOLO, which isn't on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Roselle, N.J., welcome sign misspelled",
+      "outcome": "rejected",
+      "reason": "Reported around Sept 30, but the coverage found was News 12, Shore News Network and a Yahoo republication, none of them accepted. I couldn't find the original publisher's page."
+    },
+    {
+      "side": "genius",
+      "headline": "SMU historian Ariel Ron named 2026 MacArthur Fellow",
+      "outcome": "rejected",
+      "reason": "The Dallas Morning News page could not be opened (fetch not allowed), so the only accepted source was the AP list. Kate Spradley was used as the Texas MacArthur candidate instead."
+    },
+    {
+      "side": "genius",
+      "headline": "2026 MacArthur Fellows class announced (full list)",
+      "outcome": "rejected",
+      "reason": "Proposed as individual fellows with a home state instead. The Washington Post and NPR list pages could not be opened."
+    },
+    {
+      "side": "genius",
+      "headline": "World's first enhanced geothermal power plant completed (TechCrunch)",
+      "outcome": "rejected",
+      "reason": "Seen only as a TechCrunch headline dated Oct. 1, after the scan date. The event date and a second source were not checked."
+    },
+    {
+      "side": "genius",
+      "headline": "Astronomers produce clearest exoplanet 'ultrasound' of twin planets (Space.com, Sept. 30)",
+      "outcome": "rejected",
+      "reason": "Seen only in the Space.com archive. The lead institution, the publication date and a second accepted source were not checked before the search tool limit was reached."
+    },
+    {
+      "side": "genius",
+      "headline": "Astronomers name an asteroid after 'Weird Al' Yankovic",
+      "outcome": "rejected",
+      "reason": "A naming honor, not an achievement."
+    }
+  ]
+}
