@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-01",
+  "genius": {
+    "slug": "spacex-starship-reaches-orbit-first-time-flight-14",
+    "side": "genius",
+    "headline": "SpaceX's Starship reaches orbit for the first time on its 14th test flight from Starbase, Texas",
+    "summary": "SpaceX's Starship reached orbit for the first time on its 14th test flight, launched Sept. 28 from Starbase, Texas, and deployed 26 Starlink satellites. According to CBS News, one of the upper stage's six Raptor engines shut down early, and a second burn on a single engine completed the climb to orbit. SpaceX then ended the mission early with a splashdown in the Pacific north of Hawaii.",
+    "quote": {
+      "text": "After assessing telemetry, Elon Musk's flight control team decided the spacecraft was otherwise healthy and a second engine firing using a single Raptor engine completed the climb to orbit.",
+      "sourceUrl": "https://www.cbsnews.com/news/spacex-launches-starship-on-giant-rockets-first-flight-to-orbit/"
+    },
+    "state": "TX",
+    "city": "Starbase",
+    "category": "space",
+    "subject": "business",
+    "party": null,
+    "eventDate": "2026-09-28",
+    "sources": [
+      {
+        "url": "https://www.cbsnews.com/news/spacex-launches-starship-on-giant-rockets-first-flight-to-orbit/",
+        "publisher": "CBS News",
+        "title": "SpaceX launches Starship on giant rocket's first flight to orbit",
+        "date": "2026-09-28",
+        "archiveUrl": "https://web.archive.org/web/20261010021416/https://www.cbsnews.com/news/spacex-launches-starship-on-giant-rockets-first-flight-to-orbit/"
+      },
+      {
+        "url": "https://techcrunch.com/2026/09/28/spacexs-starship-rocket-reaches-orbit-for-the-first-time/",
+        "publisher": "TechCrunch",
+        "title": "SpaceX's Starship rocket reaches orbit for the first time",
+        "date": "2026-09-28",
+        "archiveUrl": "https://web.archive.org/web/20261010021412/https://techcrunch.com/2026/09/28/spacexs-starship-rocket-reaches-orbit-for-the-first-time/"
+      },
+      {
+        "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-megarocket-flight-14-orbital-launch-success",
+        "publisher": "Space.com",
+        "title": "SpaceX launches Starship into orbit for 1st time — largest rocket ever built notches key milestone on dramatic Flight 14 test",
+        "date": "2026-09-28",
+        "archiveUrl": "https://web.archive.org/web/20261010021446/https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-megarocket-flight-14-orbital-launch-success"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "white-house-ai-accord-misspells-united-states-under-trump-signature",
+    "side": "facepalm",
+    "headline": "White House AI safety accord signed by Trump and tech leaders lists him as 'President of the Unites States'",
+    "summary": "On Sept. 29, President Trump and leaders of six AI companies, including Google, Anthropic, Meta and OpenAI, signed a voluntary White House accord on AI safety. In the image of the signed document that Trump shared on Truth Social, his title under his signature reads \"President of the Unites States,\" while the other signatories and their companies are spelled correctly. The error was still visible the next morning, according to The National News Desk.",
+    "quote": {
+      "text": "The image of the accord, shared on Trump’s Truth Social account, misspelled his title as “President of the Unites States,” an error that remained visible as of early Wednesday.",
+      "sourceUrl": "https://komonews.com/news/nation-world/trumps-ai-safety-pact-with-tech-giants-relies-on-self-policing-includes-typo"
+    },
+    "state": "DC",
+    "city": "Washington",
+    "category": "government",
+    "subject": "public-figure",
+    "party": "republican",
+    "eventDate": "2026-09-29",
+    "sources": [
+      {
+        "url": "https://komonews.com/news/nation-world/trumps-ai-safety-pact-with-tech-giants-relies-on-self-policing-includes-typo",
+        "publisher": "KOMO News (The National News Desk)",
+        "title": "Trump’s AI safety pact with tech giants relies on self-policing, includes typo",
+        "date": "2026-09-30",
+        "archiveUrl": "https://web.archive.org/web/20261010021549/https://komonews.com/news/nation-world/trumps-ai-safety-pact-with-tech-giants-relies-on-self-policing-includes-typo"
+      },
+      {
+        "url": "https://techcrunch.com/2026/09/30/pledge-signed-by-president-trump-and-top-ai-leaders-misspells-the-united-states/",
+        "publisher": "TechCrunch",
+        "title": "Pledge signed by President Trump and top AI leaders misspells the United States",
+        "date": "2026-09-30",
+        "archiveUrl": "https://web.archive.org/web/20261010021634/https://techcrunch.com/2026/10/04/can-super-intelligence-and-a-non-binding-safety-pact-solve-ais-image-problem/?sidebar=b"
+      },
+      {
+        "url": "https://www.presidency.ucsb.edu/documents/white-house-accord-super-intelligence",
+        "publisher": "The American Presidency Project (UC Santa Barbara)",
+        "title": "White House Accord on Super Intelligence",
+        "date": null,
+        "archiveUrl": "https://web.archive.org/web/20261010015006/https://www.presidency.ucsb.edu/documents/white-house-accord-super-intelligence"
+      }
+    ]
+  },
+  "publishedAt": "2026-10-10T02:16:47.921Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-10-10",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
