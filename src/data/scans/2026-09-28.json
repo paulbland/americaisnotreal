@@ -1,0 +1,119 @@
+{
+  "date": "2026-09-28",
+  "startedAt": "2026-10-10T01:47:29.743Z",
+  "finishedAt": "2026-10-10T01:53:19.890Z",
+  "model": "claude-opus-5-5",
+  "searches": 65,
+  "summary": "Facepalm: Search for 2026-09-28 (window Sept 22–28). The search tool hit its usage limit partway through the run, so coverage is limited. I'm submitting one candidate. It's Montgomery County, MD, which was set aside on 2026-09-26 for having only one accepted source. There's a new fact since then: I found and opened the county Board of Elections' own 2026 statement (dated Sept 23, 2026; the page found last time was the 2024 one). That gives one official source plus one accepted news page, foxbaltimore.com. One risk for the verifier: the foxbaltimore page's canonical URL and publisher tag point to WJLA (wjla.com), which is not on the accepted list, though the page sits on the accepted foxbaltimore.com domain. I set aside several other election mistakes because there were no accepted sources or they were reported after the scan date. Genius: I have no genius candidates for 2026-09-28. Search and page-opening hit the tool limit partway through the scan. After that I could not open a second publisher's page for any in-window lead, and every lead had only one accepted source open (ScienceDaily). The one story with two publishers open was the Caltech quantum-simulator result, but its Nature paper and Caltech announcement are dated August 19, 2026, too old for the window. Several leads look worth checking in a rerun, each needing a second accepted source and a confirmed date (listed under passed): the Weill Cornell/HSS spinal-stenosis stem cells (Cell), the Oregon State study linking the Cascadia and San Andreas faults, the Mizzou sarcopenia mechanism (JCI), the ORNL neutron imaging of the Scotty T. rex rib, and the UC Berkeley Pompeii dating study (Science Advances). Pair published.",
+  "published": true,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "Duke-led team uses a 13-ion quantum simulator to watch particle 'strings' break and new pairs form",
+      "outcome": "published",
+      "reason": "from the bench (verified 2026-09-26)"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Montgomery County, Md., voter guides list wrong polling place and party for voters in 11 precincts",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Yankton County, SD pauses absentee voting over ballot wording error",
+      "outcome": "rejected",
+      "reason": "In the date window (Sept 25), but the only coverage found was on outlets not on the accepted list (Dakota News Now, KELOLAND, KCAU, Yankton Press & Dakotan, KYNT)."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Washoe County warns of ballot mailing error",
+      "outcome": "rejected",
+      "reason": "Reported September 29, 2026, after the scan date; source (KOLO) is not on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Champaign County, IL suspends early voting; 600 voters to get replacement ballots",
+      "outcome": "rejected",
+      "reason": "Reported in October 2026, after the scan date."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Floyd County, Ind. voters receive incorrect ballots",
+      "outcome": "rejected",
+      "reason": "Reported October 9, 2026, after the scan date."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Seattle City Light apologizes after planned outages disrupt Chinatown-International District businesses",
+      "outcome": "rejected",
+      "reason": "Couldn't open the King 5 page or find a second accepted source, and it isn't clearly a blunder rather than a planned service disruption."
+    },
+    {
+      "side": "genius",
+      "headline": "Caltech physicists measure energy ladder predicted by conformal field theory using a quantum simulator",
+      "outcome": "rejected",
+      "reason": "Nature paper and Caltech announcement both dated August 19, 2026; ScienceDaily write-up on Sept 28 is not the event date. Too old."
+    },
+    {
+      "side": "genius",
+      "headline": "Syracuse-linked team describes 'fire amoeba' from California hot springs that survives record heat",
+      "outcome": "rejected",
+      "reason": "Cell paper date not confirmed within the window; the Syracuse release is dated Sept 22, but the only accepted news page opened (Space.com) is dated Sept 29, after the scan date."
+    },
+    {
+      "side": "genius",
+      "headline": "Weill Cornell and HSS researchers identify stem cells that may drive spinal stenosis",
+      "outcome": "rejected",
+      "reason": "Only one accepted source opened (ScienceDaily, Sept 27); Cell publication date not confirmed and no second publisher opened."
+    },
+    {
+      "side": "genius",
+      "headline": "Oregon State study finds Cascadia and northern San Andreas faults may have ruptured together",
+      "outcome": "rejected",
+      "reason": "Only one accepted source opened (ScienceDaily, Sept 22); Geosphere publication date not confirmed."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Missouri finds mechanism behind age-related muscle weakness",
+      "outcome": "rejected",
+      "reason": "Only one accepted source opened (ScienceDaily, Sept 23); JCI publication date not confirmed."
+    },
+    {
+      "side": "genius",
+      "headline": "ORNL neutron imaging reveals fossilized blood vessels in rib of 'Scotty' T. rex",
+      "outcome": "rejected",
+      "reason": "Only one accepted source opened (ScienceDaily, Sept 22); original announcement date not confirmed."
+    },
+    {
+      "side": "genius",
+      "headline": "UC Berkeley uses Pompeii eruption to refine argon-argon dating clock",
+      "outcome": "rejected",
+      "reason": "Only one accepted source opened (ScienceDaily, Sept 28); Science Advances publication date not confirmed."
+    },
+    {
+      "side": "genius",
+      "headline": "Magnetic bacteria extend worm lifespan by 43%",
+      "outcome": "rejected",
+      "reason": "Research by the Hefei Institutes of Physical Science in China; not in the US."
+    },
+    {
+      "side": "genius",
+      "headline": "New tick-borne virus identified behind unexplained illnesses",
+      "outcome": "rejected",
+      "reason": "Discovery made in China; not in the US."
+    },
+    {
+      "side": "genius",
+      "headline": "Resurrected ancient mammal peptides outperform human versions against superbugs (University of Oregon)",
+      "outcome": "rejected",
+      "reason": "PLOS Biology paper published August 25, 2026, before the 7-day window."
+    },
+    {
+      "side": "genius",
+      "headline": "LSU-led team captures subduction zone tearing apart off Vancouver Island",
+      "outcome": "rejected",
+      "reason": "Site is off Vancouver Island, Canada; only one accepted source opened."
+    }
+  ]
+}
