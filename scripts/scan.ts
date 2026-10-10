@@ -411,7 +411,10 @@ async function pickSide(
 
 async function withArchives(story: Story): Promise<Story> {
   const sources = await Promise.all(
-    story.sources.map(async (s) => ({ ...s, archiveUrl: await archiveUrl(s.url) })),
+    story.sources.map(async (s) => {
+      const archived = await archiveUrl(s.url);
+      return archived ? { ...s, archiveUrl: archived } : s;
+    }),
   );
   return { ...story, sources };
 }
