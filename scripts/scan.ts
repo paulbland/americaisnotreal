@@ -523,7 +523,10 @@ async function main() {
   // A bench entry leaves the bench only when it is actually published; a day that
   // borrowed it and still found no partner must leave it for the next day.
   const usedSlugs = new Set(published ? Object.values(fromBench).map((b) => b.story.slug) : []);
-  const nextBench = [...bench.filter((b) => !usedSlugs.has(b.story.slug) && usable(b)), ...benched];
+  // Prune only entries whose event is more than a week before this date. An entry whose
+  // event is after a backfill date must survive for the live scans that can still use it.
+  const keep = (b: BenchEntry) => b.story.eventDate >= weekAgo;
+  const nextBench = [...bench.filter((b) => !usedSlugs.has(b.story.slug) && keep(b)), ...benched];
 
   let day: Day | null = null;
   if (genius.story && facepalm.story) {
