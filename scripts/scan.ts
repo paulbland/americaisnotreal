@@ -77,11 +77,20 @@ const SubmittedCandidatesSchema = z.object({
   passed: z.array(PassedSchema),
 });
 
+const RevisionsSchema = z
+  .object({
+    headline: z.string().nullable(),
+    summary: z.string().nullable(),
+  })
+  .strict();
+
 const VerdictSchema = z
   .object({
     outcome: z.enum(["approve", "reject", "uncertain"]),
     problems: z.array(z.string()),
     reasoning: z.string(),
+    /** Corrected copy the verifier wants published instead; null fields keep the original. */
+    revisions: RevisionsSchema.nullable(),
   })
   .strict();
 type Verdict = z.infer<typeof VerdictSchema>;
@@ -304,7 +313,12 @@ async function consider(
     for (const [k, v] of result.fetched) fetched.set(k, v);
   } catch (err) {
     if (!(err instanceof InvalidFinalInput)) throw err;
-    verdict = { outcome: "uncertain", problems: ["malformed verdict"], reasoning: err.message };
+    verdict = {
+      outcome: "uncertain",
+      problems: ["malformed verdict"],
+      reasoning: err.message,
+      revisions: null,
+    };
   }
   if (verdict.outcome !== "approve") {
     return {
@@ -318,7 +332,27 @@ async function consider(
   const c = await quoteOnPage(corroboration.sourceUrl, corroboration.quote, fetched);
   if (!c.ok) return { status: "deferred", reason: `corroboration ${c.detail} (${corrHost})` };
 
-  return { status: "published", story: parsed.data };
+  // The verifier may tighten our wording; the result must still pass every mechanical rule.
+  let final = parsed.data;
+  if (verdict.revisions && (verdict.revisions.headline || verdict.revisions.summary)) {
+    const revised = DaySchema.shape.genius.safeParse({
+      ...final,
+      headline: verdict.revisions.headline ?? final.headline,
+      summary: verdict.revisions.summary ?? final.summary,
+    });
+    if (!revised.success) {
+      return {
+        status: "rejected",
+        reason: `revision fails the schema: ${z.prettifyError(revised.error)}`,
+      };
+    }
+    const revisedProblems = storyProblems(revised.data);
+    if (revisedProblems.length) return { status: "rejected", reason: revisedProblems.join("; ") };
+    console.log(`  revised by the verifier: ${revised.data.headline}`);
+    final = revised.data;
+  }
+
+  return { status: "published", story: final };
 }
 
 // ---------------------------------------------------------------------------

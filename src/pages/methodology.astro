@@ -7,7 +7,7 @@ import { LABELS, SITE } from "../lib/site.ts";
 const faqs = [
   {
     q: "How are the two stories chosen?",
-    a: "Every morning an automated scan searches an allowlist of accepted US news publishers for stories reported in the previous day or two. It proposes up to four candidates for each side, ranked. Each candidate is then checked independently; the first on each side to pass every check is published. If either side has no survivor, nothing is published that day.",
+    a: "Every morning an automated scan searches an allowlist of accepted US news publishers for stories from the previous seven days. It proposes up to four candidates for each side, ranked. Each candidate is then checked independently; the first on each side to pass every check is published. A story qualifies if the event happened, was announced or was published within the previous seven days, whatever the date on the news pages. If either side has no survivor, nothing is published that day.",
   },
   {
     q: "What counts as a genius story?",
@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "Who fact-checks the stories?",
-    a: "Three layers. Deterministic code rejects anything whose sources are off the allowlist, that lacks two independent publishers, that uses loaded wording, or that trips the no-victims rules. A second, adversarial model then tries to reject the story and must approve it. Finally, two verbatim quotes, one from each publisher, are matched mechanically against the live pages. A story that fails any step is not published, and the scan log says why.",
+    a: "Three layers. Deterministic code rejects anything whose sources are off the allowlist, that lacks two independent publishers, that uses loaded wording, or that trips the no-victims rules. A second, adversarial model then tries to reject the story and must approve it; if the facts are sound but our wording is imprecise, it supplies corrected wording, which is re-checked by the same rules. Finally, two verbatim quotes, one from each publisher, are matched mechanically against the live pages. A story that fails any step is not published, and the scan log says why.",
   },
   {
     q: "Are politicians included?",
@@ -122,7 +122,9 @@ const faqs = [
       <li>
         <strong>An adversarial review.</strong> A second, independent model is given the story and
         told to find reasons it should not run. It opens every source, checks every fact against the
-        page, and must approve. "Uncertain" is treated as a rejection.
+        page, and must approve. If the facts are sound but our wording is imprecise, it supplies the
+        corrected wording, which is then re-checked by the same mechanical rules. "Uncertain" is
+        treated as a rejection.
       </li>
       <li>
         <strong>Verbatim quotes.</strong> Each story carries two short quotations, one from each of

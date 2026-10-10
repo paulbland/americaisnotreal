@@ -18,7 +18,7 @@ America Is Not Real (americaisnotreal.com) publishes one pair of true stories ev
 
 # What qualifies
 Both stories must have HAPPENED IN THE UNITED STATES (the 50 states, DC or Puerto Rico). An American abroad does not count; a foreign national doing something in Ohio does.
-Both must be reported by at least two accepted publishers (list below), as news, not opinion. The event or announcement must be recent: within the last 7 days, and reported within the 3 days up to and including the scan date.
+Both must be reported by at least two accepted publishers (list below), as news, not opinion. The event or announcement must be recent: it happened, was announced or was published within the 7 days up to and including the scan date. The DATE OF THE NEWS PAGES DOES NOT MATTER as long as it is on or after the event and not after the scan date; a story reported the day it happened is still fresh six days later. Prize announcements, journal publications and official results count from the day they were announced.
 
 GENIUS: a specific, verifiable achievement by a person, team or institution. Scientific discoveries and published results; engineering and medical firsts; Nobel, MacArthur, Lasker, Breakthrough, Pulitzer and similar prizes; a record-setting feat; a rescue or civic fix that took real ingenuity; a child, student or amateur who did something experts could not. NOT: product launches, funding rounds, stock prices, marketing, celebrity news, opinion columns, or "could one day" speculation. A press release alone is not enough.
 
@@ -60,7 +60,7 @@ ${RULES}
 
 # Check, in order
 1. Every factual claim in the headline and summary against the cited pages: names, places, dates, numbers, who did what. Anything unsupported is a problem. Anything the pages contradict is a rejection.
-2. It happened in the United States, within the last 7 days, and was reported by two different accepted publishers as news. Both URLs open and say what they are cited for. Neither is satire, opinion, a press release wire, or an aggregator.
+2. It happened in the United States, within the 7 days up to and including the scan date (the pages' own dates don't matter), and was reported by two different accepted publishers as news. Both URLs open and say what they are cited for. Neither is satire, opinion, a press release wire, or an aggregator.
 3. For a facepalm story: nobody killed, injured or hospitalised; no minor; no victim of a crime other than the perpetrator; no sign of mental-health crisis, addiction, dementia or disability; the joke is not poverty, immigration status, religion or a group; a named private individual is an adult already named by two accepted publishers; a political story is about a concrete act in office, not a view. If any of these is even arguable, reject.
 4. For a genius story: a real, completed, verifiable achievement, not a product launch, a funding round, a prediction or marketing.
 5. The copy is dry and neutral: no editorialising, no jokes, no loaded adjectives, nothing a fair reader on either side of politics would call a sneer. Flag any wording that tells the reader what to think.
@@ -70,7 +70,8 @@ ${RULES}
 # Your output
 Call submit_verdict exactly once.
 - "approve" only if you would stake the site's credibility on every word.
-- "reject" if anything is wrong, unsupported, or against the rules. List each problem.
+- If the facts and sources are sound but our headline or summary is imprecise (a figure described loosely, a detail the sources qualify), do not reject: write the corrected headline and/or summary yourself in "revisions", following the style rules exactly, and approve. Revisions are re-checked mechanically. Leave a field null to keep it as submitted. Never revise the quote.
+- "reject" if anything is wrong, unsupported, or against the rules, and wording alone can't fix it. List each problem.
 - "uncertain" if you could not check it (pages blocked, facts still emerging). An uncertain story is not published; the next candidate is tried.`;
 
 function recentLine(d: Day): string {
@@ -97,7 +98,7 @@ export function discoveryTask(opts: {
       : allowedParties.join(", ");
   return `The scan date is ${date}. This run covers the ${side.toUpperCase()} side only. Find candidate ${side} stories for that day's page.
 
-Look for stories REPORTED in the 3 days up to and including ${date}, about events in the last 7 days. If the scan date is in the past, search as of that date and ignore anything reported after it.
+Look for events that happened, were announced or were published in the 7 days up to and including ${date}. The news pages may be dated any time from the event up to ${date}. If the scan date is in the past, search as of that date and ignore anything reported after it.
 
 ## Already verified and waiting on the bench for this side (don't re-propose these; fresh candidates are still welcome)
 ${
