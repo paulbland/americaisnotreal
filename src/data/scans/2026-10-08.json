@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-08",
+  "startedAt": "2026-10-10T13:07:53.054Z",
+  "finishedAt": "2026-10-10T13:12:05.182Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: Facepalm scan for 2026-10-08 (window Oct 2–8). No candidates are submitted. The one story that was in the window and in scope, the Louisiana voter-status error, has only one accepted source that I opened (WBRZ, Oct 8). Search capacity ran out before I could find a second accepted publisher. Most other leads were election printing errors already on the bench or set aside earlier, reports dated after the scan date, or coverage only on outlets that aren't accepted. Genius: Genius scan for 2026-10-08: no candidates submitted. The one US result inside the window was the USGS Hawaiian Volcano Observatory-led Science paper on Kilauea's 54 episodic lava fountains, published Oct. 8. It had only one accepted source I could open (Science News). The phys.org write-up and the Science/DOI page would not open, and the search tool limit was reached before a second accepted publisher could be found. The literature Nobel (Oct. 8) went to Anne Carson, who is Canadian, holds Icelandic citizenship and was in Iceland when she was told, so it is not a US story. The other leads were outside the US or outside the window. No genius story met the standard; nothing published.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "facepalm",
+      "headline": "About 800,000 Colorado ballots wrongly include the Front Range Passenger Rail tax question",
+      "outcome": "published",
+      "reason": "from the bench (verified 2026-10-07)"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Louisiana Secretary of State's office says 'human error' during routine maintenance switched about 67,000 voters to inactive",
+      "outcome": "rejected",
+      "reason": "In the date window (the error happened Monday, Oct. 5, and WBRZ reported it Oct. 8). WBRZ is the only accepted source I opened. The other coverage (KSLA, Louisiana Illuminator, State Affairs, a Yahoo republication, Raw Story) isn't accepted or is banned, and search capacity ran out before I found a second accepted publisher. It also involves an office led by an elected Republican, and that party isn't currently allowed."
+    },
+    {
+      "side": "facepalm",
+      "headline": "DeSoto, Texas, residents report utility billing problems after the city switches systems",
+      "outcome": "rejected",
+      "reason": "Found only as a CBS Texas search result (around Oct. 7), which I didn't open. I found no second accepted source, and it isn't clearly a specific blunder rather than a system-transition complaint."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Caldwell County, Ky., clerk takes responsibility for reversed candidate order on ballots",
+      "outcome": "rejected",
+      "reason": "Coverage found (Paducah Sun, WPSD, Times Leader) was dated Oct. 9–10, after the scan date, and none of those outlets is on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Man arrested after posing as an ICE agent at a Miami polling site",
+      "outcome": "rejected",
+      "reason": "Alleged crime with victims (voters at the polling site), so it's excluded."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Calaveras County, Calif., voter pamphlets printed with June candidate statements",
+      "outcome": "rejected",
+      "reason": "Already set aside several times. Coverage is still only on outlets that aren't accepted or on Yahoo, and the ABC10 page wasn't available."
+    },
+    {
+      "side": "genius",
+      "headline": "USGS Hawaiian Volcano Observatory-led Science study explains Kilauea's 54 episodic lava fountains since December 2024 (HI, Oct. 8)",
+      "outcome": "rejected",
+      "reason": "Inside the window (Science, Oct. 8), but only one accepted source was opened (Science News, Oct. 8). The phys.org page and the Science/DOI page could not be opened, and USGS's HVO news page has no release on the paper. The search tool limit was reached before a second accepted publisher could be found. Worth retrying if a second source turns up."
+    },
+    {
+      "side": "genius",
+      "headline": "Anne Carson wins the 2026 Nobel Prize in Literature (Oct. 8)",
+      "outcome": "rejected",
+      "reason": "Not in the US. PBS/AP describe her as a Canadian writer who holds Icelandic citizenship (granted in 2022), and she was in Iceland when the academy reached her. She once taught at US universities, but the sources give no current US home."
+    },
+    {
+      "side": "genius",
+      "headline": "Experimental drug CBL-514 reduces visceral fat by killing fat cells in two small trials",
+      "outcome": "rejected",
+      "reason": "The results were reported Oct. 1 at the EASD meeting in Milan, before the window. The Science News page describes it as something the drug 'may' do, and no US lead institution was confirmed."
+    },
+    {
+      "side": "genius",
+      "headline": "LUX-ZEPLIN detector in Lead, S.D., sees a possible dark matter signal",
+      "outcome": "rejected",
+      "reason": "The collaboration announced it Sept. 1, so it is too old. The Oct. 5 Science News piece is a follow-up feature, and the signal could still be a blip from known physics."
+    },
+    {
+      "side": "genius",
+      "headline": "American Megan Eckert sets the women's six-day world record and the overall American record",
+      "outcome": "rejected",
+      "reason": "The race was in Balatonfüred, Hungary, in early September. Not in the US and too old. The only source is iRunFar, which is not an accepted publisher."
+    },
+    {
+      "side": "genius",
+      "headline": "First observation of quantum spins shifting a centimeter-scale object",
+      "outcome": "rejected",
+      "reason": "Research by the Okinawa Institute of Science and Technology in Japan; not in the US. The phys.org page could not be opened."
+    },
+    {
+      "side": "genius",
+      "headline": "Lost mega-cliff may explain the Grand Canyon's missing billion years",
+      "outcome": "rejected",
+      "reason": "Coverage of the study dates back to August 2026, before the window. It is also framed as what 'could' have happened."
+    }
+  ]
+}
