@@ -60,7 +60,7 @@
         "publisher": "Portland Press Herald",
         "title": "South Portland having municipal ballots reprinted to fix typo on bond question",
         "date": "2026-10-07",
-        "archiveUrl": "https://web.archive.org/web/20261010012754/https://www.pressherald.com/2026/10/07/south-portland-having-ballots-reprinted-after-bond-question-typo/"
+        "archiveUrl": "https://web.archive.org/web/20261010013021/https://www.pressherald.com/2026/10/07/south-portland-having-ballots-reprinted-after-bond-question-typo/"
       },
       {
         "url": "https://wgme.com/news/local/south-portland-municipal-ballots-being-replaced-after-printing-errors-maine-elections-politics",
@@ -77,6 +77,10 @@
     {
       "date": "2026-10-10",
       "change": "Published by the daily scan."
+    },
+    {
+      "date": "2026-10-10",
+      "change": "Replaced the Portland Press Herald archive link with the confirmed Wayback capture; the original pointed at a capture that did not exist."
     }
   ]
 }
