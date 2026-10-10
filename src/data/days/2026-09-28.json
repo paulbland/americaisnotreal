@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-28",
+  "genius": {
+    "slug": "duke-quantum-simulator-recreates-particle-string-breaking",
+    "side": "genius",
+    "headline": "Duke-led team uses a 13-ion quantum simulator to watch particle 'strings' break and new pairs form",
+    "summary": "A team led by the Duke Quantum Center used a trapped-ion quantum simulator to watch \"string breaking\", the process in which pulling two linked particles apart creates new particle pairs. The work was published in Nature Physics on September 23, 2026. The researchers encoded the model into a chain of 13 ions controlled by focused laser beams, and the university calls it one of the earliest demonstrations of its kind.",
+    "quote": {
+      "text": "Researchers led by the Duke Quantum Center (DQC) have used a quantum simulator to observe string breaking dynamics connected to particle antiparticle formation, marking one of the earliest demonstrations of its kind in quantum physics.",
+      "sourceUrl": "https://www.sciencedaily.com/releases/2026/09/260925005416.htm"
+    },
+    "state": "NC",
+    "city": "Durham",
+    "category": "science",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-09-23",
+    "sources": [
+      {
+        "url": "https://www.sciencedaily.com/releases/2026/09/260925005416.htm",
+        "publisher": "ScienceDaily",
+        "title": "Quantum computer simulates matter “popping into existence”",
+        "date": "2026-09-26"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41567-026-03422-0",
+        "publisher": "Nature Physics",
+        "title": "String-breaking dynamics in a quantum simulator",
+        "date": "2026-09-23",
+        "archiveUrl": "https://web.archive.org/web/20261010015151/https://www.nature.com/articles/s41567-026-03422-0?error=cookies_not_supported&code=84bef8a7-9a31-49d2-8725-50321b1941cc"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "montgomery-county-md-voter-guides-wrong-polling-place-party",
+    "side": "facepalm",
+    "headline": "Some Montgomery County, Md., voter guides list wrong polling place or party in 11 precincts",
+    "summary": "Montgomery County, Maryland's Board of Elections said on September 23 that several Voter Information Guides mailed in one batch to voters in 11 precincts in the Clarksburg, Germantown and Poolesville areas listed an incorrect polling place and/or party affiliation. The board said its printing vendor would mail replacement guides and had assured it that guides for the other 246 precincts were correct.",
+    "quote": {
+      "text": "Voters in Montgomery County were mailed sample ballots that were printed with errors on them, officials said.",
+      "sourceUrl": "https://foxbaltimore.com/news/local/sample-ballots-with-printing-errors-were-mailed-to-montgomery-county-voters-maryland-board-of-elections-september-2026"
+    },
+    "state": "MD",
+    "city": null,
+    "category": "government",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-09-23",
+    "sources": [
+      {
+        "url": "https://foxbaltimore.com/news/local/sample-ballots-with-printing-errors-were-mailed-to-montgomery-county-voters-maryland-board-of-elections-september-2026",
+        "publisher": "WBFF Fox45 Baltimore (7News/WJLA)",
+        "title": "Sample ballots with printing errors were mailed to Montgomery County voters",
+        "date": "2026-09-23",
+        "archiveUrl": "https://web.archive.org/web/20261010015225/https://foxbaltimore.com/news/local/sample-ballots-with-printing-errors-were-mailed-to-montgomery-county-voters-maryland-board-of-elections-september-2026"
+      },
+      {
+        "url": "https://www2.montgomerycountymd.gov/mcgportalapps/Media_Detail.aspx?NaID=6125",
+        "publisher": "Montgomery County, Maryland (Board of Elections)",
+        "title": "BOARD OF ELECTIONS STATEMENT REGARDING MAILED OFFICIAL SAMPLE BALLOT & VOTING INFORMATION BOOKLET",
+        "date": "2026-09-23",
+        "archiveUrl": "https://web.archive.org/web/20261010015308/https://www2.montgomerycountymd.gov/mcgportalapps/Media_Detail.aspx?NaID=6125"
+      }
+    ]
+  },
+  "publishedAt": "2026-10-10T01:53:19.890Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-10-10",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
