@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-11",
+  "genius": {
+    "slug": "debrunner-sets-wheelchair-marathon-world-record-in-chicago",
+    "side": "genius",
+    "headline": "Catherine Debrunner wins Chicago Marathon women's wheelchair race in 1:33:16, reported as a world record",
+    "summary": "Swiss wheelchair racer Catherine Debrunner won the women's wheelchair division of the Bank of America Chicago Marathon on Oct. 11, 2026, finishing in 1:33:16. NBC Chicago and the Chicago Sun-Times both report the time as a world record. She finished ahead of second-place Tatyana McFadden, who came in at 1:42:01.",
+    "quote": {
+      "text": "At least one world record was set on Sunday morning on the streets of Chicago, as Switzerland’s Catherine Debrunner scorched the 26.2-mile course in a time of 1:33:16, setting a new top mark in the women’s wheelchair race.",
+      "sourceUrl": "https://www.nbcchicago.com/news/sports/chicago-marathon/here-are-some-of-the-records-set-at-the-2026-bank-of-america-chicago-marathon/4000920/"
+    },
+    "state": "IL",
+    "city": "Chicago",
+    "category": "sports",
+    "subject": "public-figure",
+    "party": null,
+    "eventDate": "2026-10-11",
+    "sources": [
+      {
+        "url": "https://www.nbcchicago.com/news/sports/chicago-marathon/here-are-some-of-the-records-set-at-the-2026-bank-of-america-chicago-marathon/4000920/",
+        "publisher": "NBC Chicago",
+        "title": "Here are some of the records set at the 2026 Bank of America Chicago Marathon",
+        "date": "2026-10-11",
+        "archiveUrl": "https://web.archive.org/web/20261011161047/https://www.nbcchicago.com/news/sports/chicago-marathon/here-are-some-of-the-records-set-at-the-2026-bank-of-america-chicago-marathon/4000920/"
+      },
+      {
+        "url": "https://chicago.suntimes.com/chicago-marathon/2026/10/11/hawi-feysa-repeats-as-womens-chicago-marathon-champion",
+        "publisher": "Chicago Sun-Times",
+        "title": "Hawi Feysa repeats as women's Chicago Marathon champion",
+        "date": "2026-10-11"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "colorado-800000-ballots-wrongly-include-passenger-rail-tax-question",
+    "side": "facepalm",
+    "headline": "About 800,000 Colorado ballots wrongly include the Front Range Passenger Rail tax question",
+    "summary": "Ballots sent to some voters in Adams, Arapahoe, Douglas and Weld counties include Issue 7A, a sales tax measure for the proposed Front Range passenger train, even though those voters live outside the rail district. The rail district apologized to the four county clerks for a lack of communication about its new boundaries. The Secretary of State's office said only votes from district residents will be counted.",
+    "quote": {
+      "text": "The Front Range Passenger Rail District apologized in a letter to the four county clerks offices for a lack of communication that led to the error.",
+      "sourceUrl": "https://www.cpr.org/2026/10/07/front-range-passenger-rail-incorrect-ballots/"
+    },
+    "state": "CO",
+    "city": null,
+    "category": "government",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://www.cpr.org/2026/10/07/front-range-passenger-rail-incorrect-ballots/",
+        "publisher": "Colorado Public Radio",
+        "title": "800,000 voters in Colorado will see ballots that incorrectly include the Front Range Passenger Rail measure",
+        "date": "2026-10-07"
+      },
+      {
+        "url": "https://gazette.com/2026/10/07/ballot-issue-for-passenger-rail-on-more-ballots-than-it-should-be/",
+        "publisher": "The Gazette",
+        "title": "800,000 voters wrongly sent ballots with passenger rail tax question",
+        "date": "2026-10-07"
+      }
+    ]
+  },
+  "publishedAt": "2026-10-11T16:12:05.191Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-10-11",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
