@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-12",
+  "startedAt": "2026-10-12T19:31:23.089Z",
+  "finishedAt": "2026-10-12T19:38:35.267Z",
+  "model": "claude-opus-5-5",
+  "searches": 77,
+  "summary": "Facepalm: Facepalm scan for 2026-10-12. Search capacity ran out before I found any stories that weren't about elections, so all three candidates are ballot blunders. They are, best first: (1) Athens-Clarke County, Ga., mailed a second absentee ballot to 1,154 voters because of a mailing-list error. This story was set aside on Oct. 10 only because its summary failed the schema, and it is now rewritten and sourced to WSB-TV and CBS News Atlanta. (2) A printer's packaging error sent ballots for the wrong town to some voters in Oxford, Maine, sourced to WGME and the Press Herald. Maine was also the state on Oct. 10. (3) Floyd County, Ind., left a commissioner race off the ballots of 572 voters. Its second source, WVXU, republishes LPM's article word for word, so that sourcing is weaker. Genius: Scan for 2026-10-12 (window Oct 6–12), genius side. The strongest story is the Nobel economics prize, announced Oct. 12 and shared by Michael Woodford (Columbia, NY) and Robert E. Hall (Stanford, CA). I'm submitting it twice, once per laureate. Woodford is ranked first because California was the genius state on Oct. 6. Both are sourced to Axios plus AP copy carried by the Boston Globe and ABC7 News, with the universities' own pages alongside. The third candidate is a Rhode Island giant pumpkin reported at 3,156 pounds, a possible world record, at the Warren weigh-off on Oct. 10, sourced to WJAR (turnto10) and NBC Boston. It is hedged because certification is pending, and NBC Boston's page is a video page, so its corroborating text is the headline. Pair published.",
+  "published": true,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "Columbia economist Michael Woodford shares the 2026 Nobel economics prize with Stanford's Robert Hall",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "genius",
+      "headline": "Stanford economist Robert E. Hall shares the 2026 Nobel economics prize with Columbia's Michael Woodford",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "genius",
+      "headline": "Rhode Island grower's 3,156-pound pumpkin tops the reported world record at a Warren weigh-off",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Athens-Clarke County, Ga., mails a second absentee ballot to 1,154 voters after a mailing-list error",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Printer's packaging error sends ballots meant for another town to some voters in Oxford, Maine",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Floyd County, Ind., ballots leave off a county commissioner race for 572 early voters",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Columbia University dining menu lists 'October 7th blush sauce'",
+      "outcome": "rejected",
+      "reason": "The story turns on the Oct. 7 attacks, in which people were killed, and on a religious and ethnic group, both of which the rules exclude. The coverage I found was also mostly on outlets that aren't accepted or are banned (Yahoo, Breitbart, MSN, Israel Hayom)."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Shasta County, Calif., ballots leave off the unopposed Redding city clerk race",
+      "outcome": "rejected",
+      "reason": "In the date window (Oct. 9–10), but the only coverage I found was KRCR, Shasta Unfiltered and a Yahoo republication. None of them is on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Woman's house mistakenly demolished; she takes legal action against the contractor (WBRZ)",
+      "outcome": "rejected",
+      "reason": "The homeowner is a victim of someone else's mistake, which the misfortune rule excludes. I found only one accepted source."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Montgomery County residents' bank information mistakenly shared in a data leak",
+      "outcome": "rejected",
+      "reason": "Reported about 10 days before the scan date, outside the window. The residents whose data leaked are victims."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Wayne County, Mich., 8,500 mail ballots resent after printing error",
+      "outcome": "rejected",
+      "reason": "Reported Oct. 2, before the window. It was also already published as the facepalm story for 2026-09-30."
+    },
+    {
+      "side": "genius",
+      "headline": "Vanderbilt surgeons perform first U.S. pediatric heart transplant using a new donor-heart recovery technique",
+      "outcome": "rejected",
+      "reason": "Vanderbilt announced it Oct. 7, but the transplant itself was done in January 2026. The only source found was Vanderbilt's own news site, with no accepted news publisher."
+    },
+    {
+      "side": "genius",
+      "headline": "Ron Wallace's giant pumpkin (WPRI version)",
+      "outcome": "rejected",
+      "reason": "The WPRI page could not be fetched, and the AP version found was only on Yahoo and Boston 25, neither of which is accepted. WJAR and NBC Boston were used instead."
+    },
+    {
+      "side": "genius",
+      "headline": "Alexey Molchanov sets free-diving world record at the AIDA Depth World Championships",
+      "outcome": "rejected",
+      "reason": "Held in Limassol, Cyprus, so not in the US."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-12",
+  "genius": {
+    "slug": "columbia-michael-woodford-wins-2026-nobel-economics-prize",
+    "side": "genius",
+    "headline": "Columbia economist Michael Woodford shares the 2026 Nobel economics prize with Stanford's Robert Hall",
+    "summary": "The Royal Swedish Academy of Sciences awarded the 2026 Nobel memorial prize in economics on Oct. 12 to Columbia University's Michael Woodford and Stanford's Robert E. Hall for the microeconomic foundations of macroeconomic stabilization. According to the prize committee, their work gave a stable theoretical foundation to models now used by central banks and governments to deal with shocks such as energy crises or sudden changes in household spending.",
+    "quote": {
+      "text": "Stanford University's Robert E. Hall and Columbia University's Michael Woodford won the Nobel Prize in economics for research on how policymakers can stabilize",
+      "sourceUrl": "https://www.axios.com/2026/10/12/nobel-prize-economics-2026-hall-woodford"
+    },
+    "state": "NY",
+    "city": "New York",
+    "category": "science",
+    "subject": "private-individual",
+    "party": null,
+    "eventDate": "2026-10-12",
+    "sources": [
+      {
+        "url": "https://www.axios.com/2026/10/12/nobel-prize-economics-2026-hall-woodford",
+        "publisher": "Axios",
+        "title": "U.S. economists win Nobel for work on managing economic shocks",
+        "date": "2026-10-12"
+      },
+      {
+        "url": "https://www.bostonglobe.com/2026/10/12/business/nobel-prize-economics-winners/",
+        "publisher": "The Boston Globe (AP)",
+        "title": "Robert E. Hall and Michael Woodford are awarded Nobel memorial prize in economics",
+        "date": "2026-10-12",
+        "archiveUrl": "https://web.archive.org/web/20261012193729/https://www.bostonglobe.com/2026/10/12/business/nobel-prize-economics-winners/"
+      },
+      {
+        "url": "https://president.columbia.edu/news/congratulations-michael-woodford-winning-nobel-prize-economic-sciences",
+        "publisher": "Columbia University Office of the President",
+        "title": "Congratulations to Michael Woodford on Winning Nobel Prize in Economic Sciences",
+        "date": "2026-10-12"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "athens-clarke-mails-second-absentee-ballot-to-1154-voters",
+    "side": "facepalm",
+    "headline": "Athens-Clarke County, Ga., mails a second absentee ballot to 1,154 voters because of a mailing-list error",
+    "summary": "Athens-Clarke County's elections department says 1,154 voters were sent two absentee ballots for the Nov. 3 general election. The county says the mailing list provided to a state-authorized printer included duplicate addresses from an earlier list. It learned of the error Oct. 7, two days after the first ballots went out, and is asking voters to shred the extra ballot or return it in person to the elections office.",
+    "quote": {
+      "text": "The Athens-Clarke County Unified Government Elections Department says an error in a mailing list allowed a second ballot to be mailed to 1,154 voters.",
+      "sourceUrl": "https://www.cbsnews.com/atlanta/news/over-1100-georgia-voters-receive-duplicate-absentee-ballots-for-midterm-election-officials-say/"
+    },
+    "state": "GA",
+    "city": "Athens",
+    "category": "government",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://www.cbsnews.com/atlanta/news/over-1100-georgia-voters-receive-duplicate-absentee-ballots-for-midterm-election-officials-say/",
+        "publisher": "CBS News Atlanta",
+        "title": "Over 1,100 Georgia voters receive duplicate absentee ballots for midterm election, officials say",
+        "date": "2026-10-09",
+        "archiveUrl": "https://web.archive.org/web/20261012193803/https://www.cbsnews.com/atlanta/news/over-1100-georgia-voters-receive-duplicate-absentee-ballots-for-midterm-election-officials-say/"
+      },
+      {
+        "url": "https://www.wsbtv.com/news/local/clarke-county/more-than-1000-georgia-voters-receive-second-mail-in-ballot/BP54F3FSJRDN5IJ4Q4YZKPCBOM/",
+        "publisher": "WSB-TV",
+        "title": "More than 1,000 Georgia voters receive second mail-in ballot",
+        "date": "2026-10-09"
+      }
+    ]
+  },
+  "publishedAt": "2026-10-12T19:38:35.266Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-10-12",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
