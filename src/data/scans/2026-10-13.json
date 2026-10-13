@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-13",
+  "startedAt": "2026-10-13T17:15:42.976Z",
+  "finishedAt": "2026-10-13T17:26:37.240Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: Facepalm scan for 2026-10-13 (window Oct 7–13). I ran out of search capacity partway through, so this is a short list. Ballot errors still made up most of what I found. I'm submitting two in-window institutional blunders. The first is Floyd County, Ind., where a programming error left a county commissioner race off 572 early ballots and the election board apologized. Both of its sources (LPM and WFYI) carry the same LPM report, and WHAS11's independent report couldn't be opened. The second is Oxford, Maine, where a printer packaging error sent out wrong ballot styles. It has two separately written reports, Press Herald/Sun Journal and WGME. The strongest new story I found was a pro-Collins super PAC buying ads in Portland, Ore., instead of Portland, Maine. I set it aside under the party balance rule. Genius: Genius scan for 2026-10-13 (window Oct 7–13). I found two candidates that clear every rule. (1) A 3,156-pound pumpkin grown by Ron Wallace was weighed Oct. 10 at a weigh-off in Warren, R.I. That is nearly 300 pounds over the current heaviest-pumpkin record, but Guinness still has to certify it. It is sourced to WJAR (turnto10.com), KIRO 7 and NBC Boston. (2) A University of Washington team used its DNA Typewriter system to reconstruct the cell family tree of a mouse embryo, published in Science on Oct. 8. It is sourced to ScienceDaily, the UW Medicine newsroom and Nature. I checked both quotes and both corroboration passages word for word against the fetched pages. I hit the search limit before I could find solid third or fourth candidates. Most of the other leads were too old, led from outside the US, or had only one accepted source. Pair published.",
+  "published": true,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "Rhode Island grower's 3,156-pound pumpkin beats the heaviest-pumpkin world record, pending Guinness review",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "genius",
+      "headline": "University of Washington team records a mouse embryo's cell family tree back to the fertilized egg",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Floyd County, Ind., early ballots leave off a county commissioner race for 572 voters",
+      "outcome": "rejected",
+      "reason": "The story has only one independent source. The WFYI page is not a second publisher reporting in its own words. It is LPM's article republished word for word, under the same byline ('Aprile Rickert - Louisville Public Media'), with the same LPM photo credit and 647-word count, and is tagged 'Auto-Publish for Partner Stations'. The rules require two accepted publishers reporting the story in their own words, so LPM plus its syndicated copy counts as one source.; The corroboration ('The board said Friday afternoon they had identified 572 impacted voters.') is the identical sentence from the LPM article. It does not independently confirm anything from a different publisher.; Other syndicated copies (IPM, WBOI, WBAA, WVPE) don't fix this. A search found a WHAS11 report (whas11.com, an accepted domain) that may be independent, but the page returned 'url_not_accessible' and could not be checked. WDRB's coverage is on wdrbwave.com, which is not on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Oxford, Maine, sends some voters the wrong ballots after a packaging error at the printer",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "GOP super PAC ad buyer spends money meant for pro-Susan Collins ads in Portland, Ore., instead of Portland, Maine",
+      "outcome": "rejected",
+      "reason": "In the window (Oct. 12–13) and covered by NBC News, The Hill, Bangor Daily News and NBC Boston. It's a Republican-side political blunder, and that party isn't currently allowed under the balance rule. The NBC News page also couldn't be fetched."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Louisiana Secretary of State's office says 'human error' switched about 67,000 voters to inactive",
+      "outcome": "rejected",
+      "reason": "Already set aside. WBRZ is still the only accepted source (KSLA, Louisiana Illuminator and Yahoo aren't accepted), and the office is led by an elected Republican, a party not currently allowed."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Johnson County, Ind., officials fix a voting machine error affecting referendum questions",
+      "outcome": "rejected",
+      "reason": "In the window (Oct. 12), but the only source found was the Daily Journal, which isn't on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Calaveras County, Calif., voter pamphlets printed with wrong candidate statements",
+      "outcome": "rejected",
+      "reason": "Already set aside several times. Coverage is still only on outlets that aren't accepted (Union Democrat, FOX40, myMotherLode, Calaveras Enterprise) or on Yahoo, plus an ABC10 video page. The county announced it Oct. 4, so it has also aged out of the window."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Champaign County, Ill., suspends early voting after ballot errors",
+      "outcome": "rejected",
+      "reason": "Coverage is still only on outlets that aren't accepted (WCIA, IPM Newsroom, Capitol News Illinois, NewsChannel 20, Yahoo), plus a congressional committee release. The suspension was also around Oct. 2–5, at or before the start of the window."
+    },
+    {
+      "side": "genius",
+      "headline": "FDA approves Zanvastro, the first drug for Alexander disease, built on UW-Madison research",
+      "outcome": "rejected",
+      "reason": "Too old. The FDA approval came in early September 2026, and the ScienceDaily piece dated Oct. 12 is a later university write-up."
+    },
+    {
+      "side": "genius",
+      "headline": "MIT-led team finds a star slowly feeding on a brown dwarf (ZTF J0440+2325)",
+      "outcome": "rejected",
+      "reason": "Too old. According to the MIT release, the Nature Astronomy paper was published Oct. 5, before the window opened on Oct. 7."
+    },
+    {
+      "side": "genius",
+      "headline": "Injectable wireless nerve stimulator for chronic pain (Science Advances)",
+      "outcome": "rejected",
+      "reason": "Not in the US. It was developed at NYU Abu Dhabi with Cleveland Clinic Abu Dhabi."
+    },
+    {
+      "side": "genius",
+      "headline": "Whitehead Institute team led by Jonathan Weissman maps mouse embryo cell lineages with PEtracer (Cell, Oct. 8)",
+      "outcome": "rejected",
+      "reason": "Inside the window, but the only pages opened were HHMI's release and the paywalled Nature news piece. No accepted news page or Whitehead/MIT release on the Cell paper could be opened."
+    },
+    {
+      "side": "genius",
+      "headline": "Caltech IPAC: Webb finds galaxy cluster XLSSC 122 is the most distant known strong gravitational lens",
+      "outcome": "rejected",
+      "reason": "Too old. The results were presented June 17, 2026, at the AAS meeting. The ScienceDaily page from Oct. 13 is a repost."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Florida finds many bacteria behind a century-old mushroom disease",
+      "outcome": "rejected",
+      "reason": "Too old. The UF release dates to May 2026, and it is a modest result with only one accepted source."
+    },
+    {
+      "side": "genius",
+      "headline": "Jurassic mammaliaform swimmer Megacauda sungei shows early changes to the mammalian pharynx (Nature)",
+      "outcome": "rejected",
+      "reason": "Not US-led. The source page is the University of Bonn release, and the team was in Shenyang, Bonn and Chicago."
+    },
+    {
+      "side": "genius",
+      "headline": "First 3D lipid map of the mouse brain finds 539 chemical zones",
+      "outcome": "rejected",
+      "reason": "Not in the US. The research is from EPFL in Switzerland."
+    },
+    {
+      "side": "genius",
+      "headline": "Corey Murphey sets North Channel swim world record",
+      "outcome": "rejected",
+      "reason": "Not in the US. The North Channel lies between Northern Ireland and Scotland, and the only coverage seen was SwimSwam, which is not an accepted publisher."
+    },
+    {
+      "side": "genius",
+      "headline": "Further Chicago Marathon records (Hug course record, Hurley debut, Rupp masters record)",
+      "outcome": "rejected",
+      "reason": "Same event as the Debrunner story published 2026-10-11, and these were already set aside in earlier scans."
+    }
+  ]
+}

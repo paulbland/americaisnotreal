@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-13",
+  "genius": {
+    "slug": "rhode-island-grower-3156-pound-pumpkin-tops-world-record",
+    "side": "genius",
+    "headline": "Rhode Island grower's 3,156-pound pumpkin beats the heaviest-pumpkin world record, pending Guinness review",
+    "summary": "At the Southern New England Giant Pumpkin Growers Weigh-Off in Warren, R.I., on Oct. 10, Rhode Island grower Ron Wallace's pumpkin weighed 3,156 pounds, according to the official scale weigher. The current Guinness record, certified Oct. 3, is 2,856 pounds. Guinness World Records still has to certify the new mark.",
+    "quote": {
+      "text": "The pumpkin's grower, Ron Wallace of Greene, Rhode Island, reportedly surpassed the previous world record for heaviest pumpkin by nearly 300 pounds.",
+      "sourceUrl": "https://turnto10.com/news/local/pumpkin-surpasses-world-record-at-frerich-far-weigh-off-world-record-surpases-record-large-pumpkin-heavy-pumpkin-official-weight-scale-frerich-farm-october-10-2026"
+    },
+    "state": "RI",
+    "city": "Warren",
+    "category": "food",
+    "subject": "private-individual",
+    "party": null,
+    "eventDate": "2026-10-10",
+    "sources": [
+      {
+        "url": "https://turnto10.com/news/local/pumpkin-surpasses-world-record-at-frerich-far-weigh-off-world-record-surpases-record-large-pumpkin-heavy-pumpkin-official-weight-scale-frerich-farm-october-10-2026",
+        "publisher": "WJAR NBC 10",
+        "title": "Rhode Island grown pumpkin surpasses world record at weigh off",
+        "date": "2026-10-10",
+        "archiveUrl": "https://web.archive.org/web/20261013172501/https://turnto10.com/news/local/pumpkin-surpasses-world-record-at-frerich-far-weigh-off-world-record-surpases-record-large-pumpkin-heavy-pumpkin-official-weight-scale-frerich-farm-october-10-2026"
+      },
+      {
+        "url": "https://www.kiro7.com/news/trending/3156-pound-pumpkin-grown-rhode-island-could-break-world-record/DIN5KKILPZHC7AKVX4PY33JXCQ/",
+        "publisher": "KIRO 7 (Cox Media Group)",
+        "title": "3,156-pound pumpkin grown in Rhode Island could break world record",
+        "date": "2026-10-13",
+        "archiveUrl": "https://web.archive.org/web/20261013172413/https://www.kiro7.com/news/trending/3156-pound-pumpkin-grown-rhode-island-could-break-world-record/DIN5KKILPZHC7AKVX4PY33JXCQ/"
+      },
+      {
+        "url": "https://www.nbcboston.com/video/on-air/as-seen-on/rhode-island-pumpkin-breaks-world-record-at-3156-pounds/4029771/",
+        "publisher": "NBC Boston",
+        "title": "Rhode Island pumpkin breaks world record at 3,156 pounds",
+        "date": "2026-10-12",
+        "archiveUrl": "https://web.archive.org/web/20261013172415/https://www.nbcboston.com/video/on-air/as-seen-on/rhode-island-pumpkin-breaks-world-record-at-3156-pounds/4029771/"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "oxford-maine-packaging-error-sends-wrong-ballots",
+    "side": "facepalm",
+    "headline": "Oxford, Maine, sends some voters the wrong ballots; state cites a packaging error at the printer",
+    "summary": "Some voters in Oxford, Maine, got absentee ballots in the wrong ballot style. A resident noticed and contacted the town clerk on Oct. 6. Maine's Secretary of State's office said on Oct. 7 that a packaging error at the printer meant a small number of incorrect ballots were received and sent out. According to the office, the town is contacting affected voters and each will get the correct ballot.",
+    "quote": {
+      "text": "The clerk identified that due to a packaging error at the printer, a small number of incorrect ballots were received and sent out.",
+      "sourceUrl": "https://www.pressherald.com/2026/10/07/state-says-packaging-error-caused-small-number-of-wrong-ballots-to-go-out-in-oxford-county/"
+    },
+    "state": "ME",
+    "city": "Oxford",
+    "category": "government",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-10-07",
+    "sources": [
+      {
+        "url": "https://www.pressherald.com/2026/10/07/state-says-packaging-error-caused-small-number-of-wrong-ballots-to-go-out-in-oxford-county/",
+        "publisher": "Portland Press Herald",
+        "title": "State says ‘packaging error’ caused ‘small number’ of incorrect ballots to go out in Oxford",
+        "date": "2026-10-07",
+        "archiveUrl": "https://web.archive.org/web/20261013172521/https://www.pressherald.com/2026/10/07/state-says-packaging-error-caused-small-number-of-wrong-ballots-to-go-out-in-oxford-county/"
+      },
+      {
+        "url": "https://wgme.com/news/local/printing-error-leads-to-incorrect-ballots-in-oxford-secretary-of-states-office",
+        "publisher": "WGME",
+        "title": "Printing error leads to incorrect ballots in Oxford",
+        "date": "2026-10-07",
+        "archiveUrl": "https://web.archive.org/web/20261013172614/https://wgme.com/news/local/printing-error-leads-to-incorrect-ballots-in-oxford-secretary-of-states-office"
+      }
+    ]
+  },
+  "publishedAt": "2026-10-13T17:26:37.239Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-10-13",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
