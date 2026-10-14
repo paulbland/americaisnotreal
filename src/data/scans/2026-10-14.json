@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-14",
+  "startedAt": "2026-10-14T14:47:28.879Z",
+  "finishedAt": "2026-10-14T14:53:04.561Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: Facepalm scan for 2026-10-14 (window Oct. 8–14). Search capacity ran out before I found any story with two accepted publishers that I could open and verify, so I'm submitting no candidates. Leads I looked at: Casper's emergency warning sirens set off by mistake (only source was a paywalled trib.com page), Beverly Hills sirens set off by accident (Beverly Press only), a misspelling on Snohomish County ballot envelopes (only on outlets that aren't accepted), the 'wrong Portland' super PAC ad buy (Republican side, not currently allowed), and the Floyd County ballot error (WHAS11 still couldn't be reached). Genius: Scan for 2026-10-14 (genius). I'm submitting two candidates. The first is UW Medicine's DNA Typewriter study, which recorded a mouse embryo's cell lineage from its first cell division (Science, Oct. 8, Seattle, WA). It is sourced to ScienceDaily and Nature's news story, with UW Medicine's own release as the official page. The second is NASA JPL's Perseverance rover passing Opportunity's off-world driving record on Oct. 11. It is sourced to CBS News, Space.com and the Spokesman-Review (a USA Today story), plus JPL's release. One caveat on Perseverance: the drive happened on Mars. I listed it under JPL in Pasadena, CA, which operates the rover, so the verifier may judge it differently on the in-the-US rule. The search tool limit was reached before I could find an accepted publisher for the 3M Young Scientist winner from Connecticut. No facepalm story met the standard; nothing published. The verified genius story is on the bench for a later day.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "University of Washington team records a mouse embryo's cell family tree from its first division",
+      "outcome": "benched",
+      "reason": "passed every check; kept for a later day because the other side had no story"
+    },
+    {
+      "side": "genius",
+      "headline": "NASA's Perseverance rover passes Opportunity to set the record for distance driven on another world",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Casper, Wyo., emergency warning sirens mistakenly activated",
+      "outcome": "rejected",
+      "reason": "In the date window (about Oct. 8). The only accepted source found is the Casper Star-Tribune (trib.com), and that page is paywalled and couldn't be fetched. I found no second accepted publisher."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Beverly Hills accidentally sets off its emergency sirens",
+      "outcome": "rejected",
+      "reason": "In the date window (about Oct. 9). The only coverage found was Beverly Press and the Beverly Hills Standard, neither of which is on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Snohomish County, Wash., ballot envelopes misspell 'general election'",
+      "outcome": "rejected",
+      "reason": "Reported Oct. 13, but the only coverage found was Seattle Red/MyNorthwest and a Substack newsletter, none of which is accepted. Searches for HeraldNet or KING 5 coverage turned up nothing."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Pro-Susan Collins super PAC ad buy runs in Portland, Ore., instead of Portland, Maine",
+      "outcome": "rejected",
+      "reason": "In the window and covered by KGW, Bangor Daily News and NewsCenter Maine, but it's a Republican-side political blunder, and that party isn't currently allowed under the balance rule."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Floyd County, Ind., early ballots leave off the county commissioner race",
+      "outcome": "rejected",
+      "reason": "Already set aside. The WHAS11 page showed up again but still returned 'url_not_accessible'. The IPM and WFYI pages are syndicated copies of LPM's story, so there is still only one independent accepted source."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Arlington County's alert account reposts an anti-immigrant message; county apologizes",
+      "outcome": "rejected",
+      "reason": "The story turns on immigration, which the rules exclude. The only source found (ARLnow) isn't on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Audit finds accounting errors behind Oklahoma County budget confusion",
+      "outcome": "rejected",
+      "reason": "Reported Oct. 14, but the only in-window source found was KOSU, which isn't accepted. It follows an audit that has been under way since September, not a new self-contained blunder."
+    },
+    {
+      "side": "genius",
+      "headline": "13-year-old Raji Doshi of Farmington, Conn., named America's Top Young Scientist (3M Young Scientist Challenge, Oct. 14)",
+      "outcome": "rejected",
+      "reason": "Inside the window, but the only coverage found was 3M's press release, PR Newswire and a Yahoo repost. The search limit was reached before an accepted news publisher could be found. Worth retrying with Connecticut outlets or USA Today."
+    },
+    {
+      "side": "genius",
+      "headline": "Whitehead Institute's PEtracer maps mouse embryo cell lineages (Cell, Oct. 8)",
+      "outcome": "rejected",
+      "reason": "Only one accepted source (Nature's news story, which covers it alongside the UW study). The phys.org page could not be opened, and no Whitehead/MIT release on the paper turned up. It is also the same result as the UW candidate."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Utah-led gait-retraining trial eases knee osteoarthritis pain",
+      "outcome": "rejected",
+      "reason": "Too old. The Lancet Rheumatology paper was published in 2025, and the ScienceDaily page from Oct. 10 is a repost."
+    },
+    {
+      "side": "genius",
+      "headline": "ASU graduate student-led team measures magnesium and silicon together in exoplanet WASP-189b's atmosphere",
+      "outcome": "rejected",
+      "reason": "The observations used Gemini South in Chile. The Nature Communications publication date was not confirmed inside the window, and the only accepted source is ScienceDaily."
+    },
+    {
+      "side": "genius",
+      "headline": "USGS-led Science study of Kilauea's episodic lava fountains (HI, Oct. 8)",
+      "outcome": "rejected",
+      "reason": "There is still no second accepted source. The phys.org page could not be opened, and the other coverage found (technology.org, archyde) is not accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "Valley Baptist Medical Center physicians perform a 'world's first' procedure (Harlingen, TX)",
+      "outcome": "rejected",
+      "reason": "Seen only on MyRGV, which is not an accepted publisher, and not opened. The procedure and date were not checked."
+    },
+    {
+      "side": "genius",
+      "headline": "First-of-its-kind robotic breast surgery preserves sensation for a Bethesda patient",
+      "outcome": "rejected",
+      "reason": "Seen only on WTOP, which is not an accepted publisher. The date and a second source were not checked."
+    },
+    {
+      "side": "genius",
+      "headline": "Pieter Coetze breaks the short-course 50m backstroke world record",
+      "outcome": "rejected",
+      "reason": "The race was in Tashkent, Uzbekistan, and the swimmer is South African. Not in the US."
+    }
+  ]
+}

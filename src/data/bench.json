@@ -1,1 +1,41 @@
-[]
+[
+  {
+    "story": {
+      "slug": "uw-dna-typewriter-records-mouse-embryo-cell-family-tree",
+      "side": "genius",
+      "headline": "University of Washington team records a mouse embryo's cell family tree from its first division",
+      "summary": "A team led by Jay Shendure of the University of Washington School of Medicine and Chengxiang Qiu of Dartmouth traced the lineage of a mouse embryo's cells from the fertilized egg's first division through 13.5 days of development. They inserted a recording sequence called DNA Typewriter into the egg's genome, which adds ordered genetic marks as cells divide, and reconstructed the relationships of 1.3 million cells, about 10% of the embryo, according to Nature. The results were published Oct. 8 in Science.",
+      "quote": {
+        "text": "Scientists have reconstructed a remarkably detailed family tree of cells in a developing mouse embryo, tracing their origins back to the moment a fertilized egg first divided into two cells.",
+        "sourceUrl": "https://www.sciencedaily.com/releases/2026/10/261011211556.htm"
+      },
+      "state": "WA",
+      "city": "Seattle",
+      "category": "science",
+      "subject": "official-or-institution",
+      "party": null,
+      "eventDate": "2026-10-08",
+      "sources": [
+        {
+          "url": "https://www.sciencedaily.com/releases/2026/10/261011211556.htm",
+          "publisher": "ScienceDaily",
+          "title": "DNA recording system reveals how a single cell becomes a body",
+          "date": "2026-10-13"
+        },
+        {
+          "url": "https://www.nature.com/articles/d41586-026-03193-x",
+          "publisher": "Nature",
+          "title": "How to build a mouse: embryo development captured in stunning detail",
+          "date": "2026-10-08"
+        },
+        {
+          "url": "https://newsroom.uw.edu/news-releases/dna-typewriter-records-cells-history-in-early-mouse-embryo",
+          "publisher": "UW Medicine Newsroom",
+          "title": "DNA Typewriter records cells’ history in early mouse embryo",
+          "date": "2026-10-08"
+        }
+      ]
+    },
+    "verifiedOn": "2026-10-14"
+  }
+]
