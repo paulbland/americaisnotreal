@@ -37,5 +37,38 @@
       ]
     },
     "verifiedOn": "2026-10-14"
+  },
+  {
+    "story": {
+      "slug": "nasa-perseverance-rover-sets-off-world-driving-record",
+      "side": "genius",
+      "headline": "NASA's Perseverance rover passes Opportunity to set the record for distance driven on another world",
+      "summary": "On Oct. 11, the odometer on NASA's Perseverance Mars rover reached 28.10 miles (45.22 kilometers), passing the 28.06-mile record set by the Opportunity rover, which took almost 15 years to cover that distance. Perseverance is built and run by NASA's Jet Propulsion Laboratory in Pasadena, Calif., and set the mark in about five and a half years. According to JPL, it drove more than 90% of that distance using its AutoNav self-driving system.",
+      "quote": {
+        "text": "In a milestone achievement, NASA's Perseverance Mars rover has broken the record for most miles driven on a world beyond Earth.",
+        "sourceUrl": "https://www.space.com/space-exploration/mars-rovers/nasas-perseverance-mars-rover-breaks-interplanetary-driving-record-and-its-far-from-done"
+      },
+      "state": "CA",
+      "city": "Pasadena",
+      "category": "space",
+      "subject": "official-or-institution",
+      "party": null,
+      "eventDate": "2026-10-11",
+      "sources": [
+        {
+          "url": "https://www.space.com/space-exploration/mars-rovers/nasas-perseverance-mars-rover-breaks-interplanetary-driving-record-and-its-far-from-done",
+          "publisher": "Space.com",
+          "title": "NASA's Perseverance Mars rover breaks interplanetary driving record — and it's far from done",
+          "date": "2026-10-13"
+        },
+        {
+          "url": "https://www.jpl.nasa.gov/news/nasas-perseverance-sets-off-world-record-for-total-distance-driven/",
+          "publisher": "NASA Jet Propulsion Laboratory",
+          "title": "NASA’s Perseverance Sets Off-World Record for Total Distance Driven",
+          "date": "2026-10-12"
+        }
+      ]
+    },
+    "verifiedOn": "2026-10-15"
   }
 ]
