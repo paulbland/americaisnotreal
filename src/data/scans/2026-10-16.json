@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-16",
+  "startedAt": "2026-10-16T14:25:26.323Z",
+  "finishedAt": "2026-10-16T14:32:37.313Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: I found two facepalm candidates; search capacity ran out before I could find more. Candidate 1: about 535,000 Snohomish County, Wash., ballot return envelopes say \"Genereal\" instead of \"General.\" This was set aside on Oct. 15 with only FOX 13 as a source, but KOMO (an accepted publisher) covered it on Oct. 15, so it now has two independent accepted sources. Candidate 2: the Orange County DA announced that the case against the Costa Mesa woman who registered her dog to vote has been dismissed. As part of her plea deal she pays for four anti-voter-fraud billboards showing the dog. NBC Los Angeles and LAist both cover it and name her. Several other leads were election errors covered only by outlets not on the accepted list. Genius: The search tool limit ran out partway through the scan, so I'm submitting one well-sourced genius candidate and no alternates. It is the Stanford coral-bleaching study published Oct. 14 in Science Advances. A scan on Oct. 15 set it aside for lacking a second source. This time Stanford's own release (official) and Nature's Oct. 15 news briefing (accepted publisher) both opened, and both quotes match the page text exactly. One discrepancy: Stanford says seven weeks to full recovery and Nature says eight, so the summary credits the seven-week figure to Stanford. Other leads failed on location (not in the US), on date (published before the window), or on having only one accepted source. Pair published.",
+  "published": true,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "Stanford researchers bring bleached corals back to full health by touching them to healthy clones",
+      "outcome": "rejected",
+      "reason": "stanford-team-revives-bleached-coral-by-contact-with-healthy-clones: source not accepted: abcnews.com"
+    },
+    {
+      "side": "genius",
+      "headline": "NASA's Perseverance rover passes Opportunity to set the record for distance driven on another world",
+      "outcome": "published",
+      "reason": "from the bench (verified 2026-10-15)"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Snohomish County, Wash., mails about 535,000 ballot return envelopes that misspell 'General' as 'Genereal'",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Costa Mesa woman who registered her dog to vote must pay for anti-voter-fraud billboards featuring the dog",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Nearly 7,800 Tulare County, Calif., voters receive duplicate vote-by-mail ballots after vendor error",
+      "outcome": "rejected",
+      "reason": "In the window (Oct. 14–15), but the coverage found (ABC30, KMPH, Sun-Gazette, Porterville Recorder, KMJ, YourCentralValley, Yahoo) isn't on the accepted list. A search for Fresno Bee coverage found nothing."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Milliken, Colo., acknowledges water billing errors after a resident gets a nearly $900 bill",
+      "outcome": "rejected",
+      "reason": "The 9News page couldn't be fetched, and the CBS Colorado piece is from early September, outside the window. The residents who were overbilled are the ones affected, and Colorado was used on Oct. 11."
+    },
+    {
+      "side": "facepalm",
+      "headline": "St. Joseph County, Ind., clerk responds to claims that South Bend school board candidates are missing from some ballots",
+      "outcome": "rejected",
+      "reason": "Coverage (WSBT, WNDU, WVPE, Yahoo) isn't on the accepted list. The clerk says all ballots are correct and a map discrepancy caused the confusion, so the blunder itself is disputed."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Philadelphia City Council reluctant to abolish the sheriff's office after a $20 million issue",
+      "outcome": "rejected",
+      "reason": "An ongoing accountability story about the office's long-running finances, not a discrete, self-contained blunder in the window. Only the Inquirer was seen."
+    },
+    {
+      "side": "facepalm",
+      "headline": "GOP PAC ad against Maine's Troy Jackson airs in Portland, Ore., instead of Portland, Maine",
+      "outcome": "rejected",
+      "reason": "Already set aside. A Republican-side political blunder, and that party isn't currently allowed under the balance rule."
+    },
+    {
+      "side": "genius",
+      "headline": "13-year-old Raji Doshi of Farmington, Conn., named America's Top Young Scientist (3M Young Scientist Challenge, Oct. 14)",
+      "outcome": "rejected",
+      "reason": "Still no accepted news publisher. The USA Today-credited piece turned up only on azdailysun.com and Yahoo. The rest is 3M's own release, PR Newswire reposts and sites that are not accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Illinois-led survey finds a crayfish bigger than 'Crawzilla' (Ecology)",
+      "outcome": "rejected",
+      "reason": "The only accepted source is ScienceDaily (Oct. 15), and the paper appears in Ecology vol. 107(9), an earlier issue, so the publication date may fall before the window. Illinois was also a recent genius state."
+    },
+    {
+      "side": "genius",
+      "headline": "Baylor College of Medicine study finds unexpected brain activity under anesthesia",
+      "outcome": "rejected",
+      "reason": "An observational finding, not a clear achievement. The only accepted source is ScienceDaily."
+    },
+    {
+      "side": "genius",
+      "headline": "MIT engineers program NK immune cells inside the body with mRNA nanoparticles (Oct. 13)",
+      "outcome": "rejected",
+      "reason": "Found only on MIT News, an official source, with no accepted news page. It also appears to be preclinical work."
+    },
+    {
+      "side": "genius",
+      "headline": "SpaceX Starship Ship 40 returns to Starbase as the first flown upper stage brought back to its launch site",
+      "outcome": "rejected",
+      "reason": "A transport milestone for company hardware rather than a new achievement. The splashdown was months earlier, and Space.com is the only accepted source."
+    },
+    {
+      "side": "genius",
+      "headline": "JWST 'transmission strings' reveal the uneven shape of hot exoplanet atmospheres (Cornell/Bristol)",
+      "outcome": "rejected",
+      "reason": "Co-led with the University of Bristol, which developed the method, and seen only on phys.org. The publication date and a second source were not confirmed."
+    },
+    {
+      "side": "genius",
+      "headline": "New megaraptoran dinosaur from the Wessex Formation; quantum vortex 'highway'; crop fungus defense (John Innes Centre)",
+      "outcome": "rejected",
+      "reason": "Not in the US: the work is from the UK and Japan."
+    }
+  ]
+}

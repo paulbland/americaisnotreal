@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-16",
+  "genius": {
+    "slug": "nasa-perseverance-rover-sets-off-world-driving-record",
+    "side": "genius",
+    "headline": "NASA's Perseverance rover passes Opportunity to set the record for distance driven on another world",
+    "summary": "On Oct. 11, the odometer on NASA's Perseverance Mars rover reached 28.10 miles (45.22 kilometers), passing the 28.06-mile record set by the Opportunity rover, which took almost 15 years to cover that distance. Perseverance is built and run by NASA's Jet Propulsion Laboratory in Pasadena, Calif., and set the mark in about five and a half years. According to JPL, it drove more than 90% of that distance using its AutoNav self-driving system.",
+    "quote": {
+      "text": "In a milestone achievement, NASA's Perseverance Mars rover has broken the record for most miles driven on a world beyond Earth.",
+      "sourceUrl": "https://www.space.com/space-exploration/mars-rovers/nasas-perseverance-mars-rover-breaks-interplanetary-driving-record-and-its-far-from-done"
+    },
+    "state": "CA",
+    "city": "Pasadena",
+    "category": "space",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-10-11",
+    "sources": [
+      {
+        "url": "https://www.space.com/space-exploration/mars-rovers/nasas-perseverance-mars-rover-breaks-interplanetary-driving-record-and-its-far-from-done",
+        "publisher": "Space.com",
+        "title": "NASA's Perseverance Mars rover breaks interplanetary driving record — and it's far from done",
+        "date": "2026-10-13",
+        "archiveUrl": "https://web.archive.org/web/20261016143120/https://www.space.com/space-exploration/mars-rovers/nasas-perseverance-mars-rover-breaks-interplanetary-driving-record-and-its-far-from-done"
+      },
+      {
+        "url": "https://www.jpl.nasa.gov/news/nasas-perseverance-sets-off-world-record-for-total-distance-driven/",
+        "publisher": "NASA Jet Propulsion Laboratory",
+        "title": "NASA’s Perseverance Sets Off-World Record for Total Distance Driven",
+        "date": "2026-10-12"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "snohomish-county-ballot-envelopes-misspell-general-as-genereal",
+    "side": "facepalm",
+    "headline": "Snohomish County, Wash., mails about 535,000 ballot return envelopes that misspell 'General' as 'Genereal'",
+    "summary": "About 535,000 ballot return envelopes mailed this month for the Nov. 3 election in Snohomish County, Washington, have 'General' printed as 'Genereal.' Auditor Garth Fell said the ballots remain valid, and his office said staff had checked voter names, ID numbers and barcodes but missed the misspelling. The office has corrected the data for remaining packets and is revising its proofreading procedures.",
+    "quote": {
+      "text": "The word “General” was printed as “Genereal” on about 535,000 envelopes mailed earlier this month for the Nov. 3 election.",
+      "sourceUrl": "https://komonews.com/news/local/snohomish-co-auditor-says-ballots-valid-despite-typo-on-election-materials-envelope-mail-voting-mistake-general-genereal-database-accurate-identification-barcode"
+    },
+    "state": "WA",
+    "city": "Everett",
+    "category": "government",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-10-14",
+    "sources": [
+      {
+        "url": "https://komonews.com/news/local/snohomish-co-auditor-says-ballots-valid-despite-typo-on-election-materials-envelope-mail-voting-mistake-general-genereal-database-accurate-identification-barcode",
+        "publisher": "KOMO News",
+        "title": "Snohomish Co. auditor says ballots valid despite typo on election materials",
+        "date": "2026-10-15",
+        "archiveUrl": "https://web.archive.org/web/20261016143215/https://komonews.com/news/local/snohomish-co-auditor-says-ballots-valid-despite-typo-on-election-materials-envelope-mail-voting-mistake-general-genereal-database-accurate-identification-barcode"
+      },
+      {
+        "url": "https://www.fox13seattle.com/news/snohomish-county-ballot-envelope-typo",
+        "publisher": "FOX 13 Seattle",
+        "title": "Snohomish County reassures voters after ballot envelope typo",
+        "date": "2026-10-14",
+        "archiveUrl": "https://web.archive.org/web/20261016143216/https://www.fox13seattle.com/news/snohomish-county-ballot-envelope-typo"
+      }
+    ]
+  },
+  "publishedAt": "2026-10-16T14:32:37.313Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-10-16",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
