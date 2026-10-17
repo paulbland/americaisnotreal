@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-17",
+  "startedAt": "2026-10-17T13:22:12.549Z",
+  "finishedAt": "2026-10-17T13:30:09.213Z",
+  "model": "claude-opus-5-5",
+  "searches": 89,
+  "summary": "Facepalm: Facepalm scan for 2026-10-17. I found three in-window institutional blunders, each confirmed on two independent accepted publishers whose pages I opened, with every quote checked word for word against the fetched text. (1) Snohomish County, Wash., printed 'Genereal' on about 535,000 ballot return envelopes. This was set aside earlier for having only one source; KOMO's Oct. 15 report now supplies the second. (2) Maryland's elections board says Anne Arundel County mailed sample ballots that were missing their last two pages (CBS Baltimore, FOX45, WMAR). (3) Texas reported a second state software error in two weeks that backlogged 15,000 voter address updates days before early voting (Votebeat, KERA/Texas Newsroom). Most of the other leads were again election-office errors covered only by outlets not on the accepted list. Genius: Scan for 2026-10-17 (GENIUS). I found two solid candidates, both published in journals on Oct. 14. The first is a Stanford study in Science Advances: bleached coral fully recovered after brief contact with healthy clones. It is sourced to Stanford's own release and a Nature news story. The second is a pair of Nature papers from David Baker's University of Washington lab on AI-designed protein-cutting enzymes. It is sourced to Phys.org and the Nature paper pages, which give UW as the affiliation and Oct. 14 as the publication date. The search limit was reached before a third candidate with accepted sources turned up. Gretchen Walsh's short-course 50 free world record set in Charlottesville on Oct. 16 is promising, but so far it is covered only by outlets that are not accepted. Pair published.",
+  "published": true,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "Stanford scientists revive bleached coral by placing it in contact with healthy fragments",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "genius",
+      "headline": "University of Washington team uses AI to design working protein-cutting enzymes from scratch",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Snohomish County, Wash., prints 'Genereal Election' on about 535,000 ballot return envelopes",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Anne Arundel County, Md., mails sample ballots missing their last two pages",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Second Texas state software error in two weeks backlogs 15,000 voter address updates before early voting",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Nearly 7,800 Tulare County, Calif., voters receive duplicate vote-by-mail ballots after printing error",
+      "outcome": "rejected",
+      "reason": "In the window (Oct. 14–16), but the only coverage found was ABC30 Fresno, KMPH, Sun-Gazette, Porterville Recorder, YourCentralValley, KMJ and a Yahoo republication. None is on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Millville, Calif., voter says her ballots left off a local school board race",
+      "outcome": "rejected",
+      "reason": "The only source found was KRCR, which isn't on the accepted list. It rests on one voter's account, with no official confirmation found."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Calcasieu Parish, La., inmate released by mistake and rebooked",
+      "outcome": "rejected",
+      "reason": "In the window (Oct. 15), but the only coverage found was KPLC, American Press, CenLA Now and Yahoo, none of them accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Some Berks County, Pa., mail-in ballots arrive with an envelope issue",
+      "outcome": "rejected",
+      "reason": "The only source found was WFMZ, which isn't on the accepted list, and the nature of the error wasn't clear from the results."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Bexar County, Texas, elections office closes two days to process a 13,000-registration backlog",
+      "outcome": "rejected",
+      "reason": "This is a consequence of the state software error, which is already submitted as its own candidate, not a separate county blunder. The sources found were News4SA, Fox San Antonio and San Antonio Current, plus a KENS5 video page."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Swampscott, Mass., paints over rainbow crosswalks",
+      "outcome": "rejected",
+      "reason": "A contested policy decision that turns on an LGBTQ+ symbol, not a self-evident blunder, and the joke would land on a group."
+    },
+    {
+      "side": "genius",
+      "headline": "Gretchen Walsh breaks her own short-course 50m freestyle world record (22.75) at UVA pro-am, Charlottesville, Va. (Oct. 16)",
+      "outcome": "rejected",
+      "reason": "In the US and inside the window, but the only coverage found was Virginia Athletics, NBC Sports, SwimSwam, Swimming World and Augusta Free Press, none of which is an accepted publisher. Worth retrying once AP or Virginia outlets cover it."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Florida study finds plant genes respond within minutes of suborbital spaceflight (npj Microgravity)",
+      "outcome": "rejected",
+      "reason": "Too old. The Nature page shows the paper was published Aug. 4, 2026, and Phys.org's Oct. 16 story is a later write-up."
+    },
+    {
+      "side": "genius",
+      "headline": "USC team engineers progenitor cells for a renewable supply of CAR immune cells (Cell)",
+      "outcome": "rejected",
+      "reason": "The journal reference is Cell vol. 189, issue 17, an earlier issue, so the publication date is not inside the window. It is also a mouse study, and the only accepted source is ScienceDaily."
+    },
+    {
+      "side": "genius",
+      "headline": "Infrared locking method for LIGO mirror-coating upgrade (Physical Review D)",
+      "outcome": "rejected",
+      "reason": "Not in the US. The research is from Australian institutions (UWA, ANU, Adelaide)."
+    },
+    {
+      "side": "genius",
+      "headline": "Spiny dogfish found to produce cortisol (Proc. R. Soc. B)",
+      "outcome": "rejected",
+      "reason": "Not in the US. The research is from the University of Manitoba and Bamfield Marine Sciences Centre in Canada."
+    },
+    {
+      "side": "genius",
+      "headline": "13-year-old Raji Doshi named America's Top Young Scientist (3M Young Scientist Challenge, Oct. 14)",
+      "outcome": "rejected",
+      "reason": "Still no accepted news publisher. The coverage found was 3M's and Discovery Education's releases, PR Newswire, Yahoo and sites that are not accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "FDA approves first treatment for certain people with BCG-unresponsive bladder cancer (mid-October)",
+      "outcome": "rejected",
+      "reason": "Only the FDA announcement and trade outlets that are not accepted (AJMC, PharmTech) were found. It is also a product approval, not a distinct achievement."
+    },
+    {
+      "side": "genius",
+      "headline": "Illinois researchers find a crayfish larger than 'Crawzilla' (Ecology)",
+      "outcome": "rejected",
+      "reason": "The journal reference is Ecology vol. 107, issue 9, an earlier issue. The only accepted source is ScienceDaily, and Illinois was a recent genius state."
+    }
+  ]
+}
