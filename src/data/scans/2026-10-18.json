@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-18",
+  "startedAt": "2026-10-18T13:41:03.816Z",
+  "finishedAt": "2026-10-18T13:49:19.278Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: Facepalm scan for 2026-10-18 (window Oct. 12–18). My search capacity ran out partway through, so I'm submitting two candidates, not four. Both are institutional election blunders, and I opened and checked the pages and quotes for each. 1) Maryland's state elections board said Anne Arundel County mailed sample ballots that were missing their last two pages. Three accepted outlets cover it (CBS Baltimore, WMAR-2, FOX45). 2) Texas's Secretary of State's office told counties about a second state error that had held back about 15,000 voter address updates, four days before early voting. Sources are Votebeat/Texas Tribune and KERA. Several other leads were set aside, mostly because they had no accepted source. Genius: Scan for 2026-10-18 (GENIUS; window Oct. 12–18). The search budget ran out early, so most of the work went into opening ScienceDaily, Nature news and NASA pages that had already turned up. One candidate holds up: on Oct. 14, NASA reported that the Roman Space Telescope's Wide Field Instrument, after being aligned by a Goddard team, beats its predicted image quality by nearly 30%. NASA's own page plus ScienceDaily make a complete pair. Most other leads were led from outside the US, were journal papers published before the window and reposted later, or had only one accepted publisher. Gretchen Walsh's Oct. 16 world record still has no accepted publisher. Only one candidate is submitted. Pair published.",
+  "published": true,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "NASA's Roman Space Telescope camera beats its predicted image quality by nearly 30% after alignment",
+      "outcome": "rejected",
+      "reason": "fails the schema: ✖ summary is longer than four sentences"
+    },
+    {
+      "side": "genius",
+      "headline": "NASA's Perseverance rover passes Opportunity to set the record for distance driven on another world",
+      "outcome": "published",
+      "reason": "from the bench (verified 2026-10-15)"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Anne Arundel County, Md., mails sample ballots missing the last two pages of ballot questions",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Texas finds a second state error holding back 15,000 voter records four days before early voting",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Concord, Mass., municipal light plant adds $6.74 a month to bills to recover a five-year billing error",
+      "outcome": "rejected",
+      "reason": "In the window (bills starting in October), but the only coverage found was The Concord Bridge, The Cool Down and a Yahoo republication. None of them is on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "City of Perry, Ga., to reissue some tax bills after leaving off a grant credit",
+      "outcome": "rejected",
+      "reason": "Only one accepted source was found (13WMAZ). The other result was a Yahoo republication."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Kansas City settles a crash claim over a missing road sign, then leaves the sign missing for months",
+      "outcome": "rejected",
+      "reason": "The story involves a vehicle crash, and the only source found (KCTV5) isn't on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Central, La., police chief apologizes for department Facebook post criticizing Baton Rouge",
+      "outcome": "rejected",
+      "reason": "Reported around Oct. 10, at the edge of the window, and only one accepted source (WBRZ) was found."
+    },
+    {
+      "side": "facepalm",
+      "headline": "New York retiree's NYSEG bill jumps from about $200 to $10,000",
+      "outcome": "rejected",
+      "reason": "The customer is on the receiving end of the error, so the misfortune rule excludes it, and the only source found (The Cool Down) isn't accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Nearly 7,800 Tulare County, Calif., voters receive duplicate vote-by-mail ballots",
+      "outcome": "rejected",
+      "reason": "Already set aside. Coverage is still only on outlets that aren't accepted (ABC30, KMPH, Sun-Gazette)."
+    },
+    {
+      "side": "genius",
+      "headline": "Gretchen Walsh breaks her own short-course 50m freestyle world record (22.75) at UVA, Charlottesville (Oct. 16)",
+      "outcome": "rejected",
+      "reason": "Still no accepted publisher. AFP's story was found only on France24 and Yahoo, and the rest of the coverage is SwimSwam, Swimming World, NBC Sports and Virginia Athletics."
+    },
+    {
+      "side": "genius",
+      "headline": "Baylor team finds the anesthetized human hippocampus still processes language (Nature)",
+      "outcome": "rejected",
+      "reason": "Too old. ScienceDaily's Oct. 15 page cites Nature vol. 654, issue 8119, an earlier issue, so the publication date is before the window."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Maryland 'nuclear archaeology' study of Heisenberg's last reactor using surviving uranium cubes (PNAS Nexus)",
+      "outcome": "rejected",
+      "reason": "The journal reference is PNAS Nexus vol. 5, issue 9, an earlier issue, so the publication date is probably before the window. The only accepted source is ScienceDaily."
+    },
+    {
+      "side": "genius",
+      "headline": "MGH-led study links a brain phospholipase to cognitive resilience in old age (Nature Neuroscience, Oct. 15)",
+      "outcome": "rejected",
+      "reason": "An association drawn from mice and 13 human brains, framed as what the enzyme 'could' do. The only accepted coverage is Nature's news story, from the same publisher as the journal."
+    },
+    {
+      "side": "genius",
+      "headline": "Mitochondrial protein atlas across six organisms (Cell Press papers)",
+      "outcome": "rejected",
+      "reason": "Too old. According to Nature's Oct. 16 news story, the papers were published Oct. 1."
+    },
+    {
+      "side": "genius",
+      "headline": "Berkeley sleep and growth hormone circuit; Yale cortisol memory study (ScienceDaily reposts, Oct. 16–17)",
+      "outcome": "rejected",
+      "reason": "Too old. The journal references are Cell 2025 and Science Advances 2025."
+    },
+    {
+      "side": "genius",
+      "headline": "Webb finds orderly weather on a world 20 light-years away; WASP-17b lopsided atmosphere; black hole jet 'universal rule'",
+      "outcome": "rejected",
+      "reason": "Not led from the US. The lead institutions are Trinity College Dublin, the University of Bristol and Curtin University."
+    }
+  ]
+}

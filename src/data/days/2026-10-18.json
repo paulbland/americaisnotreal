@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-18",
+  "genius": {
+    "slug": "nasa-perseverance-rover-sets-off-world-driving-record",
+    "side": "genius",
+    "headline": "NASA's Perseverance rover passes Opportunity to set the record for distance driven on another world",
+    "summary": "On Oct. 11, the odometer on NASA's Perseverance Mars rover reached 28.10 miles (45.22 kilometers), passing the 28.06-mile record set by the Opportunity rover, which took almost 15 years to cover that distance. Perseverance is built and run by NASA's Jet Propulsion Laboratory in Pasadena, Calif., and set the mark in about five and a half years. According to JPL, it drove more than 90% of that distance using its AutoNav self-driving system.",
+    "quote": {
+      "text": "In a milestone achievement, NASA's Perseverance Mars rover has broken the record for most miles driven on a world beyond Earth.",
+      "sourceUrl": "https://www.space.com/space-exploration/mars-rovers/nasas-perseverance-mars-rover-breaks-interplanetary-driving-record-and-its-far-from-done"
+    },
+    "state": "CA",
+    "city": "Pasadena",
+    "category": "space",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-10-11",
+    "sources": [
+      {
+        "url": "https://www.space.com/space-exploration/mars-rovers/nasas-perseverance-mars-rover-breaks-interplanetary-driving-record-and-its-far-from-done",
+        "publisher": "Space.com",
+        "title": "NASA's Perseverance Mars rover breaks interplanetary driving record — and it's far from done",
+        "date": "2026-10-13",
+        "archiveUrl": "https://web.archive.org/web/20261018134645/https://www.space.com/space-exploration/mars-rovers/nasas-perseverance-mars-rover-breaks-interplanetary-driving-record-and-its-far-from-done"
+      },
+      {
+        "url": "https://www.jpl.nasa.gov/news/nasas-perseverance-sets-off-world-record-for-total-distance-driven/",
+        "publisher": "NASA Jet Propulsion Laboratory",
+        "title": "NASA’s Perseverance Sets Off-World Record for Total Distance Driven",
+        "date": "2026-10-12"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "anne-arundel-sample-ballots-missing-last-two-pages",
+    "side": "facepalm",
+    "headline": "Anne Arundel County, Md., mails sample ballots missing the last two pages of ballot questions",
+    "summary": "Sample ballots mailed to Anne Arundel County, Maryland, voters left out the last two pages, which covered state ballot Questions 2 and 3 and county Questions A, B and C, according to the Maryland State Board of Elections. The state board announced the misprint on Oct. 16 and said the county board would send corrected sample ballots to all affected voters.",
+    "quote": {
+      "text": "Sample ballots mailed out to voters in Anne Arundel County were missing the last two ballot pages, according to Maryland's State Board of Election (SBE).",
+      "sourceUrl": "https://www.cbsnews.com/baltimore/news/sample-ballots-mailed-to-anne-arundel-county-voters/"
+    },
+    "state": "MD",
+    "city": "Annapolis",
+    "category": "government",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-10-16",
+    "sources": [
+      {
+        "url": "https://www.cbsnews.com/baltimore/news/sample-ballots-mailed-to-anne-arundel-county-voters/",
+        "publisher": "CBS News Baltimore",
+        "title": "Sample ballots mailed to Anne Arundel County voters were missing pages",
+        "date": "2026-10-16",
+        "archiveUrl": "https://web.archive.org/web/20261018134716/https://www.cbsnews.com/baltimore/news/sample-ballots-mailed-to-anne-arundel-county-voters/"
+      },
+      {
+        "url": "https://www.wmar2news.com/news/region/anne-arundel-county/misprinted-sample-ballots-distributed-to-anne-arundel-county-voters",
+        "publisher": "WMAR-2 News",
+        "title": "Misprinted sample ballots distributed to Anne Arundel County voters",
+        "date": "2026-10-16"
+      },
+      {
+        "url": "https://foxbaltimore.com/news/local/anne-arundel-county-to-send-corrected-specimen-ballots-missing-questions-2-3",
+        "publisher": "FOX45 News (WBFF)",
+        "title": "Anne Arundel County elections sends out incomplete sample ballots to voters",
+        "date": "2026-10-16"
+      }
+    ]
+  },
+  "publishedAt": "2026-10-18T13:49:19.278Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-10-18",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
