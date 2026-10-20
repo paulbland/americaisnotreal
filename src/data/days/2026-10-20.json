@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-20",
+  "genius": {
+    "slug": "uw-team-uses-ai-to-design-protein-cutting-enzymes",
+    "side": "genius",
+    "headline": "University of Washington team uses AI to design protein-cutting enzymes from scratch",
+    "summary": "Researchers led by David Baker at the University of Washington's Institute for Protein Design report in two Nature papers published Oct. 14 that they used AI tools to design proteases, enzymes that cut proteins at chosen sites, from scratch. Of 135 zinc-based designs tested, 36% cut their target peptides, and 13 of 69 cysteine-based designs worked, according to the papers.",
+    "quote": {
+      "text": "To see if it could be done, David Baker at the University of Washington and his colleagues combined several advanced artificial intelligence tools to create both cysteine and zinc proteases.",
+      "sourceUrl": "https://phys.org/news/2026-10-ai-molecular-scissors-protein.html"
+    },
+    "state": "WA",
+    "city": "Seattle",
+    "category": "science",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-10-14",
+    "sources": [
+      {
+        "url": "https://phys.org/news/2026-10-ai-molecular-scissors-protein.html",
+        "publisher": "Phys.org",
+        "title": "AI designs working molecular scissors that recognize and cut selected protein targets",
+        "date": "2026-10-16"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41586-026-11167-2",
+        "publisher": "Nature",
+        "title": "Computational design of metalloproteases",
+        "date": "2026-10-14",
+        "archiveUrl": "https://web.archive.org/web/20261020144128/https://www.nature.com/articles/s41586-026-11167-2?error=cookies_not_supported&code=850d4c24-11ad-43fb-bd2b-9db1c69d157f"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41586-026-11143-w",
+        "publisher": "Nature",
+        "title": "De novo design of cysteine proteases",
+        "date": "2026-10-14",
+        "archiveUrl": "https://web.archive.org/web/20261020144054/https://www.nature.com/articles/s41586-026-11143-w?error=cookies_not_supported&code=73b301a3-ebf2-4058-af0b-68f1757cb430"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "lynchburg-absentee-applications-wrong-return-po-box",
+    "side": "facepalm",
+    "headline": "Third-party mailing sends Lynchburg, Va., absentee ballot applications with the wrong return PO box",
+    "summary": "Lynchburg's Office of the General Registrar warned voters on Oct. 16 that absentee ballot applications sent out by an unidentified third party had an incorrect mailing address on the return envelope. According to WSET, the envelopes carried the wrong PO box number and ZIP code; the mail still reached the right Lynchburg post office, but the registrar urged voters to check the address before the Oct. 23 application deadline.",
+    "quote": {
+      "text": "Lynchburg voters applying to vote absentee by mail are being urged to check their return envelopes after a third-party mailing error sent some applications to the wrong post office box.",
+      "sourceUrl": "https://wset.com/news/local/lynchburg-voters-warned-of-incorrect-return-address-on-absentee-ballot-applications-october-2026"
+    },
+    "state": "VA",
+    "city": "Lynchburg",
+    "category": "government",
+    "subject": "unnamed",
+    "party": null,
+    "eventDate": "2026-10-16",
+    "sources": [
+      {
+        "url": "https://wset.com/news/local/lynchburg-voters-warned-of-incorrect-return-address-on-absentee-ballot-applications-october-2026",
+        "publisher": "WSET",
+        "title": "Lynchburg voters warned of incorrect return address on absentee ballot applications",
+        "date": "2026-10-19"
+      },
+      {
+        "url": "https://www.lynchburgva.gov/m/newsflash/Home/Detail/1148",
+        "publisher": "City of Lynchburg",
+        "title": "Voters Advised to Review Mailing Address on Return Envelope for Absentee Ballot Applications",
+        "date": "2026-10-16",
+        "archiveUrl": "https://web.archive.org/web/20261016230919/https://www.lynchburgva.gov/m/newsflash/Home/Detail/1148"
+      }
+    ]
+  },
+  "publishedAt": "2026-10-20T14:43:45.360Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-10-20",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
