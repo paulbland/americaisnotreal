@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-21",
+  "startedAt": "2026-10-21T14:46:23.809Z",
+  "finishedAt": "2026-10-21T14:55:22.055Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: Facepalm scan for 2026-10-21 (window Oct 15–21). One candidate passed every check: the Milwaukee Brewers' public admission, made Oct. 20, that they erred in handling $1,000 'Timeless Ticket' redemptions for the World Series. Sources are AP via NBC Chicago and WISN, and I opened both pages. Several other leads failed on sourcing: the LA Times page on Tulare's duplicate ballots is blocked for fetching, the TPR page on Bexar County couldn't be opened, and Deschutes still has no accepted outlet. Search capacity ran out before I could find accepted coverage for more alternates. Genius: GENIUS scan for 2026-10-21 (window Oct 15–21). No candidate met the rules, so the list is empty. The search budget ran out early, and so did the page-fetch budget. The strongest lead was again Google Quantum AI's magic state cultivation on Willow (Science, about Oct 15–16). It is in the US and inside the window, but the only accepted page that would open was Phys.org (Oct 17). Science.org and its DOI link returned 'not accessible', Scientific American's page was blocked, and the remaining coverage is from outlets that are not accepted. Every other lead turned out to be too old, outside the US, from a press release only, hedged, or backed by a single source. Worth retrying next scan: Google Willow, if a second accepted page appears (for example Ars Technica, New Scientist or the NYT), and the Utah dinosaur-costume record, if KSL or Deseret covered it. No genius story met the standard; nothing published. The verified facepalm story is on the bench for a later day.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "facepalm",
+      "headline": "Milwaukee Brewers say they erred in handling $1,000 'Timeless Ticket' redemptions for the World Series",
+      "outcome": "benched",
+      "reason": "passed every check; kept for a later day because the other side had no story"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Nearly 7,800 Tulare County, Calif., voters receive duplicate vote-by-mail ballots after a printer error",
+      "outcome": "rejected",
+      "reason": "Set aside in earlier scans; new facts this time. The Los Angeles Times covered it on Oct. 20 (confirmed through its Yahoo republication), but the latimes.com page returns 'url_not_allowed' and couldn't be opened. Other coverage (ABC30, KMPH, Sun-Gazette, Hanford Sentinel, Yahoo, AOL) isn't accepted or is banned."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Bexar County, Texas, early-voting ballots leave off East Central ISD's Proposition A on the first day",
+      "outcome": "rejected",
+      "reason": "In the window (Oct. 19, reported by TPR on Oct. 20). The TPR page appeared in results but returned 'url_not_allowed' when opened. Search capacity ran out before I could find a second accepted publisher."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Deschutes County, Ore., sends about 200 Bend voters the wrong ballots",
+      "outcome": "rejected",
+      "reason": "Already set aside. The only coverage found is still KTVZ and Central Oregon Daily, neither of which is on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Chandler, Ariz., early-voting printers pulled after paper trays found open",
+      "outcome": "rejected",
+      "reason": "The county is investigating whether this was tampering or human error, so no blunder has been established. Only one accepted source (AZFamily) was found."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Iberville Parish, La., emergency notification system sends false alerts",
+      "outcome": "rejected",
+      "reason": "Reported about 44 days before the scan date, well outside the 7-day window."
+    },
+    {
+      "side": "genius",
+      "headline": "Google Quantum AI demonstrates magic state cultivation on Willow, cutting errors 40-fold (Science, ~Oct 15–16)",
+      "outcome": "rejected",
+      "reason": "In the US and inside the window, but the only accepted page opened was Phys.org (Oct 17). The Science.org/DOI page returned 'not accessible', Scientific American was blocked, and the other coverage (Quantum Computing Report, The Quantum Insider, Google's blog) is not accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "NASA's Roman Space Telescope camera beats predicted image quality by nearly 30% after alignment",
+      "outcome": "rejected",
+      "reason": "Now outside the window. The underlying NASA blog post is dated Oct. 14, 2026, one day before the Oct. 15–21 window, and ScienceDaily's Oct. 17 page is a repost."
+    },
+    {
+      "side": "genius",
+      "headline": "Stanford's label-free iISM microscope images living cells at 120 nm resolution",
+      "outcome": "rejected",
+      "reason": "Too old. ScienceDaily's Oct. 16 page republishes a Stanford release from March 2026."
+    },
+    {
+      "side": "genius",
+      "headline": "Mayo Clinic finds five subtypes of fatty liver disease (Nature Communications)",
+      "outcome": "rejected",
+      "reason": "Too old. Mayo Clinic's release was published Sept. 2, 2026, and ScienceDaily's Oct. 18 page is a repost. It is also a subtyping study rather than a distinct achievement."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Arizona team explains Bennu's low thermal inertia with cracks in returned samples",
+      "outcome": "rejected",
+      "reason": "Too old. The University of Arizona release dates to March 2026, and ScienceDaily's Oct. 19 page is a repost."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Minnesota-led LBT project measures primordial helium with record precision",
+      "outcome": "rejected",
+      "reason": "Too old. The Astrophysical Journal papers were published in early September 2026, and ScienceDaily's Oct. 20 page is a repost."
+    },
+    {
+      "side": "genius",
+      "headline": "Columbia team links a rare FN1 mutation to blood-brain-barrier protection in APOE4 carriers (Nature Aging)",
+      "outcome": "rejected",
+      "reason": "The publication date was not confirmed inside the window. The work appears to be largely in animal models with 'could' framing, and the only accepted source is ScienceDaily."
+    },
+    {
+      "side": "genius",
+      "headline": "Quantinuum says it broke an error-correction world record by 10x",
+      "outcome": "rejected",
+      "reason": "Only the company's own press release and investor page were seen. No accepted news publisher was found."
+    },
+    {
+      "side": "genius",
+      "headline": "Lawrence Livermore simulations of nuclear deflection of hypothetical asteroids (Planetary Science Journal)",
+      "outcome": "rejected",
+      "reason": "A modelling study of hypothetical scenarios rather than a demonstrated achievement. The only accepted source is Phys.org."
+    },
+    {
+      "side": "genius",
+      "headline": "'Big chunky belemnite' megateuthidid described from Wyoming (Papers in Palaeontology)",
+      "outcome": "rejected",
+      "reason": "Led by the University of Manchester. The publication date was not confirmed inside the window, and the only accepted source is ScienceDaily."
+    },
+    {
+      "side": "genius",
+      "headline": "Hand-cranked microfluidic chip gives blood type and hematocrit in one minute",
+      "outcome": "rejected",
+      "reason": "Not in the US. The work is from National Taiwan University."
+    },
+    {
+      "side": "genius",
+      "headline": "Trapped-ion quantum network keeps distant ions entangled for about 10 seconds",
+      "outcome": "rejected",
+      "reason": "Not in the US. The research is from the University of Oxford."
+    },
+    {
+      "side": "genius",
+      "headline": "First measurement of the chemical bond stability of a seaborgium compound (Nature)",
+      "outcome": "rejected",
+      "reason": "Not in the US. The collaboration is led by GSI/FAIR in Darmstadt, Germany."
+    },
+    {
+      "side": "genius",
+      "headline": "Single surface-adsorbed molecule reaches a Fourier-limited transition (Science)",
+      "outcome": "rejected",
+      "reason": "Not in the US. The research is from the Max Planck Institute for the Science of Light in Germany."
+    },
+    {
+      "side": "genius",
+      "headline": "804 people in dinosaur costumes set a world record in Utah",
+      "outcome": "rejected",
+      "reason": "Seen only on Hypefresh, which is not an accepted publisher. The date and details were not checked before the tool limit was reached."
+    }
+  ]
+}
