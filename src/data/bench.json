@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "story": {
+      "slug": "milwaukee-brewers-err-handling-timeless-ticket-world-series-redemptions",
+      "side": "facepalm",
+      "headline": "Milwaukee Brewers say they erred in handling $1,000 'Timeless Ticket' requests for World Series seats",
+      "summary": "More than a decade ago the Milwaukee Brewers sold $1,000 'Timeless Tickets' redeemable for any future game at the best available seats, subject to availability. When several hundred holders asked to use them for the team's first World Series since 1982, some complained about their seats, and president of business operations Rick Schlesinger said the club erred in its internal communications on the logistics. The team said those fans will keep their World Series tickets and their Timeless Ticket for a future season.",
+      "quote": {
+        "text": "Schlesinger acknowledged that “we subsequently erred in our internal communications on the logistics of fulfilling the requests.”",
+        "sourceUrl": "https://www.nbcchicago.com/mlb/brewers-timeless-tickets-world-series/4005234/"
+      },
+      "state": "WI",
+      "city": "Milwaukee",
+      "category": "sports",
+      "subject": "business",
+      "party": null,
+      "eventDate": "2026-10-20",
+      "sources": [
+        {
+          "url": "https://www.nbcchicago.com/mlb/brewers-timeless-tickets-world-series/4005234/",
+          "publisher": "NBC Chicago (The Associated Press)",
+          "title": "Brewers promised a ticket to any future game for $1,000. Some fans unhappy with World Series seats",
+          "date": "2026-10-20"
+        },
+        {
+          "url": "https://www.wisn.com/article/milwaukee-brewers-fan-redeems-12-year-old-timeless-ticket-for-world-series-game/74185473",
+          "publisher": "WISN 12 News",
+          "title": "Brewers fan redeems 12-year-old 'Timeless Ticket' for World Series game",
+          "date": "2026-10-19"
+        }
+      ]
+    },
+    "verifiedOn": "2026-10-21"
+  }
+]
