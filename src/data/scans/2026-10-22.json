@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-22",
+  "startedAt": "2026-10-22T14:46:29.349Z",
+  "finishedAt": "2026-10-22T14:53:26.146Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: Facepalm scan for 2026-10-22. Search capacity ran out after about 30 queries, so I'm submitting two candidates, each backed by at least two accepted publishers that I opened. (1) The Big 12 admitted that its replay crew wrongly cleared the last play of BYU's 28-24 win over Notre Dame in Provo on Oct. 17, when one second should have stayed on the clock. Sources: Deseret News, Salt Lake Tribune and KSL/AP. Utah, sports. (2) On the first day of early voting, Oct. 19, some Bexar County, Texas, voters got ballots with the wrong school-district items; the county says data from the state transposed the ballot styles. Sources: KSAT and TPR. A recent scan set this story aside because only one accepted source could be opened; it now has two. Neither candidate involves a politician, so party is null for both. Most other leads were repeats of stories already set aside, were outside the window, or had only sources that aren't accepted. Genius: Genius scan for 2026-10-22 (window Oct 16–22). The strongest lead was Northwestern's PRL result: Gerald Gabrielse's group trapped a single positron for months and drove one-quantum cyclotron jumps (Evanston, IL, about Oct 20–21). Nature News, Phys.org and Scientific American all covered it, but none of those pages, nor Northwestern's release or APS Physics, could be opened (not accessible / not allowed). That left no openable accepted source, so I could not take verbatim quotes. Most of what ScienceDaily ran this week was reposts of older papers or non-US work. The search tool limit was reached before a second lead with two openable accepted sources turned up. No candidates submitted. No genius story met the standard; nothing published. The verified facepalm story is on the bench for a later day.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "facepalm",
+      "headline": "Big 12 says replay officials wrongly ended BYU-Notre Dame game with one second left on the clock",
+      "outcome": "benched",
+      "reason": "passed every check; kept for a later day because the other side had no story"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Bexar County, Texas, gives some early voters ballots with the wrong school district items",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Federal records wrongly list a Red Lake Nation boy as dead in a child welfare takeover (Star Tribune)",
+      "outcome": "rejected",
+      "reason": "The person affected is a minor in the child welfare system, and the story involves child deaths, so it's excluded."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Detroit water department admits a faulty meter caused an 82-year-old's $32,000 bill",
+      "outcome": "rejected",
+      "reason": "The resident is on the receiving end of the error, and the only source seen (Hoodline) isn't accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Nearly 7,800 Tulare County, Calif., voters receive duplicate mail ballots",
+      "outcome": "rejected",
+      "reason": "Already set aside in earlier scans. The new results were Santa Monica Observer, Hanford Sentinel and Hoodline, none of them accepted, and no accessible latimes.com page turned up."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Deschutes County, Ore., voters' pamphlet and ballot errors",
+      "outcome": "rejected",
+      "reason": "Already set aside. Coverage is still only on KTVZ and Central Oregon Daily, neither of which is accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "San Diego charges tens of thousands of residents the wrong city trash fees",
+      "outcome": "rejected",
+      "reason": "The billing error was reported Sept. 23, before the 7-day window. The Oct. 21 coverage is a follow-up about when the mayor learned of it."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Big 12 clock error KSL Sports page (sports.ksl.com)",
+      "outcome": "rejected",
+      "reason": "The page returned 'url_not_accessible'. The story is submitted using the Deseret News, Salt Lake Tribune and KSL.com/AP pages instead."
+    },
+    {
+      "side": "genius",
+      "headline": "Northwestern physicists trap a single positron for months and observe one-quantum cyclotron jumps (Physical Review Letters)",
+      "outcome": "rejected",
+      "reason": "In the US and inside the window, but none of the accepted pages could be opened: Nature News and Phys.org returned 'not accessible' and Scientific American was blocked. Northwestern's release and APS Physics could not be opened either. The only page that loaded, ScienceAlert, is not accepted. Worth retrying first next scan."
+    },
+    {
+      "side": "genius",
+      "headline": "Gretchen Walsh breaks her own short-course 50m freestyle world record in Charlottesville, Va. (Oct. 16)",
+      "outcome": "rejected",
+      "reason": "Still no accepted publisher. The coverage found was NBC Sports, Swimming World, Virginia Athletics and AFP's story on France24, none of which is accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "13-year-old Raji Doshi of Farmington, Conn., named America's Top Young Scientist (Oct. 14)",
+      "outcome": "rejected",
+      "reason": "Still no accepted news publisher. The coverage found was 3M's release, Yahoo, Patch, American Bazaar and other sites that are not accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "Google Quantum AI demonstrates magic state cultivation on Willow (Science)",
+      "outcome": "rejected",
+      "reason": "Still no openable second accepted source. The coverage found was Quantum Computing Report, Digitimes, Gigazine and Google's post on X, none of which is accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "Analysis of nearly 30,000 adolescent brain scans links cortical maturation timing to later mental-health symptoms (Nature News, Oct. 21)",
+      "outcome": "rejected",
+      "reason": "The study is a bioRxiv preprint posted Oct. 11 that has not been peer-reviewed, and it is a population-level association rather than a demonstrated result."
+    },
+    {
+      "side": "genius",
+      "headline": "Full-scale salt marsh in a giant wave flume shows marshes damp extreme storm waves (Nature)",
+      "outcome": "rejected",
+      "reason": "Not in the US. The experiment was run by Dutch institutions (TU Delft and University of Twente) in the Delta Flume."
+    },
+    {
+      "side": "genius",
+      "headline": "Texas A&M finds excess RNA impairs mitochondria during poxvirus infection (PNAS)",
+      "outcome": "rejected",
+      "reason": "Too old. The journal reference is PNAS vol. 123, issue 22, an earlier issue, and ScienceDaily's Oct. 20 page is a repost."
+    },
+    {
+      "side": "genius",
+      "headline": "Penn State trial: four minutes of daily strength training improves function in adults over 65",
+      "outcome": "rejected",
+      "reason": "A modest trial result rather than a distinct achievement. The only accepted source is a ScienceDaily repost, and the publication date was not confirmed inside the window."
+    },
+    {
+      "side": "genius",
+      "headline": "Northwestern-linked study of 13 astronauts finds hearts adapt well to long spaceflight (Circulation)",
+      "outcome": "rejected",
+      "reason": "An exploratory observational study framed as 'suggests'. The only accepted source is ScienceDaily."
+    },
+    {
+      "side": "genius",
+      "headline": "Penn State team finds two active magma reservoirs under Masaya volcano",
+      "outcome": "rejected",
+      "reason": "Not in the US. The volcano is in Nicaragua."
+    },
+    {
+      "side": "genius",
+      "headline": "Bonn team converts an 80-year-old's blood cells into neural stem cells with a molecular age under 20",
+      "outcome": "rejected",
+      "reason": "Not in the US. The research is from the University of Bonn in Germany."
+    },
+    {
+      "side": "genius",
+      "headline": "Argyrin B clears C. difficile in mice while sparing gut microbiota",
+      "outcome": "rejected",
+      "reason": "Not in the US (Helmholtz Centre for Infection Research, Germany). It is also a mouse study."
+    },
+    {
+      "side": "genius",
+      "headline": "U.S. U-17 women set a Women's World Cup scoring record with a 17-0 win over Samoa",
+      "outcome": "rejected",
+      "reason": "Not in the US: the tournament is being played abroad. The sources seen were ESPN and Just Women's Sports, neither of which is accepted."
+    }
+  ]
+}
