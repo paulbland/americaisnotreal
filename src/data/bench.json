@@ -31,5 +31,44 @@
       ]
     },
     "verifiedOn": "2026-10-21"
+  },
+  {
+    "story": {
+      "slug": "big-12-admits-replay-crew-wrongly-ended-byu-notre-dame-game",
+      "side": "facepalm",
+      "headline": "Big 12 says replay officials wrongly ended BYU-Notre Dame game with one second left on the clock",
+      "summary": "After No. 8 BYU beat No. 2 Notre Dame 28-24 in Provo, Utah, on Oct. 17, the Big 12 said its replay crew had incorrectly cleared the final incomplete pass even though one second remained on the clock. By rule, Notre Dame should have had one more play from the 8-yard line, and the conference said it would conduct a complete review of its end-of-game officiating process.",
+      "quote": {
+        "text": "it was determined that time remained on the clock when the ball hit the ground and the play was incorrectly cleared by the replay officiating crew",
+        "sourceUrl": "https://www.deseret.com/sports/2026/10/18/big-12-statement-replay-crew-erred-should-have-put-1-second-back-on-clock-in-byus-28-24-win-over-notre-dame/"
+      },
+      "state": "UT",
+      "city": "Provo",
+      "category": "sports",
+      "subject": "official-or-institution",
+      "party": null,
+      "eventDate": "2026-10-17",
+      "sources": [
+        {
+          "url": "https://www.deseret.com/sports/2026/10/18/big-12-statement-replay-crew-erred-should-have-put-1-second-back-on-clock-in-byus-28-24-win-over-notre-dame/",
+          "publisher": "Deseret News",
+          "title": "Big 12 statement: Replay crew erred, should have put 1 second back on clock in BYU’s 28-24 win over Notre Dame",
+          "date": "2026-10-18"
+        },
+        {
+          "url": "https://www.sltrib.com/sports/2026/10/18/big-12-says-byu-notre-dame-refs/",
+          "publisher": "The Salt Lake Tribune",
+          "title": "Big 12 says BYU-Notre Dame refs, replay crew erred in not putting 1 second back on clock",
+          "date": "2026-10-18"
+        },
+        {
+          "url": "https://www.ksl.com/article/51637725/bachmeier-leads-winning-drive-no-8-byu-outlasts-no-2-notre-dame-28-24",
+          "publisher": "KSL.com (Associated Press)",
+          "title": "Bachmeier leads winning drive, No. 8 BYU outlasts No. 2 Notre Dame 28-24 but Big 12 admits mistake",
+          "date": "2026-10-17"
+        }
+      ]
+    },
+    "verifiedOn": "2026-10-22"
   }
 ]
