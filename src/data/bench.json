@@ -70,5 +70,38 @@
       ]
     },
     "verifiedOn": "2026-10-22"
+  },
+  {
+    "story": {
+      "slug": "volusia-county-mails-350-ballots-with-another-citys-contests",
+      "side": "facepalm",
+      "headline": "About 350 Volusia County, Fla., mail ballots list contests for another city after a vendor error",
+      "summary": "The Volusia County Supervisor of Elections Office said Thursday, Oct. 22, that about 350 vote-by-mail ballots for the Nov. 3 election had been sent out listing contests for another city. The office blamed a vendor mailing error and said replacement ballots would go out Friday. Supervisor Lisa Lewis said she was \"deeply upset\" and would hold the vendor responsible.",
+      "quote": {
+        "text": "VOLUSIA COUNTY, Fla. — About 350 vote-by-mail ballots were affected by a vendor mailing error that sent some Volusia County voters ballots containing contests for another city, the Supervisor of Elections Office said Thursday.",
+        "sourceUrl": "https://www.wftv.com/news/local/about-350-volusia-mail-ballots-affected-by-vendor-error-elections-office-says/4H64O7CDDFFTHPPG6T7WML3SO4/"
+      },
+      "state": "FL",
+      "city": null,
+      "category": "government",
+      "subject": "official-or-institution",
+      "party": null,
+      "eventDate": "2026-10-22",
+      "sources": [
+        {
+          "url": "https://www.wftv.com/news/local/about-350-volusia-mail-ballots-affected-by-vendor-error-elections-office-says/4H64O7CDDFFTHPPG6T7WML3SO4/",
+          "publisher": "WFTV",
+          "title": "About 350 Volusia mail ballots affected by vendor error, elections office says",
+          "date": "2026-10-22"
+        },
+        {
+          "url": "https://www.fox35orlando.com/video/fmc-zzk05x7ctk8uzu65",
+          "publisher": "FOX 35 Orlando",
+          "title": "Incorrect mail-in ballots sent to more than 300 Volusia County voters",
+          "date": "2026-10-22"
+        }
+      ]
+    },
+    "verifiedOn": "2026-10-23"
   }
 ]

@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-23",
+  "startedAt": "2026-10-23T14:33:06.378Z",
+  "finishedAt": "2026-10-23T14:38:49.782Z",
+  "model": "claude-opus-5-5",
+  "searches": 91,
+  "summary": "Facepalm: Scan for 2026-10-23 (facepalm side). Two candidates qualify, both institutional ballot blunders in states not used on recent published days. (1) Volusia County, Fla.: about 350 mail ballots went out listing contests for another city. The source is WFTV's Oct. 22 article, backed up by the FOX 35 Orlando video page's own text. (2) Bexar County, Texas: on the first day of early voting, some ballots showed another district's measure where East Central ISD's Prop A should have been. Sources are KSAT and TPR, both from Oct. 19. TPR couldn't be opened in an earlier scan but loaded this time. Search capacity ran out before a third or fourth candidate with two accepted sources turned up. Genius: Scan for 2026-10-23, GENIUS side: I found no candidate that meets the rules. The best lead, Northwestern trapping a single positron for months (Physical Review Letters), is in the US and inside the window. But again this run none of its accepted pages would open: Phys.org returned 'not accessible', Scientific American was blocked, and APS Physics and Northwestern's release would not load either. The search limit was reached early. After that, Phys.org articles mostly returned 'not accessible', so the leads I could open came largely from ScienceDaily. Those were either outside the US or reposts of older papers. No genius story met the standard; nothing published. The verified facepalm story is on the bench for a later day.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "facepalm",
+      "headline": "About 350 Volusia County, Fla., mail ballots list contests for another city after a vendor error",
+      "outcome": "benched",
+      "reason": "passed every check; kept for a later day because the other side had no story"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Some Bexar County, Texas, early-voting ballots show another district's measure in place of East Central ISD's Prop A",
+      "outcome": "rejected",
+      "reason": "malformed candidate: ✖ Too big: expected string to have <=110 characters   → at headline"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Doña Ana County, N.M., clerk's office mails election notice with wrong early-voting hours and apologizes",
+      "outcome": "rejected",
+      "reason": "In the window (correction sent Oct. 20). Only one accepted news source (Santa Fe New Mexican). The clerk's notice is on donaanacountyelections.com, which isn't a .gov or other accepted official domain, and KVIA isn't on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Tennessee voters report touchscreen machines showing the wrong candidate selected",
+      "outcome": "rejected",
+      "reason": "These are voter reports, with no blunder established by officials. A fact-check found no evidence the machines were flipping votes. The only accepted source seen was WSMV, since WVLT isn't on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "City of Liberty, Texas, sends about $600,000 to a fraudulent account after a fake payment request",
+      "outcome": "rejected",
+      "reason": "The city was the victim of a crime (wire fraud), which the rules exclude."
+    },
+    {
+      "side": "facepalm",
+      "headline": "12,000 Republican mailers in Clay, N.Y., carry the Board of Elections return address",
+      "outcome": "rejected",
+      "reason": "Republican-side political story, and that party isn't currently allowed under the balance rule. Only a non-accepted source (CNY Central) was seen."
+    },
+    {
+      "side": "facepalm",
+      "headline": "City Utilities of Springfield, Mo., vendor error sends duplicate bills to some customers",
+      "outcome": "rejected",
+      "reason": "In the window (about Oct. 20), but the only coverage found was local radio sites (WOWO, 96.3 XKE, 103.9 The Wayne), none of them accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "Northwestern physicists trap a single positron for months and create a 'one-positron quantum cyclotron' (Physical Review Letters)",
+      "outcome": "rejected",
+      "reason": "In the US and inside the window, but none of the accepted pages could be opened. Phys.org returned 'not accessible' twice and Scientific American was blocked. APS Physics and Northwestern's release would not open either. The rest of the coverage (ScienceAlert, sci.news, Tech Times, technology.org) is not accepted. Worth retrying first next scan."
+    },
+    {
+      "side": "genius",
+      "headline": "Kyle Berkshire breaks his own long-drive world record with a 588.3-yard drive in Rawlins, Wyo.",
+      "outcome": "rejected",
+      "reason": "The coverage (Golf Monthly, Golf Digest, Bleacher Report, Yahoo) is not accepted. The video was posted in October, but a Cowboy State Daily piece from Aug. 22 suggests the drive itself happened in August, outside the window."
+    },
+    {
+      "side": "genius",
+      "headline": "UC Berkeley laser phase plate improves cryo-EM imaging of small proteins (Science)",
+      "outcome": "rejected",
+      "reason": "Too old. ScienceDaily's Oct. 22 page cites Science vol. 393, issue 6807, an earlier issue, so the paper predates the window. The only accepted source is a repost."
+    },
+    {
+      "side": "genius",
+      "headline": "2,884 Type Ia supernovae point to dark energy that changes over time",
+      "outcome": "rejected",
+      "reason": "Not in the US. The study is led by the University of Queensland in Australia."
+    },
+    {
+      "side": "genius",
+      "headline": "Gamma delta T cells found to attack small cell lung cancer (Cancer Cell)",
+      "outcome": "rejected",
+      "reason": "Not in the US. The research is from WEHI in Australia."
+    },
+    {
+      "side": "genius",
+      "headline": "13-year-old Raji Doshi of Farmington, Conn., named America's Top Young Scientist (Oct. 14)",
+      "outcome": "rejected",
+      "reason": "Still no accepted news publisher. The coverage found was 3M's and Discovery Education's releases, Yahoo, Patch, American Bazaar and India New England, none of which is accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "MBARI, NYU and Yale team uses DNA and submersible footage to sort out Bargmannia siphonophore species (Phys.org, Oct. 22)",
+      "outcome": "rejected",
+      "reason": "A modest taxonomy result. The only accepted source is Phys.org, and no second accepted page or official release turned up in the results."
+    },
+    {
+      "side": "genius",
+      "headline": "UBC study shows statins bind ryanodine receptors in muscle; marmoset brain-folding study; Göttingen subducted-rock study",
+      "outcome": "rejected",
+      "reason": "Not in the US (University of British Columbia, German Primate Center and University of Göttingen), and the statin paper dates to 2025."
+    }
+  ]
+}
