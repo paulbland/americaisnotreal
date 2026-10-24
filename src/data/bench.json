@@ -103,5 +103,38 @@
       ]
     },
     "verifiedOn": "2026-10-23"
+  },
+  {
+    "story": {
+      "slug": "utah-county-clerk-sends-id-required-notices-to-voters-who-did-not-need-them",
+      "side": "facepalm",
+      "headline": "Utah County clerk's office wrongly tells some voters their mail ballots need a copy of their ID",
+      "summary": "The Utah County Clerk's Office sent 6,144 notices in ballot packets telling voters to include a copy of their ID or their ballot may not be counted, according to Clerk Aaron Davidson. At least 71 went to people who had voted before and an unknown number to voters already verified; the state elections office said the county had not checked registrations against driver's license data. The county apologized on Oct. 23 and said verified voters' ballots will not be rejected.",
+      "quote": {
+        "text": "The Utah County Clerk's Office inadvertently sent mailers to some registered voters incorrectly stating that they needed to return a copy of their ID with their mail-in ballot or it would be rejected.",
+        "sourceUrl": "https://www.ksl.com/article/51640353/some-utah-county-voters-incorrectly-received-notice-telling-them-to-include-copy-of-id-with-ballot"
+      },
+      "state": "UT",
+      "city": "Provo",
+      "category": "government",
+      "subject": "official-or-institution",
+      "party": null,
+      "eventDate": "2026-10-23",
+      "sources": [
+        {
+          "url": "https://www.ksl.com/article/51640353/some-utah-county-voters-incorrectly-received-notice-telling-them-to-include-copy-of-id-with-ballot",
+          "publisher": "KSL.com",
+          "title": "Some Utah County voters incorrectly received notice telling them to include copy of ID with ballot",
+          "date": "2026-10-23"
+        },
+        {
+          "url": "https://www.sltrib.com/news/politics/2026/10/23/utah-county-clerk-sent-incorrect/",
+          "publisher": "The Salt Lake Tribune",
+          "title": "Utah County clerk sent incorrect voting instructions to thousands of residents",
+          "date": "2026-10-23"
+        }
+      ]
+    },
+    "verifiedOn": "2026-10-24"
   }
 ]
