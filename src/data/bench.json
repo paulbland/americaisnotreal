@@ -34,45 +34,6 @@
   },
   {
     "story": {
-      "slug": "big-12-admits-replay-crew-wrongly-ended-byu-notre-dame-game",
-      "side": "facepalm",
-      "headline": "Big 12 says replay officials wrongly ended BYU-Notre Dame game with one second left on the clock",
-      "summary": "After No. 8 BYU beat No. 2 Notre Dame 28-24 in Provo, Utah, on Oct. 17, the Big 12 said its replay crew had incorrectly cleared the final incomplete pass even though one second remained on the clock. By rule, Notre Dame should have had one more play from the 8-yard line, and the conference said it would conduct a complete review of its end-of-game officiating process.",
-      "quote": {
-        "text": "it was determined that time remained on the clock when the ball hit the ground and the play was incorrectly cleared by the replay officiating crew",
-        "sourceUrl": "https://www.deseret.com/sports/2026/10/18/big-12-statement-replay-crew-erred-should-have-put-1-second-back-on-clock-in-byus-28-24-win-over-notre-dame/"
-      },
-      "state": "UT",
-      "city": "Provo",
-      "category": "sports",
-      "subject": "official-or-institution",
-      "party": null,
-      "eventDate": "2026-10-17",
-      "sources": [
-        {
-          "url": "https://www.deseret.com/sports/2026/10/18/big-12-statement-replay-crew-erred-should-have-put-1-second-back-on-clock-in-byus-28-24-win-over-notre-dame/",
-          "publisher": "Deseret News",
-          "title": "Big 12 statement: Replay crew erred, should have put 1 second back on clock in BYU’s 28-24 win over Notre Dame",
-          "date": "2026-10-18"
-        },
-        {
-          "url": "https://www.sltrib.com/sports/2026/10/18/big-12-says-byu-notre-dame-refs/",
-          "publisher": "The Salt Lake Tribune",
-          "title": "Big 12 says BYU-Notre Dame refs, replay crew erred in not putting 1 second back on clock",
-          "date": "2026-10-18"
-        },
-        {
-          "url": "https://www.ksl.com/article/51637725/bachmeier-leads-winning-drive-no-8-byu-outlasts-no-2-notre-dame-28-24",
-          "publisher": "KSL.com (Associated Press)",
-          "title": "Bachmeier leads winning drive, No. 8 BYU outlasts No. 2 Notre Dame 28-24 but Big 12 admits mistake",
-          "date": "2026-10-17"
-        }
-      ]
-    },
-    "verifiedOn": "2026-10-22"
-  },
-  {
-    "story": {
       "slug": "volusia-county-mails-350-ballots-with-another-citys-contests",
       "side": "facepalm",
       "headline": "About 350 Volusia County, Fla., mail ballots list contests for another city after a vendor error",
@@ -136,5 +97,44 @@
       ]
     },
     "verifiedOn": "2026-10-24"
+  },
+  {
+    "story": {
+      "slug": "bexar-county-ballots-show-wrong-district-measure-instead-of-east-central-prop-a",
+      "side": "facepalm",
+      "headline": "Some Bexar County, Texas, ballots omit East Central ISD's Prop A on first day of early voting",
+      "summary": "On the first day of early voting, Oct. 19, some voters in three east Bexar County precincts found East Central ISD's Proposition A missing from their ballots, with another school district's proposition in its place, according to the district. County officials said the problem, which they attributed to data received from the state's election management system, was fixed that day; voters who already cast ballots cannot get replacements.",
+      "quote": {
+        "text": "Brandon Oliver, a spokesman for the school district, said a separate proposition from another school district appeared instead of East Central ISD’s.",
+        "sourceUrl": "https://www.ksat.com/news/local/2026/10/19/voters-find-east-central-isds-prop-a-missing-from-some-ballots-district-says/"
+      },
+      "state": "TX",
+      "city": "San Antonio",
+      "category": "government",
+      "subject": "official-or-institution",
+      "party": null,
+      "eventDate": "2026-10-19",
+      "sources": [
+        {
+          "url": "https://www.ksat.com/news/local/2026/10/19/voters-find-east-central-isds-prop-a-missing-from-some-ballots-district-says/",
+          "publisher": "KSAT",
+          "title": "Voters find East Central ISD’s Prop A missing from some ballots, district says",
+          "date": "2026-10-19"
+        },
+        {
+          "url": "https://www.tpr.org/government-politics/2026-10-20/with-early-voting-underway-bexar-county-elections-department-tackles-ballot-errors-and-long-lines",
+          "publisher": "Texas Public Radio",
+          "title": "With early voting underway, Bexar County elections department tackles ballot errors and long lines",
+          "date": "2026-10-20"
+        },
+        {
+          "url": "https://www.ksat.com/news/local/2026/10/20/officials-to-discuss-election-updates-as-bexar-county-reports-high-first-day-early-voting-turnout/",
+          "publisher": "KSAT",
+          "title": "Bexar County officials address ballot errors, long lines as in-person early voting passes 72,000",
+          "date": "2026-10-20"
+        }
+      ]
+    },
+    "verifiedOn": "2026-10-25"
   }
 ]
