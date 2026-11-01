@@ -1,140 +1,35 @@
 [
   {
     "story": {
-      "slug": "milwaukee-brewers-err-handling-timeless-ticket-world-series-redemptions",
+      "slug": "weber-county-printer-stuffs-two-ballots-in-167-envelopes",
       "side": "facepalm",
-      "headline": "Milwaukee Brewers say they erred in handling $1,000 'Timeless Ticket' requests for World Series seats",
-      "summary": "More than a decade ago the Milwaukee Brewers sold $1,000 'Timeless Tickets' redeemable for any future game at the best available seats, subject to availability. When several hundred holders asked to use them for the team's first World Series since 1982, some complained about their seats, and president of business operations Rick Schlesinger said the club erred in its internal communications on the logistics. The team said those fans will keep their World Series tickets and their Timeless Ticket for a future season.",
+      "headline": "Weber County, Utah, printer puts two ballots in as many as 167 voters' mail envelopes",
+      "summary": "Weber County Clerk/Auditor Ricky Hatch said a miscalibrated envelope-stuffing machine at the county's contracted printer slipped two ballots into as many as 167 of the roughly 135,000 mail-ballot packets sent to voters. A voter who got two ballots alerted the clerk's office. Hatch said safeguards will stop any extra ballots from being counted, and his office has already caught several returned envelopes with two ballots inside.",
       "quote": {
-        "text": "Schlesinger acknowledged that “we subsequently erred in our internal communications on the logistics of fulfilling the requests.”",
-        "sourceUrl": "https://www.nbcchicago.com/mlb/brewers-timeless-tickets-world-series/4005234/"
-      },
-      "state": "WI",
-      "city": "Milwaukee",
-      "category": "sports",
-      "subject": "business",
-      "party": null,
-      "eventDate": "2026-10-20",
-      "sources": [
-        {
-          "url": "https://www.nbcchicago.com/mlb/brewers-timeless-tickets-world-series/4005234/",
-          "publisher": "NBC Chicago (The Associated Press)",
-          "title": "Brewers promised a ticket to any future game for $1,000. Some fans unhappy with World Series seats",
-          "date": "2026-10-20"
-        },
-        {
-          "url": "https://www.wisn.com/article/milwaukee-brewers-fan-redeems-12-year-old-timeless-ticket-for-world-series-game/74185473",
-          "publisher": "WISN 12 News",
-          "title": "Brewers fan redeems 12-year-old 'Timeless Ticket' for World Series game",
-          "date": "2026-10-19"
-        }
-      ]
-    },
-    "verifiedOn": "2026-10-21"
-  },
-  {
-    "story": {
-      "slug": "volusia-county-mails-350-ballots-with-another-citys-contests",
-      "side": "facepalm",
-      "headline": "About 350 Volusia County, Fla., mail ballots list contests for another city after a vendor error",
-      "summary": "The Volusia County Supervisor of Elections Office said Thursday, Oct. 22, that about 350 vote-by-mail ballots for the Nov. 3 election had been sent out listing contests for another city. The office blamed a vendor mailing error and said replacement ballots would go out Friday. Supervisor Lisa Lewis said she was \"deeply upset\" and would hold the vendor responsible.",
-      "quote": {
-        "text": "VOLUSIA COUNTY, Fla. — About 350 vote-by-mail ballots were affected by a vendor mailing error that sent some Volusia County voters ballots containing contests for another city, the Supervisor of Elections Office said Thursday.",
-        "sourceUrl": "https://www.wftv.com/news/local/about-350-volusia-mail-ballots-affected-by-vendor-error-elections-office-says/4H64O7CDDFFTHPPG6T7WML3SO4/"
-      },
-      "state": "FL",
-      "city": null,
-      "category": "government",
-      "subject": "official-or-institution",
-      "party": null,
-      "eventDate": "2026-10-22",
-      "sources": [
-        {
-          "url": "https://www.wftv.com/news/local/about-350-volusia-mail-ballots-affected-by-vendor-error-elections-office-says/4H64O7CDDFFTHPPG6T7WML3SO4/",
-          "publisher": "WFTV",
-          "title": "About 350 Volusia mail ballots affected by vendor error, elections office says",
-          "date": "2026-10-22"
-        },
-        {
-          "url": "https://www.fox35orlando.com/video/fmc-zzk05x7ctk8uzu65",
-          "publisher": "FOX 35 Orlando",
-          "title": "Incorrect mail-in ballots sent to more than 300 Volusia County voters",
-          "date": "2026-10-22"
-        }
-      ]
-    },
-    "verifiedOn": "2026-10-23"
-  },
-  {
-    "story": {
-      "slug": "utah-county-clerk-sends-id-required-notices-to-voters-who-did-not-need-them",
-      "side": "facepalm",
-      "headline": "Utah County clerk's office wrongly tells some voters their mail ballots need a copy of their ID",
-      "summary": "The Utah County Clerk's Office sent 6,144 notices in ballot packets telling voters to include a copy of their ID or their ballot may not be counted, according to Clerk Aaron Davidson. At least 71 went to people who had voted before and an unknown number to voters already verified; the state elections office said the county had not checked registrations against driver's license data. The county apologized on Oct. 23 and said verified voters' ballots will not be rejected.",
-      "quote": {
-        "text": "The Utah County Clerk's Office inadvertently sent mailers to some registered voters incorrectly stating that they needed to return a copy of their ID with their mail-in ballot or it would be rejected.",
-        "sourceUrl": "https://www.ksl.com/article/51640353/some-utah-county-voters-incorrectly-received-notice-telling-them-to-include-copy-of-id-with-ballot"
+        "text": "But a mistake by the printer hired by the county meant that as many as 167 of the envelopes sent to voters contained an extra ballot inside.",
+        "sourceUrl": "https://www.sltrib.com/news/politics/2026/10/26/weber-co-sent-extra-ballots-many/"
       },
       "state": "UT",
-      "city": "Provo",
+      "city": "Ogden",
       "category": "government",
       "subject": "official-or-institution",
       "party": null,
-      "eventDate": "2026-10-23",
+      "eventDate": "2026-10-26",
       "sources": [
         {
-          "url": "https://www.ksl.com/article/51640353/some-utah-county-voters-incorrectly-received-notice-telling-them-to-include-copy-of-id-with-ballot",
-          "publisher": "KSL.com",
-          "title": "Some Utah County voters incorrectly received notice telling them to include copy of ID with ballot",
-          "date": "2026-10-23"
-        },
-        {
-          "url": "https://www.sltrib.com/news/politics/2026/10/23/utah-county-clerk-sent-incorrect/",
+          "url": "https://www.sltrib.com/news/politics/2026/10/26/weber-co-sent-extra-ballots-many/",
           "publisher": "The Salt Lake Tribune",
-          "title": "Utah County clerk sent incorrect voting instructions to thousands of residents",
-          "date": "2026-10-23"
+          "title": "Weber County sent two ballots to as many as 167 voters",
+          "date": "2026-10-26"
+        },
+        {
+          "url": "https://www.ksl.com/article/51641660/some-weber-county-voters-received-duplicate-ballots-but-clerk-says-count-will-remain-accurate",
+          "publisher": "KSL.com",
+          "title": "Some Weber County voters received duplicate ballots, but clerk says count will remain accurate",
+          "date": "2026-10-27"
         }
       ]
     },
-    "verifiedOn": "2026-10-24"
-  },
-  {
-    "story": {
-      "slug": "bexar-county-ballots-show-wrong-district-measure-instead-of-east-central-prop-a",
-      "side": "facepalm",
-      "headline": "Some Bexar County, Texas, ballots omit East Central ISD's Prop A on first day of early voting",
-      "summary": "On the first day of early voting, Oct. 19, some voters in three east Bexar County precincts found East Central ISD's Proposition A missing from their ballots, with another school district's proposition in its place, according to the district. County officials said the problem, which they attributed to data received from the state's election management system, was fixed that day; voters who already cast ballots cannot get replacements.",
-      "quote": {
-        "text": "Brandon Oliver, a spokesman for the school district, said a separate proposition from another school district appeared instead of East Central ISD’s.",
-        "sourceUrl": "https://www.ksat.com/news/local/2026/10/19/voters-find-east-central-isds-prop-a-missing-from-some-ballots-district-says/"
-      },
-      "state": "TX",
-      "city": "San Antonio",
-      "category": "government",
-      "subject": "official-or-institution",
-      "party": null,
-      "eventDate": "2026-10-19",
-      "sources": [
-        {
-          "url": "https://www.ksat.com/news/local/2026/10/19/voters-find-east-central-isds-prop-a-missing-from-some-ballots-district-says/",
-          "publisher": "KSAT",
-          "title": "Voters find East Central ISD’s Prop A missing from some ballots, district says",
-          "date": "2026-10-19"
-        },
-        {
-          "url": "https://www.tpr.org/government-politics/2026-10-20/with-early-voting-underway-bexar-county-elections-department-tackles-ballot-errors-and-long-lines",
-          "publisher": "Texas Public Radio",
-          "title": "With early voting underway, Bexar County elections department tackles ballot errors and long lines",
-          "date": "2026-10-20"
-        },
-        {
-          "url": "https://www.ksat.com/news/local/2026/10/20/officials-to-discuss-election-updates-as-bexar-county-reports-high-first-day-early-voting-turnout/",
-          "publisher": "KSAT",
-          "title": "Bexar County officials address ballot errors, long lines as in-person early voting passes 72,000",
-          "date": "2026-10-20"
-        }
-      ]
-    },
-    "verifiedOn": "2026-10-25"
+    "verifiedOn": "2026-11-01"
   }
 ]
