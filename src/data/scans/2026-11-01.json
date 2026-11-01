@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-01",
+  "startedAt": "2026-11-01T16:31:28.886Z",
+  "finishedAt": "2026-11-01T16:36:18.372Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: Facepalm scan for 2026-11-01, covering Oct. 26 to Nov. 1. Search capacity ran out partway through, so I found two candidates that meet the rules.\n1. Weber County, Utah: the county's ballot printer put two ballots in up to 167 mail-ballot envelopes. The Salt Lake Tribune reported it Oct. 26 and KSL.com on Oct. 27, and I opened both pages and checked the quotes against them.\n2. Sea-Tac airport: a passenger who said he'd forgotten about them carried Wolverine-style claw blades in his carry-on. TSA announced it Oct. 27, and CBS News, KOMO and Fox News covered it Oct. 28.\nSeveral other election-mailing errors in the window were reported only by outlets that aren't on the accepted list: the Washoe County 'FALSE' envelopes, Fresno County, Scott County in Arkansas, and the Moorhead newsletter. Genius: Scan for 2026-11-01 (genius side): no candidates submitted. I hit the search limit early, and none of the leads had two accepted publishers that I could actually open. The strongest lead is the run of short-course world records at the USA Swimming Short Course World Championship Trials at the FMC Natatorium in Westmont, Ill., Oct. 29–31. Only one accepted page opened: Fox News on Jack Alexy's 44.64 in the 100m freestyle on Oct. 30. The Billings Gazette page on Katharine Berkoff's record was blocked by a paywall, and the rest of the coverage is NBC Sports, SwimSwam, Swimming World, team athletics sites and Yahoo. These are worth retrying first next scan, looking for AP, the Chicago Tribune, the Sun-Times, Chicago TV stations, the Missoulian or NJ.com. Several Nature news pages within the window came back 'not accessible', and Scientific American and Phys.org pages could not be opened either. No genius story met the standard; nothing published. The verified facepalm story is on the bench for a later day.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "facepalm",
+      "headline": "Weber County, Utah, printer puts two ballots in as many as 167 voters' mail envelopes",
+      "outcome": "benched",
+      "reason": "passed every check; kept for a later day because the other side had no story"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Passenger brings Wolverine-style claw blades to Sea-Tac security in a carry-on, saying he forgot them",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Printing error puts 'FALSE' on 32,000 Washoe County, Nev., ballot return envelopes",
+      "outcome": "rejected",
+      "reason": "In the window (Oct. 29–30), but the only coverage found was KRNV/My News 4, Fox Reno, 2News and KOLO, none of which is on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "New Maryland Heights, Mo., city limit sign reads 'Mayrland Heights'",
+      "outcome": "rejected",
+      "reason": "In the window (Oct. 27), but the only coverage found was KMOV/First Alert 4, Fox 2 St. Louis, Yahoo and podcasts. None of them is accepted, and no Post-Dispatch or St. Louis Public Radio page turned up."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Moorhead, Minn., city newsletter mailed to residents lists the wrong Election Day",
+      "outcome": "rejected",
+      "reason": "In the window (Oct. 27). The city's own .gov notice confirms it, but the only news coverage found was Valley News Live, which isn't on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Fresno County, Calif., finds a typographical printing error on some ballots",
+      "outcome": "rejected",
+      "reason": "In the window (Oct. 31–Nov. 1), but the only coverage found was ABC30, KMPH, YourCentralValley and Yahoo, none of which is accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Scott County, Ark., Election Commission asks 42 Mount Pleasant voters to re-vote after a ballot error",
+      "outcome": "rejected",
+      "reason": "In the window, but the only coverage found was 5NEWS, NWA Homepage, Yahoo and Resident News Network, none of which is accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Utah County clerk mails 'ID required' notices to thousands of voters by mistake",
+      "outcome": "rejected",
+      "reason": "Reported Oct. 23, before the Oct. 26–Nov. 1 window."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Connecticut state Rep. Anne Hughes arrested on charges of stealing an opponent's lawn signs",
+      "outcome": "rejected",
+      "reason": "The alleged crime has a victim (the owner of the signs), and the case is still only an allegation."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Volusia County, Fla., resends 350 mail ballots after a vendor mailing error",
+      "outcome": "rejected",
+      "reason": "Reported Oct. 22–23, before the 7-day window."
+    },
+    {
+      "side": "facepalm",
+      "headline": "San Diego County resends 44,000 property tax bills after the city's trash fee error",
+      "outcome": "rejected",
+      "reason": "A follow-on to the city billing error reported in September, which was already set aside. Residents are on the receiving end, and the only sources found (CBS 8, Yahoo) aren't accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "St. Louis County blames a software glitch for senior tax freeze errors on online bills",
+      "outcome": "rejected",
+      "reason": "The only source found (KMOV/First Alert 4) isn't accepted, and the seniors are on the receiving end of the error."
+    },
+    {
+      "side": "genius",
+      "headline": "Jack Alexy sets a short-course 100m freestyle world record (44.64) at U.S. Short Course World Championship Trials in Westmont, Ill. (Oct. 30)",
+      "outcome": "rejected",
+      "reason": "In the US and inside the window, but only one accepted source opened: Fox News, Oct. 31 (that page says 'on Saturday', while its photo captions date the swim to Oct. 30). The other coverage found (NBC Sports, SwimSwam, Swimming World, Yahoo, WFMD) is not accepted. I hit the search limit before finding a second accepted page. Worth retrying."
+    },
+    {
+      "side": "genius",
+      "headline": "Katharine Berkoff sets a short-course 50m backstroke world record (25.21) at U.S. trials in Westmont, Ill. (Oct. 29)",
+      "outcome": "rejected",
+      "reason": "Billings Gazette (accepted) has a story, but the page was blocked by a TollBit paywall and could not be opened. The other coverage is Montana Sports, KYSS FM, SwimSwam, Swimming World and NBC Sports, none of which is accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "Van Mathias breaks the short-course 100m breaststroke world record (55.14) in Westmont, Ill. (Oct. 29)",
+      "outcome": "rejected",
+      "reason": "No accepted publisher found. The coverage is Indiana University Athletics (which wrongly gives the location as 'Westmont, California'), SwimSwam, Swimming World, NBC Sports and Yahoo."
+    },
+    {
+      "side": "genius",
+      "headline": "Kate Douglass lowers her short-course 100m freestyle world record to 49.64 and ties the 50m freestyle record in Westmont, Ill. (Oct. 29–31)",
+      "outcome": "rejected",
+      "reason": "No accepted publisher found. The coverage is NBC Sports, Yahoo, Swimming World, SwimSwam, Virginia Athletics and Report.az."
+    },
+    {
+      "side": "genius",
+      "headline": "Claire Curzan sets a short-course 100m backstroke world record (53.92) in Westmont, Ill. (Oct. 30)",
+      "outcome": "rejected",
+      "reason": "No accepted publisher found. The coverage is Virginia Athletics, NBC Sports, Swimming World, SwimSwam and Yahoo."
+    },
+    {
+      "side": "genius",
+      "headline": "Mathematicians find infinitely many Ramanujan-type equations (Scientific American, Oct. 29)",
+      "outcome": "rejected",
+      "reason": "The Scientific American page returned 'url not allowed'. It turned up only on Yahoo and Positron Today, which are not accepted. The institutions and paper were not identified."
+    },
+    {
+      "side": "genius",
+      "headline": "Nature news items within the window (newborn brain clearing mutant neurons; flickering brain signals; dengue reinfection)",
+      "outcome": "rejected",
+      "reason": "All of the Nature news pages returned 'not accessible', so I couldn't confirm the institutions, the countries or the paper dates. No second source was found."
+    },
+    {
+      "side": "genius",
+      "headline": "Delft-led team controls the nuclear spin of a single atom (Phys.org, Oct. 28)",
+      "outcome": "rejected",
+      "reason": "Phys.org returned 'not accessible'. The researchers (main author Hester Vennema) appear to be based in the Netherlands, not the US."
+    },
+    {
+      "side": "genius",
+      "headline": "Boston University study finds ant brains get energy priority during starvation (Phys.org, Oct. 28)",
+      "outcome": "rejected",
+      "reason": "A modest finding in physiology rather than a distinct achievement. The Phys.org page was not accessible, and there is no second accepted source."
+    }
+  ]
+}
