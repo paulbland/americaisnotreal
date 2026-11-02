@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-02",
+  "startedAt": "2026-11-02T19:53:51.497Z",
+  "finishedAt": "2026-11-02T20:01:29.174Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: Facepalm scan for 2026-11-02 (window Oct. 27 to Nov. 2). Search capacity ran out partway through, so there are two candidates, not four. Both have two accepted publishers, and every quote was checked against the opened page. (1) The Big 12 says its replay officials were wrong to award BYU a touchdown against Arizona State in Provo on Oct. 31. Sources: Deseret News and Salt Lake Tribune. (2) Cobb County, Ga., is overnighting replacement absentee ballots after its vendor's mailing delays. Sources: FOX 5 Atlanta, WSB-TV and the county's .gov notice. Caveat on (1): a Big 12 clock-error story was submitted around 2026-10-22, so (1) is ranked first on sourcing but is less varied. Genius: Genius scan for 2026-11-02 (window Oct. 27 – Nov. 2). I have no candidates to submit. I hit the search-tool limit early. After that, most accepted news pages I could reach either returned errors (Phys.org, Scientific American, NBC News) or were ScienceDaily reposts. When I could check dates through journal DOIs, those reposts turned out to cover papers published before the window. The two best leads each have only one openable accepted or official source. The first is Brookhaven/STAR's oxygen-collision jet quenching result: the PRL issue appears to be dated about Oct. 23, and the BNL release couldn't be opened. The second is Jack Alexy's short-course 100m freestyle world record in Westmont, Ill., where Fox News is the only accepted page. Both are worth retrying. No genius story met the standard; nothing published. The verified facepalm story is on the bench for a later day.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "facepalm",
+      "headline": "Big 12 says replay officials wrongly awarded BYU a touchdown in its win over Arizona State",
+      "outcome": "benched",
+      "reason": "passed every check; kept for a later day because the other side had no story"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Cobb County, Ga., overnights replacement absentee ballots after its vendor's mailing delays",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Arizona DPS cites a Loop 202 driver who used a Halloween mask as a dummy HOV passenger",
+      "outcome": "rejected",
+      "reason": "In the window (Oct. 29), but the only coverage found was FOX 10 Phoenix (not on the accepted list) and a Yahoo republication (banned). Searches of KTAR, AZFamily and 12News turned up only older HOV-dummy stories."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Oregon election test data accidentally exposed to the public internet and search engines",
+      "outcome": "rejected",
+      "reason": "Reported about Oct. 25, before the Oct. 27–Nov. 2 window. The only coverage found was The Chronicle, Yahoo and Substack posts, none of which is accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Floyd County auditor's office finds a ballot error before Tuesday's election",
+      "outcome": "rejected",
+      "reason": "In the window (Oct. 30), but the only coverage found was KCHA News and 95.1 The Bull, neither of which is on the accepted list. The nature of the error wasn't clear from the results."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Berkeley County, S.C., advises residents of a printing error on some property tax bills",
+      "outcome": "rejected",
+      "reason": "Announced about Oct. 24, before the 7-day window. Only the county's own page was found, and residents are on the receiving end of the error."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Errors in Mississippi's election system risk sending voters to the wrong polling place",
+      "outcome": "rejected",
+      "reason": "A long-running data problem, not a self-contained blunder dated in the window. The only coverage found was the Mississippi Free Press, Election Law Blog and Political Wire, none of which is accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Tulsa County deputies find a suspect's ankle monitor tied to balloons after a chase",
+      "outcome": "rejected",
+      "reason": "A vehicle chase where injuries and other people's risk can't be ruled out, and the only source found (News On 6) isn't accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Fresno County ballots misidentify Fresno Unified elections",
+      "outcome": "rejected",
+      "reason": "Already set aside on 2026-11-01. The new result was Mid Valley Times, which isn't accepted either."
+    },
+    {
+      "side": "genius",
+      "headline": "Jack Alexy sets short-course 100m freestyle world record (44.64) at U.S. trials in Westmont, Ill. (Oct. 30)",
+      "outcome": "rejected",
+      "reason": "In the US and inside the window, but the only accepted page is still Fox News/OutKick (Oct. 31). The other coverage found (NBC Sports, SwimSwam, Swimming World, Yahoo) is not accepted. I hit the search limit before I could check AP, NJ.com or the Chicago papers."
+    },
+    {
+      "side": "genius",
+      "headline": "Kate Douglass lowers short-course 100m freestyle world record to 49.64 in Westmont, Ill. (Oct. 31)",
+      "outcome": "rejected",
+      "reason": "The only coverage opened was NBC Sports, which is not an accepted publisher. No AP, lohud or other accepted page turned up."
+    },
+    {
+      "side": "genius",
+      "headline": "STAR experiment at Brookhaven's RHIC finds jet quenching in oxygen-oxygen collisions (Physical Review Letters)",
+      "outcome": "rejected",
+      "reason": "The only accepted source opened was a ScienceDaily repost (Oct. 30). The journal reference is PRL vol. 137, issue 17, which works out to about Oct. 23, before the window. The BNL release and the APS DOI page couldn't be opened, so I couldn't confirm the date or get a second source."
+    },
+    {
+      "side": "genius",
+      "headline": "NASA's TRACERS mission publishes first results on magnetic reconnection (Oct. 29)",
+      "outcome": "rejected",
+      "reason": "Only NASA's own blog page could be opened. Phys.org returned 'not accessible', and the other coverage (NewSpace Economy) is not accepted. An official page alone is not enough. It is also an early-results paper rather than a distinct first."
+    },
+    {
+      "side": "genius",
+      "headline": "'Hell chicken' Infernogallus jamesi from North Dakota described as a fruit-eating dinosaur",
+      "outcome": "rejected",
+      "reason": "Too old: the paper and first coverage came out about Oct. 14, before the window. The study is also led by the Royal Ontario Museum in Canada."
+    },
+    {
+      "side": "genius",
+      "headline": "Smithsonian-led Lumina simulation of the first 2 billion years of the universe (MNRAS)",
+      "outcome": "rejected",
+      "reason": "Too old. The paper went online Oct. 13, 2026, and ScienceDaily's Oct. 27 page is a repost. It is also a simulation rather than a demonstrated result."
+    },
+    {
+      "side": "genius",
+      "headline": "Hubble and Webb image the smallest known trans-Neptunian objects (NASA)",
+      "outcome": "rejected",
+      "reason": "Too old. NASA's release was published Sept. 8, 2026, and ScienceDaily's Nov. 1 page is a repost."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Illinois 3D thermal invisibility cloak (Nature Communications)",
+      "outcome": "rejected",
+      "reason": "Too old. The paper went online May 20, 2026, and ScienceDaily's Oct. 26 page is a repost."
+    },
+    {
+      "side": "genius",
+      "headline": "Northwestern/Michigan Hubble study of Lyman continuum escape in starburst galaxies (Nature Astronomy)",
+      "outcome": "rejected",
+      "reason": "Too old. The paper went online Oct. 15, 2026, and ScienceDaily's Oct. 30 page is a repost."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Michigan rules out giant planets around 70 Ophiuchi AB, ending a 170-year-old claim (ApJ)",
+      "outcome": "rejected",
+      "reason": "Mostly a null result rather than an achievement. The only accepted source is a ScienceDaily repost, and the journal page couldn't be opened to confirm the date."
+    },
+    {
+      "side": "genius",
+      "headline": "Juno finds complex plasma-wave structure at Jupiter's bow shock (University of Iowa)",
+      "outcome": "rejected",
+      "reason": "Too old. The University of Iowa release is from September 2026, and ScienceDaily's Oct. 29 page is a repost."
+    },
+    {
+      "side": "genius",
+      "headline": "Johns Hopkins studies on B. fragilis toxin and colon cancer (Nature) and foveal cone patterning (PNAS)",
+      "outcome": "rejected",
+      "reason": "Too old. The papers are in Nature vol. 654 and PNAS vol. 123, issue 7, both earlier 2026 issues, and the ScienceDaily pages are reposts."
+    },
+    {
+      "side": "genius",
+      "headline": "Perseverance rover sets off-world driving distance record",
+      "outcome": "rejected",
+      "reason": "Too old. NASA announced the record Oct. 12, 2026, and ScienceDaily's Nov. 2 page is a repost."
+    }
+  ]
+}

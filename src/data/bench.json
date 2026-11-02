@@ -31,5 +31,38 @@
       ]
     },
     "verifiedOn": "2026-11-01"
+  },
+  {
+    "story": {
+      "slug": "big-12-says-replay-wrongly-gave-byu-touchdown-vs-arizona-state",
+      "side": "facepalm",
+      "headline": "Big 12 says replay officials wrongly awarded BYU a touchdown in its win over Arizona State",
+      "summary": "After No. 8 BYU beat Arizona State 27-20 in Provo, Utah, on Oct. 31, the Big 12 Conference said in a statement that replay officials should not have awarded a first-quarter touchdown. Running back Sione Moa had picked up a fumble by quarterback Bear Bachmeier near the goal line and was credited with a 1-yard score. The conference said the correct ruling was BYU ball, third and goal from the 2.",
+      "quote": {
+        "text": "Replay was incorrect in awarding a score. The correct ruling should have been BYU ball for a third and goal attempt from the two-yard line.",
+        "sourceUrl": "https://www.deseret.com/sports/2026/10/31/big-12-says-officials-erred-in-awarding-byu-a-touchdown-after-fumble-recovery/"
+      },
+      "state": "UT",
+      "city": "Provo",
+      "category": "sports",
+      "subject": "official-or-institution",
+      "party": null,
+      "eventDate": "2026-10-31",
+      "sources": [
+        {
+          "url": "https://www.deseret.com/sports/2026/10/31/big-12-says-officials-erred-in-awarding-byu-a-touchdown-after-fumble-recovery/",
+          "publisher": "Deseret News",
+          "title": "Big 12: Replay officials erred in awarding BYU touchdown vs. ASU",
+          "date": "2026-11-01"
+        },
+        {
+          "url": "https://www.sltrib.com/sports/byu-cougars/2026/11/01/another-controversial-call-goes/",
+          "publisher": "The Salt Lake Tribune",
+          "title": "Should BYU’s first touchdown vs. Arizona State have counted? Big 12 says no in latest officiating gaffe.",
+          "date": "2026-11-01"
+        }
+      ]
+    },
+    "verifiedOn": "2026-11-02"
   }
 ]
