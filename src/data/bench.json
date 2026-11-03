@@ -1,39 +1,6 @@
 [
   {
     "story": {
-      "slug": "weber-county-printer-stuffs-two-ballots-in-167-envelopes",
-      "side": "facepalm",
-      "headline": "Weber County, Utah, printer puts two ballots in as many as 167 voters' mail envelopes",
-      "summary": "Weber County Clerk/Auditor Ricky Hatch said a miscalibrated envelope-stuffing machine at the county's contracted printer slipped two ballots into as many as 167 of the roughly 135,000 mail-ballot packets sent to voters. A voter who got two ballots alerted the clerk's office. Hatch said safeguards will stop any extra ballots from being counted, and his office has already caught several returned envelopes with two ballots inside.",
-      "quote": {
-        "text": "But a mistake by the printer hired by the county meant that as many as 167 of the envelopes sent to voters contained an extra ballot inside.",
-        "sourceUrl": "https://www.sltrib.com/news/politics/2026/10/26/weber-co-sent-extra-ballots-many/"
-      },
-      "state": "UT",
-      "city": "Ogden",
-      "category": "government",
-      "subject": "official-or-institution",
-      "party": null,
-      "eventDate": "2026-10-26",
-      "sources": [
-        {
-          "url": "https://www.sltrib.com/news/politics/2026/10/26/weber-co-sent-extra-ballots-many/",
-          "publisher": "The Salt Lake Tribune",
-          "title": "Weber County sent two ballots to as many as 167 voters",
-          "date": "2026-10-26"
-        },
-        {
-          "url": "https://www.ksl.com/article/51641660/some-weber-county-voters-received-duplicate-ballots-but-clerk-says-count-will-remain-accurate",
-          "publisher": "KSL.com",
-          "title": "Some Weber County voters received duplicate ballots, but clerk says count will remain accurate",
-          "date": "2026-10-27"
-        }
-      ]
-    },
-    "verifiedOn": "2026-11-01"
-  },
-  {
-    "story": {
       "slug": "big-12-says-replay-wrongly-gave-byu-touchdown-vs-arizona-state",
       "side": "facepalm",
       "headline": "Big 12 says replay officials wrongly awarded BYU a touchdown in its win over Arizona State",

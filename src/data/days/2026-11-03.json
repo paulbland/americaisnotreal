@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-03",
+  "genius": {
+    "slug": "milwaukee-brewers-win-first-world-series-title",
+    "side": "genius",
+    "headline": "Milwaukee Brewers win the franchise's first World Series title, beating the Rays in Game 5",
+    "summary": "The Milwaukee Brewers beat the Tampa Bay Rays 4-1 in Game 5 of the World Series at Tropicana Field in St. Petersburg, Fla., on Oct. 28, 2026, taking the series four games to one. It is the first World Series championship in the franchise's history. According to Wisconsin Public Radio, starter Jacob Misiorowski threw five and two-thirds shutout innings in the clincher.",
+    "quote": {
+      "text": "For the first time in franchise history, the Milwaukee Brewers are World Series champions.",
+      "sourceUrl": "https://www.wpr.org/news/milwaukee-brewers-win-first-ever-world-series-title"
+    },
+    "state": "FL",
+    "city": "St. Petersburg",
+    "category": "sports",
+    "subject": "group",
+    "party": null,
+    "eventDate": "2026-10-28",
+    "sources": [
+      {
+        "url": "https://www.wpr.org/news/milwaukee-brewers-win-first-ever-world-series-title",
+        "publisher": "Wisconsin Public Radio (WPR)",
+        "title": "Milwaukee Brewers win first-ever World Series title",
+        "date": "2026-10-28",
+        "archiveUrl": "https://web.archive.org/web/20261103173541/https://www.wpr.org/news/milwaukee-brewers-win-first-ever-world-series-title"
+      },
+      {
+        "url": "https://www.foxnews.com/outkick-sports/christian-yelich-says-brewer-ball-hard-replicate-season-after-world-series-triumph",
+        "publisher": "Fox News (OutKick)",
+        "title": "Christian Yelich says 'Brewer Ball' is hard to replicate for this season after World Series triumph",
+        "date": "2026-11-02",
+        "archiveUrl": "https://web.archive.org/web/20261103173646/https://www.foxnews.com/outkick-sports/christian-yelich-says-brewer-ball-hard-replicate-season-after-world-series-triumph"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "westchester-voting-machines-reject-paper-ballots-election-day",
+    "side": "facepalm",
+    "headline": "Westchester County, N.Y., voting machines reject paper ballots countywide on Election Day",
+    "summary": "Voting machines at polling places across Westchester County, N.Y., began rejecting paper ballots on the morning of Nov. 3, Election Day, so poll workers put completed ballots in orange emergency bags to be counted later. The county Board of Elections first blamed ballot paper thickness, then revised its statement to cite \"an issue involving paper ballots\" and apologized to voters and poll workers. Gov. Kathy Hochul said the problem appeared to stem from the wrong size paper.",
+    "quote": {
+      "text": "The Westchester County Board of Elections (BOE) is aware of an issue involving paper ballots that is preventing voting machines from accepting ballots at polling locations throughout the County.",
+      "sourceUrl": "https://www.nbcnewyork.com/westchester/ballot-problems-westchester-county-polling-locations/6566750/"
+    },
+    "state": "NY",
+    "city": null,
+    "category": "government",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-11-03",
+    "sources": [
+      {
+        "url": "https://www.nbcnewyork.com/westchester/ballot-problems-westchester-county-polling-locations/6566750/",
+        "publisher": "NBC New York",
+        "title": "Ballots in bags? Voters reporting poll problems in Westchester County",
+        "date": "2026-11-03",
+        "archiveUrl": "https://web.archive.org/web/20261103173718/https://www.nbcnewyork.com/westchester/ballot-problems-westchester-county-polling-locations/6566750/"
+      },
+      {
+        "url": "https://abc7ny.com/post/election-day-scanner-problem-affects-westchester-polling-sites/20011651/",
+        "publisher": "ABC7 New York",
+        "title": "Westchester voting machine problems tied to ballot paper issue",
+        "date": "2026-11-03",
+        "archiveUrl": "https://web.archive.org/web/20261103173812/https://abc7ny.com/post/election-day-scanner-problem-affects-westchester-polling-sites/20011651/"
+      },
+      {
+        "url": "https://www.pbs.org/newshour/politics/live-updates-midterm-voters-go-to-the-polls-on-election-day",
+        "publisher": "PBS NewsHour",
+        "title": "Live Updates: Midterm voters go to the polls on Election Day",
+        "date": "2026-11-03",
+        "archiveUrl": "https://web.archive.org/web/20261103161311/https://www.pbs.org/newshour/politics/live-updates-midterm-voters-go-to-the-polls-on-election-day"
+      }
+    ]
+  },
+  "publishedAt": "2026-11-03T17:38:28.431Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-11-03",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
