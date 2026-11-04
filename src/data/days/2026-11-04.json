@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-04",
+  "genius": {
+    "slug": "golden-state-valkyries-win-first-wnba-title-game-7",
+    "side": "genius",
+    "headline": "Golden State Valkyries win the WNBA title in their second season, beating the Dream in Game 7",
+    "summary": "The Golden State Valkyries beat the Atlanta Dream 68-63 in Game 7 of the WNBA Finals at Chase Center in San Francisco on Oct. 31, 2026, winning the franchise's first championship in only its second season. Finals MVP Gabby Williams scored 28 of her 30 points in the second half, and CBS News reported it was the first Game 7 in WNBA Finals history.",
+    "quote": {
+      "text": "The Golden State Valkyries brought to a conclusion a WNBA season that shattered viewership and attendance records with their first WNBA championship Saturday in a thrilling 68-63 victory over the Atlanta Dream in Game 7.",
+      "sourceUrl": "https://www.cbsnews.com/news/golden-state-wins-first-wnba-title-franchise-history/"
+    },
+    "state": "CA",
+    "city": "San Francisco",
+    "category": "sports",
+    "subject": "group",
+    "party": null,
+    "eventDate": "2026-10-31",
+    "sources": [
+      {
+        "url": "https://www.cbsnews.com/news/golden-state-wins-first-wnba-title-franchise-history/",
+        "publisher": "CBS News",
+        "title": "Golden State wins first WNBA title in franchise history in thrilling Game 7 victory over Atlanta",
+        "date": "2026-11-01",
+        "archiveUrl": "https://web.archive.org/web/20261104174631/https://www.cbsnews.com/news/golden-state-wins-first-wnba-title-franchise-history/"
+      },
+      {
+        "url": "https://www.nbcbayarea.com/wnba/golden-state-valkyries/gabby-williams-joe-lacob-valkyries-wnba-champions/4168105/",
+        "publisher": "NBC Bay Area",
+        "title": "'Closer' Gabby Williams validates Joe Lacob's hype in Valkyries' WNBA title win",
+        "date": "2026-11-01",
+        "archiveUrl": "https://web.archive.org/web/20261104174632/https://www.nbcbayarea.com/wnba/golden-state-valkyries/gabby-williams-joe-lacob-valkyries-wnba-champions/4168105/"
+      },
+      {
+        "url": "https://www.nbcbayarea.com/news/local/valkyries-championship-parade-watch-live-updates/4168684/",
+        "publisher": "NBC Bay Area",
+        "title": "Valkyries championship parade live updates: Bay Area celebrates another title",
+        "date": "2026-11-04",
+        "archiveUrl": "https://web.archive.org/web/20261104174632/https://www.nbcbayarea.com/news/local/valkyries-championship-parade-watch-live-updates/4168684/"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "leavenworth-county-linwood-polling-place-ballot-order-error",
+    "side": "facepalm",
+    "headline": "Leavenworth County, Kan., polling place gets 100 ballots instead of 1,000 after an ordering error",
+    "summary": "On Election Day, Nov. 3, the Linwood Community Building polling place in Leavenworth County, Kansas, ran short of paper ballots. A Kansas Secretary of State spokesperson said the site needed 1,000 ballots but received 100, and that the problem was remedied early that morning. The county said the shortage was caused by an error in the number of ballots ordered and apologized; Fox News reported that some voters left without casting a ballot.",
+    "quote": {
+      "text": "Leavenworth County said in a press release the ballot shortage occurred due to an error in the number of ballots ordered.",
+      "sourceUrl": "https://www.foxnews.com/politics/paper-ballot-shortages-spark-election-day-scramble-polling-places-several-states"
+    },
+    "state": "KS",
+    "city": "Linwood",
+    "category": "government",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-11-03",
+    "sources": [
+      {
+        "url": "https://www.foxnews.com/politics/paper-ballot-shortages-spark-election-day-scramble-polling-places-several-states",
+        "publisher": "Fox News",
+        "title": "Paper ballot shortages spark Election Day scramble at polling places in several states",
+        "date": "2026-11-03"
+      },
+      {
+        "url": "https://www.leavenworthcounty.gov/news_detail_T32_R158.php",
+        "publisher": "Leavenworth County, Kansas",
+        "title": "Press Release 2026 General Election - Linwood H-38 Ballot Shortage",
+        "date": "2026-11-03"
+      }
+    ]
+  },
+  "publishedAt": "2026-11-04T17:46:55.487Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-11-04",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
