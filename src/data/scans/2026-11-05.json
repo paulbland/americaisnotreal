@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-05",
+  "startedAt": "2026-11-05T17:45:58.233Z",
+  "finishedAt": "2026-11-05T17:55:52.064Z",
+  "model": "claude-opus-5-5",
+  "searches": 91,
+  "summary": "Facepalm: Scan for 2026-11-05 (facepalm). Election-week coverage dominated results again. One candidate fully meets the rules: the Chicago Board of Elections announced on Nov. 4 that its own coding error had transposed ballot-style quantities in some split precincts. That error caused Election Day ballot shortages and long lines, and the board apologized. This adds a new fact to the Chicago item set aside on Nov. 4, where the cause had not yet been established. It is sourced to the Sun-Times, ABC7 Chicago and FOX 32 Chicago. Several other leads were set aside because they were equipment failures rather than blunders, or had only one accepted source. The search tool hit its usage limit before a non-election alternate could be confirmed. Genius: Genius scan for 2026-11-05. One candidate is fully sourced. Zouhair Talbi's run at the New York City Marathon on Nov. 1, the fastest time ever by a U.S. runner in the event, is now confirmed by two accepted publishers: NBC New York (AP text) and ABC7 New York, with WRAL as a third AP page. Earlier scans could find only one. The other science and sports leads I checked were outside the US, too old, or had only one accepted page that could be opened. The search limit was reached before I could follow up on more of them. Pair published.",
+  "published": true,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "Zouhair Talbi runs the fastest New York City Marathon time ever by a U.S. runner",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Chicago elections board says its own coding error caused Election Day ballot shortages at some precincts",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Milwaukee election workers leave required poll numbers off 242 absentee ballots; tabulator found without a security seal",
+      "outcome": "rejected",
+      "reason": "In the window (Nov. 3). The only accepted source opened was Votebeat. No second accepted publisher was found (TMJ4 isn't on the list)."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Metro Atlanta city says some tax bills were printed showing an interest charge in error",
+      "outcome": "rejected",
+      "reason": "In the window (Nov. 4), but only one accepted source (WSB-TV) was found; the other copy was on Yahoo (banned). Residents are on the receiving end of the billing error."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Dorchester County, S.C., hand-counts more than 5,000 early-voting ballots",
+      "outcome": "rejected",
+      "reason": "The Post and Courier attributes the hand count to faulty USB drives that wouldn't upload results. That's an equipment failure, not an established blunder."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Lubbock County, Texas, election results delayed by a machine error and ballot rescans",
+      "outcome": "rejected",
+      "reason": "Described as a machine failure, not a blunder. The only coverage found was KCBD, KLTV, EverythingLubbock and Yahoo, none of which is accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Burlington County, N.J., election results page shows apparently erroneous vote tallies",
+      "outcome": "rejected",
+      "reason": "The only coverage found was the Pine Barrens Tribune, which isn't accepted, and the county calls it a website issue. The cause isn't established."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Wilson County, N.C., election-night data error draws the state board's attention",
+      "outcome": "rejected",
+      "reason": "The only coverage found was the Wilson Times, which isn't on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Mechanicsville, Md., man charged with stealing a Brandywine volunteer fire department engine",
+      "outcome": "rejected",
+      "reason": "A crime with a victim (the fire department). Coverage was Daily Voice, Southern Maryland outlets and Yahoo, none of which is accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Santa Clarita-area public safety power shutoff notices issued in error",
+      "outcome": "rejected",
+      "reason": "The only coverage found was The Signal (signalscv.com), which isn't accepted, and the responsible party and date weren't clear from the results."
+    },
+    {
+      "side": "genius",
+      "headline": "SLAC-led team reports chiral altermagnon in MnTe as evidence of a third type of magnetism (Science, Oct. 29)",
+      "outcome": "rejected",
+      "reason": "According to ScienceDaily's repost of SLAC's release, the measurements were made at the European Synchrotron Radiation Facility in France, so it didn't happen in the US. Altermagnetism in MnTe had also been reported before, and ScienceDaily is the only accepted source opened."
+    },
+    {
+      "side": "genius",
+      "headline": "Hawkmoths evolved genital ultrasound against bats up to seven times (Proceedings of the Royal Society B, Nov. 4)",
+      "outcome": "rejected",
+      "reason": "In the US (Florida Museum and AMNH researchers) and inside the window, but only Science News opened. Phys.org and the journal DOI page were not accessible, and the Florida Museum page that turned up is from the 2015 study."
+    },
+    {
+      "side": "genius",
+      "headline": "MIT team uses flexible linkers to build new nanoparticle superlattice structures (Nature Materials)",
+      "outcome": "rejected",
+      "reason": "The only accepted page that opened is ScienceDaily's Nov. 4 repost, which says the paper 'will appear', so the publication date isn't confirmed. Phys.org was not accessible, and MIT's own release didn't turn up in the results."
+    },
+    {
+      "side": "genius",
+      "headline": "Stanford team finds an AI-identified appetite-suppressing peptide, BRP ('natural Ozempic')",
+      "outcome": "rejected",
+      "reason": "Too old. ScienceDaily's Nov. 4 page cites a 2025 Nature paper (vol. 641). It is also an animal study."
+    },
+    {
+      "side": "genius",
+      "headline": "Brock Bowers sets NFL receiving-yards record through 35 games for non-wide receivers (Nov. 1)",
+      "outcome": "rejected",
+      "reason": "A narrow statistical milestone. The game was played at the Jets' stadium in New Jersey, the Review-Journal page was not accessible, and the other coverage (Yahoo, ClutchPoints) is not accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "Jessica McClain finishes second at the NYC Marathon, the first U.S. woman in the top three since 2018",
+      "outcome": "rejected",
+      "reason": "A podium finish rather than a record or distinct achievement. Talbi's run from the same race is the better-documented candidate."
+    },
+    {
+      "side": "genius",
+      "headline": "Voyager 1 restores contact after a communications glitch ahead of its one-light-day milestone",
+      "outcome": "rejected",
+      "reason": "The coverage describes the probe recovering on its own rather than through an engineering fix, and the milestone itself hasn't happened yet."
+    },
+    {
+      "side": "genius",
+      "headline": "Pulsar timing sets first mass limits on supermassive black hole pairs at cosmic dawn (PRL)",
+      "outcome": "rejected",
+      "reason": "These are upper limits rather than a detection. Phys.org has been inaccessible on previous scans, and no accepted page was opened."
+    },
+    {
+      "side": "genius",
+      "headline": "Jack Alexy short-course 100m freestyle world record in Westmont, Ill. (Oct. 30)",
+      "outcome": "rejected",
+      "reason": "Still only one accepted source (Fox News/OutKick). The new results were NBC Sports, Swimming World, SwimSwam and WFMD, none of which is accepted."
+    }
+  ]
+}

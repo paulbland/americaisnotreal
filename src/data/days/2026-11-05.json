@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-05",
+  "genius": {
+    "slug": "zouhair-talbi-fastest-us-runner-nyc-marathon",
+    "side": "genius",
+    "headline": "Zouhair Talbi runs the fastest New York City Marathon time ever by a U.S. runner",
+    "summary": "American distance runner Zouhair Talbi finished sixth in the men's race at the New York City Marathon on Sunday, Nov. 1, 2026. According to the Associated Press, his time was the fastest ever run by a U.S. runner in the event. Sweden's Andreas Almgren won the men's race in his marathon debut.",
+    "quote": {
+      "text": "American Zouhair Talbi finished sixth on Sunday and ran the fastest time ever by a U.S. runner in the event.",
+      "sourceUrl": "https://www.nbcnewyork.com/news/sports/2026-nyc-marathon-winners/6565793/"
+    },
+    "state": "NY",
+    "city": "New York",
+    "category": "sports",
+    "subject": "public-figure",
+    "party": null,
+    "eventDate": "2026-11-01",
+    "sources": [
+      {
+        "url": "https://www.nbcnewyork.com/news/sports/2026-nyc-marathon-winners/6565793/",
+        "publisher": "NBC New York (The Associated Press)",
+        "title": "Sheila Chepkirui wins matchup of past champions in NYC Marathon, Andreas Almgren makes winning debut",
+        "date": "2026-11-01",
+        "archiveUrl": "https://web.archive.org/web/20261105175244/https://www.nbcnewyork.com/news/sports/2026-nyc-marathon-winners/6565793/"
+      },
+      {
+        "url": "https://abc7ny.com/post/nyc-marathon-record-field-expected-50th-anniversary-run/20004692/",
+        "publisher": "ABC7 New York",
+        "title": "2026 TCS New York City Marathon: Andreas Almgren wins men's race, Sheila Chepkirui wins women's race",
+        "date": "2026-11-01",
+        "archiveUrl": "https://web.archive.org/web/20261105175257/https://abc7ny.com/post/nyc-marathon-record-field-expected-50th-anniversary-run/20004692/"
+      },
+      {
+        "url": "https://www.wral.com/news/ap/d0cb1-andreas-almgren-of-sweden-finishes-first-in-his-marathon-debut-taking-the-new-york-city-marathon/",
+        "publisher": "WRAL (The Associated Press)",
+        "title": "Andreas Almgren wins men's race in NYC in his marathon debut, Sheila Chepkirui wins women's race",
+        "date": "2026-11-01"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "chicago-elections-board-coding-error-ballot-shortages",
+    "side": "facepalm",
+    "headline": "Chicago elections board says a coding error caused Election Day ballot shortages at some precincts",
+    "summary": "The Chicago Board of Elections said Wednesday that a coding error in the system it uses to calculate ballot quantities left some split precincts short of one ballot style and oversupplied with another during Tuesday's midterm election, leading to long lines. Every precinct got the correct total number of ballots, according to the board, which said the error was a first, added new validation checks and apologized to voters.",
+    "quote": {
+      "text": "Election officials blamed a coding error for causing ballot shortages at several Chicago precincts on Tuesday, forcing people to wait in long lines for touchscreen voting machines.",
+      "sourceUrl": "https://chicago.suntimes.com/elections/2026/11/04/election-coding-error-ballot-shortage"
+    },
+    "state": "IL",
+    "city": "Chicago",
+    "category": "government",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-11-04",
+    "sources": [
+      {
+        "url": "https://chicago.suntimes.com/elections/2026/11/04/election-coding-error-ballot-shortage",
+        "publisher": "Chicago Sun-Times",
+        "title": "Election officials blame coding error for ballot shortage, long lines at some precincts",
+        "date": "2026-11-04"
+      },
+      {
+        "url": "https://abc7chicago.com/post/2026-midterm-elections-computer-error-led-ballot-shortages-chicago-polling-locations-election-day/20016432/",
+        "publisher": "ABC7 Chicago",
+        "title": "2026 midterm elections: Computer 'error' led to ballot shortages at some Chicago polling locations on Election Day",
+        "date": "2026-11-04"
+      },
+      {
+        "url": "https://www.fox32chicago.com/news/chicago-board-elections-coding-error-ballot-issues",
+        "publisher": "FOX 32 Chicago",
+        "title": "Chicago election board blames coding error for ballot shortages amid high turnout",
+        "date": "2026-11-04"
+      }
+    ]
+  },
+  "publishedAt": "2026-11-05T17:55:52.064Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-11-05",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
