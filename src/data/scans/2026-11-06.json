@@ -1,0 +1,161 @@
+{
+  "date": "2026-11-06",
+  "startedAt": "2026-11-06T17:02:11.373Z",
+  "finishedAt": "2026-11-06T17:08:30.289Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: Facepalm scan for 2026-11-06 (window Oct. 31–Nov. 6). I found two candidates with two accepted publishers each: (1) Monroe County, Mich., accidentally sent a shelter-in-place alert about the Fermi 2 nuclear plant during a drill on Nov. 5 (CBS Detroit, 13abc); (2) the Associated Press says a data entry error briefly showed an incorrect vote total in Florida's uncalled 26th District race (CBS Miami, NBC 6 South Florida). Neither is a political-party story, so the party balance doesn't apply. The search budget ran out before I could find a third and fourth candidate. Genius: Genius scan for 2026-11-06 (window Oct 31–Nov 6). I'm submitting no candidates: nothing I opened has two acceptable sources. Both the search limit and the page-opening limit ran out before I could find a second source for the best lead. That lead is the first robotic assembly of a structure in orbit, built by a Caltech payload under DARPA's NOM4D program (announced Nov. 5). DARPA's own page opened and confirms it, but the only news page found (Phys.org) was not accessible. The other leads were outside the U.S., older than the window, theoretical, hedged, or covered only by publishers that aren't accepted. Worth retrying first next scan: the Caltech/DARPA in-space assembly (look for Space.com, SpaceNews, the LA Times or AP); Connor McDavid breaking Wayne Gretzky's record for fastest to 30 assists at Madison Square Garden (Nov. 1); and the Rockefeller University tuberculosis gene-interaction map. No genius story met the standard; nothing published. The verified facepalm story is on the bench for a later day.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "facepalm",
+      "headline": "Monroe County, Mich., sends a shelter-in-place alert about the Fermi 2 nuclear plant by mistake during a drill",
+      "outcome": "benched",
+      "reason": "passed every check; kept for a later day because the other side had no story"
+    },
+    {
+      "side": "facepalm",
+      "headline": "AP says a data entry error briefly showed an incorrect vote total in Florida's 26th District House race",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Suffolk, Va., election officials correct a reporting error that swapped a council candidate's votes with the write-in total",
+      "outcome": "rejected",
+      "reason": "In the window (Nov. 5), but the only accepted source found was WTKR. Searches of 13News Now and WAVY found nothing on it."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Lucas County, Ohio, board of elections apologizes for results not posted until nearly 2 a.m.",
+      "outcome": "rejected",
+      "reason": "The cause isn't established as a blunder. Officials pointed to about 900 late-arriving ballots and the state's reporting-order rules, and The Blade reports they blamed new state requirements."
+    },
+    {
+      "side": "facepalm",
+      "headline": "More than 100,000 bottles of acetaminophen recalled nationwide after a labeling mix-up",
+      "outcome": "rejected",
+      "reason": "A medicine labeling recall carries a possible health risk to consumers. Most coverage seen was on Yahoo or non-accepted sites, and only one accepted source (Fox 8) appeared."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Westboro, Mass., police chief shown on bodycam with a bottle of vodka in an unmarked cruiser",
+      "outcome": "rejected",
+      "reason": "The behaviour may suggest an addiction issue, which the rules exclude."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Gardner Edgerton, Kan., high school goes into a false intruder lockdown after a medical emergency",
+      "outcome": "rejected",
+      "reason": "It involves students (minors) and someone's medical emergency."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Chandler, Okla., warns December water bills may rise after a billing glitch",
+      "outcome": "rejected",
+      "reason": "The only source found (okcfox.com) isn't on the accepted list, and residents are on the receiving end of the error."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Vivek Ramaswamy's concession call to Amy Acton goes to voicemail",
+      "outcome": "rejected",
+      "reason": "A Republican-side political story, and that party isn't currently allowed. The only source seen was Newsweek, which is banned."
+    },
+    {
+      "side": "genius",
+      "headline": "Caltech payload under DARPA's NOM4D program autonomously assembles a truss structure in orbit, the first in-space automated assembly (announced Nov. 5)",
+      "outcome": "rejected",
+      "reason": "In the window and confirmed by DARPA's own page (darpa.mil, Nov. 5), but an official page alone is not enough. Phys.org's article was not accessible. The other coverage found was Pasadena Now, which is not accepted. The search limit ran out before Space.com, SpaceNews or a Caltech-and-news pair could be found. It is also arguable whether a build done in orbit counts as 'in the United States'. Worth retrying first."
+    },
+    {
+      "side": "genius",
+      "headline": "Connor McDavid becomes the fastest player to 30 assists in a season, breaking Wayne Gretzky's record, at Madison Square Garden (Nov. 1)",
+      "outcome": "rejected",
+      "reason": "In the U.S. and in the window, but the only coverage found was NHL.com, Yahoo, ClutchPoints, The Big Lead, Yardbarker and Digg, none of which is accepted. No AP, Newsday or other accepted page turned up before the search limit."
+    },
+    {
+      "side": "genius",
+      "headline": "Sidney Crosby passes Ray Bourque for the most assists with one NHL franchise (Oct. 31)",
+      "outcome": "rejected",
+      "reason": "Not in the U.S. The game was in Montreal. The only coverage found (Beaver County Radio) is also not accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "Cutter Gauthier becomes first NHL player with multiple power-play goals in three straight games (Nov. 3)",
+      "outcome": "rejected",
+      "reason": "Not in the U.S. The game was in Vancouver. The coverage (The Big Lead) is also not accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "Luka Doncic becomes first NBA player with six straight games of 35 points, 5 rebounds, 5 assists and 5 threes (Nov. 4, Sacramento)",
+      "outcome": "rejected",
+      "reason": "A narrow statistical combination rather than a distinct record. The only coverage seen was Gulf News, which is not accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "Aidan O'Brien becomes the winningest trainer in Breeders' Cup history at Keeneland",
+      "outcome": "rejected",
+      "reason": "Too old. The record-setting win came Friday, Oct. 30, one day before the window. The coverage seen (Equine Info Exchange, NBC Sports) was also not accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "Rockefeller University team publishes the first comprehensive map of interactions among essential genes in the tuberculosis bacterium (Phys.org, Nov. 4)",
+      "outcome": "rejected",
+      "reason": "Looks like U.S. work inside the window, but the Phys.org page was not accessible. No second accepted page or university release turned up before the limits were reached."
+    },
+    {
+      "side": "genius",
+      "headline": "DNA barcoding of more than 1 million insects suggests a third of California's insect species are undiscovered (NHM Los Angeles, Ecography)",
+      "outcome": "rejected",
+      "reason": "The only coverage found was Phys.org, which was not accessible. nhm.org is neither an accepted publisher nor an official source, and the publication date was not confirmed."
+    },
+    {
+      "side": "genius",
+      "headline": "UC Berkeley study links tau buildup to 'lonely' deep-sleep brain waves and memory loss (Nature Neuroscience)",
+      "outcome": "rejected",
+      "reason": "The only accepted source is a ScienceDaily repost (Nov. 5). The journal DOI page was not accessible, so the publication date could not be confirmed in the window. It is also an association finding rather than a distinct achievement."
+    },
+    {
+      "side": "genius",
+      "headline": "Memorial Sloan Kettering identifies the enzyme behind 5-oxoETE, solving a 30-year-old puzzle (Nature)",
+      "outcome": "rejected",
+      "reason": "Too old. ScienceDaily's page says the paper was published Oct. 7, 2026."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Missouri: rapamycin increases brain blood flow in APOE4 carriers",
+      "outcome": "rejected",
+      "reason": "Too old. The university's release is dated Sept. 30, 2026, and ScienceDaily's Nov. 5 page is a repost. The findings are also hedged ('may help')."
+    },
+    {
+      "side": "genius",
+      "headline": "Georgia Tech team finds earwax's slippery-but-sticky properties deter insects (Soft Matter)",
+      "outcome": "rejected",
+      "reason": "Published Oct. 28, before the window. The only accepted source is Science News, and the finding is hedged ('may act as')."
+    },
+    {
+      "side": "genius",
+      "headline": "Smithsonian-led study links Brazil's 1979–82 frog die-off to chytrid fungus (Molecular Ecology)",
+      "outcome": "rejected",
+      "reason": "Not in the U.S. The die-off and fieldwork were in Brazil's Atlantic Forest, and the finding is hedged."
+    },
+    {
+      "side": "genius",
+      "headline": "Other ScienceDaily items Nov. 1–6 (KAIST oil-refining membrane, Paderborn MOF glass, Nottingham enamel gel, Kyushu muscle repair, Ryugu nucleobases, Chinese Homo erectus enamel proteins, IISc white dwarfs, Southern Denmark black-hole topology)",
+      "outcome": "rejected",
+      "reason": "Not in the U.S. The institutions are in South Korea, Germany, the U.K., Japan, China, India and Denmark."
+    },
+    {
+      "side": "genius",
+      "headline": "ORNL strain-tuned altermagnet H-FeS (Advanced Materials); Cold Spring Harbor placenta–autism mouse study; NC State blueberry beetle pest report",
+      "outcome": "rejected",
+      "reason": "The only accepted source for each is a ScienceDaily repost. The Cold Spring Harbor paper is in a September issue of Science Advances (vol. 12, no. 38). None is a distinct achievement: they are a modest materials result, a mouse study and a pest report."
+    },
+    {
+      "side": "genius",
+      "headline": "Melting permafrost produces a new type of large landslide (Geophysical Research Letters)",
+      "outcome": "rejected",
+      "reason": "Not in the U.S. The landslide was in Canada's Northwest Territories, and the paper was published Sept. 28."
+    }
+  ]
+}
