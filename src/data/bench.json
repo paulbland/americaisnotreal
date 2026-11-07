@@ -64,5 +64,44 @@
       ]
     },
     "verifiedOn": "2026-11-06"
+  },
+  {
+    "story": {
+      "slug": "seminole-county-georgia-memory-card-not-uploaded-flips-house-race",
+      "side": "facepalm",
+      "headline": "Uncounted memory card in Seminole County, Ga., flips the lead in a state House race",
+      "summary": "Georgia's secretary of state's office said a post-election check found about 388 more voters checked in at Seminole County polling places on Election Day than ballots reported. After the state notified them, county election officials found a memory card that had not been uploaded. Once those votes were added to the unofficial count, Republican Rep. Gerald Greene went from trailing Democrat Harry James by 58 votes to leading by 262 in House District 154, and Secretary of State Brad Raffensperger opened an investigation.",
+      "quote": {
+        "text": "When the secretary of state's office notified county officials about the difference, authorities with the Seminole County Board of Elections discovered that a memory card had not been uploaded to its election management system.",
+        "sourceUrl": "https://cbsnews.com/atlanta/news/georgia-secretary-of-state-investigating-countys-late-upload-of-votes-that-could-flip-house-seat"
+      },
+      "state": "GA",
+      "city": "Donalsonville",
+      "category": "government",
+      "subject": "official-or-institution",
+      "party": null,
+      "eventDate": "2026-11-06",
+      "sources": [
+        {
+          "url": "https://cbsnews.com/atlanta/news/georgia-secretary-of-state-investigating-countys-late-upload-of-votes-that-could-flip-house-seat",
+          "publisher": "CBS News",
+          "title": "Georgia secretary of state investigating county's late upload of votes that flips House seat",
+          "date": "2026-11-06"
+        },
+        {
+          "url": "https://www.ajc.com/politics/2026/11/georgia-elections-missing-memory-card/",
+          "publisher": "The Atlanta Journal-Constitution",
+          "title": "Missing memory card could flip Georgia House race, narrow Democratic edge",
+          "date": "2026-11-06"
+        },
+        {
+          "url": "https://www.wrdw.com/2026/11/07/memory-card-with-uncounted-ga-ballots-found-spurring-investigation/",
+          "publisher": "WRDW",
+          "title": "Memory card with uncounted Ga. ballots found, spurring investigation",
+          "date": "2026-11-07"
+        }
+      ]
+    },
+    "verifiedOn": "2026-11-07"
   }
 ]

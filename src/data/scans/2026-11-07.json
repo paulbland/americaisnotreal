@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-07",
+  "startedAt": "2026-11-07T15:58:31.371Z",
+  "finishedAt": "2026-11-07T16:02:21.508Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: Facepalm scan for 2026-11-07. Three candidates, each with two accepted publishers and verbatim quotes checked against the opened pages. Best is Seminole County, Ga.: the county never uploaded a memory card on election night, and the missing votes flipped the lead in Georgia House District 154 (CBS News Atlanta, AJC, WRDW). Second is Milwaukee County's 2027 budget, which counted on $4.56M in savings that don't exist because of reversed signs in an automated calculation (WISN, WFSB). Third is an AP data-entry error that briefly showed a wrong vote total in Florida's 26th District race (NBC Miami, CBS Miami). Several other election leads only had non-accepted sources. The search budget ran out before a fourth candidate was found. Genius: Genius scan for 2026-11-07, covering Nov. 1–7. Nothing qualified, so I'm submitting no candidates. The two best leads were both in the U.S. and inside the window, but neither had two accepted sources I could open. (1) Caltech's ASTRA robot autonomously built a truss in orbit (announced Nov. 5). Caltech's and DARPA's own pages both opened, but they are two official sources and no accepted news page; Phys.org was still not accessible. (2) LeBron James became the first NBA player to reach 16,000 career field goals, in Detroit on Nov. 4. The only accepted page that opened was the Philadelphia Inquirer; the Detroit News returned 'url not allowed'. The rest of the November items on ScienceDaily were outside the U.S., hedged, or not distinct achievements. I hit the search limit before I could find second sources. No genius story met the standard; nothing published. The verified facepalm story is on the bench for a later day.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "facepalm",
+      "headline": "Seminole County, Ga., misses an election-night memory card, and the votes flip a state House race",
+      "outcome": "benched",
+      "reason": "passed every check; kept for a later day because the other side had no story"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Milwaukee County's 2027 budget counts on $4.56 million in savings that never existed",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "AP says a data entry error briefly showed a wrong vote total in Florida's 26th District race",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Timberville, Va., mayoral race shows the wrong winner after a results entry error",
+      "outcome": "rejected",
+      "reason": "In the window (Nov. 4–5), and Rockingham County's registrar confirms an entry error. But the only accepted source found was WHSV, so there is no second accepted publisher."
+    },
+    {
+      "side": "facepalm",
+      "headline": "More than 2,000 absentee ballots left uncounted on election night in Johnson County, Iowa; state audit launched",
+      "outcome": "rejected",
+      "reason": "In the window (Nov. 6), but the only coverage found was WHO13, KWWL, KCRG, KIMT, Iowa Capital Dispatch, The Gazette, CBS2 Iowa and Yahoo, none of which is on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Montana Millionaire lottery game halted after a glitch produces extra instant winners",
+      "outcome": "rejected",
+      "reason": "Coverage found was Daily Montanan, KTVH, KTVQ, casino.org and gambling trade sites, none of which is accepted. It is also described as a technical glitch, with no blunder established."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Virginia election website error sparks unfounded fraud claims",
+      "outcome": "rejected",
+      "reason": "Only a Yahoo copy (banned) was found. The search budget ran out before the wire service's own page could be located."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Cobb County, Ga., officials declare the wrong Kennesaw council winner after a missed memory card",
+      "outcome": "rejected",
+      "reason": "Too old: the Fox News article is from November 2022."
+    },
+    {
+      "side": "genius",
+      "headline": "Caltech's ASTRA robot assembles a truss structure in orbit, the first autonomous construction in space (announced Nov. 5)",
+      "outcome": "rejected",
+      "reason": "Inside the window, and confirmed by Caltech's news page (Nov. 5) and DARPA's page, but both are official sources and a story needs at least one accepted news publisher. Phys.org returned 'not accessible' again, and the only other coverage was Pasadena Now and ana.ir, neither of which is accepted. According to Caltech, the team built only the first section of the antenna, and it is arguable whether a build in orbit counts as 'in the United States'. Worth retrying if Space.com, SpaceNews or the LA Times covers it."
+    },
+    {
+      "side": "genius",
+      "headline": "LeBron James becomes the first NBA player to reach 16,000 career field goals, in the 76ers' win at Detroit (Nov. 4)",
+      "outcome": "rejected",
+      "reason": "In the U.S. and inside the window, but only one accepted page opened: the Philadelphia Inquirer's game story (Nov. 4). The Detroit News recaps returned 'url not allowed'. The other coverage found was Yahoo (republishing Basketball Network and Roundtable), Bleacher Report, beIN Sports, Heavy and Yardbarker, none of which is accepted. It is also a round-number milestone in a career field-goal record he already holds. The search limit ran out before AP, the Free Press or a TV station page turned up."
+    },
+    {
+      "side": "genius",
+      "headline": "Chemists isolate stable oxoborane boron-oxygen molecules after 60 years of attempts (ScienceDaily, Nov. 6)",
+      "outcome": "rejected",
+      "reason": "Not in the U.S. The research is from the University of Würzburg in Germany."
+    },
+    {
+      "side": "genius",
+      "headline": "Other ScienceDaily items Nov. 3–6: phage-therapy guidelines, coronary-calcium statin trial, Andreev qubit readout, brain cross-wiring hypothesis, durable gene-editing framework, fear-memory overlap in mice, full-fat dairy trial",
+      "outcome": "rejected",
+      "reason": "None qualifies. Five are not from the U.S.: German Center for Infection Research, European Society of Cardiology, FAPESP in Brazil, McGill in Canada and the University of Toronto. The qubit readout result was shown only in simulations. Of the two U.S. items, the brain cross-wiring piece is a hedged evolutionary hypothesis and the University of Michigan gene-editing item is a commentary framework in JAMA Internal Medicine. None is a distinct achievement."
+    },
+    {
+      "side": "genius",
+      "headline": "American sets a downhill sand-skiing record (The Inertia, Nov. 6)",
+      "outcome": "rejected",
+      "reason": "Seen only on The Inertia, which is not accepted. The location wasn't checked, and earlier sand-skiing speed records were set outside the U.S."
+    }
+  ]
+}
