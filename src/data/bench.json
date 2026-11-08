@@ -1,39 +1,6 @@
 [
   {
     "story": {
-      "slug": "big-12-says-replay-wrongly-gave-byu-touchdown-vs-arizona-state",
-      "side": "facepalm",
-      "headline": "Big 12 says replay officials wrongly awarded BYU a touchdown in its win over Arizona State",
-      "summary": "After No. 8 BYU beat Arizona State 27-20 in Provo, Utah, on Oct. 31, the Big 12 Conference said in a statement that replay officials should not have awarded a first-quarter touchdown. Running back Sione Moa had picked up a fumble by quarterback Bear Bachmeier near the goal line and was credited with a 1-yard score. The conference said the correct ruling was BYU ball, third and goal from the 2.",
-      "quote": {
-        "text": "Replay was incorrect in awarding a score. The correct ruling should have been BYU ball for a third and goal attempt from the two-yard line.",
-        "sourceUrl": "https://www.deseret.com/sports/2026/10/31/big-12-says-officials-erred-in-awarding-byu-a-touchdown-after-fumble-recovery/"
-      },
-      "state": "UT",
-      "city": "Provo",
-      "category": "sports",
-      "subject": "official-or-institution",
-      "party": null,
-      "eventDate": "2026-10-31",
-      "sources": [
-        {
-          "url": "https://www.deseret.com/sports/2026/10/31/big-12-says-officials-erred-in-awarding-byu-a-touchdown-after-fumble-recovery/",
-          "publisher": "Deseret News",
-          "title": "Big 12: Replay officials erred in awarding BYU touchdown vs. ASU",
-          "date": "2026-11-01"
-        },
-        {
-          "url": "https://www.sltrib.com/sports/byu-cougars/2026/11/01/another-controversial-call-goes/",
-          "publisher": "The Salt Lake Tribune",
-          "title": "Should BYU’s first touchdown vs. Arizona State have counted? Big 12 says no in latest officiating gaffe.",
-          "date": "2026-11-01"
-        }
-      ]
-    },
-    "verifiedOn": "2026-11-02"
-  },
-  {
-    "story": {
       "slug": "monroe-county-michigan-fermi-2-shelter-in-place-alert-sent-by-mistake",
       "side": "facepalm",
       "headline": "Monroe County, Mich., mistakenly sends a shelter-in-place alert during a drill at the Fermi 2 nuclear plant",
@@ -103,5 +70,44 @@
       ]
     },
     "verifiedOn": "2026-11-07"
+  },
+  {
+    "story": {
+      "slug": "wallingford-conn-feeds-hand-count-ballots-into-tabulator-recount",
+      "side": "facepalm",
+      "headline": "Wallingford, Conn., recounts every Election Day ballot after 100 hand-count ballots go through a tabulator",
+      "summary": "Wallingford, Conn., ran out of regular ballots at eight of its nine polling places on Nov. 3 and switched to printed contingency ballots, which must be counted by hand. At one polling place, about 100 of them were fed through a tabulator instead, according to Secretary of the State Stephanie Thomas, who told the town to conduct a discrepancy recount. Officials began recounting roughly 18,000 ballots on Friday, Nov. 6.",
+      "quote": {
+        "text": "Those contingency ballots were supposed to be counted by hand, however one hundred of them were fed through a tabulator instead, according to Secretary of the State Stephanie Thomas.",
+        "sourceUrl": "https://www.wfsb.com/2026/11/06/wallingford-recount-ballots-friday-after-running-out/"
+      },
+      "state": "CT",
+      "city": "Wallingford",
+      "category": "government",
+      "subject": "official-or-institution",
+      "party": null,
+      "eventDate": "2026-11-03",
+      "sources": [
+        {
+          "url": "https://www.wfsb.com/2026/11/06/wallingford-recount-ballots-friday-after-running-out/",
+          "publisher": "WFSB",
+          "title": "Wallingford recounting ballots Friday after running out on Election Day",
+          "date": "2026-11-06"
+        },
+        {
+          "url": "https://www.nbcboston.com/news/local/wallingford-to-recount-ballots-after-election-day-error/4044244/",
+          "publisher": "NBC Boston",
+          "title": "Wallingford, Conn. to recount ballots after Election Day error",
+          "date": "2026-11-04"
+        },
+        {
+          "url": "https://www.nbcboston.com/news/local/ballot-recount-underway-in-wallingford-after-election-day-error/4045117/",
+          "publisher": "NBC Boston",
+          "title": "Ballot recount underway in Wallingford, Conn. after error",
+          "date": "2026-11-06"
+        }
+      ]
+    },
+    "verifiedOn": "2026-11-08"
   }
 ]
