@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-09",
+  "genius": {
+    "slug": "caltech-robot-autonomously-builds-structure-in-orbit",
+    "side": "genius",
+    "headline": "Caltech robot builds a truss section in orbit; Caltech and DARPA call it a first for automated assembly",
+    "summary": "Caltech said on Nov. 5 that its ASTRA payload, funded by DARPA's NOM4D program, had built a structure in orbit without astronauts, calling it the first time a structure had been autonomously constructed in space. After pushing out two prebuilt truss bays, the robot assembled a third from struts and joints held in on-board dispensers. Caltech said time limits let the team build only the initial section of a planned 1.4-meter reflector antenna.",
+    "quote": {
+      "text": "For the first time, a robot has successfully assembled part of a structure in space without astronauts, demonstrating a technology that could dramatically change how large spacecraft and scientific instruments are built.",
+      "sourceUrl": "https://www.sciencedaily.com/releases/2026/11/261108233043.htm"
+    },
+    "state": "CA",
+    "city": "Pasadena",
+    "category": "space",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-11-05",
+    "sources": [
+      {
+        "url": "https://www.sciencedaily.com/releases/2026/11/261108233043.htm",
+        "publisher": "ScienceDaily",
+        "title": "Caltech robot makes history by building a structure in space",
+        "date": "2026-11-09",
+        "archiveUrl": "https://web.archive.org/web/20261109124110/https://www.sciencedaily.com/releases/2026/11/261108233043.htm"
+      },
+      {
+        "url": "https://www.caltech.edu/about/news/caltech-robotic-space-demo-successfully-builds-in-space",
+        "publisher": "California Institute of Technology",
+        "title": "Caltech Robotic Space Demo Successfully Builds in Space",
+        "date": "2026-11-05",
+        "archiveUrl": "https://web.archive.org/web/20261109124544/https://www.caltech.edu/about/news/caltech-robotic-space-demo-successfully-builds-in-space"
+      },
+      {
+        "url": "https://www.darpa.mil/news/2026/nom4d-program-demonstrates-automated-in-space-assembly",
+        "publisher": "DARPA",
+        "title": "NOM4D program demonstrates automated in-space assembly",
+        "date": "2026-11-05",
+        "archiveUrl": "https://web.archive.org/web/20261109202440/https://www.darpa.mil/news/2026/nom4d-program-demonstrates-automated-in-space-assembly"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "ap-data-entry-error-wrong-vote-total-florida-26th-district",
+    "side": "facepalm",
+    "headline": "AP says a data entry error briefly showed the wrong vote total in Florida's 26th District race",
+    "summary": "The Associated Press says a data entry error caused an incorrect vote total to briefly appear for Democrat Nicole Locklin in the race for Florida's 26th Congressional District, where she is challenging Republican Rep. Mario Diaz-Balart. NBC 6 says the error also appeared on its platforms because NBC News relies on AP vote data. The AP says it quickly corrected the total and has not called the race; Locklin has said she wants a further explanation of how the error happened.",
+    "quote": {
+      "text": "The error involved the vote total for Democratic candidate Nicole Locklin and was quickly corrected, according to AP.",
+      "sourceUrl": "https://www.nbcmiami.com/elections/ap-says-data-entry-error-briefly-showed-incorrect-district-26-vote-total/3884253/"
+    },
+    "state": "FL",
+    "city": null,
+    "category": "government",
+    "subject": "business",
+    "party": null,
+    "eventDate": "2026-11-04",
+    "sources": [
+      {
+        "url": "https://www.nbcmiami.com/elections/ap-says-data-entry-error-briefly-showed-incorrect-district-26-vote-total/3884253/",
+        "publisher": "NBC 6 South Florida",
+        "title": "AP says data entry error briefly showed incorrect District 26 vote total",
+        "date": "2026-11-05"
+      },
+      {
+        "url": "https://www.cbsnews.com/miami/news/florida-district-26-wrong-vote-total-nicole-locklin/",
+        "publisher": "CBS News Miami",
+        "title": "Florida District 26 candidate says questions remain after \"data entry error\" caused incorrect vote total",
+        "date": "2026-11-05"
+      },
+      {
+        "url": "https://www.wlrn.org/government-politics/2026-11-09/diaz-balart-nicole-locklin-election-26-recount",
+        "publisher": "WLRN",
+        "title": "Democrat Nicole Locklin will not concede in FL-26 race. Calls for recount, voting records",
+        "date": "2026-11-09"
+      }
+    ]
+  },
+  "publishedAt": "2026-11-09T20:24:55.938Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-11-09",
+      "change": "Published by the daily scan."
+    }
+  ]
+}

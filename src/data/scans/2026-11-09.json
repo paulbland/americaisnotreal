@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-09",
+  "startedAt": "2026-11-09T20:18:15.118Z",
+  "finishedAt": "2026-11-09T20:24:55.939Z",
+  "model": "claude-opus-5-5",
+  "searches": 93,
+  "summary": "Facepalm: Facepalm scan for 2026-11-09 (window Nov. 3–9). The search budget ran out early, so only one candidate is fully sourced: the Associated Press admitted that a data entry error briefly put the wrong vote total for Democrat Nicole Locklin into the Florida 26th District results. NBC 6 South Florida and CBS News Miami both report the AP's statement. Several other leads were set aside, mostly because only one accepted publisher covered them or the only copy was on a banned or non-accepted site. Genius: Scan for 2026-11-09 (GENIUS). I'm submitting one candidate. Caltech's ASTRA payload, built under DARPA's NOM4D program, autonomously assembled the first section of a truss structure in orbit. Caltech announced it on Nov. 5 as the first structure ever built autonomously in space. On earlier scans this story had only official sources (Caltech and DARPA), and the Phys.org page could not be opened. ScienceDaily (an accepted publisher) has now covered it (dated Nov. 9), so ScienceDaily plus Caltech's own page make a complete pair. Both quotes were checked word for word against the fetched pages. Open questions: the build happened in orbit, though Caltech in Pasadena designed and ran the payload; and only the initial section of the planned 1.4-meter antenna was finished. I used up the search budget before finding a second accepted source for the other leads: Magnus Ditlev's Ironman world best in Panama City Beach (Nov. 7; only WJHG) and Eli Gillman's Big Sky Conference touchdown record (Nov. 7; Billings Gazette is paywalled and Fox Sports is not on the accepted list). Several of ScienceDaily's November items were outside the U.S. or older than the window. Pair published.",
+  "published": true,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "Caltech robot autonomously assembles part of a truss structure in orbit, a first for space construction",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "AP says a data entry error briefly showed the wrong vote total in Florida's 26th District race",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "FedEx sues to recover $57 million it says it overpaid USPS because of a technology error",
+      "outcome": "rejected",
+      "reason": "The only accepted source found was Law360 (paywalled). No second accepted publisher or court filing turned up."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Bloomington, Ind., city council votes 7-0 to ban artificial superintelligence",
+      "outcome": "rejected",
+      "reason": "The only news coverage found was the Indiana Daily Student, plus non-accepted blogs and aggregators. It is also a deliberate policy vote, which comes close to judging officials' views."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Williamsburg, Va., results page briefly shows 118% turnout by counting votes instead of ballots",
+      "outcome": "rejected",
+      "reason": "In the window (Nov. 3), but the only copy found was the AFP fact check republished on Yahoo (banned). The page on AFP's own site and a second accepted publisher couldn't be found before the search budget ran out."
+    },
+    {
+      "side": "facepalm",
+      "headline": "West Virginia man charged after TSA finds a handgun in his carry-on at Pittsburgh airport",
+      "outcome": "rejected",
+      "reason": "A routine checkpoint case, and only one accepted source (WPXI) was opened."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Martha Stewart apologizes on TODAY for her Halloween costume",
+      "outcome": "rejected",
+      "reason": "The NBC page couldn't be opened, so the details of the costume weren't checked. The act happened around Halloween, before the window, and may involve offence to a group."
+    },
+    {
+      "side": "facepalm",
+      "headline": "New Jersey township discloses a $26 million wire transfer theft after Election Day",
+      "outcome": "rejected",
+      "reason": "The township was the victim of a crime, which the rules exclude."
+    },
+    {
+      "side": "genius",
+      "headline": "Magnus Ditlev sets an iron-distance world best (7:19:17) at Ironman Florida in Panama City Beach (Nov. 7)",
+      "outcome": "rejected",
+      "reason": "It happened in the U.S. and inside the window, but WJHG is the only accepted publisher found. The other coverage (Slowtwitch, Triathlete, Yahoo, TRI247, Flashscore) is not accepted. Some outlets also call the time a 'world best' rather than an official world record. Worth retrying with Pensacola News Journal or AP."
+    },
+    {
+      "side": "genius",
+      "headline": "Montana RB Eli Gillman breaks Cooper Kupp's Big Sky Conference career touchdown record, Missoula (Nov. 7)",
+      "outcome": "rejected",
+      "reason": "Billings Gazette's page is blocked by a TollBit paywall. The other coverage (Fox Sports, NBC Montana, Yahoo, Daily Inter Lake, Missoula Current, SWX, FloFootball) is not on the accepted list. No Missoulian or AP page turned up."
+    },
+    {
+      "side": "genius",
+      "headline": "UCSF's brain-activated B-SYNC CAR-T cells clear diffuse midline glioma in mice (Science Translational Medicine)",
+      "outcome": "rejected",
+      "reason": "Too old. UCSF says the paper was published Oct. 28. It is also a mouse study, and the only accepted source is a ScienceDaily repost."
+    },
+    {
+      "side": "genius",
+      "headline": "UC San Diego finds sticky marine snow carries more carbon to the deep ocean (Science)",
+      "outcome": "rejected",
+      "reason": "Probably too old. The paper is in Science vol. 394, issue 6820, which works out to roughly early October. It is also a mechanism finding rather than a distinct achievement."
+    },
+    {
+      "side": "genius",
+      "headline": "Cary Institute's 35-year study finds mice and acorns drive Lyme disease risk more than deer (PNAS)",
+      "outcome": "rejected",
+      "reason": "Too old. The paper is in PNAS vol. 123, issue 34, an earlier 2026 issue, and ScienceDaily's Nov. 9 page is a repost."
+    },
+    {
+      "side": "genius",
+      "headline": "Other ScienceDaily items Nov. 2–9: KCL-286 Alzheimer's drug in mice, room-temperature supersolid, Colombian Paja Formation fossils",
+      "outcome": "rejected",
+      "reason": "None is from the U.S. The sources are King's College London, the University of Warsaw and McGill University, with fieldwork in Colombia."
+    },
+    {
+      "side": "genius",
+      "headline": "Rockefeller University map of essential-gene interactions in the tuberculosis bacterium",
+      "outcome": "rejected",
+      "reason": "Only the university's own page is available. Phys.org is still not accessible, and no accepted news page was found."
+    }
+  ]
+}
