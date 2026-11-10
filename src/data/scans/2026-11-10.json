@@ -1,0 +1,131 @@
+{
+  "date": "2026-11-10",
+  "startedAt": "2026-11-10T17:23:06.116Z",
+  "finishedAt": "2026-11-10T17:30:22.492Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: Facepalm scan for 2026-11-10 (window Nov. 4–10). The search budget ran out after a lot of queries that mostly brought back election stories, so there are two candidates, both checked against pages I opened. 1) Latah County, Idaho, left 2,342 counted ballots out of its election-night results and has ordered a full recount. Sources are the Spokesman-Review and Boise State Public Radio. 2) Milwaukee County's 2027 budget relies on $4.56 million in savings that don't exist. The county's budget office says an automated process reversed the positive and negative signs on two airport-related entries. Sources are WISN and WPR. I wrote this one about the county as an institution, with no party label, and kept it neutral on the timing of the disclosure after the election. Both quotes and both corroboration passages were checked word for word against the fetched pages. Genius: Genius scan for 2026-11-10 (window Nov. 4–10). The search quota ran out early, after about 20 queries. After that I could only open pages already in my results or linked from them, and CNN and NPR pages returned 'url not allowed'. One candidate meets every rule: NASA's twin ESCAPADE probes completed powered Earth flybys on Nov. 7 and Nov. 9, run from UC Berkeley's mission operations center. NASA calls it the first time it has used this manoeuvre to send a spacecraft toward Mars. It is sourced to Space.com (Nov. 10) and NASA's own page (Nov. 9), and I checked both quotes word for word against the pages. Caveats: it is another CA/space story right after the Nov. 9 Caltech piece, and the manoeuvre itself happened in space. Other leads failed on sourcing, timing or location (see passed). Pair published.",
+  "published": true,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "NASA's twin ESCAPADE probes complete the agency's first powered Earth flybys to head for Mars",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Latah County, Idaho, leaves 2,342 counted ballots out of its election results and orders a full recount",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Milwaukee County's 2027 budget counts on $4.56 million in savings that a reversed-sign error created",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Clark County, Ind., sets a ballot review in a tight state Senate race",
+      "outcome": "rejected",
+      "reason": "Questions about ballots cast versus ballots counted have been raised, but no blunder is established. The only coverage found was Indiana Capital Chronicle, IPM, IBJ, News and Tribune and Yahoo, none of which is accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Union Parish, La., sheriff's office says some property tax bills wrongly included city taxes",
+      "outcome": "rejected",
+      "reason": "In the window (Nov. 6), but the only coverage found was KNOE, which isn't accepted. Residents are on the receiving end of the billing error."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Data-entry error briefly showed an inflated Talarico vote share during election-night coverage",
+      "outcome": "rejected",
+      "reason": "The only copy found was an AFP fact check republished on Yahoo (banned). It is also very close to the AP data-entry story published on 2026-11-09."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Wyandot County, Ohio, unofficial results show more votes than ballots",
+      "outcome": "rejected",
+      "reason": "The only coverage found was Lead Stories and a Yahoo republication, neither of which is accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Virginia election website error sparks unfounded fraud claims",
+      "outcome": "rejected",
+      "reason": "Already set aside on 2026-11-07. Again, only an AFP fact check on Yahoo (banned) was found."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Air France jet makes an unauthorized turn near an American Airlines flight after leaving LAX",
+      "outcome": "rejected",
+      "reason": "A near-collision safety incident that endangered other people. Only non-accepted or Yahoo copies appeared."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Glenns Ferry, Idaho, resident gets a $21,000 water bill the city blames on billing software",
+      "outcome": "rejected",
+      "reason": "The resident is on the receiving end of the error, and the only copy found was on Yahoo (banned)."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Milwaukee County supervisors accuse the administration of withholding the budget error until after the election",
+      "outcome": "rejected",
+      "reason": "The concealment angle is contested and politically charged, and it was reported mostly by partisan or non-accepted outlets (Townhall, Heartland Post, Wisconsin Right Now). Only the budget error itself is proposed, as a candidate above."
+    },
+    {
+      "side": "genius",
+      "headline": "Magnus Ditlev sets an iron-distance world best (7:19:17) at Ironman Florida in Panama City Beach (Nov. 7)",
+      "outcome": "rejected",
+      "reason": "In the U.S. and inside the window, but WJHG is still the only accepted publisher (page opened, Nov. 8). The other coverage (Triathlete, Slowtwitch, the5krunner, CBC, YouTube, tri-mag.de) is not accepted. A search on pnj.com and WEAR found no story, and the search quota ran out before AP could be checked."
+    },
+    {
+      "side": "genius",
+      "headline": "Montana RB Eli Gillman breaks Cooper Kupp's Big Sky career touchdown record, Missoula (Nov. 7)",
+      "outcome": "rejected",
+      "reason": "Still no accepted publisher. The coverage found was NBC Montana, Montana Sports, Daily Inter Lake, Skyline Sports, FloFootball, Yahoo and MSN, none of which is accepted. Searches on missoulian.com, mtpr.org and apnews.com turned up only older articles."
+    },
+    {
+      "side": "genius",
+      "headline": "Caltech robot autonomously assembles a truss structure in orbit (Space.com)",
+      "outcome": "rejected",
+      "reason": "Already published on Nov. 9, so not re-proposed, even though a Space.com article now exists."
+    },
+    {
+      "side": "genius",
+      "headline": "CHAPEA Mission 2 crew completes a 378-day simulated Mars mission at NASA Johnson, Houston",
+      "outcome": "rejected",
+      "reason": "Too old. According to NASA's page, the crew left the habitat on Oct. 31, before the window. Only NASA's own page was found."
+    },
+    {
+      "side": "genius",
+      "headline": "Cape Cod bolide of May 2026 traced to an asteroid nudged by Jupiter (Space.com, Nov. 9)",
+      "outcome": "rejected",
+      "reason": "The study is led by the Arctic University of Norway, and it is a characterisation study rather than a distinct achievement. Space.com is the only accepted source."
+    },
+    {
+      "side": "genius",
+      "headline": "Vanderbilt Health performs three liver transplants in 12 hours (Nashville, Nov. 10)",
+      "outcome": "rejected",
+      "reason": "The only source found is Vanderbilt's own news site (vumc.org), which is not an accepted publisher or official source. It is also a workload feat rather than a medical first."
+    },
+    {
+      "side": "genius",
+      "headline": "MD Anderson finds a 24-hour fast boosts a gut bacterium that aids repair after radiation (PNAS)",
+      "outcome": "rejected",
+      "reason": "A preclinical mouse study with 'could' framing. The only accepted source is a ScienceDaily repost (Nov. 8), and the paper's publication date was not confirmed inside the window."
+    },
+    {
+      "side": "genius",
+      "headline": "Scientists report possible dinosaur blood remnants (NPR, Nov. 9)",
+      "outcome": "rejected",
+      "reason": "Not in the U.S. The study is from Curtin University in Australia, it was already set aside on Nov. 4, and the NPR page returned 'url not allowed'."
+    },
+    {
+      "side": "genius",
+      "headline": "Jetson ONE personal aircraft flight demonstrations at Kennedy Space Center (Space.com photo of the day, Nov. 9)",
+      "outcome": "rejected",
+      "reason": "A product demonstration at an event, not an achievement or a first."
+    }
+  ]
+}
