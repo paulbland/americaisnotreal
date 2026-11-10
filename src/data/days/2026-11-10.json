@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-10",
+  "genius": {
+    "slug": "nasa-escapade-probes-complete-first-powered-earth-flybys-to-mars",
+    "side": "genius",
+    "headline": "NASA's twin ESCAPADE probes use powered Earth flybys to head for Mars, a first for the agency",
+    "summary": "NASA's two ESCAPADE spacecraft each fired their engines for about nine minutes while swinging past Earth, the first on Nov. 7 and the second on Nov. 9, combining the burns with Earth's gravity to set course for Mars. The mission is led by UC Berkeley's Space Sciences Laboratory. According to NASA, it is the first time the agency has used a powered Earth flyby to send a spacecraft toward Mars, and the probes are due there in September 2027.",
+    "quote": {
+      "text": "The first spacecraft tackled the feat on Nov. 7; the second did so on Monday (Nov. 9). And according to NASA, the burns went perfectly.",
+      "sourceUrl": "https://www.space.com/astronomy/mars/nasas-escapade-twin-mars-probes-execute-a-1st-of-its-kind-gravity-slingshot-around-earth"
+    },
+    "state": "CA",
+    "city": "Berkeley",
+    "category": "space",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-11-09",
+    "sources": [
+      {
+        "url": "https://www.space.com/astronomy/mars/nasas-escapade-twin-mars-probes-execute-a-1st-of-its-kind-gravity-slingshot-around-earth",
+        "publisher": "Space.com",
+        "title": "NASA's twin ESCAPADE Mars probes slingshot around Earth in unprecedented double 'gravity assist'",
+        "date": "2026-11-10",
+        "archiveUrl": "https://web.archive.org/web/20261110113035/https://www.space.com/astronomy/mars/nasas-escapade-twin-mars-probes-execute-a-1st-of-its-kind-gravity-slingshot-around-earth"
+      },
+      {
+        "url": "https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/",
+        "publisher": "NASA Science",
+        "title": "NASA's ESCAPADE Completes Powered Earth Flybys, Now En Route to Mars",
+        "date": "2026-11-09",
+        "archiveUrl": "https://web.archive.org/web/20261110120653/https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "latah-county-idaho-leaves-2342-ballots-out-of-results-recount",
+    "side": "facepalm",
+    "headline": "Latah County, Idaho, leaves 2,342 counted ballots out of its election results and announces a full recount",
+    "summary": "Latah County officials announced Nov. 9 that they will recount every ballot from the Nov. 3 election after 2,342 counted ballots were left out of the unofficial results, according to the Idaho Secretary of State's office, which called it a procedural error. A county commissioner said the clerk's office found the votes on a memory stick. The state said an initial review found no outcomes changed, though the number exceeds the margin in several races, including the county clerk's own re-election.",
+    "quote": {
+      "text": "The secretary of state’s office said the review found 2,342 ballots that were counted were not transferred to the county’s election night results reporting system.",
+      "sourceUrl": "https://www.spokesman.com/stories/2026/nov/09/latah-county-to-conduct-full-recount-after-2342-ba/"
+    },
+    "state": "ID",
+    "city": "Moscow",
+    "category": "government",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-11-09",
+    "sources": [
+      {
+        "url": "https://www.spokesman.com/stories/2026/nov/09/latah-county-to-conduct-full-recount-after-2342-ba/",
+        "publisher": "The Spokesman-Review",
+        "title": "Latah County to conduct full recount after 2,342 ballots were not reported in initial results",
+        "date": "2026-11-09",
+        "archiveUrl": "https://web.archive.org/web/20261110173005/https://www.spokesman.com/stories/2026/nov/09/latah-county-to-conduct-full-recount-after-2342-ba/"
+      },
+      {
+        "url": "https://www.boisestatepublicradio.org/politics-government/2026-11-09/latah-county-recount-lost-votes",
+        "publisher": "Boise State Public Radio",
+        "title": "Latah County to conduct full recount after excluding 2,342 votes from results",
+        "date": "2026-11-09",
+        "archiveUrl": "https://web.archive.org/web/20261110173005/https://www.boisestatepublicradio.org/politics-government/2026-11-09/latah-county-recount-lost-votes"
+      }
+    ]
+  },
+  "publishedAt": "2026-11-10T17:30:22.491Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-11-10",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
