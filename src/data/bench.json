@@ -70,44 +70,5 @@
       ]
     },
     "verifiedOn": "2026-11-07"
-  },
-  {
-    "story": {
-      "slug": "wallingford-conn-feeds-hand-count-ballots-into-tabulator-recount",
-      "side": "facepalm",
-      "headline": "Wallingford, Conn., recounts every Election Day ballot after 100 hand-count ballots go through a tabulator",
-      "summary": "Wallingford, Conn., ran out of regular ballots at eight of its nine polling places on Nov. 3 and switched to printed contingency ballots, which must be counted by hand. At one polling place, about 100 of them were fed through a tabulator instead, according to Secretary of the State Stephanie Thomas, who told the town to conduct a discrepancy recount. Officials began recounting roughly 18,000 ballots on Friday, Nov. 6.",
-      "quote": {
-        "text": "Those contingency ballots were supposed to be counted by hand, however one hundred of them were fed through a tabulator instead, according to Secretary of the State Stephanie Thomas.",
-        "sourceUrl": "https://www.wfsb.com/2026/11/06/wallingford-recount-ballots-friday-after-running-out/"
-      },
-      "state": "CT",
-      "city": "Wallingford",
-      "category": "government",
-      "subject": "official-or-institution",
-      "party": null,
-      "eventDate": "2026-11-03",
-      "sources": [
-        {
-          "url": "https://www.wfsb.com/2026/11/06/wallingford-recount-ballots-friday-after-running-out/",
-          "publisher": "WFSB",
-          "title": "Wallingford recounting ballots Friday after running out on Election Day",
-          "date": "2026-11-06"
-        },
-        {
-          "url": "https://www.nbcboston.com/news/local/wallingford-to-recount-ballots-after-election-day-error/4044244/",
-          "publisher": "NBC Boston",
-          "title": "Wallingford, Conn. to recount ballots after Election Day error",
-          "date": "2026-11-04"
-        },
-        {
-          "url": "https://www.nbcboston.com/news/local/ballot-recount-underway-in-wallingford-after-election-day-error/4045117/",
-          "publisher": "NBC Boston",
-          "title": "Ballot recount underway in Wallingford, Conn. after error",
-          "date": "2026-11-06"
-        }
-      ]
-    },
-    "verifiedOn": "2026-11-08"
   }
 ]

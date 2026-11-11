@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-11",
+  "startedAt": "2026-11-11T17:34:53.971Z",
+  "finishedAt": "2026-11-11T17:40:48.100Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: I'm submitting no facepalm candidates for 2026-11-11. The search budget ran out partway through the scan. None of the leads in the Nov. 5–11 window had two accepted publishers (or an official page plus one accepted news page) that I could actually open. The strongest in-window leads were post-election ballot blunders: Bannock County, Idaho, and Johnson County, Iowa, both found uncounted ballots, and Wyandot County, Ohio, left mock-election totals in its reporting system. Each fell short on accepted-source coverage or on pages that wouldn't open. The Lake County, Fla., student-records case has three accepted sources, but the blunder itself happened in October, outside the window. The two stories already verified on the bench (Monroe County, Mich., and Seminole County, Ga.) are still available for this side. Genius: Genius scan for 2026-11-11: no candidates submitted. Searches ran out early, and fetching stopped working soon after, so I could not get two accepted sources for any story inside the window (Nov. 5–11). The best lead was the Denver Broncos' NFL-record 16th straight one-score win on Nov. 8. Coverage exists from KDVR, NBC News and a USA Today network site, but none of those pages would open, and the only page I read was on Yahoo. The other leads were either outside the window (Caltech's Webb 'digital twin' paper, Wembanyama's 52-24 game, a UCSF Nature paper) or reposts of older studies. No genius story met the standard; nothing published.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "facepalm",
+      "headline": "Uncounted memory card in Seminole County, Ga., flips the lead in a state House race",
+      "outcome": "published",
+      "reason": "from the bench (verified 2026-11-07)"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Bannock County, Idaho, finds 333 uncounted Election Day ballots from one Pocatello precinct a week after the election",
+      "outcome": "rejected",
+      "reason": "In the window (Nov. 10), and the county clerk's own press release (bannockcounty.gov) confirms it. But the only accepted news source, KTVB, couldn't be opened; I found it only as a Yahoo republication (banned). Other coverage was Idaho State Journal, Idaho Capital Sun, East Idaho News, KIFI and Newsweek (banned), none of which is accepted. It is also very close to the Latah County, Idaho, uncounted-ballots story published on 2026-11-10."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Johnson County, Iowa, auditor says 2,017 absentee ballots were missed because boxes were put on a shelf instead of a cart",
+      "outcome": "rejected",
+      "reason": "Already set aside on 2026-11-07. The new facts (the shelf explanation on Nov. 10) appear on KCCI, which is accepted, but KCCI is the only accepted publisher. Other coverage was KCRG, WHO13, WQAD, WOI, Press-Citizen, Iowa Capital Dispatch and Yahoo, none of which is accepted, and no official Secretary of State or county page could be opened."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Wyandot County, Ohio, board of elections says Oct. 28 mock-election totals were left in its reporting system on election night",
+      "outcome": "rejected",
+      "reason": "In the window (announced Nov. 9). The WTOL page couldn't be opened, so its text couldn't be checked. The only other copies were Lead Stories and a Yahoo republication, neither of which is accepted. No second accepted publisher or official statement page was found."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Milwaukee County budget office reverses signs on two airport entries, leaving a $4.56 million gap in the 2027 budget",
+      "outcome": "rejected",
+      "reason": "In the window (Nov. 4–5 memo). WISN is the only accepted source. Other coverage was FOX6, TMJ4, Spectrum News, WBAY, Fox 11 and Yahoo, none of which is accepted, and no Journal Sentinel or county .gov page could be found or opened. The timing of the disclosure, a day after the county executive was elected governor, is also politically contested."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Lake County, Fla., school district sues a parent after an employee mistakenly sent him records of about 47,000 students",
+      "outcome": "rejected",
+      "reason": "WESH, FOX 35 and WFTV are all accepted, but the mistaken upload happened on Oct. 23 and the lawsuit was filed Nov. 3. Both are outside the Nov. 5–11 window, and the district had already disclosed the breach earlier. The people on the receiving end are students whose disability records were exposed."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Rep. Haley Stevens is the only Michigan member to miss the Hegseth impeachment vote",
+      "outcome": "rejected",
+      "reason": "Missing a vote isn't clearly a blunder that speaks for itself, and the coverage carries a contested political angle. The only copy opened was a Lansing State Journal republication on Yahoo (banned), and neither paper is on the accepted list."
+    },
+    {
+      "side": "genius",
+      "headline": "Denver Broncos win an NFL-record 16th straight one-score game, 26-21 over the Panthers (Nov. 8)",
+      "outcome": "rejected",
+      "reason": "In the U.S. and inside the window, but no accepted page could be opened. KDVR returned 'not accessible'. NBC News and the Broncos Wire page on usatoday.com returned 'url not allowed'. The only page I read was Yahoo's republication, and the other coverage found (NFL.com, denverbroncos.com, Heavy, Mile High Report, Athlon, Men's Journal) is not accepted. I ran out of searches before finding the Denver Post, AP, 9News or Denver7. Worth retrying first."
+    },
+    {
+      "side": "genius",
+      "headline": "Caltech-led team uses a 'digital twin' of Webb's NIRCam to remove starlight and reveal a hidden exoplanet (Nature)",
+      "outcome": "rejected",
+      "reason": "Too old by one day. Caltech's release and the Nature paper are both dated Nov. 4, 2026, and the window runs Nov. 5–11. ScienceDaily's Nov. 10 page is a repost."
+    },
+    {
+      "side": "genius",
+      "headline": "Victor Wembanyama scores 52 points with 24 rebounds in the Spurs' 112-111 win over Dallas in San Antonio",
+      "outcome": "rejected",
+      "reason": "Too old. According to the AP story on WSLS, the game was on Wednesday, Nov. 4, one day before the window. The milestones are also narrow statistical combinations."
+    },
+    {
+      "side": "genius",
+      "headline": "UCSF finds a gut-to-brain dopamine pathway behind learning to like bitter flavours (Nature)",
+      "outcome": "rejected",
+      "reason": "Too old. The Nature page gives a publication date of Nov. 4, 2026, before the window. It is also a mechanism finding rather than a distinct achievement."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Oklahoma finds a 450-million-year-old crinoid fossil with preserved soft tissue",
+      "outcome": "rejected",
+      "reason": "Too old. ScienceDaily's Nov. 10 page repeats a story it ran on Aug. 20, 2026, and the specimen came from a museum collection."
+    },
+    {
+      "side": "genius",
+      "headline": "UC Davis co-authored study describes a fully marine Triassic stem amphibian (Nature Ecology & Evolution)",
+      "outcome": "rejected",
+      "reason": "Too old, since the paper was published Oct. 26, 2026. It is also not in the U.S.: the fossil and most of the authors are from China."
+    },
+    {
+      "side": "genius",
+      "headline": "University of Pennsylvania chewing gum reduces HPV levels by up to 93% in samples from patients (Scientific Reports)",
+      "outcome": "rejected",
+      "reason": "A lab study on samples, framed as something that 'could eventually' help. The only accepted source is a ScienceDaily repost, and I couldn't check the paper's publication date before tools ran out."
+    },
+    {
+      "side": "genius",
+      "headline": "FIU study finds individual people attract different mosquito species (iScience)",
+      "outcome": "rejected",
+      "reason": "Too old. The paper is in iScience vol. 29, issue 8, an earlier 2026 issue, and ScienceDaily's Nov. 10 page is a repost. It is also an association finding rather than an achievement."
+    },
+    {
+      "side": "genius",
+      "headline": "Magnus Ditlev sets an iron-distance world best (7:19:17) at Ironman Florida in Panama City Beach (Nov. 7)",
+      "outcome": "rejected",
+      "reason": "Still only one accepted publisher, WJHG. The new results were Triathlete, Slowtwitch, TRI247, Flashscore, Triathlon Magazine Canada and YouTube, none of which is accepted."
+    }
+  ]
+}
