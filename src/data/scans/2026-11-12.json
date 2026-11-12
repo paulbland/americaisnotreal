@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-12",
+  "startedAt": "2026-11-12T17:48:16.684Z",
+  "finishedAt": "2026-11-12T17:53:22.383Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: Facepalm scan for 2026-11-12 (window Nov. 6–12). The search budget ran out after about 30 queries. Most results were older stories, non-accepted outlets, Yahoo or Newsweek republications, or election-error stories already published, benched or set aside (Latah and Bannock counties in Idaho, Johnson County in Iowa, Wyandot County in Ohio, Milwaukee, Timberville). I found no new in-window facepalm story with two accepted publishers that clears every exclusion, so I'm submitting no candidates rather than weak ones. Genius: Genius scan for 2026-11-12 (window Nov. 6–12): no candidate qualifies. The search quota ran out after about 20 queries, so the rest of the work was done by opening pages that had already appeared in results. The strongest lead was a University of Pittsburgh-led All of Us pharmacogenomics study (Science Translational Medicine, Nov. 11), but STAT was the only accepted source that opened: the science.org and DOI pages were not accessible, and the other coverage came from sites that are not accepted. The U.S. items on ScienceDaily were either too old, hedged association findings or preclinical work, and the remaining items were from outside the U.S. The sports leads still lack accepted sources. No genius story met the standard; nothing published.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "facepalm",
+      "headline": "Uncounted memory card in Seminole County, Ga., flips the lead in a state House race",
+      "outcome": "published",
+      "reason": "from the bench (verified 2026-11-07)"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Calaveras County, Calif., voter pamphlets printed with June primary candidate statements instead of November ones",
+      "outcome": "rejected",
+      "reason": "Too old: the KCRA article was published Oct. 4, 2026, well before the Nov. 6–12 window."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Summit County, Utah, report says human mistakes and software issues caused a misfired evacuation alert",
+      "outcome": "rejected",
+      "reason": "The report came out Nov. 10, but the alert itself went out in August. The only coverage of the report was KPCW, which isn't accepted; the KSL pages found date from August."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Duke Energy refunds a Largo, Fla., woman billed for a different home for nearly five years",
+      "outcome": "rejected",
+      "reason": "Reported around Nov. 4, before the window. The customer is on the receiving end of the error, and the only accepted source seen was FOX 13."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Mobile, Ala., city council moves to investigate a $14.7 million vendor-impersonation scam",
+      "outcome": "rejected",
+      "reason": "The city was the victim of a crime (fraud), which the rules exclude. The only copies seen were on Yahoo (banned) and WKRG (not accepted)."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Florida man charged after calling 911 about the Black deputy who responded to his own call",
+      "outcome": "rejected",
+      "reason": "It turns on race, which raises the 'group of people' exclusion. The only coverage found was Atlanta Black Star, Front Page Detectives and Yahoo, none of which is accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Ole Miss student apologizes after a video shows racially offensive gestures",
+      "outcome": "rejected",
+      "reason": "A racist act aimed at other students, which is cruelty with victims and not a facepalm under the rules."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Bannock County, Idaho, finds 333 uncounted Election Day ballots in a pickup truck",
+      "outcome": "rejected",
+      "reason": "Already set aside on 2026-11-11. The only new results were the Idaho State Journal and Idaho Press, neither of which is accepted, and it is very close to the Latah County story published on 2026-11-10."
+    },
+    {
+      "side": "genius",
+      "headline": "Pitt-led All of Us study of ~100,000 Americans finds thousands of new pharmacogene variants (Science Translational Medicine, Nov. 11)",
+      "outcome": "rejected",
+      "reason": "In the U.S. and inside the window, but only one accepted source opened: STAT (Nov. 11). The science.org and doi.org pages for the paper returned 'not accessible'. The other coverage found (EurekAlert, MedicalXpress, Mirage News, Cumberlink, Yahoo/The Conversation) is not accepted, and no Pitt release on pitt.edu turned up. The search limit ran out before the Post-Gazette or a TV station could be checked. Worth retrying first."
+    },
+    {
+      "side": "genius",
+      "headline": "Denver Broncos win an NFL-record 16th straight one-score game, 26-21 over the Panthers (Nov. 8)",
+      "outcome": "rejected",
+      "reason": "Still no accepted publisher found. The only coverage in the results was denversports.com, denverbroncos.com, Heavy, RawChili, Roundtable, ClutchPoints and SI/Mile High Huddle, none of which is accepted. Searches on denverpost.com and 9news.com returned only older articles, and the search limit was reached."
+    },
+    {
+      "side": "genius",
+      "headline": "Golden State Warriors become the first NBA team to win eight straight after an 0-3 start (Nov. 9, San Francisco)",
+      "outcome": "rejected",
+      "reason": "A narrow statistical combination rather than a distinct record. The only coverage seen was The Big Lead, which cites a Yahoo Sports post, and neither is accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "Penn State-led study finds the first land animals had stiff necks (Nature)",
+      "outcome": "rejected",
+      "reason": "Too old. According to the Nature page, the paper was published online Oct. 14, 2026, and ScienceDaily's Nov. 11 page is a repost. It is also a modelling finding rather than a distinct achievement."
+    },
+    {
+      "side": "genius",
+      "headline": "University of New Mexico study suggests Earth made much of its own water from pebble-hydrogen reactions (Nature Geoscience)",
+      "outcome": "rejected",
+      "reason": "Too old. ScienceDaily's journal reference gives the publication date as Oct. 12, 2026. The finding is also hedged ('may have')."
+    },
+    {
+      "side": "genius",
+      "headline": "Wistar Institute finds fructose released by chemo-surviving cells helps ovarian cancer spread",
+      "outcome": "rejected",
+      "reason": "A preclinical mechanism finding with hedged framing ('may help') rather than a distinct achievement. The only accepted source is a ScienceDaily repost (Nov. 11)."
+    },
+    {
+      "side": "genius",
+      "headline": "Other ScienceDaily items Nov. 9–12: Parker Solar Probe helicity reversal, ETH vibration-memory quantum computer, Homo naledi enamel proteins, Chalmers lipoprotein study, IA STUDIO 1834 sixpence, Geneva hair-follicle patterning",
+      "outcome": "rejected",
+      "reason": "None is from the U.S. The lead institutions are the University of Tokyo, ETH Zurich, the University of York (with fossils from South Africa), Chalmers in Sweden, IA STUDIO in England and the University of Geneva."
+    },
+    {
+      "side": "genius",
+      "headline": "NASA reports the largest Antarctic ozone hole in a decade; NASA details its plan for a 2028 Moon landing",
+      "outcome": "rejected",
+      "reason": "Neither is an achievement. One is a measurement of an environmental trend, and the other is a plan announced at an Oct. 23 briefing, before the window."
+    },
+    {
+      "side": "genius",
+      "headline": "SpaceX Starship Flight 15 double-catch attempt",
+      "outcome": "rejected",
+      "reason": "Hasn't happened yet. The launch is scheduled for Nov. 13, after the scan date."
+    }
+  ]
+}
