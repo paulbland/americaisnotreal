@@ -1,39 +1,6 @@
 [
   {
     "story": {
-      "slug": "monroe-county-michigan-fermi-2-shelter-in-place-alert-sent-by-mistake",
-      "side": "facepalm",
-      "headline": "Monroe County, Mich., mistakenly sends a shelter-in-place alert during a drill at the Fermi 2 nuclear plant",
-      "summary": "On the morning of Thursday, Nov. 5, some people subscribed to Monroe County's opt-in Everidge alert system got an emergency message about the Fermi 2 nuclear power plant. County agencies were running a drill at the plant when a shelter-in-place message went out by mistake. It was retracted within minutes, and Michigan State Police said there was no emergency.",
-      "quote": {
-        "text": "Monroe County agencies were executing a drill exercise this morning at Fermi II in Frenchtown. An accidental message was sent in ERROR to shelter in place.",
-        "sourceUrl": "https://www.cbsnews.com/detroit/news/monroe-county-michigan-accidental-alert-fermi-ii-nuclear-plant/"
-      },
-      "state": "MI",
-      "city": "Monroe",
-      "category": "government",
-      "subject": "official-or-institution",
-      "party": null,
-      "eventDate": "2026-11-05",
-      "sources": [
-        {
-          "url": "https://www.cbsnews.com/detroit/news/monroe-county-michigan-accidental-alert-fermi-ii-nuclear-plant/",
-          "publisher": "CBS News Detroit",
-          "title": "Monroe County alert about Fermi II nuclear plant was sent in error, officials say",
-          "date": "2026-11-05"
-        },
-        {
-          "url": "https://www.13abc.com/2026/11/05/false-emergency-message-concerning-nuclear-plant-sent-out-monroe-co-everidge-subscribers/",
-          "publisher": "13abc (WTVG)",
-          "title": "False emergency message concerning nuclear plant sent out to Monroe Co. Everidge subscribers",
-          "date": "2026-11-05"
-        }
-      ]
-    },
-    "verifiedOn": "2026-11-06"
-  },
-  {
-    "story": {
       "slug": "seminole-county-georgia-memory-card-not-uploaded-flips-house-race",
       "side": "facepalm",
       "headline": "Uncounted memory card in Seminole County, Ga., flips the lead in a state House race",

@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-13",
+  "startedAt": "2026-11-13T17:26:34.460Z",
+  "finishedAt": "2026-11-13T17:30:25.936Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: Facepalm scan for 2026-11-13 (window Nov. 7–13). I found no story that meets every rule, so I'm submitting no candidates. The search budget ran out after roughly 35 queries. Most in-window leads were either covered only by publishers that aren't accepted (Washington Health Care Authority accounting error), had no established blunder (Microsoft 365 outage, where Microsoft has not named a root cause), involved minors on the receiving end (Oakland charter school), or were dated before the window (Topeka crime statistics correction, Monroe County Fermi II alert, Hoke County boa). Election-error leads in the window were already published, on the bench or set aside (Latah, Seminole, Bannock, Wyandot, Johnson County). Genius: Genius scan for 2026-11-13 (window Nov. 7–13) found no qualifying candidates. The search quota ran out early. Retries on the leads carried over from earlier scans (the Pitt All of Us pharmacogenomics study and the Broncos one-score-game record) still found no second accepted source that would open. SpaceX's Starship Flight 15 double-catch attempt hadn't launched yet when I checked. All of this week's ScienceDaily items I checked were either outside the U.S. or too old. No genius story met the standard; nothing published.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "facepalm",
+      "headline": "Uncounted memory card in Seminole County, Ga., flips the lead in a state House race",
+      "outcome": "published",
+      "reason": "from the bench (verified 2026-11-07)"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Washington state Senate staff estimate a $654 million Health Care Authority accounting error",
+      "outcome": "rejected",
+      "reason": "In the window (about Nov. 10–11), but the only coverage found was The Center Square syndication (Chronicle, NCWLife, Big Country News, Yahoo), The Post Millennial and Seattle Red, none of which is accepted. Searches of the Seattle Times and Spokesman-Review found nothing. The estimate also comes from one side's legislative staff and is still contested."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Microsoft 365 outage takes down Outlook and Teams worldwide",
+      "outcome": "rejected",
+      "reason": "In the window (Nov. 12), but Microsoft has not named a root cause. It said only that a recent network configuration change 'correlates with' the start of the outage. A blunder isn't established, the outage is global rather than a U.S. event, and the only sources seen were tech blogs that aren't accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Oakland charter school faces closure vote after its board cut the high school without required approval",
+      "outcome": "rejected",
+      "reason": "The board's vote happened in May, well before the window; only the district's closure vote falls on Nov. 12. The people on the receiving end are about 200 students (minors) who had to find other schools. The SF Chronicle page couldn't be opened, so the only accepted page opened was NBC Bay Area."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Topeka police correct mid-year 2026 crime statistics after a reporting error overstated the drop in crime",
+      "outcome": "rejected",
+      "reason": "Announced Nov. 6, the day before the Nov. 7–13 window. The only copy found was a KSNT story on Yahoo (banned), and KSNT isn't on the accepted list."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Monroe County, Mich., sends an alert about the Fermi II nuclear plant in error",
+      "outcome": "rejected",
+      "reason": "The CBS Detroit page is dated Nov. 5, 2026, before the Nov. 7–13 window."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Hoke County, N.C., man mistakes a missing pet boa constrictor for a fence post",
+      "outcome": "rejected",
+      "reason": "The WRAL article was published Nov. 4, before the window. It is also a lost-pet story, not a blunder with its own consequence."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Idaho officials find 2,675 ballots left out of results in Latah and Bannock counties",
+      "outcome": "rejected",
+      "reason": "Repeats the Latah County story published on 2026-11-10 and the Bannock County lead set aside on 2026-11-11 and 2026-11-12. The only new coverage found was Newsweek (banned), the Post Register and a Yahoo republication, none of which is accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "Pitt-led All of Us study of ~100,000 Americans finds thousands of new pharmacogene variants (Science Translational Medicine, Nov. 11)",
+      "outcome": "rejected",
+      "reason": "Still only one accepted source opened: STAT (Nov. 11). The science.org paper page returned 'not accessible' again. The other coverage found (UPMC media page, Cumberlink, EurekAlert, MedicalXpress, GenomeWeb, GEN, Mirage News) is not an accepted publisher or official source, and no pitt.edu release or Post-Gazette/WESA/WTAE story turned up. It is also a prevalence study, which is a weak fit as an achievement."
+    },
+    {
+      "side": "genius",
+      "headline": "Denver Broncos win an NFL-record 16th straight one-score game, 26-21 over the Panthers (Nov. 8)",
+      "outcome": "rejected",
+      "reason": "Still no accepted page could be opened. The Broncos Wire page on usatoday.com returned 'url not allowed' again, and Yahoo is republishing it. The other coverage (Heavy, Roundtable, LWOSports, denversports.com, RawChili) is not accepted, and no Denver Post or AP story turned up."
+    },
+    {
+      "side": "genius",
+      "headline": "SpaceX attempts the first catch of both Starship stages on Flight 15 at Starbase, Texas",
+      "outcome": "rejected",
+      "reason": "Hasn't happened yet. When I checked the Space.com live page on the scan date, launch was set for 5:45 p.m. EST Nov. 13, and the ship catch would come about 22 hours later, after the scan date."
+    },
+    {
+      "side": "genius",
+      "headline": "Perseverance confirms complex organic carbon in Bright Angel formation rocks on Mars (Science Advances)",
+      "outcome": "rejected",
+      "reason": "Too old. ScienceDaily's Nov. 12 page is a repost, and its journal reference is Science Advances vol. 12, issue 26, an issue from around mid-2026. The finding is also on Mars, not in the U.S."
+    },
+    {
+      "side": "genius",
+      "headline": "Florida Museum researchers find a widespread tropical butterfly is actually three species (Zootaxa)",
+      "outcome": "rejected",
+      "reason": "Not in the U.S. The butterflies are from Central and South America, with Costa Rican collaborators. The only accepted source is a ScienceDaily repost (Nov. 12), and the Zootaxa issue (vol. 5802, no. 2) date wasn't confirmed inside the window."
+    },
+    {
+      "side": "genius",
+      "headline": "UCSB deep-learning approach refines bionic-vision stimulation in a blind implant recipient (Neuron)",
+      "outcome": "rejected",
+      "reason": "The implant patient and the clinical work are in Spain (Eduardo Fernández's group), not the U.S. The finding is also hedged ('could'), and the only accepted source is a ScienceDaily repost."
+    },
+    {
+      "side": "genius",
+      "headline": "Other ScienceDaily items Nov. 9–13: giant 34-million-year-old rodent, virus DNA in medieval manuscripts, osteoporosis drugs and dementia, crow decision speed, fossil 'treasure map', superheated magma, dark-energy sign flip",
+      "outcome": "rejected",
+      "reason": "None is from the U.S. The sources are Thailand fossils, University College Dublin, the University of Hong Kong, the University of Tübingen, the Bavarian State Natural History Collections, the University of Manchester and Istanbul Technical University. Several findings are also hedged or are associations."
+    },
+    {
+      "side": "genius",
+      "headline": "Phys.org items Nov. 2026: 'dark magic' mushroom with psychedelic and toxic compounds; direct observation of a submarine landslide; magnetic nanoparticles speed adhesive curing",
+      "outcome": "rejected",
+      "reason": "Phys.org returned 'not accessible', so I couldn't confirm the institutions, the location or the dates, and the search limit was reached before any second source turned up."
+    }
+  ]
+}
