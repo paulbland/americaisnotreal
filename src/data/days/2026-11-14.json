@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-14",
+  "genius": {
+    "slug": "uf-team-finds-first-mushroom-with-psilocybin-and-amatoxin",
+    "side": "genius",
+    "headline": "University of Florida researchers find the first mushroom known to make both psilocybin and a deadly toxin",
+    "summary": "University of Florida researchers report in Current Biology on Nov. 11 that Galerina indica, a tiny mushroom found growing on a palm trunk in a central Florida wetland, makes both the hallucinogen psilocybin and deadly amatoxins. Science News says it is the first fungus species found to make both, and that it also makes a previously undiscovered form of amatoxin. Andrew Kunik found the mushroom while working in fungal biologist Matthew Smith's lab.",
+    "quote": {
+      "text": "Researchers at the University of Florida Institute of Food and Agricultural Sciences (UF/IFAS) have identified for the first time a mushroom that contains both types of compounds.",
+      "sourceUrl": "https://news.ufl.edu/2026/11/dark-magic-mushroom/"
+    },
+    "state": "FL",
+    "city": "Gainesville",
+    "category": "science",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-11-11",
+    "sources": [
+      {
+        "url": "https://www.sciencenews.org/article/dark-magic-mushroom-psilocybin-amatoxin",
+        "publisher": "Science News",
+        "title": "This magic mushroom can kill",
+        "date": "2026-11-11",
+        "archiveUrl": "https://web.archive.org/web/20261114162149/https://www.sciencenews.org/article/dark-magic-mushroom-psilocybin-amatoxin"
+      },
+      {
+        "url": "https://news.ufl.edu/2026/11/dark-magic-mushroom/",
+        "publisher": "University of Florida News",
+        "title": "UF students discover the ‘dark magic mushroom’",
+        "date": "2026-11-11",
+        "archiveUrl": "https://web.archive.org/web/20261114162150/https://news.ufl.edu/2026/11/dark-magic-mushroom/"
+      }
+    ]
+  },
+  "facepalm": {
+    "slug": "meta-ai-keeps-restricting-rhode-island-soda-maker-as-alcohol",
+    "side": "facepalm",
+    "headline": "Meta's automated system repeatedly restricts a Rhode Island soda maker's page, mistaking its soda for alcohol",
+    "summary": "Yacht Club Soda of North Providence, R.I., in business since 1915, said Meta's automated systems repeatedly restricted its social media posts after mistaking its soda for alcohol, and that it spent two months seeking help. Its president said Meta's AI chatbot blamed the glass bottles, and that each time a manual review lifted the restrictions they returned about 30 seconds later. Meta told Boston.com the account was restricted in error and has been restored.",
+    "quote": {
+      "text": "The president of Yacht Club Soda says Meta’s automated systems repeatedly restrict the company’s social media posts after mistakenly identifying its soda as alcohol, leaving him searching for help for two months.",
+      "sourceUrl": "https://turnto10.com/news/local/yacht-club-soda-says-meta-keeps-mistaking-its-soda-for-alcohol-restricting-posts-november-9-2026"
+    },
+    "state": "RI",
+    "city": "North Providence",
+    "category": "technology",
+    "subject": "business",
+    "party": null,
+    "eventDate": "2026-11-09",
+    "sources": [
+      {
+        "url": "https://turnto10.com/news/local/yacht-club-soda-says-meta-keeps-mistaking-its-soda-for-alcohol-restricting-posts-november-9-2026",
+        "publisher": "WJAR NBC 10",
+        "title": "Yacht Club Soda says Meta keeps mistaking its soda for alcohol, restricting posts",
+        "date": "2026-11-09",
+        "archiveUrl": "https://web.archive.org/web/20261114162220/https://turnto10.com/news/local/yacht-club-soda-says-meta-keeps-mistaking-its-soda-for-alcohol-restricting-posts-november-9-2026"
+      },
+      {
+        "url": "https://www.boston.com/off-beat/live/the-off-beat-blog-quirky-new-england-stories-111026/",
+        "publisher": "Boston.com",
+        "title": "The Off Beat Live Blog (RI drink maker says it's locked in a battle with Meta's soda-hating AI)",
+        "date": "2026-11-10",
+        "archiveUrl": "https://web.archive.org/web/20261114162220/https://www.boston.com/off-beat/live/the-off-beat-blog-quirky-new-england-stories-111026/"
+      }
+    ]
+  },
+  "publishedAt": "2026-11-14T16:23:00.690Z",
+  "model": "claude-opus-5-5",
+  "history": [
+    {
+      "date": "2026-11-14",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
