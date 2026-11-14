@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-14",
+  "startedAt": "2026-11-14T16:15:31.496Z",
+  "finishedAt": "2026-11-14T16:23:00.691Z",
+  "model": "claude-opus-5-5",
+  "searches": 90,
+  "summary": "Facepalm: Facepalm scan for 2026-11-14 (window Nov. 8–14). I'm submitting three candidates. Each has two accepted publishers, and I opened every page cited and checked each quote against the page text. (1) A Marblehead, Mass., Select Board chair barred the Board of Health from its Abbot Hall meeting room because one member wore a baseball cap. He later said the ban was inappropriate. Sources: CBS Boston and Boston.com. (2) Meta's automated system kept age-restricting a Rhode Island soda maker's page, mistaking its glass-bottled sodas for alcohol. Meta said the restriction was an error. Sources: WJAR/NBC 10 and Boston.com. (3) Eleven House Democrats missed the 211-204 vote that sent the Hegseth impeachment resolution to committee, with several blaming traffic. Sources: ABC News and Fox News. This one is political and Democratic, which is an allowed party. It ranks last because a single-member version (Haley Stevens) was set aside on 2026-11-11. The search budget ran out before I found a fourth candidate. Genius: Scan for 2026-11-14 (genius), covering Nov. 8–14. I'm submitting two candidates, each with one accepted news page plus an official .edu page, and both pages opened. 1) A University of Florida team reports in Current Biology (Nov. 11) that Galerina indica, found at a central Florida field station, is the first mushroom known to make both psilocybin and amatoxins. 2) An NSF NOIRLab-led team used Gemini North on Maunakea, Hawaii, together with JWST to find the oldest compact quasar pair known (ApJ Letters, Nov. 10). The search limit ran out early, so I couldn't retry the Pitt All of Us pharmacogene study or the Broncos one-score record for second accepted sources. Pair published.",
+  "published": true,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "University of Florida researchers find the first mushroom known to make both psilocybin and a deadly toxin",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "genius",
+      "headline": "Astronomers using Hawaii's Gemini North and the Webb telescope find the oldest known compact quasar pair",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Marblehead, Mass., Select Board chair bars the Board of Health from its meeting room over a member's baseball cap",
+      "outcome": "rejected",
+      "reason": "malformed candidate: ✖ Too big: expected string to have <=110 characters   → at headline"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Meta's automated system keeps restricting a Rhode Island soda maker's page, mistaking its soda for alcohol",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Eleven House Democrats miss the 211-204 vote that sends the Hegseth impeachment resolution to committee",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "FAA issues a nationwide ground stop after a telecommunications outage at air route traffic control centers",
+      "outcome": "rejected",
+      "reason": "In the window (Nov. 13), but the cause isn't established. CBS reports conflicting information from its sources, and officials said they were still working out what went wrong. No blunder is confirmed."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Russian pranksters posing as a Ukrainian official get OpenAI national security staff onto a video call",
+      "outcome": "rejected",
+      "reason": "In the window (reported Nov. 11 by The Intercept), but the only coverage found was The Intercept, Futurism, Daily Caller, Business Today and other outlets that aren't accepted. OpenAI was also the target of a deception."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Boston English High football team left out of MIAA playoffs over a clerical error; judge denies injunction",
+      "outcome": "rejected",
+      "reason": "The Boston Globe and WCVB cover it, but the error and the ruling date from Nov. 3–7, before the Nov. 8–14 window. The people on the receiving end are high school students (minors)."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Microsoft apologizes for a global Outlook and Teams outage it ties to an earlier network capacity upgrade",
+      "outcome": "rejected",
+      "reason": "Already set aside on 2026-11-13. Microsoft now points to an issue during an earlier capacity upgrade, but the outage is global rather than a U.S. event, and the root cause is described only in general terms."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Rep. Melanie Stansbury apologizes for missing the Hegseth impeachment vote",
+      "outcome": "rejected",
+      "reason": "Folded into the group candidate on the 11 Democrats who missed the vote, rather than proposed as a single member, given that a single-member version (Haley Stevens) was set aside on 2026-11-11."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Evanston/Skokie District 65 parents find a $17 million error in school budget projections",
+      "outcome": "rejected",
+      "reason": "The error was found and reported in late October, before the window. The only coverage seen was Evanston RoundTable, Patch, the Daily Northwestern and Local 12, none of which is accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "SpaceX Starship Flight 15 attempts the first catch of both stages at Starbase, Texas",
+      "outcome": "rejected",
+      "reason": "The booster catch was called off and the booster made an offshore divert. When I checked on the scan date, the ship catch attempt had not yet happened."
+    },
+    {
+      "side": "genius",
+      "headline": "Presbyterian Hospital surgeons perform New Mexico's first transorbital neuroendoscopic tumor surgery (Albuquerque Journal, Nov. 14)",
+      "outcome": "rejected",
+      "reason": "The paper says the surgery was done 'this fall' with no date, so it may be outside the window. It is also a state first for an existing technique, and the Albuquerque Journal is the only source."
+    },
+    {
+      "side": "genius",
+      "headline": "Possible new dinosaur species found at a dig near Arches National Park, Utah",
+      "outcome": "rejected",
+      "reason": "Too old: first reported about 16–17 days before the scan date. The species is also described only as 'possible'."
+    },
+    {
+      "side": "genius",
+      "headline": "Pitt-led All of Us study finds thousands of new pharmacogene variants (Nov. 11)",
+      "outcome": "rejected",
+      "reason": "Couldn't retry because the search limit was reached. STAT is still the only accepted source found on earlier scans."
+    },
+    {
+      "side": "genius",
+      "headline": "Denver Broncos win an NFL-record 16th straight one-score game (Nov. 8)",
+      "outcome": "rejected",
+      "reason": "Still only Yahoo, Heavy, Yardbarker, RawChili and denversports.com in the results, none of which is accepted. The search limit ran out before a Denver Post or AP page turned up."
+    },
+    {
+      "side": "genius",
+      "headline": "An AFC West quarterback breaks a Patrick Mahomes NFL record (Week 9)",
+      "outcome": "rejected",
+      "reason": "Only Yahoo and Heavy coverage, both not accepted. The game also appears to have been before the window, and the record looks like a narrow statistical one."
+    }
+  ]
+}
