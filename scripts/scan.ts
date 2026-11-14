@@ -130,6 +130,9 @@ const SUBMIT_VERDICT: Anthropic.Beta.BetaTool = {
 
 class InvalidFinalInput extends Error {}
 
+/** A safety classifier declined the request and no server-side fallback answered it. */
+class ModelRefused extends Error {}
+
 interface AgentResult<T> {
   input: T;
   /** Page text returned by the web_fetch tool, keyed by urlKey(). */
@@ -184,7 +187,7 @@ async function runAgent<T>(opts: {
     }
 
     if (message.stop_reason === "refusal") {
-      throw new Error(`Model refused: ${JSON.stringify(message.stop_details)}`);
+      throw new ModelRefused(`Model refused: ${JSON.stringify(message.stop_details)}`);
     }
     messages.push({ role: "assistant", content: message.content });
 
@@ -462,12 +465,10 @@ async function main() {
     facepalm: Number(process.env.SCAN_MAX_SEARCHES_FACEPALM ?? 60),
     genius: Number(process.env.SCAN_MAX_SEARCHES_GENIUS ?? 30),
   };
-  const discover = (side: Side) => {
-    console.log(
-      `Discovery for ${DATE}, ${side} side (${MODELS.discovery}, ${budgets[side]} searches)…`,
-    );
+  const discoverWith = (side: Side, model: string) => {
+    console.log(`Discovery for ${DATE}, ${side} side (${model}, ${budgets[side]} searches)…`);
     return runAgent({
-      model: MODELS.discovery,
+      model,
       system: DISCOVERY_SYSTEM,
       task: discoveryTask({
         date: DATE,
@@ -483,6 +484,17 @@ async function main() {
       maxSearches: budgets[side],
       maxFetches: 60,
     });
+  };
+  // The discovery model declines in more categories than the verifier model does, and a
+  // refusal would otherwise fail the whole scan. One retry on the verifier model keeps the day.
+  const discover = async (side: Side) => {
+    try {
+      return await discoverWith(side, MODELS.discovery);
+    } catch (err) {
+      if (!(err instanceof ModelRefused) || MODELS.discovery === MODELS.verifier) throw err;
+      console.warn(`${err.message}\nRetrying the ${side} side on ${MODELS.verifier}.`);
+      return discoverWith(side, MODELS.verifier);
+    }
   };
   const [facepalmDiscovery, geniusDiscovery] = await Promise.all([
     discover("facepalm"),
