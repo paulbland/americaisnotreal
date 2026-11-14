@@ -23,7 +23,9 @@ import { SITE } from "../lib/site.ts";
   <p class="prose">
     Every candidate the daily scan looked at seriously, and what happened to it. A story is
     published only when it passes every check in the <a href="/methodology">methodology</a>; the
-    rest are listed here so the process is auditable.
+    rest are listed here so the process is auditable. Each entry ends with the model that ran that
+    scan. Where two are named, the first proposed the candidates and the second reviewed them; where
+    one is named, it did both, in separate runs.
   </p>
   {scans.map((s) => (
     <section class="section" id={s.date}>

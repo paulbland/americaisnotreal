@@ -50,9 +50,9 @@ Change one and you almost certainly need to change the others.
 
 ## The daily scan (`scripts/scan.ts`, `.github/workflows/scan.yml`)
 
-10:00 UTC (6am Eastern in summer). Claude Opus 5.5 with web search runs once per side, in
+10:00 UTC (6am Eastern in summer). Claude Sonnet 5.5 with web search runs once per side, in
 parallel, each with its own search budget, and proposes up to four ranked candidates. Each candidate, in order, must pass: the schema and repo rules; the
-party-balance rule; an independent adversarial Claude review (which may supply corrected headline or summary
+party-balance rule; an independent adversarial review by Claude Opus 5.5 (which may supply corrected headline or summary
 wording, re-checked by the same lints); and a mechanical check that
 its quote and a corroborating quote appear verbatim on two different publishers' live
 pages. The first survivor on each side is published as the pair. A side with no fresh survivor
@@ -62,7 +62,14 @@ publish time. The workflow re-runs validate/check/test/build, opens a PR and mer
 itself. After the merge, `scripts/indexnow.ts` waits for the deploy and pings IndexNow.
 
 Budget: 60 facepalm and 30 genius discovery searches (facepalm is the harder side to source)
-plus up to 3 verifications per side at 8 searches each, roughly $2 to $4 a day. The first real
+plus up to 3 verifications per side at 8 searches each. Discovery runs on Sonnet 5.5 and the
+verifier on Opus 5.5; the repository variables `SCAN_DISCOVERY_MODEL` and `SCAN_VERIFIER_MODEL`
+change either without a code change (unset means the default; defaults and list prices are in
+`scripts/lib/models.ts`). With both jobs on Opus 5.5 a run cost roughly $2 to $4: up to about
+$0.90 in search fees ($0.01 a search) and the rest tokens. Sonnet 5.5's token prices are half of
+Opus 5.5's, so discovery's share of the tokens should cost about half; no run on the split had
+been measured when this was written. The footer of each scan PR is the only cost record: models,
+searches, fetches and total on its first line, then each model's token split. The first real
 run on 2026-10-09 cost $1.71 and took six minutes.
 
 ## Editorial rules (non-negotiable)
