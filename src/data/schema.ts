@@ -160,6 +160,7 @@ export const DayObject = z
     facepalm: StorySchema,
     /** ISO timestamp of the scan run that published the pair. */
     publishedAt: z.string().datetime(),
+    /** The scan's model or models, in the same form as the scan log's `model`. */
     model: z.string().min(1),
     history: z.array(HistorySchema).min(1),
   })
@@ -198,6 +199,12 @@ export const ScanLogSchema = z
     date: IsoDateSchema,
     startedAt: z.string().datetime(),
     finishedAt: z.string().datetime(),
+    /**
+     * Which model ran the scan, as the scan requested it. One model id when the same model
+     * proposed the candidates and reviewed them, as in every log written before the two jobs
+     * could use different models; otherwise "<id> (discovery), <id> (verifier)". Written by
+     * modelLabel() in scripts/lib/models.ts.
+     */
     model: z.string().min(1),
     searches: z.number().int().min(0),
     /** One or two sentences for the log page. */

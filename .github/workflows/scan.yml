@@ -10,6 +10,11 @@ name: Daily scan
 #   2. Settings → Actions → General → Workflow permissions: "Read and write",
 #      and tick "Allow GitHub Actions to create and approve pull requests".
 #   3. Don't require PR reviews on main (or exempt github-actions[bot]).
+#
+# Optional: repository variables (Settings → Secrets and variables → Actions →
+# Variables) SCAN_DISCOVERY_MODEL and SCAN_VERIFIER_MODEL choose the model for each
+# job without a code change, e.g. SCAN_DISCOVERY_MODEL=claude-opus-5-5 to put
+# discovery back on Opus. Unset, the defaults in scripts/lib/models.ts apply.
 
 on:
   schedule:
@@ -45,6 +50,10 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SCAN_NOTIFY: "@${{ github.repository_owner }}"
+          # An unset repository variable arrives as an empty string, which the scan
+          # treats as "use the default".
+          SCAN_DISCOVERY_MODEL: ${{ vars.SCAN_DISCOVERY_MODEL }}
+          SCAN_VERIFIER_MODEL: ${{ vars.SCAN_VERIFIER_MODEL }}
         run: |
           if [ -n "${{ inputs.date }}" ]; then
             npm run scan -- --date=${{ inputs.date }}

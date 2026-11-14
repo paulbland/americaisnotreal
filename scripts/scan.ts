@@ -4,11 +4,13 @@
  * past day (used by the backfill).
  *
  *   1. Discovery: Claude searches the accepted publishers and proposes up to four
- *      ranked candidates for each side.
+ *      ranked candidates for each side (SCAN_DISCOVERY_MODEL, Claude Sonnet 5.5
+ *      by default).
  *   2. Each candidate, in rank order, must pass: the schema and repo rules, the
- *      party-balance rule, an independent adversarial Claude review, and a
- *      mechanical check that its quote and corroboration appear verbatim on two
- *      different publishers' live pages.
+ *      party-balance rule, an independent adversarial Claude review
+ *      (SCAN_VERIFIER_MODEL, Claude Opus 5.5 by default), and a mechanical check
+ *      that its quote and corroboration appear verbatim on two different
+ *      publishers' live pages.
  *   3. The first candidate to pass on each side is published together as that
  *      day's pair. If either side has no survivor, nothing is published and the
  *      scan log says why. Every run writes a scan log.
@@ -37,10 +39,20 @@ import { archiveUrl } from "./lib/archive.ts";
 import { fetchPageText, urlKey } from "./lib/fetch.ts";
 import { BENCH_FILE, canonicalJson, dayFile, ROOT, scanFile, writeJson } from "./lib/files.ts";
 import { checkRepo, storyProblems } from "./lib/integrity.ts";
+import {
+  addUsage,
+  costFooter,
+  isPriced,
+  modelLabel,
+  resolveModels,
+  totals,
+  UNPRICED_AS,
+  type UsageByModel,
+} from "./lib/models.ts";
 import { DISCOVERY_SYSTEM, discoveryTask, VERIFIER_SYSTEM, verifierTask } from "./lib/prompts.ts";
 import { containsQuote, hostOf } from "./lib/verify.ts";
 
-const MODEL = process.env.SCAN_MODEL ?? "claude-opus-5-5";
+const MODELS = resolveModels(process.env);
 const DRY_RUN = process.argv.includes("--dry-run");
 const DATE_ARG = process.argv.find((a) => a.startsWith("--date="))?.slice("--date=".length);
 const DATE = DATE_ARG ?? new Date().toISOString().slice(0, 10);
@@ -124,9 +136,11 @@ interface AgentResult<T> {
   fetched: Map<string, string>;
 }
 
-const usage = { input: 0, output: 0, cacheRead: 0, cacheWrite: 0, searches: 0, fetches: 0 };
+/** Tokens, searches and fetches per model, so each is priced at its own rates. */
+const usage: UsageByModel = new Map();
 
 async function runAgent<T>(opts: {
+  model: string;
   system: string;
   task: string;
   finalTool: Anthropic.Beta.BetaTool;
@@ -148,7 +162,7 @@ async function runAgent<T>(opts: {
   for (let turn = 0; turn < 16; turn++) {
     const message = await client.beta.messages
       .stream({
-        model: MODEL,
+        model: opts.model,
         max_tokens: 64000,
         betas: ["server-side-fallback-2026-07-01"],
         fallbacks: "default",
@@ -160,12 +174,7 @@ async function runAgent<T>(opts: {
       })
       .finalMessage();
 
-    usage.input += message.usage.input_tokens;
-    usage.output += message.usage.output_tokens;
-    usage.cacheRead += message.usage.cache_read_input_tokens ?? 0;
-    usage.cacheWrite += message.usage.cache_creation_input_tokens ?? 0;
-    usage.searches += message.usage.server_tool_use?.web_search_requests ?? 0;
-    usage.fetches += message.usage.server_tool_use?.web_fetch_requests ?? 0;
+    addUsage(usage, opts.model, message.usage);
 
     for (const block of message.content) {
       if (block.type !== "web_fetch_tool_result" || block.content.type !== "web_fetch_result")
@@ -301,6 +310,7 @@ async function consider(
   let fetched = new Map(discoveryFetched);
   try {
     const result = await runAgent({
+      model: MODELS.verifier,
       system: VERIFIER_SYSTEM,
       task: verifierTask({ date: DATE, candidate, recent: days.slice(0, 30) }),
       finalTool: SUBMIT_VERDICT,
@@ -422,6 +432,11 @@ async function withArchives(story: Story): Promise<Story> {
 
 async function main() {
   const startedAt = new Date().toISOString();
+  for (const model of new Set([MODELS.discovery, MODELS.verifier])) {
+    if (!isPriced(model)) {
+      console.warn(`No list price on file for ${model}: its tokens are costed as ${UNPRICED_AS}.`);
+    }
+  }
   const repo = checkRepo();
   if (repo.errors.length) {
     throw new Error(`Repo is invalid before scanning:\n${repo.errors.join("\n")}`);
@@ -448,8 +463,11 @@ async function main() {
     genius: Number(process.env.SCAN_MAX_SEARCHES_GENIUS ?? 30),
   };
   const discover = (side: Side) => {
-    console.log(`Discovery for ${DATE}, ${side} side (${MODEL}, ${budgets[side]} searches)…`);
+    console.log(
+      `Discovery for ${DATE}, ${side} side (${MODELS.discovery}, ${budgets[side]} searches)…`,
+    );
     return runAgent({
+      model: MODELS.discovery,
       system: DISCOVERY_SYSTEM,
       task: discoveryTask({
         date: DATE,
@@ -535,7 +553,7 @@ async function main() {
       genius: DRY_RUN ? genius.story : await withArchives(genius.story),
       facepalm: DRY_RUN ? facepalm.story : await withArchives(facepalm.story),
       publishedAt: new Date().toISOString(),
-      model: MODEL,
+      model: modelLabel(MODELS),
       history: [
         { date: new Date().toISOString().slice(0, 10), change: "Published by the daily scan." },
       ],
@@ -558,16 +576,13 @@ async function main() {
     date: DATE,
     startedAt,
     finishedAt: new Date().toISOString(),
-    model: MODEL,
-    searches: usage.searches,
+    model: modelLabel(MODELS),
+    searches: totals(usage).searches,
     summary,
     published,
     candidates,
   });
 
-  const cost =
-    (usage.input * 4 + usage.cacheWrite * 5 + usage.cacheRead * 0.2 + usage.output * 20) / 1e6 +
-    usage.searches * 0.01;
   const report = [
     `## Scan ${DATE}`,
     "",
@@ -583,7 +598,7 @@ async function main() {
     "### Candidates",
     ...candidates.map((c) => `- ${c.side} · ${c.outcome}: ${c.headline} — ${c.reason}`),
     "",
-    `<sub>${MODEL} · ${usage.searches} searches · ${usage.fetches} fetches · ~$${cost.toFixed(2)}</sub>`,
+    ...costFooter(MODELS, usage),
     ...(NOTIFY && !published ? ["", `cc ${NOTIFY}: no pair today.`] : []),
   ].join("\n");
   console.log(`\n${report}\n`);
