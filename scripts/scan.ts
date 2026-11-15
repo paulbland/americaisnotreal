@@ -164,6 +164,11 @@ async function runAgent<T>(opts: {
   effort: "medium" | "high" | "max";
   maxSearches: number;
   maxFetches: number;
+  /**
+   * The final tool is refused until the run has made this many web searches. Discovery
+   * sets it: a model that submits an empty list without searching has not done the job.
+   */
+  minSearches?: number;
 }): Promise<AgentResult<T>> {
   const tools: Anthropic.Beta.BetaToolUnion[] = [
     { type: "web_search_20260209", name: "web_search", max_uses: opts.maxSearches },
@@ -174,8 +179,10 @@ async function runAgent<T>(opts: {
   const fetched = new Map<string, string>();
   let nudged = false;
   let corrections = 0;
+  let searches = 0;
+  let searchReminders = 0;
 
-  for (let turn = 0; turn < 16; turn++) {
+  for (let turn = 0; turn < 20; turn++) {
     const message = await client.beta.messages
       .stream({
         model: opts.model,
@@ -195,6 +202,14 @@ async function runAgent<T>(opts: {
       .finalMessage();
 
     addUsage(usage, opts.model, message.usage);
+    searches += message.usage.server_tool_use?.web_search_requests ?? 0;
+    // One line per request, so a run that goes wrong can be read from the log.
+    const blocks = message.content.map((b) =>
+      b.type === "tool_use" ? `tool_use:${b.name}` : b.type,
+    );
+    console.log(
+      `  [${opts.finalTool.name} turn ${turn}] ${message.model} stop=${message.stop_reason} searches=${searches} blocks=${[...new Set(blocks)].join(",")}`,
+    );
 
     for (const block of message.content) {
       if (block.type !== "web_fetch_tool_result" || block.content.type !== "web_fetch_result")
@@ -208,10 +223,48 @@ async function runAgent<T>(opts: {
     }
     messages.push({ role: "assistant", content: message.content });
 
-    const call = message.content.find(
-      (b): b is Anthropic.Beta.BetaToolUseBlock =>
-        b.type === "tool_use" && b.name === opts.finalTool.name,
+    const toolUses = message.content.filter(
+      (b): b is Anthropic.Beta.BetaToolUseBlock => b.type === "tool_use",
     );
+    const call = toolUses.find((b) => b.name === opts.finalTool.name);
+    // Every tool_use must be answered in the next message. A model sometimes calls a tool
+    // this run doesn't define (Sonnet 5.5 has asked for code execution by name); it gets
+    // an error result naming the real tools, which it usually corrects on its next turn.
+    const strayResults: Anthropic.Beta.BetaToolResultBlockParam[] = toolUses
+      .filter((b) => b !== call)
+      .map((b) => ({
+        type: "tool_result",
+        tool_use_id: b.id,
+        is_error: true,
+        content: `There is no tool named "${b.name}" in this run. The only tools are web_search, web_fetch and ${opts.finalTool.name}.`,
+      }));
+    if (strayResults.length) {
+      console.warn(
+        `Unknown tool call(s): ${toolUses
+          .filter((b) => b !== call)
+          .map((b) => b.name)
+          .join(", ")}`,
+      );
+    }
+    if (call && searches < (opts.minSearches ?? 0) && searchReminders < 2) {
+      searchReminders++;
+      console.warn(
+        `${opts.finalTool.name} called after ${searches} searches; sending the model back to search.`,
+      );
+      messages.push({
+        role: "user",
+        content: [
+          ...strayResults,
+          {
+            type: "tool_result",
+            tool_use_id: call.id,
+            is_error: true,
+            content: `Not accepted: you have made ${searches} web searches. This run exists to search today's news. Call web_search now (you may use up to ${opts.maxSearches}), open the pages you find with web_fetch, and call ${opts.finalTool.name} again only when you have done that.`,
+          },
+        ],
+      });
+      continue;
+    }
     if (call) {
       const parsed = opts.accept.safeParse(call.input);
       if (parsed.success) return { input: parsed.data, fetched };
@@ -223,6 +276,7 @@ async function runAgent<T>(opts: {
       messages.push({
         role: "user",
         content: [
+          ...strayResults,
           {
             type: "tool_result",
             tool_use_id: call.id,
@@ -233,6 +287,10 @@ async function runAgent<T>(opts: {
       });
       continue;
     }
+    if (strayResults.length) {
+      messages.push({ role: "user", content: strayResults });
+      continue;
+    }
     if (message.stop_reason === "pause_turn") continue;
     if (nudged) throw new Error(`Model finished without calling ${opts.finalTool.name}`);
     nudged = true;
@@ -241,7 +299,7 @@ async function runAgent<T>(opts: {
       content: `Please call ${opts.finalTool.name} now with your results.`,
     });
   }
-  throw new Error("Agent loop exceeded 16 turns");
+  throw new Error("Agent loop exceeded 20 turns");
 }
 
 // ---------------------------------------------------------------------------
@@ -532,6 +590,7 @@ async function main() {
       effort: "medium",
       maxSearches: budgets[side],
       maxFetches: 60,
+      minSearches: 5,
     });
   };
   // The discovery model declines in more categories than the verifier model does, and a
