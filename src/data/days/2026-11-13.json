@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-13",
+  "genius": {
+    "slug": "fda-approves-first-factor-xia-inhibitor-sunharbo-for-stroke",
+    "side": "genius",
+    "headline": "FDA approves Sunharbo, the first factor XIa inhibitor, to help prevent repeat strokes",
+    "summary": "The FDA approved Bayer's Sunharbo (asundexian) on Nov. 9 as the first factor XIa inhibitor for use with antiplatelet therapy after a recent mild-to-moderate non-cardioembolic ischemic stroke or a high-risk TIA. In the phase 3 OCEANIC-STROKE trial of 12,327 adults, the FDA said, it reduced the risk of ischemic stroke by 26% compared with placebo over a median of 14.2 months.",
+    "quote": {
+      "text": "Among those who took 50 mg of asundexian orally once daily plus antiplatelet therapy for a period of 14.2 months, there was a 26% relative reduction in ischemic stroke",
+      "sourceUrl": "https://www.foxnews.com/health/stroke-survivors-get-fda-approved-daily-pill-shown-cut-repeat-risk"
+    },
+    "state": "US",
+    "city": null,
+    "category": "medicine",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-11-09",
+    "sources": [
+      {
+        "url": "https://www.foxnews.com/health/stroke-survivors-get-fda-approved-daily-pill-shown-cut-repeat-risk",
+        "publisher": "Fox News",
+        "title": "Stroke survivors get FDA-approved daily pill shown to cut repeat risk by 26%",
+        "date": "2026-11-13",
+        "archiveUrl": "https://web.archive.org/web/20261115143031/https://www.foxnews.com/health/stroke-survivors-get-fda-approved-daily-pill-shown-cut-repeat-risk"
+      },
+      {
+        "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-factor-xla-inhibitor-help-prevent-stroke-certain-adults-high-risk",
+        "publisher": "U.S. Food and Drug Administration",
+        "title": "FDA Approves First Factor Xla Inhibitor to Help Prevent Stroke in Certain Adults at High Risk",
+        "date": "2026-11-09"
+      }
+    ],
+    "score": 5
+  },
+  "facepalm": {
+    "slug": "hundreds-gather-chicago-try-push-the-bean-seven-inches",
+    "side": "facepalm",
+    "headline": "Hundreds gather in Chicago to try to push the 110-ton Bean sculpture seven inches to the left",
+    "summary": "On Sunday, Nov. 8, hundreds of people gathered at Chicago's Millennium Park after flyers posted around the city and online called for pushing Cloud Gate, known as The Bean, seven inches to the left. Organizers said moving it would free a man trapped inside, a long-running internet joke that CBS Chicago called a satirical claim. The crowd could not move the 110-ton stainless steel sculpture.",
+    "quote": {
+      "text": "The plan was simple: Push Chicago's famous Bean (officially a statue named Cloud Gate by Anish Kapoor) seven inches to the left.",
+      "sourceUrl": "https://www.cbsnews.com/chicago/news/hundreds-millennium-park-push-the-bean-sunday/"
+    },
+    "state": "IL",
+    "city": "Chicago",
+    "category": "culture",
+    "subject": "group",
+    "party": null,
+    "eventDate": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.cbsnews.com/chicago/news/hundreds-millennium-park-push-the-bean-sunday/",
+        "publisher": "CBS News Chicago",
+        "title": "Hundreds gather in Millennium Park to try to push The Bean seven inches to the left",
+        "date": "2026-11-09",
+        "archiveUrl": "https://web.archive.org/web/20261115143102/https://www.cbsnews.com/chicago/news/hundreds-millennium-park-push-the-bean-sunday/"
+      },
+      {
+        "url": "https://www.upi.com/Odd_News/2026/11/09/move-the-bean-chicago-cloud-gate/3341794244560/",
+        "publisher": "UPI",
+        "title": "Watch: Hundreds gather to attempt to 'move The Bean' in Chicago",
+        "date": "2026-11-09"
+      }
+    ],
+    "score": 5
+  },
+  "publishedAt": "2026-11-15T14:31:24.559Z",
+  "model": "claude-sonnet-5-5 (discovery), claude-opus-5-5 (verifier)",
+  "history": [
+    {
+      "date": "2026-11-15",
+      "change": "Published by the daily scan."
+    }
+  ]
+}
