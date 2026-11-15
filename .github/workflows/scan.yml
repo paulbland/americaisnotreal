@@ -25,6 +25,10 @@ on:
       date:
         description: "Scan date (YYYY-MM-DD); blank for today"
         required: false
+      dry_run:
+        description: "Run the scan and print the result, but write and publish nothing"
+        type: boolean
+        default: false
 
 concurrency:
   group: daily-scan
@@ -54,6 +58,7 @@ jobs:
           # treats as "use the default".
           SCAN_DISCOVERY_MODEL: ${{ vars.SCAN_DISCOVERY_MODEL }}
           SCAN_VERIFIER_MODEL: ${{ vars.SCAN_VERIFIER_MODEL }}
+          SCAN_DRY_RUN: ${{ inputs.dry_run }}
         run: |
           if [ -n "${{ inputs.date }}" ]; then
             npm run scan -- --date=${{ inputs.date }}
@@ -69,6 +74,7 @@ jobs:
           npm run build
 
       - name: Open and merge PR
+        if: ${{ !inputs.dry_run }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -88,5 +94,6 @@ jobs:
           gh pr merge "$branch" --squash --delete-branch
 
       - name: Notify search engines (IndexNow)
+        if: ${{ !inputs.dry_run }}
         continue-on-error: true
         run: node scripts/indexnow.ts

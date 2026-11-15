@@ -14,6 +14,7 @@ export const ACCEPTED_PUBLISHERS = [
   // Wire services
   "apnews.com",
   "reuters.com",
+  "upi.com",
   // National papers and magazines
   "nytimes.com",
   "washingtonpost.com",
@@ -537,6 +538,18 @@ export const BANNED_HOSTS = [
   "businesswire.com",
   "globenewswire.com",
   "eurekalert.org",
+  // Platforms and aggregators that can look like a local newsroom
+  "newsbreak.com",
+  "hoodline.com",
+  "substack.com",
+  "medium.com",
+  "blogspot.com",
+  "wordpress.com",
+  "flipboard.com",
+  "smartnews.com",
+  "ground.news",
+  "google.com",
+  "bing.com",
 ];
 
 const ARCHIVE_HOSTS = ["web.archive.org", "archive.org", "archive.ph", "archive.today"];
@@ -570,6 +583,21 @@ export function sourceAllowed(url: string): boolean {
   const host = hostOf(url);
   if (isBannedHost(host)) return false;
   return isAcceptedPublisher(host) || isPrimaryHost(host);
+}
+
+/**
+ * Whether this URL could be a story's one local-newsroom source: a real hostname that
+ * is not banned, not an archive, and not already covered by the accepted or official
+ * lists. This is only the mechanical floor; the fact-checker must still vouch for the
+ * outlet before a story citing it can publish.
+ */
+export function localSourceAllowed(url: string): boolean {
+  const u = new URL(url);
+  const host = hostOf(url);
+  if (u.protocol !== "https:") return false;
+  if (!/^[a-z0-9-]+(\.[a-z0-9-]+)+$/.test(host) || /^[0-9.]+$/.test(host)) return false;
+  if (isBannedHost(host) || isArchiveHost(host)) return false;
+  return !isAcceptedPublisher(host) && !isPrimaryHost(host);
 }
 
 const ENTITIES: Record<string, string> = {
@@ -630,7 +658,7 @@ export function containsQuote(text: string, quote: string): boolean {
  * defers a candidate so the next one is tried.
  */
 const FACEPALM_BLOCK_TERMS =
-  /\b(died|death|dead|killed|fatal(ly)?|injur(ed|y|ies)|hospitali[sz]ed|critical condition|suicide|overdose|minor|teen(ager)?s?|child(ren)?|toddler|infant|baby|\d{1,2}-year-old|year-old (boy|girl)|student|homeless|disabilit(y|ies)|disabled|mental(ly)? (ill|health)|dementia|undocumented|immigrant|rape|sexual|assault(ed)?|abuse|victim)\b/i;
+  /\b(died|death|dead|killed|fatal(ly)?|injur(ed|y|ies)|hospitali[sz]ed|critical condition|suicide|overdose|minor|teen(ager)?s?|child(ren)?|toddler|infant|baby|(?:\d|1[0-7])-year-old|year-old (boy|girl)|student|homeless|disabilit(y|ies)|disabled|mental(ly)? (ill|health)|dementia|undocumented|immigrant|rape|sexual|assault(ed)?|abuse|victim)\b/i;
 
 export function facepalmBlockedTerms(text: string): string[] {
   const found = new Set<string>();

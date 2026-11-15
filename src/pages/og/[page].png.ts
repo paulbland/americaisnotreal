@@ -17,6 +17,7 @@ const page = (slug: string, title: string, subtitle: string) => ({
 
 export const getStaticPaths = (() => [
   page("archive", "Archive", countLine(days)),
+  page("weeks", "Pair of the week", "The strongest pair from each week"),
   page("genius", "Genius", "What people here are capable of"),
   page("facepalm", "Facepalm", "What they are also capable of"),
   page("states", "By state", "Where the stories come from"),

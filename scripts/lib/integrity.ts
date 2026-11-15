@@ -22,6 +22,7 @@ import {
   hostOf,
   isAcceptedPublisher,
   isPrimaryHost,
+  localSourceAllowed,
   sourceAllowed,
 } from "./verify.ts";
 
@@ -29,16 +30,24 @@ import {
 export function storyProblems(s: Story): string[] {
   const problems: string[] = [];
   for (const src of s.sources) {
-    if (!sourceAllowed(src.url))
+    if (src.local) {
+      if (!localSourceAllowed(src.url)) {
+        problems.push(`${s.slug}: not acceptable as a local newsroom: ${hostOf(src.url)}`);
+      }
+    } else if (!sourceAllowed(src.url)) {
       problems.push(`${s.slug}: source not accepted: ${hostOf(src.url)}`);
+    }
     if (src.archiveUrl && !src.archiveUrl.includes("web.archive.org")) {
       problems.push(`${s.slug}: archiveUrl isn't a Wayback Machine link`);
     }
   }
-  const newsHosts = s.sources.filter((x) => isAcceptedPublisher(hostOf(x.url)));
+  if (s.sources.filter((x) => x.local).length > 1) {
+    problems.push(`${s.slug}: at most one local newsroom per story`);
+  }
+  const newsHosts = s.sources.filter((x) => !x.local && isAcceptedPublisher(hostOf(x.url)));
   if (newsHosts.length < 1) problems.push(`${s.slug}: needs at least one accepted news publisher`);
   const primaryOnly = s.sources.every(
-    (x) => isPrimaryHost(hostOf(x.url)) && !isAcceptedPublisher(hostOf(x.url)),
+    (x) => !x.local && isPrimaryHost(hostOf(x.url)) && !isAcceptedPublisher(hostOf(x.url)),
   );
   if (primaryOnly) problems.push(`${s.slug}: can't rest on official announcements alone`);
 

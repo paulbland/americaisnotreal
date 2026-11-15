@@ -36,6 +36,7 @@ const canonical = new URL(path, SITE.url).href;
 const ogImageUrl = new URL(ogImage, SITE.url).href;
 const nav = [
   { href: "/archive", label: "Archive" },
+  { href: "/weeks", label: "Weekly" },
   { href: "/states", label: "States" },
   { href: "/methodology", label: "Methodology" },
   { href: "/about", label: "About" },
@@ -145,10 +146,10 @@ const plausibleQueue =
           </ul>
         </nav>
         <p class="meta">
-          {SITE.tagline} Every story is reported by at least two accepted news publishers and linked
-          to them. We write our own headlines and summaries and never editorialise. Spotted an
-          error? <a href={`${SITE.repoUrl}/issues`}>Open an issue</a>; corrections are logged on the
-          day's page.
+          {SITE.tagline} Every story is reported by at least two news organisations and linked to
+          them. We write our own headlines and summaries and never editorialise. Spotted an error?{" "}
+          <a href={`${SITE.repoUrl}/issues`}>Open an issue</a>; corrections are logged on the day's
+          page.
         </p>
         <p class="meta">
           An independent, automated publication. Not affiliated with any news organisation. Text

@@ -4,7 +4,7 @@
 
 Every day, two true stories from the United States, side by side: one that shows what people
 here are capable of (**Genius**), and one that shows what they are also capable of
-(**Facepalm**). Both are reported by at least two accepted news publishers, summarised in
+(**Facepalm**). Both are reported by at least two news organisations, summarised in
 neutral language, and linked to their sources. There is no commentary.
 
 The pair is found, fact-checked and published automatically. See the

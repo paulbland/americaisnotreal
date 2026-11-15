@@ -9,6 +9,7 @@ import { days } from "../lib/data.ts";
 import { formatDate, formatLongDate } from "../lib/format.ts";
 import { breadcrumbLd, dayDescription, dayLd, dayPath, dayTitle } from "../lib/seo.ts";
 import { SITE } from "../lib/site.ts";
+import { weekName, weekOf, weekPath } from "../lib/weeks.ts";
 
 export const getStaticPaths = (() =>
   days.map((day) => ({ params: { date: day.date }, props: { day } }))) satisfies GetStaticPaths;
@@ -16,6 +17,7 @@ export const getStaticPaths = (() =>
 const { day } = Astro.props as { day: Day };
 const url = new URL(dayPath(day), SITE.url).href;
 const corrections = day.history.filter((h) => !h.change.startsWith("Published"));
+const week = weekOf(day.date, days);
 ---
 
 <Base
@@ -61,5 +63,12 @@ const corrections = day.history.filter((h) => !h.change.startsWith("Published"))
     Published {formatDate(day.publishedAt.slice(0, 10))} by the daily scan. Both stories passed the
     checks in the <a href="/methodology">methodology</a>; the{" "}
     <a href={`/log#${day.date}`}>scan log</a> lists the candidates that didn't.
+    {week && (
+      <>
+        {" "}
+        {week.pick.date === day.date ? "This is the pair of the week for the" : "Part of the"}{" "}
+        <a href={weekPath(week)}>{weekName(week).toLowerCase()}</a>.
+      </>
+    )}
   </p>
 </Base>

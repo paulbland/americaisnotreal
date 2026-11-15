@@ -7,11 +7,13 @@ import { asOf, days, latest } from "../lib/data.ts";
 import { formatDate, formatLongDate } from "../lib/format.ts";
 import { dayLd, dayPath, homeDescription, websiteLd } from "../lib/seo.ts";
 import { SITE } from "../lib/site.ts";
+import { inProgress, weekName, weekOf, weekPath } from "../lib/weeks.ts";
 
 const title = latest
   ? `${SITE.name}: ${latest.genius.headline} / ${latest.facepalm.headline}`
   : `${SITE.name}: ${SITE.tagline}`;
 const jsonLd = [websiteLd(), ...(latest ? dayLd(latest) : [])];
+const week = latest ? weekOf(latest.date, days) : undefined;
 const shareText = latest
   ? `${latest.genius.headline}. Also: ${latest.facepalm.headline}. ${SITE.tagline}`
   : SITE.tagline;
@@ -35,6 +37,15 @@ const shareText = latest
       <Pair day={latest} />
       <Share url={new URL(dayPath(latest), SITE.url).href} text={shareText} />
       <DayNav date={latest.date} />
+      {week && (
+        <p class="meta">
+          Pair of the week{inProgress(week, asOf) ? " so far" : ""}:{" "}
+          <a href={weekPath(week)}>
+            {week.pick.genius.headline} / {week.pick.facepalm.headline}
+          </a>{" "}
+          ({weekName(week).toLowerCase()}).
+        </p>
+      )}
       {latest.date !== asOf && (
         <p class="meta">
           The news was last checked on {formatDate(asOf)}; no pair met the standard that day, so the

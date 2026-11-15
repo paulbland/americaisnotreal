@@ -1,0 +1,60 @@
+---
+import Base from "../../layouts/Base.astro";
+import { asOf, days } from "../../lib/data.ts";
+import { formatDate, plural } from "../../lib/format.ts";
+import { breadcrumbLd, dayPath } from "../../lib/seo.ts";
+import { LABELS, SITE } from "../../lib/site.ts";
+import { place } from "../../lib/states.ts";
+import { inProgress, weekName, weekPath, weeksOf } from "../../lib/weeks.ts";
+
+const weeks = weeksOf(days);
+---
+
+<Base
+  title={`Pair of the week · ${SITE.name}`}
+  description="The strongest pair from each week: one story of what Americans are capable of and one of what they are also capable of, chosen from that week's daily pairs."
+  path="/weeks"
+  ogImage="/og/weeks.png"
+  ogImageAlt="Pair of the week"
+  modified={asOf}
+  jsonLd={[breadcrumbLd([{ name: "Pair of the week", path: "/weeks" }])]}
+>
+  <div class="day-head">
+    <h1>Pair of the week</h1>
+    <p class="tagline">{plural(weeks.length, "week")}</p>
+  </div>
+  <p class="prose">
+    Each week's strongest pair, chosen from that week's daily pairs. How it is chosen is in the{" "}
+    <a href="/methodology#pair-of-the-week">methodology</a>.
+  </p>
+  {weeks.length === 0 && <p class="empty">Nothing yet.</p>}
+  <div class="section">
+    {weeks.map((w) => (
+      <div class="archive-day">
+        <span class="when">
+          <a href={weekPath(w)}>{weekName(w)}</a>
+          {inProgress(w, asOf) && <span class="meta"> · so far</span>}
+        </span>
+        <span class="what">
+          <span class="kicker" style="color: var(--genius)">
+            {LABELS.genius}
+          </span>
+          <br />
+          <a href={`${dayPath(w.pick)}#genius`}>{w.pick.genius.headline}</a>
+          <span class="meta"> · {place(w.pick.genius.city, w.pick.genius.state)}</span>
+        </span>
+        <span class="what">
+          <span class="kicker" style="color: var(--facepalm)">
+            {LABELS.facepalm}
+          </span>
+          <br />
+          <a href={`${dayPath(w.pick)}#facepalm`}>{w.pick.facepalm.headline}</a>
+          <span class="meta">
+            {" "}
+            · {place(w.pick.facepalm.city, w.pick.facepalm.state)} · {formatDate(w.pick.date)}
+          </span>
+        </span>
+      </div>
+    ))}
+  </div>
+</Base>
