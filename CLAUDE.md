@@ -72,6 +72,11 @@ been measured when this was written. The footer of each scan PR is the only cost
 searches, fetches and total on its first line, then each model's token split. The first real
 run on 2026-10-09 cost $1.71 and took six minutes.
 
+Every request caches the conversation so far as well as the system prompt (top-level
+`cache_control` in `runAgent`). In a healthy footer a model's cache read is several times its
+input; cache write with no cache read means the cache is being written and never hit, which
+costs more than not caching.
+
 ## Editorial rules (non-negotiable)
 
 - Both stories happened in the United States. Americans abroad don't count.

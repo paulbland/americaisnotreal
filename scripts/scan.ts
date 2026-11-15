@@ -171,6 +171,10 @@ async function runAgent<T>(opts: {
         fallbacks: "default",
         thinking: { type: "adaptive" },
         output_config: { effort: opts.effort },
+        // Caches the conversation as it grows, on top of the system prompt's own
+        // marker. A turn that resumes after a pause re-sends every search result so
+        // far; this lets it read them back at the cache rate instead of full price.
+        cache_control: { type: "ephemeral" },
         system: [{ type: "text", text: opts.system, cache_control: { type: "ephemeral" } }],
         tools,
         messages,
