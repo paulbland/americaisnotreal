@@ -477,6 +477,7 @@ async function main() {
       task: discoveryTask({
         date: DATE,
         side,
+        maxSearches: budgets[side],
         recent,
         recentScans,
         allowedParties: allowedParties(days),

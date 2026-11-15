@@ -82,12 +82,14 @@ function recentLine(d: Day): string {
 export function discoveryTask(opts: {
   date: string;
   side: Side;
+  /** The run's web search limit, stated in the task so the model can pace itself. */
+  maxSearches: number;
   recent: Day[];
   recentScans: ScanLog[];
   allowedParties: string[];
   bench: BenchEntry[];
 }): string {
-  const { date, side, recent, recentScans, allowedParties, bench } = opts;
+  const { date, side, maxSearches, recent, recentScans, allowedParties, bench } = opts;
   const passed = recentScans.flatMap((s) =>
     s.candidates
       .filter((c) => c.side === side && (c.outcome === "rejected" || c.outcome === "deferred"))
@@ -97,7 +99,7 @@ export function discoveryTask(opts: {
     allowedParties.length === 0
       ? "none: today's facepalm story must not be about a politician at all"
       : allowedParties.join(", ");
-  return `The scan date is ${date}. This run covers the ${side.toUpperCase()} side only. Find candidate ${side} stories for that day's page.
+  return `The scan date is ${date}. This run covers the ${side.toUpperCase()} side only. Find candidate ${side} stories for that day's page. You have ${maxSearches} web searches for this run and no more, so plan them before you start.
 
 Look for events that happened, were announced or were published in the 7 days up to and including ${date}. The news pages may be dated any time from the event up to ${date}. If the scan date is in the past, search as of that date and ignore anything reported after it.
 
