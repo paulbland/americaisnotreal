@@ -61,7 +61,8 @@ published, any verified story on the other side goes to the bench, and the log s
 publish time. The workflow re-runs validate/check/test/build, opens a PR and merges it
 itself. After the merge, `scripts/indexnow.ts` waits for the deploy and pings IndexNow.
 
-Budget: 60 facepalm and 30 genius discovery searches (facepalm is the harder side to source)
+Budget: 60 facepalm and 20 genius discovery searches (facepalm is the harder side to source;
+genius was 30 until 2026-11-15, and each discovery task now tells the model its number)
 plus up to 3 verifications per side at 8 searches each. Discovery runs on Sonnet 5.5 and the
 verifier on Opus 5.5; the repository variables `SCAN_DISCOVERY_MODEL` and `SCAN_VERIFIER_MODEL`
 change either without a code change (unset means the default; defaults and list prices are in
