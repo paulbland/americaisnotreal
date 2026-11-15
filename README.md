@@ -13,10 +13,10 @@ The pair is found, fact-checked and published automatically. See the
 
 ## Stack
 
-Astro 7 (static) on Vercel. A GitHub Actions cron runs `scripts/scan.ts` daily: Claude Opus 5.5
+Astro 7 (static) on Vercel. A GitHub Actions cron runs `scripts/scan.ts` daily: Claude Sonnet 5.5
 with web search proposes candidates; each must pass schema and sourcing rules, an adversarial
-second review, and verbatim quote checks against two publishers' live pages before it is
-published. Every day is one JSON file in `src/data/days/`.
+second review by Claude Opus 5.5, and verbatim quote checks against two publishers' live pages
+before it is published. Every day is one JSON file in `src/data/days/`.
 
 ## Develop
 
