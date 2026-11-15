@@ -6,8 +6,11 @@
  *   1. Discovery: Claude searches the accepted publishers and proposes up to four
  *      ranked candidates for each side (SCAN_DISCOVERY_MODEL, Claude Sonnet 5.5
  *      by default).
- *   2. Each candidate, in rank order, must pass: the schema and repo rules, the
- *      party-balance rule, an independent adversarial Claude review
+ *   2. Each candidate, in rank order (facepalm candidates highest score first), must
+ *      pass: the schema and repo rules, the party-balance and variety rules (at most
+ *      one routine administrative error a week, no facepalm category two days
+ *      running), an independent adversarial Claude review that also scores the story
+ *      and vouches for any local newsroom it cites
  *      (SCAN_VERIFIER_MODEL, Claude Opus 5.5 by default), and a mechanical check
  *      that its quote and corroboration appear verbatim on two different
  *      publishers' live pages.
@@ -26,6 +29,7 @@ import {
   DaySchema,
   PartySchema,
   ScanLogSchema,
+  ScoreSchema,
   SIDES,
   StoryObject,
   type BenchEntry,
@@ -34,6 +38,7 @@ import {
   type Side,
   type Story,
 } from "../src/data/schema.ts";
+import { facepalmLimits, varietyProblem } from "../src/lib/score.ts";
 import { partyBalance } from "../src/lib/stats.ts";
 import { archiveUrl } from "./lib/archive.ts";
 import { fetchPageText, urlKey } from "./lib/fetch.ts";
@@ -69,7 +74,11 @@ const client = new Anthropic();
 
 const CorroborationSchema = z.object({ sourceUrl: z.string(), quote: z.string() }).strict();
 
-const CandidateSchema = StoryObject.extend({ corroboration: CorroborationSchema }).strict();
+const CandidateSchema = StoryObject.extend({
+  corroboration: CorroborationSchema,
+  /** Discovery's own rating; the verifier's replaces it before anything is published. */
+  score: ScoreSchema,
+}).strict();
 type Candidate = z.infer<typeof CandidateSchema>;
 
 const PassedSchema = z
@@ -103,6 +112,10 @@ const VerdictSchema = z
     reasoning: z.string(),
     /** Corrected copy the verifier wants published instead; null fields keep the original. */
     revisions: RevisionsSchema.nullable(),
+    /** The verifier's own rating of the story, 1 to 10. This is the score that is published. */
+    score: ScoreSchema,
+    /** Hostnames of local newsrooms (sources marked `local`) the verifier vouches for. */
+    vouchedLocalHosts: z.array(z.string()),
   })
   .strict();
 type Verdict = z.infer<typeof VerdictSchema>;
@@ -298,8 +311,10 @@ async function quoteOnPage(
   url: string,
   quote: string,
   fetched: Map<string, string>,
+  /** Vouched-for local newsroom hosts that may be read for this story. */
+  alsoAllow: string[],
 ): Promise<{ ok: boolean; detail: string }> {
-  if (!pageCache.has(url)) pageCache.set(url, fetchPageText(url));
+  if (!pageCache.has(url)) pageCache.set(url, fetchPageText(url, alsoAllow));
   const direct = await pageCache.get(url)!;
   if (direct.ok && containsQuote(direct.text, quote)) {
     return { ok: true, detail: "found on live page" };
@@ -393,6 +408,8 @@ async function consider(
       problems: ["malformed verdict"],
       reasoning: err.message,
       revisions: null,
+      score: candidate.score,
+      vouchedLocalHosts: [],
     };
   }
   if (verdict.outcome !== "approve") {
@@ -402,13 +419,28 @@ async function consider(
     };
   }
 
-  const q = await quoteOnPage(story.quote.sourceUrl, story.quote.text, fetched);
+  // A local newsroom counts only if the verifier looked at the outlet and vouched for it.
+  const vouched = verdict.vouchedLocalHosts.map((h) => h.toLowerCase().replace(/^www\./, ""));
+  const localHosts = story.sources.filter((x) => x.local).map((x) => hostOf(x.url));
+  const unvouched = localHosts.filter((h) => !vouched.includes(h));
+  if (unvouched.length) {
+    return {
+      status: "rejected",
+      reason: `the fact-checker did not vouch for the local newsroom ${unvouched.join(", ")}`,
+    };
+  }
+
+  // The verifier's score is the one that counts, so the variety rules are applied again.
+  const capped = varietyProblem({ ...parsed.data, score: verdict.score }, DATE, days);
+  if (capped) return { status: "deferred", reason: capped };
+
+  const q = await quoteOnPage(story.quote.sourceUrl, story.quote.text, fetched, localHosts);
   if (!q.ok) return { status: "deferred", reason: `quote ${q.detail} (${quoteHost})` };
-  const c = await quoteOnPage(corroboration.sourceUrl, corroboration.quote, fetched);
+  const c = await quoteOnPage(corroboration.sourceUrl, corroboration.quote, fetched, localHosts);
   if (!c.ok) return { status: "deferred", reason: `corroboration ${c.detail} (${corrHost})` };
 
   // The verifier may tighten our wording; the result must still pass every mechanical rule.
-  let final = parsed.data;
+  let final: Story = { ...parsed.data, score: verdict.score };
   if (verdict.revisions && (verdict.revisions.headline || verdict.revisions.summary)) {
     const revised = DaySchema.shape.genius.safeParse({
       ...final,
@@ -447,7 +479,10 @@ async function pickSide(
   const log: ScanLog["candidates"] = [];
   let tries = 0;
   let story: Story | null = null;
-  for (const item of raw) {
+  // Facepalm candidates are tried most absurd first, whatever order they arrived in.
+  const scoreOf = (item: unknown) => Number((item as { score?: unknown } | null)?.score) || 0;
+  const ordered = side === "facepalm" ? [...raw].sort((a, b) => scoreOf(b) - scoreOf(a)) : raw;
+  for (const item of ordered) {
     const parsed = CandidateSchema.safeParse(item);
     const headline =
       (item as { headline?: unknown } | null)?.headline?.toString() ?? "(malformed candidate)";
@@ -458,6 +493,12 @@ async function pickSide(
     }
     if (story) {
       log.push({ side, headline, outcome: "unused", reason: "an earlier candidate was published" });
+      continue;
+    }
+    // Checked before a verification is spent on it, and again with the verifier's score.
+    const blocked = varietyProblem({ ...parsed.data, side }, DATE, days);
+    if (blocked) {
+      log.push({ side, headline, outcome: "deferred", reason: blocked });
       continue;
     }
     if (tries++ >= MAX_TRIES_PER_SIDE) {
@@ -540,6 +581,7 @@ async function main() {
         recentScans,
         allowedParties: allowedParties(days),
         bench: bench.filter(usable),
+        limits: facepalmLimits(DATE, days),
       }),
       finalTool: SUBMIT_CANDIDATES,
       accept: ReceivedCandidatesSchema,
@@ -587,7 +629,7 @@ async function main() {
     const result = side === "genius" ? genius : facepalm;
     if (result.story) continue;
     const entry = bench
-      .filter((b) => b.story.side === side && usable(b))
+      .filter((b) => b.story.side === side && usable(b) && !varietyProblem(b.story, DATE, days))
       .sort((a, b) => b.verifiedOn.localeCompare(a.verifiedOn))[0];
     if (!entry) continue;
     result.story = entry.story;

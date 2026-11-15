@@ -5,3 +5,4 @@ dist/
 src/data/
 package-lock.json
 scan-output/
+.claude/

@@ -7,7 +7,7 @@ import { LABELS, SITE } from "../lib/site.ts";
 const faqs = [
   {
     q: "How are the two stories chosen?",
-    a: "Every morning an automated scan searches an allowlist of accepted US news publishers for stories from the previous seven days. It proposes up to four candidates for each side, ranked. Each candidate is then checked independently; the first on each side to pass every check is published. A story qualifies if the event happened, was announced or was published within the previous seven days, whatever the date on the news pages. If either side has no survivor, nothing is published that day.",
+    a: "Every morning an automated scan searches accepted US news publishers and the odd-news wires for stories from the previous seven days. It proposes up to four candidates for each side, ranked; on the facepalm side the most absurd is tried first. Each candidate is then checked independently; the first on each side to pass every check is published. A story qualifies if the event happened, was announced or was published within the previous seven days, whatever the date on the news pages. If either side has no survivor, nothing is published that day.",
   },
   {
     q: "What counts as a genius story?",
@@ -15,15 +15,19 @@ const faqs = [
   },
   {
     q: "What counts as a facepalm story?",
-    a: "A specific, verifiable act of foolishness in the United States that was its own consequence, reported straight by credible outlets. Never a story where anyone was killed, injured or hospitalised, where the subject is under 18 or a victim of a crime, where the behaviour suggests a mental-health crisis, addiction or disability, or where the joke is poverty, immigration status, religion or a group of people.",
+    a: "A specific, verifiable act of human absurdity in the United States that was its own consequence, reported straight by credible outlets: first a person's own baffling act, then an official decision that is absurd on its face. Routine administrative errors such as ballot misprints are a last resort, limited to one a week. Never a story where anyone was killed, injured or hospitalised, where the subject is under 18 or a victim of a crime, where the behaviour suggests a mental-health crisis, addiction or disability, or where the joke is poverty, immigration status, religion or a group of people.",
   },
   {
     q: "Who fact-checks the stories?",
-    a: "Three layers. Deterministic code rejects anything whose sources are off the allowlist, that lacks two independent publishers, that uses loaded wording, or that trips the no-victims rules. A second, adversarial model then tries to reject the story and must approve it; if the facts are sound but our wording is imprecise, it supplies corrected wording, which is re-checked by the same rules. Finally, two verbatim quotes, one from each publisher, are matched mechanically against the live pages. A story that fails any step is not published, and the scan log says why.",
+    a: "Three layers. Deterministic code rejects anything whose sources break the sourcing rules, that lacks two independent news organisations, that uses loaded wording, or that trips the no-victims rules. A second, adversarial model then tries to reject the story and must approve it; if the facts are sound but our wording is imprecise, it supplies corrected wording, which is re-checked by the same rules. Finally, two verbatim quotes, one from each publisher, are matched mechanically against the live pages. A story that fails any step is not published, and the scan log says why.",
   },
   {
     q: "Are politicians included?",
-    a: "Yes, for concrete acts in office that two accepted outlets reported as news, never for their views. The site keeps the running count of political facepalm stories about Democrats and Republicans within one of each other; when one side is ahead, the scan may not run another story about that party until the other catches up.",
+    a: "Yes, for concrete acts in office that two news organisations reported as news, never for their views. The site keeps the running count of political facepalm stories about Democrats and Republicans within one of each other; when one side is ahead, the scan may not run another story about that party until the other catches up.",
+  },
+  {
+    q: "What is the pair of the week?",
+    a: "For each Monday-to-Sunday week, the day whose two stories the fact-checker scored highest for how strongly they show each side. It is chosen by arithmetic from that week's daily pairs, not by an editor, and it can change until the week ends.",
   },
   {
     q: "What if a story is wrong?",
@@ -48,7 +52,7 @@ const faqs = [
   <div class="prose">
     <p>
       {SITE.name} publishes one pair of true stories a day. Both happened in the United States. Both
-      were reported as news by at least two accepted publishers. Both are summarised in our own
+      were reported as news by at least two news organisations. Both are summarised in our own
       words, without commentary, and linked to their sources. The labels are ours; the facts are
       theirs.
     </p>
@@ -63,10 +67,22 @@ const faqs = [
       speculation. A press release alone is never enough.
     </p>
     <p>
-      <strong>{LABELS.facepalm}.</strong> A specific, verifiable act of foolishness that was its own
-      consequence: a voluntary, avoidable decision or act, reported straight by credible outlets,
-      that a reader will recognise without being told. A council that bans something that doesn't
-      exist. A bill that misspells the state. A company that recalls its own recall.
+      <strong>{LABELS.facepalm}.</strong> A specific, verifiable act of human absurdity that was its
+      own consequence, reported straight by credible outlets, that a reader will recognise without
+      being told. In order of preference: a person's own voluntary, baffling act; then an official
+      or institutional decision that is absurd on its face, such as a council that bans something
+      that doesn't exist or a bill that misspells the state; and only as a last resort a routine
+      administrative error, such as a ballot misprint or a payroll mistake.
+    </p>
+
+    <h2>Variety</h2>
+    <p>
+      For its first month the site ran a county's ballot error almost every day, because those
+      stories pass every check easily. They are now limited in code. The fact-checker scores every
+      story from 1 to 10 for how strongly it shows its side, and a facepalm story scored as a
+      routine administrative error may run at most once in any seven days. No facepalm category may
+      run two days in a row. On the facepalm side the candidates are tried in order of score, the
+      most absurd first. A day when nothing clears these limits publishes nothing.
     </p>
 
     <h2>What is never run on the facepalm side</h2>
@@ -86,45 +102,51 @@ const faqs = [
       <li>Satire, hoaxes, social-media posts, or anything from a tabloid or aggregator.</li>
     </ul>
     <p>
-      Private individuals may be named only when they are adults, the act was their own, and at
-      least two accepted publishers already name them. Otherwise the act is described without a
-      name.
+      Private individuals may be named only when they are adults, the act was their own, and both
+      cited sources already name them. Otherwise the act is described without a name.
     </p>
 
     <h2>Politics</h2>
     <p>
       Politicians and officials are included for what they did or said in office, never for their
-      views: a bill, a vote, a ruling, a public statement with consequences, reported by two
-      accepted outlets as news. The site tracks the party of every political facepalm story and
-      keeps the counts for Democrats and Republicans within one of each other. When one party is
-      ahead, the scan is not allowed to run another story about it until the other catches up.
+      views: a bill, a vote, a ruling, a public statement with consequences, reported by two news
+      organisations as news. The site tracks the party of every political facepalm story and keeps
+      the counts for Democrats and Republicans within one of each other. When one party is ahead,
+      the scan is not allowed to run another story about it until the other catches up.
     </p>
 
     <h2>Sources</h2>
     <p>
-      Every story cites at least two sources from different publishers on a fixed allowlist: the
-      wire services, national newspapers and broadcasters, major regional papers of record,
-      network-owned local stations, public radio and the science press. Official announcements
-      (government, universities, prize bodies) may be one of the two sources but never both. The
-      allowlist is public in the repository. Tabloids, satire sites, aggregators, press-release
-      wires, social media and Wikipedia are never cited. Each source is also saved to the Wayback
-      Machine when the story is published, and the archived copy is linked.
+      Every story cites at least two sources from different news organisations, and at least one of
+      them is always a news publisher on a fixed accepted list: the wire services, national
+      newspapers and broadcasters, major regional papers of record, network-owned local stations,
+      public radio and the science press. The second source may be another publisher on that list;
+      an official announcement (government, universities, prize bodies); or one local newsroom that
+      is not on the list. Odd stories are usually broken by a small-town paper or station and then
+      picked up by a wire, and the last option exists so they aren't lost. A local newsroom
+      qualifies only if the fact-checker opens the outlet and vouches that it is a real news
+      organisation with named reporters doing its own reporting from the place where the story
+      happened, not an aggregator, a blog or a rewrite of the wire story. The accepted list is
+      public in the repository. Tabloids, satire sites, aggregators, press-release wires, social
+      media and Wikipedia are never cited. Each source is also saved to the Wayback Machine when the
+      story is published, and the archived copy is linked.
     </p>
 
     <h2>The three checks</h2>
     <ol>
       <li>
-        <strong>Rules in code.</strong> The story must fit a strict schema; its sources must be on
-        the allowlist and from two different publishers; its headline and summary may not use loaded
-        words; a facepalm story may not mention anyone hurt, anyone under 18, or any of the excluded
-        situations. Any failure rejects it before a model is asked.
+        <strong>Rules in code.</strong> The story must fit a strict schema; its sources must follow
+        the sourcing rules above and come from two different organisations; its headline and summary
+        may not use loaded words; a facepalm story may not mention anyone hurt, anyone under 18, or
+        any of the excluded situations. Any failure rejects it before a model is asked.
       </li>
       <li>
         <strong>An adversarial review.</strong> A second, independent model is given the story and
         told to find reasons it should not run. It opens every source, checks every fact against the
-        page, and must approve. If the facts are sound but our wording is imprecise, it supplies the
-        corrected wording, which is then re-checked by the same mechanical rules. "Uncertain" is
-        treated as a rejection.
+        page, looks into any local newsroom the story relies on, scores the story, and must approve.
+        If the facts are sound but our wording is imprecise, it supplies the corrected wording,
+        which is then re-checked by the same mechanical rules. "Uncertain" is treated as a
+        rejection.
       </li>
       <li>
         <strong>Verbatim quotes.</strong> Each story carries two short quotations, one from each of
@@ -137,6 +159,15 @@ const faqs = [
       was published or set aside. It also names the model that proposed each day's candidates and
       the model that reviewed them. The review is always a separate run from the proposal; where the
       log names two models, it was a different model as well.
+    </p>
+
+    <h2 id="pair-of-the-week">Pair of the week</h2>
+    <p>
+      The <a href="/weeks">pair of the week</a> is the day, in each Monday-to-Sunday week, whose two
+      stories have the highest combined score. A tie goes to the day with the stronger facepalm
+      story, then to the later day. It is arithmetic over the daily pairs, not a separate selection,
+      and it can change until the week is over. Days published before scoring began on November 14,
+      2026 are given a neutral score.
     </p>
 
     <h2>Corrections</h2>

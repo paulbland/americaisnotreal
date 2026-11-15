@@ -83,9 +83,20 @@ export const SourceSchema = z
     date: IsoDateSchema.nullable(),
     /** Wayback Machine snapshot, so the citation survives link rot. */
     archiveUrl: HttpsUrl.optional(),
+    /**
+     * A local newsroom that isn't on the accepted list, vouched for by the fact-checker
+     * when the story was published. At most one per story, and only alongside an
+     * accepted news publisher.
+     */
+    local: z.literal(true).optional(),
   })
   .strict();
 export type Source = z.infer<typeof SourceSchema>;
+
+/** How strongly a story exemplifies its side, 1 to 10. See the rubric in scripts/lib/prompts.ts. */
+export const ScoreSchema = z.number().int().min(1).max(10);
+/** A facepalm story scored at or below this is a routine administrative error. */
+export const ROUTINE_MAX_SCORE = 3;
 
 export const MIN_QUOTE_CHARS = 25;
 export const MAX_QUOTE_CHARS = 280;
@@ -129,6 +140,12 @@ export const StoryObject = z
     /** When the thing happened or was announced. */
     eventDate: IsoDateSchema,
     sources: z.array(SourceSchema).min(2),
+    /**
+     * The fact-checker's rating of how strongly the story exemplifies its side. Never
+     * shown; it picks the pair of the week and limits routine administrative errors.
+     * Days published before 2026-11-14 have none (see effectiveScore in src/lib/weeks.ts).
+     */
+    score: ScoreSchema.optional(),
   })
   .strict();
 

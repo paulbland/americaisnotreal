@@ -6,6 +6,7 @@ import type { Day, Story } from "../data/schema.ts";
 import { formatDate, plural } from "./format.ts";
 import { LABELS, SITE } from "./site.ts";
 import { place } from "./states.ts";
+import { weekName, weekPath, type Week } from "./weeks.ts";
 
 export function dayPath(d: Day | string): string {
   return `/${typeof d === "string" ? d : d.date}`;
@@ -100,6 +101,30 @@ export function faqLd(faqs: { q: string; a: string }[]): object {
       "@type": "Question",
       name: f.q,
       acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+}
+
+export function weekDescription(w: Week): string {
+  const { pick } = w;
+  return `${weekName(w)}, pair of the week. ${LABELS.genius}: ${pick.genius.headline} (${place(pick.genius.city, pick.genius.state)}). ${LABELS.facepalm}: ${pick.facepalm.headline} (${place(pick.facepalm.city, pick.facepalm.state)}). Chosen from ${plural(w.days.length, "daily pair")}, with sources.`;
+}
+
+/** The week as a list of its days, the pick first. */
+export function weekLd(w: Week): object {
+  const ordered = [w.pick, ...w.days.filter((d) => d.date !== w.pick.date)];
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${weekName(w)}: pair of the week`,
+    description: weekDescription(w),
+    url: new URL(weekPath(w), SITE.url).href,
+    numberOfItems: ordered.length,
+    itemListElement: ordered.map((d, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: dayTitle(d),
+      url: new URL(dayPath(d), SITE.url).href,
     })),
   };
 }

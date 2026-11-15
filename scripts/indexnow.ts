@@ -11,6 +11,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { SITE } from "../src/lib/site.ts";
+import { weekId, weekPath } from "../src/lib/weeks.ts";
 import { dayFile, ROOT } from "./lib/files.ts";
 
 const KEY = fs.readFileSync(path.join(ROOT, "public", "indexnow.txt"), "utf8").trim();
@@ -28,7 +29,8 @@ async function sitemapUrls(): Promise<string[]> {
 
 function todaysUrls(): string[] {
   const paths = ["/", "/archive", "/log"];
-  if (fs.existsSync(dayFile(DATE))) paths.push(`/${DATE}`);
+  // A new day can change its week's pick, so the week pages are resubmitted with it.
+  if (fs.existsSync(dayFile(DATE))) paths.push(`/${DATE}`, "/weeks", weekPath(weekId(DATE)));
   return paths.map((p) => new URL(p, SITE.url).href);
 }
 

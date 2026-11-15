@@ -6,7 +6,11 @@ export type PageText = { ok: true; text: string; finalUrl: string } | { ok: fals
 const USER_AGENT =
   "Mozilla/5.0 (compatible; americaisnotreal-verifier/1.0; +https://americaisnotreal.com/methodology)";
 
-export async function fetchPageText(url: string): Promise<PageText> {
+/**
+ * `alsoAllow` lists hostnames outside the accepted lists that may be read for this
+ * story: its one local newsroom, once the fact-checker has vouched for it.
+ */
+export async function fetchPageText(url: string, alsoAllow: string[] = []): Promise<PageText> {
   try {
     const res = await fetch(url, {
       headers: {
@@ -17,7 +21,7 @@ export async function fetchPageText(url: string): Promise<PageText> {
       signal: AbortSignal.timeout(30_000),
     });
     if (!res.ok) return { ok: false, reason: `HTTP ${res.status}` };
-    if (!sourceAllowed(res.url)) {
+    if (!sourceAllowed(res.url) && !alsoAllow.includes(hostOf(res.url))) {
       return { ok: false, reason: `ended on an unaccepted host (${hostOf(res.url)})` };
     }
     return { ok: true, text: htmlToText(await res.text()), finalUrl: res.url };

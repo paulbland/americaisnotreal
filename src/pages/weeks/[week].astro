@@ -1,0 +1,102 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../layouts/Base.astro";
+import Pair from "../../components/Pair.astro";
+import Share from "../../components/Share.astro";
+import { asOf, days } from "../../lib/data.ts";
+import { formatDate } from "../../lib/format.ts";
+import { breadcrumbLd, dayPath, weekDescription, weekLd } from "../../lib/seo.ts";
+import { LABELS, SITE } from "../../lib/site.ts";
+import { place } from "../../lib/states.ts";
+import { inProgress, weekName, weekPath, weeksOf, type Week } from "../../lib/weeks.ts";
+
+export const getStaticPaths = (() => {
+  const weeks = weeksOf(days);
+  return weeks.map((week, i) => ({
+    params: { week: week.id },
+    props: { week, newer: weeks[i - 1], older: weeks[i + 1] },
+  }));
+}) satisfies GetStaticPaths;
+
+const { week, newer, older } = Astro.props as { week: Week; newer?: Week; older?: Week };
+const { pick } = week;
+const others = week.days.filter((d) => d.date !== pick.date);
+const name = weekName(week);
+const url = new URL(weekPath(week), SITE.url).href;
+const soFar = inProgress(week, asOf);
+---
+
+<Base
+  title={`${name}: ${pick.genius.headline} / ${pick.facepalm.headline} · ${SITE.name}`}
+  description={weekDescription(week)}
+  path={weekPath(week)}
+  ogImage={`/og/${pick.date}.png`}
+  ogImageAlt={`${pick.genius.headline} / ${pick.facepalm.headline}`}
+  modified={soFar ? asOf : week.days[0]!.date}
+  jsonLd={[
+    weekLd(week),
+    breadcrumbLd([
+      { name: "Pair of the week", path: "/weeks" },
+      { name, path: weekPath(week) },
+    ]),
+  ]}
+>
+  <div class="day-head">
+    <h1>{name}</h1>
+    <p class="tagline">Pair of the week{soFar ? ", so far" : ""}</p>
+  </div>
+  <Pair day={pick} />
+  <Share
+    url={url}
+    text={`${pick.genius.headline}. Also: ${pick.facepalm.headline}. ${SITE.tagline}`}
+  />
+  <p class="meta">
+    From <a href={dayPath(pick)}>{formatDate(pick.date)}</a>. The pair of the week is the strongest
+    of the week's daily pairs; see the <a href="/methodology#pair-of-the-week">methodology</a>.
+  </p>
+  {others.length > 0 && (
+    <section class="section">
+      <h2>Also this week</h2>
+      {others.map((d) => (
+        <div class="archive-day">
+          <span class="when">
+            <a href={dayPath(d)}>{formatDate(d.date)}</a>
+          </span>
+          <span class="what">
+            <span class="kicker" style="color: var(--genius)">
+              {LABELS.genius}
+            </span>
+            <br />
+            <a href={`${dayPath(d)}#genius`}>{d.genius.headline}</a>
+            <span class="meta"> · {place(d.genius.city, d.genius.state)}</span>
+          </span>
+          <span class="what">
+            <span class="kicker" style="color: var(--facepalm)">
+              {LABELS.facepalm}
+            </span>
+            <br />
+            <a href={`${dayPath(d)}#facepalm`}>{d.facepalm.headline}</a>
+            <span class="meta"> · {place(d.facepalm.city, d.facepalm.state)}</span>
+          </span>
+        </div>
+      ))}
+    </section>
+  )}
+  <nav class="day-nav" aria-label="Weeks">
+    <span>
+      {older && (
+        <a href={weekPath(older)} rel="prev">
+          ← {weekName(older)}
+        </a>
+      )}
+    </span>
+    <a href="/weeks">All weeks</a>
+    <span>
+      {newer && (
+        <a href={weekPath(newer)} rel="next">
+          {weekName(newer)} →
+        </a>
+      )}
+    </span>
+  </nav>
+</Base>

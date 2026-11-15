@@ -7,6 +7,7 @@ import {
   facepalmBlockedTerms,
   htmlToText,
   isAcceptedPublisher,
+  localSourceAllowed,
   sourceAllowed,
 } from "../scripts/lib/verify.ts";
 
@@ -46,6 +47,33 @@ describe("publisher allowlist", () => {
   });
 });
 
+describe("local newsrooms", () => {
+  it("accepts an ordinary https host that is on no list", () => {
+    expect(localSourceAllowed("https://www.smalltowngazette.com/news/pig-wedding")).toBe(true);
+  });
+  it("rejects banned hosts, platforms, archives, IP addresses and plain http", () => {
+    for (const url of [
+      "https://nypost.com/x",
+      "https://someone.substack.com/p/x",
+      "https://www.newsbreak.com/x",
+      "https://news.google.com/x",
+      "https://web.archive.org/web/2026/https://example.com",
+      "https://192.168.1.1/x",
+      "http://www.smalltowngazette.com/x",
+    ]) {
+      expect(localSourceAllowed(url), url).toBe(false);
+    }
+  });
+  it("is not for hosts the accepted or official lists already cover", () => {
+    expect(localSourceAllowed("https://apnews.com/article/x")).toBe(false);
+    expect(localSourceAllowed("https://www.upi.com/Odd_News/x")).toBe(false);
+    expect(localSourceAllowed("https://news.mit.edu/x")).toBe(false);
+  });
+  it("accepts UPI as a publisher", () => {
+    expect(sourceAllowed("https://www.upi.com/Odd_News/2026/11/12/x/123/")).toBe(true);
+  });
+});
+
 describe("containsQuote", () => {
   const page = htmlToText(
     "<p>The council voted 5&ndash;2 on Monday to prohibit the “Harvest Lights” festival, which the city clerk said has never been held.</p>",
@@ -76,5 +104,12 @@ describe("editorial lints", () => {
     expect(facepalmBlockedTerms("A 14-year-old was injured when")).toContain("injured");
     expect(facepalmBlockedTerms("A 14-year-old was injured when")).toContain("14-year-old");
     expect(facepalmBlockedTerms("A man married an oak tree in a ceremony")).toEqual([]);
+    expect(facepalmBlockedTerms("A 17-year-old tried to")).toContain("17-year-old");
+    expect(facepalmBlockedTerms("A 9-year-old tried to")).toContain("9-year-old");
+  });
+  it("lets an adult's age through", () => {
+    expect(facepalmBlockedTerms("A 42-year-old man married a pig in a ceremony")).toEqual([]);
+    expect(facepalmBlockedTerms("An 18-year-old sued the sun")).toEqual([]);
+    expect(facepalmBlockedTerms("A 117-year-old record")).toEqual([]);
   });
 });

@@ -50,6 +50,19 @@ describe("schema", () => {
     expect(DaySchema.safeParse(d).success).toBe(false);
   });
 
+  it("accepts a score from 1 to 10 and a local source, and nothing else in their place", () => {
+    const scored = { ...fixtureDay.genius, score: 7 };
+    expect(StorySchema.safeParse(scored).success).toBe(true);
+    expect(StorySchema.safeParse({ ...scored, score: 0 }).success).toBe(false);
+    expect(StorySchema.safeParse({ ...scored, score: 11 }).success).toBe(false);
+    expect(StorySchema.safeParse({ ...scored, score: 6.5 }).success).toBe(false);
+    const [first, second] = fixtureDay.genius.sources;
+    const withLocal = { ...fixtureDay.genius, sources: [first!, { ...second!, local: true }] };
+    expect(StorySchema.safeParse(withLocal).success).toBe(true);
+    const badLocal = { ...fixtureDay.genius, sources: [first!, { ...second!, local: false }] };
+    expect(StorySchema.safeParse(badLocal).success).toBe(false);
+  });
+
   it("rejects an unknown field", () => {
     const d = { ...fixtureDay, extra: 1 };
     expect(DaySchema.safeParse(d).success).toBe(false);
