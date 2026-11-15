@@ -566,7 +566,7 @@ async function main() {
   // starve the other. Facepalm gets more: it is the harder side to source.
   const budgets: Record<Side, number> = {
     facepalm: Number(process.env.SCAN_MAX_SEARCHES_FACEPALM ?? 60),
-    genius: Number(process.env.SCAN_MAX_SEARCHES_GENIUS ?? 30),
+    genius: Number(process.env.SCAN_MAX_SEARCHES_GENIUS ?? 45),
   };
   const discoverWith = (side: Side, model: string) => {
     console.log(`Discovery for ${DATE}, ${side} side (${model}, ${budgets[side]} searches)…`);
