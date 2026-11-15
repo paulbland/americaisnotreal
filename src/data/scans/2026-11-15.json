@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-15",
+  "startedAt": "2026-11-15T16:42:58.333Z",
+  "finishedAt": "2026-11-15T16:46:57.490Z",
+  "model": "claude-sonnet-5-5 (discovery), claude-opus-5-5 (verifier)",
+  "searches": 52,
+  "summary": "Facepalm: Searches found few fresh facepalm stories. One candidate, the 11 House Democrats who missed the Hegseth impeachment vote, has two accepted sources. Genius: I found one solid genius candidate: SpaceX's first-ever catch of a Starship upper stage, on Nov. 14 at Starbase, Texas. The other searches turned up nothing strong. The ones that came close are listed under passed. No facepalm story met the standard; nothing published. The verified genius story is on the bench for a later day.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "SpaceX catches a Starship upper stage returning from orbit with its launch-tower arms for the first time",
+      "outcome": "benched",
+      "reason": "passed every check; kept for a later day because the other side had no story"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Eleven House Democrats miss the vote that killed the Hegseth impeachment resolution, 211-204; many cite traffic",
+      "outcome": "rejected",
+      "reason": "malformed candidate: ✖ Too big: expected string to have <=110 characters   → at headline"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Hamtramck council chaos",
+      "outcome": "rejected",
+      "reason": "Events from earlier in the year, not in window."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Man calls 911 to complain about club services (Fox 13)",
+      "outcome": "rejected",
+      "reason": "Article is from June 2025, too old."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Wadsworth, Ohio sheep roped after 45 days",
+      "outcome": "rejected",
+      "reason": "Animal story with no baffling human act."
+    },
+    {
+      "side": "genius",
+      "headline": "Rocky fans set Guinness record for largest gathering dressed as Rocky Balboa, Philadelphia (Nov. 13)",
+      "outcome": "rejected",
+      "reason": "A fan costume gathering rather than an achievement of the kind the site wants. Not pursued further."
+    },
+    {
+      "side": "genius",
+      "headline": "Franciscan Health and Ossium Health report first deceased-donor bone marrow transplant for non-malignant disease (Indianapolis, Nov. 10)",
+      "outcome": "rejected",
+      "reason": "Only a company press release (GlobeNewswire) turned up, which is not an accepted source. No accepted news page found."
+    },
+    {
+      "side": "genius",
+      "headline": "Rabat and Manipur first liver transplants",
+      "outcome": "rejected",
+      "reason": "Not in the US."
+    }
+  ]
+}

@@ -1,1 +1,36 @@
-[]
+[
+  {
+    "story": {
+      "slug": "spacex-catches-starship-upper-stage-with-tower-arms-first-time",
+      "side": "genius",
+      "headline": "SpaceX catches a Starship upper stage returning from orbit with its launch-tower arms for the first time",
+      "summary": "On Nov. 14, SpaceX's Ship 42 returned to Starbase, Texas, about 22.5 hours after launch and 14 orbits of Earth, and was caught by the launch tower's arms. It is the first time an orbital Starship upper stage has been recovered this way. The Super Heavy booster aborted its own catch on Nov. 13 and diverted over the Gulf of Mexico, where it exploded.",
+      "quote": {
+        "text": "SpaceX caught the Starship upper stage today (Nov. 14) for the first time ever, wrapping up the Flight 15 mission.",
+        "sourceUrl": "https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-14-2026-starship-first-double-landing-attempt"
+      },
+      "state": "TX",
+      "city": "Starbase",
+      "category": "space",
+      "subject": "business",
+      "party": null,
+      "eventDate": "2026-11-14",
+      "sources": [
+        {
+          "url": "https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-14-2026-starship-first-double-landing-attempt",
+          "publisher": "Space.com",
+          "title": "SpaceX Starship Flight 15 live updates: Starship lands from orbit for 1st time",
+          "date": "2026-11-14"
+        },
+        {
+          "url": "https://www.foxbusiness.com/technology/spacex-makes-history-starship-spacecraft-caught-launch-tower-first-time",
+          "publisher": "Fox Business",
+          "title": "SpaceX makes history as Starship spacecraft caught by launch tower for first time",
+          "date": "2026-11-14"
+        }
+      ],
+      "score": 7
+    },
+    "verifiedOn": "2026-11-15"
+  }
+]
