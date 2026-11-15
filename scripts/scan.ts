@@ -484,7 +484,9 @@ async function main() {
       }),
       finalTool: SUBMIT_CANDIDATES,
       accept: ReceivedCandidatesSchema,
-      effort: "high",
+      // Searching is wide, not deep: nothing is published on discovery's word, and the
+      // verifier that decides still runs at high effort.
+      effort: "medium",
       maxSearches: budgets[side],
       maxFetches: 60,
     });
