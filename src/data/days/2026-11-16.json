@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-16",
+  "genius": {
+    "slug": "spacex-catches-starship-upper-stage-with-tower-arms-first-time",
+    "side": "genius",
+    "headline": "SpaceX catches a Starship upper stage returning from orbit with its launch-tower arms for the first time",
+    "summary": "On Nov. 14, SpaceX's Ship 42 returned to Starbase, Texas, about 22.5 hours after launch and 14 orbits of Earth, and was caught by the launch tower's arms. It is the first time an orbital Starship upper stage has been recovered this way. The Super Heavy booster aborted its own catch on Nov. 13 and diverted over the Gulf of Mexico, where it exploded.",
+    "quote": {
+      "text": "SpaceX caught the Starship upper stage today (Nov. 14) for the first time ever, wrapping up the Flight 15 mission.",
+      "sourceUrl": "https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-14-2026-starship-first-double-landing-attempt"
+    },
+    "state": "TX",
+    "city": "Starbase",
+    "category": "space",
+    "subject": "business",
+    "party": null,
+    "eventDate": "2026-11-14",
+    "sources": [
+      {
+        "url": "https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-14-2026-starship-first-double-landing-attempt",
+        "publisher": "Space.com",
+        "title": "SpaceX Starship Flight 15 live updates: Starship lands from orbit for 1st time",
+        "date": "2026-11-14",
+        "archiveUrl": "https://web.archive.org/web/20261115074804/https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-14-2026-starship-first-double-landing-attempt"
+      },
+      {
+        "url": "https://www.foxbusiness.com/technology/spacex-makes-history-starship-spacecraft-caught-launch-tower-first-time",
+        "publisher": "Fox Business",
+        "title": "SpaceX makes history as Starship spacecraft caught by launch tower for first time",
+        "date": "2026-11-14",
+        "archiveUrl": "https://web.archive.org/web/20261116200040/https://www.foxbusiness.com/technology/spacex-makes-history-starship-spacecraft-caught-launch-tower-first-time"
+      }
+    ],
+    "score": 7
+  },
+  "facepalm": {
+    "slug": "marblehead-select-board-chair-bars-health-board-over-hat",
+    "side": "facepalm",
+    "headline": "Marblehead Select Board chair bars Board of Health from meeting room over a member's hat",
+    "summary": "Marblehead, Mass., Select Board Chair Dan Fox barred the town Board of Health from the Select Board meeting room at Abbot Hall after member Tom McMahon wore a baseball cap to a Nov. 9 meeting, according to the Marblehead Current and CBS Boston. After meeting Wednesday, the two released a joint statement in which Fox acknowledged the process of the ban was inappropriate and McMahon committed to not wearing a hat going forward; Fox said the board may resume meeting there.",
+    "quote": {
+      "text": "Members of the Board of Health say they have been blocked from using the space for meetings due to a dress code violation.",
+      "sourceUrl": "https://www.cbsnews.com/boston/news/marblehead-board-of-health-abbot-hall-hat-dress-code/"
+    },
+    "state": "MA",
+    "city": "Marblehead",
+    "category": "government",
+    "subject": "official-or-institution",
+    "party": null,
+    "eventDate": "2026-11-11",
+    "sources": [
+      {
+        "url": "https://www.cbsnews.com/boston/news/marblehead-board-of-health-abbot-hall-hat-dress-code/",
+        "publisher": "CBS News Boston",
+        "title": "Marblehead Board of Health blocked from using town hall after member wore hat",
+        "date": "2026-11-11",
+        "archiveUrl": "https://web.archive.org/web/20261116200231/https://www.cbsnews.com/boston/news/marblehead-board-of-health-abbot-hall-hat-dress-code/"
+      },
+      {
+        "url": "https://marbleheadcurrent.org/2026/11/11/hat-dispute-gets-board-of-health-booted-from-select-board-meeting-room/",
+        "publisher": "Marblehead Current",
+        "title": "Hat dispute gets Board of Health booted from Select Board meeting room",
+        "date": "2026-11-11",
+        "local": true
+      }
+    ],
+    "score": 6
+  },
+  "publishedAt": "2026-11-16T20:03:14.928Z",
+  "model": "claude-sonnet-5-5 (discovery), claude-opus-5-5 (verifier)",
+  "history": [
+    {
+      "date": "2026-11-16",
+      "change": "Published by the daily scan."
+    }
+  ]
+}

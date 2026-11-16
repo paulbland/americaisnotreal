@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-16",
+  "startedAt": "2026-11-16T19:56:34.198Z",
+  "finishedAt": "2026-11-16T20:03:14.929Z",
+  "model": "claude-sonnet-5-5 (discovery), claude-opus-5-5 (verifier)",
+  "searches": 60,
+  "summary": "Facepalm: Two facepalm candidates found and verified: Marblehead hat dispute (local pairing) and the 11 Democrats who missed the Hegseth vote. Wider odd-news searches turned up little new inside the window. Genius: Genius scan for 2026-11-16 found two candidates that fit the rules: the Chandra discovery of a hidden compact companion behind a repeating supernova impostor (University of Virginia-led, with NASA and Space.com pages), and the oldest known compact quasar pair (Gemini North in Hawaii, with Space.com and NOIRLab). The Starship upper-stage catch is already on the bench, so it was not re-proposed. Most other leads failed on sourcing, because the only coverage came from publishers that are not on the accepted list.</summary>\n<parameter name=\"candidates\">[{\"slug\":\"chandra-finds-hidden-companion-behind-repeating-supernova-impostor\",\"side\":\"genius\",\"headline\":\"Chandra X-ray data reveal a hidden black hole or neutron star behind a repeating supernova impostor\",\"summary\":\"A University of Virginia-led team used NASA's Chandra X-ray Observatory, timed to a March 2026 outburst, to show that the star AT 2016blu has an unseen compact companion in a 113-day orbit. According to NASA, it is the first X-ray detection of this class of erupting star and the first found with a black hole or neutron star companion. The study was published Nov. 9 in The Astrophysical Journal.\",\"quote\":{\"text\":\"This is the first X-ray detection of one of this class of erupting stars.\",\"sourceUrl\":\"https://science.nasa.gov/missions/chandra/nasas-chandra-finds-source-of-stars-mysterious-outbursts/\"},\"state\":\"VA\",\"city\":\"Charlottesville\",\"category\":\"space\",\"subject\":\"group\",\"party\":null,\"eventDate\":\"2026-11-09\",\"sources\":[{\"url\":\"https://science.nasa.gov/missions/chandra/nasas-chandra-finds-source-of-stars-mysterious-outbursts/\",\"publisher\":\"NASA Science\",\"title\":\"NASA's Chandra Finds Source of Star's Mysterious Outbursts\",\"date\":\"2026-11-09\"},{\"url\":\"https://www.space.com/astronomy/black-holes/this-supernova-impostor-baffled-astronomers-for-15-years-until-they-found-a-hidden-black-hole-feeding-on-an-unstable-star\",\"publisher\":\"Space.com\",\"title\":\"This supernova impostor baffled astronomers for 15 years — until they found a hidden black hole feeding on an unstable star\",\"date\":\"2026-11-12\"}],\"score\":5,\"corroboration\":{\"sourceUrl\":\"https://www.space.com/astronomy/black-holes/this-supernova-impostor-baffled-astronomers-for-15-years-until-they-found-a-hidden-black-hole-feeding-on-an-unstable-star\",\"quote\":\"Until now, no one knew what causes these stars to repeatedly cry wolf.\"}},{\"slug\":\"gemini-north-webb-find-oldest-compact-quasar-pair\",\"side\":\"genius\",\"headline\":\"Gemini North and Webb data reveal the oldest compact quasar pair, seen 900 million years after the Big Bang\",\"summary\":\"A team led by NSF NOIRLab astronomer Silvia Onorato identified J1602+4228AB in Webb survey data and resolved the two quasars with the Gemini North telescope on Maunakea, Hawaii. According to NOIRLab, it is the most distant and oldest compact quasar pair known, with black holes of 1.5 billion and 400 million solar masses. The results appeared Nov. 10 in The Astrophysical Journal Letters.\",\"quote\":{\"text\":\"Using the James Webb Space Telescope (JWST), astronomers have discovered the oldest pair of supermassive black hole-powered quasars ever seen.\",\"sourceUrl\":\"https://www.space.com/astronomy/black-holes/astronomers-stunned-after-james-webb-space-telescope-discovers-the-earliest-pair-of-black-hole-powered-quasars\"},\"state\":\"HI\",\"city\":null,\"category\":\"space\",\"subject\":\"group\",\"party\":null,\"eventDate\":\"2026-11-10\",\"sources\":[{\"url\":\"https://www.space.com/astronomy/black-holes/astronomers-stunned-after-james-webb-space-telescope-discovers-the-earliest-pair-of-black-hole-powered-quasars\",\"publisher\":\"Space.com\",\"title\":\"Astronomers stunned after James Webb Space Telescope discovers the earliest pair of black hole-powered quasars\",\"date\":\"2026-11-12\"},{\"url\":\"https://noirlab.edu/public/news/noirlab2627/\",\"publisher\":\"NSF NOIRLab\",\"title\":\"Astronomers Discover Nāpōwawāʻenakaulua, the Oldest Compact Quasar Pair in the Universe\",\"date\":\"2026-11-10\"}],\"score\":5,\"corroboration\":{\"sourceUrl\":\"https://noirlab.edu/public/news/noirlab2627/\",\"quote\":\"most distant, and thus oldest, compact pair of quasars ever found in the Universe\"}}] Pair published.",
+  "published": true,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "SpaceX catches a Starship upper stage returning from orbit with its launch-tower arms for the first time",
+      "outcome": "published",
+      "reason": "from the bench (verified 2026-11-15)"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Marblehead Select Board chair bars Board of Health from meeting room over a member's hat",
+      "outcome": "published",
+      "reason": "passed every check"
+    },
+    {
+      "side": "facepalm",
+      "headline": "11 House Democrats miss vote that killed Hegseth impeachment 211-204, many citing traffic",
+      "outcome": "unused",
+      "reason": "an earlier candidate was published"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Marathon, Fla., mayor apologizes for vulgar comment",
+      "outcome": "rejected",
+      "reason": "Only a non-accepted local outlet (Keys News) found; not opened."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Rocky fans set Guinness record in Philadelphia",
+      "outcome": "rejected",
+      "reason": "Deliberate, cheerful record rather than a baffling act."
+    },
+    {
+      "side": "genius",
+      "headline": "FDA approves Gazyva as the first drug for primary membranous nephropathy (Nov. 13)",
+      "outcome": "rejected",
+      "reason": "The FDA page is official. The news coverage found (Fierce Pharma, HCPLive, Medical Daily) is not on the accepted list. It is also a new use for an existing drug."
+    },
+    {
+      "side": "genius",
+      "headline": "Josh Allen sets the NFL record for total touchdowns through a player's first 10 seasons (Nov. 15, East Rutherford, N.J.)",
+      "outcome": "rejected",
+      "reason": "A narrow statistical record. Coverage found was NBC Sports, SI, Heavy and Roundtable, none of which is accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "MIT and Northeastern 'scale-rich' impact-absorbing metamaterials (Nature, Nov. 11)",
+      "outcome": "rejected",
+      "reason": "Only official pages (MIT, NSF) and unlisted outlets (Interesting Engineering, Nanowerk, 3dprinting.com) were found. No accepted news publisher."
+    },
+    {
+      "side": "genius",
+      "headline": "QuEra/Harvard 180-qubit prethermal dynamical phase transition study (Nature)",
+      "outcome": "rejected",
+      "reason": "Only the Nature paper and QuEra's own page were found, and the arXiv preprint dates to 2025. No accepted news coverage."
+    },
+    {
+      "side": "genius",
+      "headline": "Brown University eliminates the 'dead layer' in ultrathin multiferroic films (Nature Materials)",
+      "outcome": "rejected",
+      "reason": "Too old. Coverage dates to late October, and ScienceDaily's Nov. 11-12 page is a repost."
+    },
+    {
+      "side": "genius",
+      "headline": "Ilia Malinin wins a fourth Skate America title in Everett, Wash. (Nov. 14)",
+      "outcome": "rejected",
+      "reason": "A routine competition win rather than a record or first. The coverage found was ESPN, Forbes, Olympics.com and CBC, none of which is accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "Infosys Prize 2026 winners, including U.S.-based researchers",
+      "outcome": "rejected",
+      "reason": "The prize was announced in Bengaluru, India. It is not a U.S. event."
+    },
+    {
+      "side": "genius",
+      "headline": "Rocket Lab's 100th Electron launch (Nov. 14)",
+      "outcome": "rejected",
+      "reason": "The launch was from New Zealand, not the U.S."
+    },
+    {
+      "side": "genius",
+      "headline": "SpaceX Starship upper stage tower catch (Nov. 14)",
+      "outcome": "rejected",
+      "reason": "Already on the bench for this side, so not re-proposed."
+    }
+  ]
+}
