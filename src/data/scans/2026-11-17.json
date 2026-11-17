@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-17",
+  "startedAt": "2026-11-17T18:52:35.806Z",
+  "finishedAt": "2026-11-17T18:55:21.510Z",
+  "model": "claude-sonnet-5-5 (discovery), claude-opus-5-5 (verifier)",
+  "searches": 91,
+  "summary": "Facepalm: No facepalm candidates qualified. Searches turned up mostly animal items, crimes with victims, and election errors already set aside. The one plausible lead, a Waymo trying to pass CHP officers, had only one openable accepted source. Genius: No candidate cleared the rules after about 30 searches. Searches kept returning ScienceDaily reposts, company press releases, stories already published, or items with only one accepted source. No genius or facepalm story met the standard; nothing published.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "facepalm",
+      "headline": "Driverless Waymo tries twice to pass CHP officers during an I-280 traffic break in San Francisco",
+      "outcome": "rejected",
+      "reason": "In the window (about Nov. 12). ABC7 opened and confirmed it. The SF Chronicle page was blocked from fetch, and the only other pages found were PoliceOne (a trade site), KRON4 (not fetchable) and Yahoo (banned). No second source could be opened. It is also a mild incident."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Florida man claims meth-filled safe was 'collateral' after Lake Worth Beach crash",
+      "outcome": "rejected",
+      "reason": "Only one source (CBS12) was found, and it describes a drug-trafficking arrest."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Bellevue, Wash., man sues Kalshi after losing about $315,000 in sports betting",
+      "outcome": "rejected",
+      "reason": "Gambling losses may point to addiction, which the rules exclude, and the claim is not clearly absurd. The pages were not opened."
+    },
+    {
+      "side": "facepalm",
+      "headline": "UPI Odd News items on Nov. 16-17 (goats, sheep, spider monkey, owl)",
+      "outcome": "rejected",
+      "reason": "Animal stories with no baffling human act."
+    },
+    {
+      "side": "genius",
+      "headline": "Sellas leukemia vaccine cuts death risk 41% in phase 3 AML trial (Nov. 17)",
+      "outcome": "rejected",
+      "reason": "The result is a company-announced topline with no confidence interval released. STAT's page is paywalled and Bloomberg's coverage is stock-focused. No second independent news page was opened."
+    },
+    {
+      "side": "genius",
+      "headline": "Stanford study finds Alzheimer's warning signs years before memory loss",
+      "outcome": "rejected",
+      "reason": "It is an association finding rather than a distinct achievement. The only accepted source seen is a ScienceDaily repost, and the work was first reported around Nov. 6."
+    },
+    {
+      "side": "genius",
+      "headline": "SpaceX catches Starship upper stage (Nov. 14)",
+      "outcome": "rejected",
+      "reason": "Already published on the Nov. 16 page, so not re-proposed."
+    },
+    {
+      "side": "genius",
+      "headline": "Other ScienceDaily items, including the heart-aging study and the telescope imaging breakthrough",
+      "outcome": "rejected",
+      "reason": "Each is a ScienceDaily repost with no second accepted source and no confirmed US origin or in-window publication date."
+    }
+  ]
+}
