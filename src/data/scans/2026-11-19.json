@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-19",
+  "startedAt": "2026-11-19T18:44:41.706Z",
+  "finishedAt": "2026-11-19T18:47:10.428Z",
+  "model": "claude-sonnet-5-5 (discovery), claude-opus-5-5 (verifier)",
+  "searches": 105,
+  "summary": "Facepalm: No qualifying facepalm candidates found for 2026-11-19. The search tool hit its usage limit before enough leads could be opened and verified. Genius: No candidates for the Nov. 19 genius page. The search tool hit its use limit before I found a story with a complete pair of accepted sources. No facepalm story met the standard; nothing published.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "Voyager 1 becomes the first human-made object to reach one light-day from Earth, NASA says",
+      "outcome": "published",
+      "reason": "from the bench (verified 2026-11-18)"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Louisiana AG refuses judge's order to apologize to SEC over LSU filing language",
+      "outcome": "rejected",
+      "reason": "The AG, Liz Murrill, is a Republican, and that party isn't allowed today."
+    },
+    {
+      "side": "facepalm",
+      "headline": "American Airlines bags in Atlanta covered in liquefied peanut butter",
+      "outcome": "rejected",
+      "reason": "Passengers are on the receiving end of the mess. Only WSB-TV could be opened; the UPI page was not fetchable."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Upstate South Carolina man calls 911 to demand cigarettes and chips",
+      "outcome": "rejected",
+      "reason": "Only WSPA was found among accepted outlets, and its page could not be opened. The behaviour may also point to a health issue."
+    },
+    {
+      "side": "facepalm",
+      "headline": "California DMV bars Waymo from freeways after construction-zone incidents",
+      "outcome": "rejected",
+      "reason": "This is a regulatory action, not an absurd act, and no verbatim quote could be extracted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Burleigh County, N.D., ballot mistake did not affect results",
+      "outcome": "rejected",
+      "reason": "A routine error. Coverage was from North Dakota Monitor, KFYR and Valley News Live, none of which are accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "FDA approves Sanofi's Infilbray (venglustat), the first treatment for neurological symptoms of type 3 Gaucher disease (Nov. 18)",
+      "outcome": "rejected",
+      "reason": "The approval is in the US and inside the window, and the FDA's own page lists it. The Reuters story appeared only on syndication sites (Yahoo, TradingView, Investing.com), which are not accepted, and I never opened a reuters.com or other accepted news page. A search of apnews.com returned nothing. It is also a new drug approval."
+    },
+    {
+      "side": "genius",
+      "headline": "U.S. Short Course World Championships Trials produce six world records in Westmont, Ill.",
+      "outcome": "rejected",
+      "reason": "Too old. The World Aquatics image is dated Nov. 4 and the meet was around Oct. 30 to Nov. 1. Coverage found was SwimSwam, Swimming World and Yahoo, none of which is accepted."
+    },
+    {
+      "side": "genius",
+      "headline": "Perseverance rover confirms complex organic carbon in Martian rocks",
+      "outcome": "rejected",
+      "reason": "Too old. The paper dates to around June 2026 (C&EN), and ScienceDaily's Nov. 12 page is a repost."
+    },
+    {
+      "side": "genius",
+      "headline": "NASA moves ahead with the PROMISE lunar rover and $10B in moon base contracts",
+      "outcome": "rejected",
+      "reason": "A contract and program announcement, not an achievement. The Scientific American page returned 'url not allowed'."
+    },
+    {
+      "side": "genius",
+      "headline": "ScienceDaily items of Nov. 18-19 (hydrogen flame colour, Antarctic ice cliffs, prostate cancer CDK12 mutation, Stonehenge Altar Stone)",
+      "outcome": "rejected",
+      "reason": "These are reposts with no second accepted source and no confirmed US origin or in-window publication date. The Stonehenge item is a UK subject."
+    }
+  ]
+}
