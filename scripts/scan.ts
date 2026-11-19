@@ -92,6 +92,26 @@ const ReceivedCandidatesSchema = z.object({
   passed: z.array(PassedSchema).default([]),
 });
 
+/**
+ * What discovery is first held to: every candidate must already have the right shape
+ * (lengths, enums, required fields). A headline five characters too long used to cost
+ * the whole candidate; now the problems go back to the model to fix. If it still can't
+ * after two tries, the lenient schema above takes over and only the bad ones are lost.
+ */
+const CorrectableCandidatesSchema = ReceivedCandidatesSchema.superRefine((v, ctx) => {
+  v.candidates.forEach((candidate, i) => {
+    const parsed = CandidateSchema.safeParse(candidate);
+    if (parsed.success) return;
+    for (const issue of parsed.error.issues) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["candidates", i, ...issue.path],
+        message: issue.message,
+      });
+    }
+  });
+});
+
 const SubmittedCandidatesSchema = z.object({
   summary: z.string().min(1),
   candidates: z.array(CandidateSchema).max(4),
@@ -161,6 +181,8 @@ async function runAgent<T>(opts: {
   task: string;
   finalTool: Anthropic.Beta.BetaTool;
   accept: z.ZodType<T>;
+  /** Tried once the model has failed `accept` twice, instead of failing the run. */
+  lenient?: z.ZodType<T>;
   effort: "medium" | "high" | "max";
   maxSearches: number;
   maxFetches: number;
@@ -270,6 +292,8 @@ async function runAgent<T>(opts: {
       if (parsed.success) return { input: parsed.data, fetched };
       const problem = z.prettifyError(parsed.error);
       if (corrections++ >= 2) {
+        const fallback = opts.lenient?.safeParse(call.input);
+        if (fallback?.success) return { input: fallback.data, fetched };
         throw new InvalidFinalInput(`${opts.finalTool.name} input still invalid:\n${problem}`);
       }
       console.warn(`${opts.finalTool.name} input invalid, asking for a correction:\n${problem}`);
@@ -584,7 +608,8 @@ async function main() {
         limits: facepalmLimits(DATE, days),
       }),
       finalTool: SUBMIT_CANDIDATES,
-      accept: ReceivedCandidatesSchema,
+      accept: CorrectableCandidatesSchema,
+      lenient: ReceivedCandidatesSchema,
       // Searching is wide, not deep: nothing is published on discovery's word, and the
       // verifier that decides still runs at high effort.
       effort: "medium",
