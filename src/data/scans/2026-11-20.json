@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-20",
+  "startedAt": "2026-11-20T18:10:11.782Z",
+  "finishedAt": "2026-11-20T18:13:54.265Z",
+  "model": "claude-sonnet-5-5 (discovery), claude-opus-5-5 (verifier)",
+  "searches": 86,
+  "summary": "Facepalm: No facepalm candidate met the rules today, so I'm submitting none. Search results were thin for the Nov 14–20 window. The only possible lead, the Chicago self-cleaning toilet story, couldn't be confirmed. Genius: One candidate found: the 2026 National Book Awards. I ran a limited number of searches. Voyager 1 is already on the bench, so I did not re-propose it. Most other leads were ScienceDaily reposts or had no second accepted source. No facepalm story met the standard; nothing published. The verified genius story is on the bench for a later day.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "Hannah Lillith Assadi's 'Paradiso 17' wins the 2026 National Book Award for fiction in New York",
+      "outcome": "benched",
+      "reason": "passed every check; kept for a later day because the other side had no story"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Ogunquit, Maine, fines family $1,700 over giant rooster statues; Institute for Justice sues",
+      "outcome": "rejected",
+      "reason": "WGME and NHPR cover it, but the statues were put up to comfort a 6-year-old daughter with autism. That involves a minor and a disability, which the rules exclude."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Person briefly trapped in Chicago's first self-cleaning public toilet in Wicker Park",
+      "outcome": "rejected",
+      "reason": "The WGN page couldn't be fetched, the event date is unconfirmed, and no second accepted source was opened. The incident is also mild."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Loose horse wrangled after visiting a Virginia McDonald's (UPI)",
+      "outcome": "rejected",
+      "reason": "Animal story with no baffling human act."
+    },
+    {
+      "side": "facepalm",
+      "headline": "SCAD sends a false active-shooter alert during a system test",
+      "outcome": "rejected",
+      "reason": "Too old: the Fox 5 Atlanta article is from May 2025."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Driver in inmate costume arrested for speeding in southern Arizona",
+      "outcome": "rejected",
+      "reason": "Reported Nov. 7, before the 7-day window."
+    },
+    {
+      "side": "facepalm",
+      "headline": "St. Louis County town misspelled on new city-limit sign",
+      "outcome": "rejected",
+      "reason": "Reported Oct. 27, before the window, and the coverage was mostly local or on Yahoo."
+    },
+    {
+      "side": "genius",
+      "headline": "Voyager 1 reaches one light-day from Earth",
+      "outcome": "rejected",
+      "reason": "Already on the bench for this side."
+    },
+    {
+      "side": "genius",
+      "headline": "ScienceDaily items Nov. 17-19 (sea pig bacterium, cosmic-light rotation, hydrogen flames)",
+      "outcome": "rejected",
+      "reason": "Reposts with no second accepted source and no confirmed US origin or in-window date."
+    }
+  ]
+}

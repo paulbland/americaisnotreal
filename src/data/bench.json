@@ -38,5 +38,39 @@
       "score": 6
     },
     "verifiedOn": "2026-11-18"
+  },
+  {
+    "story": {
+      "slug": "national-book-award-fiction-hannah-lillith-assadi-paradiso-17",
+      "side": "genius",
+      "headline": "Hannah Lillith Assadi's 'Paradiso 17' wins the 2026 National Book Award for fiction in New York",
+      "summary": "Hannah Lillith Assadi won the National Book Award for fiction for 'Paradiso 17', her novel about a Palestinian exile, at the National Book Awards ceremony in New York City on Nov. 18. Abdelrahman ElGendy's memoir 'Huna' won the nonfiction prize. ElGendy, who was denied a U.S. visa, according to the National Book Foundation, was represented at the ceremony by his editor, who accepted the award.",
+      "quote": {
+        "text": "Hannah Lillith Assadi’s “Paradiso 17,” a loving, melancholy and poetic account of a Palestinian exile’s worldwide journey, won the National Book Award for fiction.",
+        "sourceUrl": "https://www.baltimoresun.com/2026/11/19/hannah-lillith-assadis-paradiso-17-wins-the-national-book-award-for-fiction/"
+      },
+      "state": "NY",
+      "city": "New York",
+      "category": "culture",
+      "subject": "private-individual",
+      "party": null,
+      "eventDate": "2026-11-18",
+      "sources": [
+        {
+          "url": "https://www.baltimoresun.com/2026/11/19/hannah-lillith-assadis-paradiso-17-wins-the-national-book-award-for-fiction/",
+          "publisher": "The Baltimore Sun (AP)",
+          "title": "Hannah Lillith Assadi's 'Paradiso 17' wins the National Book Award for fiction",
+          "date": "2026-11-19"
+        },
+        {
+          "url": "https://www.stlpr.org/npr/2026-11-19/huna-writer-wins-national-book-award-for-non-fiction-after-not-being-allowed-into-the-u-s",
+          "publisher": "St. Louis Public Radio (NPR)",
+          "title": "'Huna' writer wins National Book Award for non-fiction, after not being allowed into the U.S.",
+          "date": "2026-11-19"
+        }
+      ],
+      "score": 6
+    },
+    "verifiedOn": "2026-11-20"
   }
 ]
