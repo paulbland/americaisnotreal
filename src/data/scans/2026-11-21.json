@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-21",
+  "startedAt": "2026-11-21T17:01:15.569Z",
+  "finishedAt": "2026-11-21T17:04:35.075Z",
+  "model": "claude-sonnet-5-5 (discovery), claude-opus-5-5 (verifier)",
+  "searches": 94,
+  "summary": "Facepalm: Thin day for facepalm stories. One candidate found: Fountain Hills, Ariz., council bans license plate readers the town doesn't have. Other leads were out of the window, lacked a second accepted source, or involved mental-health or animal-only stories. Genius: No genius candidate cleared the rules this run. Searches covered science, medicine, space, prizes, sports and student feats. Results were mostly reposts, items outside the window or outside the U.S., or leads with no accepted second source. Two stories are already on the bench: the Voyager 1 light-day milestone and the National Book Award for fiction. No facepalm story met the standard; nothing published.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "Hannah Lillith Assadi's 'Paradiso 17' wins the 2026 National Book Award for fiction in New York",
+      "outcome": "published",
+      "reason": "from the bench (verified 2026-11-20)"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Fountain Hills, Arizona, council bans license plate readers the town does not have",
+      "outcome": "rejected",
+      "reason": "It isn't absurd on its face. Both sources describe a forward-looking policy ordinance, not a council banning something that doesn't exist. License plate readers exist. The town's police contractor, the Maricopa County Sheriff's Office, presented to the council, said it wanted the cameras as a tool and estimated it could use about four at the town's entrances and exits (ABC15). The ban stops that from happening, which is the point of the ordinance.; The headline and summary leave out that context, so the vote looks pointless. That makes the facepalm framing misleading by omission.; Calling this a facepalm takes a side in a live policy debate, privacy versus policing, after Flock camera misuse cases led several Arizona cities to cancel their contracts (azfamily). A fair reader who supports the ban would see it as a sneer at a legitimate policy choice. The rules say politicians and officials are fair game for what they did, never for their views, and this is at least arguably about a view. Under the rules, an arguable case means reject.; Minor point: the sources spell the drafting councilman's name differently ('Alan' in ABC15, 'Allen' in azfamily). The summary doesn't name him, so this doesn't affect the copy."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Marathon, Fla., mayor caught on hot mic insulting a resident",
+      "outcome": "rejected",
+      "reason": "The hot mic and apology date from about Nov. 10-13, before the 7-day window."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Man calls and texts 911 more than 1,000 times",
+      "outcome": "rejected",
+      "reason": "Behaviour may point to a mental-health issue, which is excluded."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Lake County, Fla., schools mistakenly release 47,000 student records",
+      "outcome": "rejected",
+      "reason": "Reported Nov. 10, before the window."
+    },
+    {
+      "side": "facepalm",
+      "headline": "North Carolina homeowner sues HOA over 60,000 Christmas lights",
+      "outcome": "rejected",
+      "reason": "Only Yahoo and aggregator copies found; no accepted second source."
+    },
+    {
+      "side": "facepalm",
+      "headline": "UPI Odd News items (runaway pig, loose chickens, horse at McDonald's, corn spill)",
+      "outcome": "rejected",
+      "reason": "Animal or spill stories with no baffling human act."
+    },
+    {
+      "side": "genius",
+      "headline": "UT Austin wearable ultrasound patch boosts REM sleep",
+      "outcome": "rejected",
+      "reason": "Too old. Coverage dates to roughly July. The ScienceDaily page is a Nov. 16 repost."
+    },
+    {
+      "side": "genius",
+      "headline": "FDA approves Regeneron's Livsayis, first siRNA therapy for generalized myasthenia gravis",
+      "outcome": "rejected",
+      "reason": "A new drug approval. Only trade outlets, Yahoo and the company release turned up, with no accepted news publisher."
+    },
+    {
+      "side": "genius",
+      "headline": "Sellas leukemia vaccine cuts death risk 41% in phase 3 AML trial",
+      "outcome": "rejected",
+      "reason": "A company-announced topline result. The Washington Post page was not accessible. Other accepted coverage was only a Fox video and a KFF Health News news roundup."
+    },
+    {
+      "side": "genius",
+      "headline": "Daraxonrasib doubles survival in metastatic pancreatic cancer (phase 3)",
+      "outcome": "rejected",
+      "reason": "Too old. The results were presented at ASCO in June 2026."
+    },
+    {
+      "side": "genius",
+      "headline": "Capstan Medical completes first U.S. robot-assisted mitral valve replacement",
+      "outcome": "rejected",
+      "reason": "Only a company press release (PRNewswire) and a Substack post were found. Neither is an accepted source."
+    },
+    {
+      "side": "genius",
+      "headline": "Vitamin B12 zinc-air battery (Journal of Materials Chemistry A)",
+      "outcome": "rejected",
+      "reason": "The research is from Chile (IQUEMA). It is not a U.S. achievement."
+    }
+  ]
+}
