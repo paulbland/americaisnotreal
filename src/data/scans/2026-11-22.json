@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-22",
+  "startedAt": "2026-11-22T17:30:06.120Z",
+  "finishedAt": "2026-11-22T17:32:51.443Z",
+  "model": "claude-sonnet-5-5 (discovery), claude-opus-5-5 (verifier)",
+  "searches": 92,
+  "summary": "Facepalm: No candidates submitted. After many searches I found no facepalm story that met every rule. The search tool returned few usable pages from accepted publishers. It hit its use limit before I could check the leads that looked promising. Genius: No candidate cleared the rules for the genius side on 2026-11-22. I ran about 25 searches. Most useful results were Wikipedia pages, reposts, or sources not on the accepted list. No facepalm story met the standard; nothing published.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "Hannah Lillith Assadi's 'Paradiso 17' wins the 2026 National Book Award for fiction in New York",
+      "outcome": "published",
+      "reason": "from the bench (verified 2026-11-20)"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Roselle, N.J., welcome banner misspells 'visiting' as 'visivting'",
+      "outcome": "rejected",
+      "reason": "The banner went up and was fixed in late September to early October, outside the 7-day window. The sources found were News 12, TAPinto and a Yahoo copy, none of them accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Wayne County, Mich., payroll error deposits $1.6 million in one paycheck",
+      "outcome": "rejected",
+      "reason": "This is a routine payroll error from 2025, so it is far too old."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Boston mayor's office mistakenly sends 'electeds of color' party invitation to the whole council",
+      "outcome": "rejected",
+      "reason": "The error was in December 2023, so it is too old."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Buffalo city workers cut down a couple's willow tree by mistake",
+      "outcome": "rejected",
+      "reason": "Only WKBW was found and the event date was not confirmed. The couple are on the receiving end of the error."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Albemarle County, Va., schools close after finding 500 staff were never screened for child abuse",
+      "outcome": "rejected",
+      "reason": "The page could not be fetched, so the event date and details could not be verified. It is also a child-safety matter."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Junction City, Ky., mayor resigns after a hot-mic video with a slur",
+      "outcome": "rejected",
+      "reason": "The conduct involves a slur and offence to a group, and the only coverage found was not from an accepted publisher."
+    },
+    {
+      "side": "facepalm",
+      "headline": "American Airlines marks passengers as no-shows despite boarding photos",
+      "outcome": "rejected",
+      "reason": "Passengers are on the receiving end of the error, and the only coverage found was a travel blog."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Woman uses Meta smart glasses and ChatGPT in an alleged witness-intimidation campaign",
+      "outcome": "rejected",
+      "reason": "This is a crime with a victim, and only a Fox News video page was found."
+    },
+    {
+      "side": "genius",
+      "headline": "NASA study of Kuiper Belt dust points to ancient heavy-oxygen ice reservoir",
+      "outcome": "rejected",
+      "reason": "The only pages found were NASA's own and a Phys.org page dated about 9 days before the scan, so it is likely outside the window. There is no second accepted news page, and it is an incremental finding."
+    },
+    {
+      "side": "genius",
+      "headline": "Verstappen wins Las Vegas Grand Prix",
+      "outcome": "rejected",
+      "reason": "A routine race win by a Dutch driver, not a record or a distinct achievement."
+    }
+  ]
+}
