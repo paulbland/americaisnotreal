@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-23",
+  "startedAt": "2026-11-23T21:49:38.187Z",
+  "finishedAt": "2026-11-23T21:52:26.918Z",
+  "model": "claude-sonnet-5-5 (discovery), claude-opus-5-5 (verifier)",
+  "searches": 74,
+  "summary": "Facepalm: No facepalm candidate met the sourcing and exclusion rules for 2026-11-23. The search budget was cut short before I could find a usable story. Genius: One candidate found: the BICAN basal ganglia cell atlas, published Nov. 12. I did not find a second or third distinct story with a complete pair of sources, and I ran only a few searches. No facepalm story met the standard; nothing published.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "Consortium publishes 25-million-cell atlas of the basal ganglia in humans, macaques and marmosets",
+      "outcome": "rejected",
+      "reason": "Too old. The papers came out on Nov. 12, 2026, which the proposal's eventDate and all three sources confirm. The scan date is 2026-11-23, so the 7-day window runs Nov. 17–23. Nov. 12 is 11 days before the scan date.; The corroboration passage only appears in STAT's og:description meta tag. The visible article text reads differently ('A massive scientific collaboration meant to unravel the mysteries of the human brain has produced the most detailed map yet of the basal ganglia, a region closely associated with a wide array of psychiatric and neurologic disorders.'), so it may fail the mechanical check.; No cited page says the Allen Institute is in Seattle. Setting state WA and city Seattle for a 56-institution consortium is also debatable: the Princeton page is the main source and centres on Princeton's marmoset work.; 'Compared it to a first draft of the Human Genome Project' loosely paraphrases one researcher's comment ('Human Genome Project 1.0, or 0.1'). It is not something the researchers said as a group."
+    },
+    {
+      "side": "genius",
+      "headline": "Hannah Lillith Assadi's 'Paradiso 17' wins the 2026 National Book Award for fiction in New York",
+      "outcome": "published",
+      "reason": "from the bench (verified 2026-11-20)"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Lubbock runner carries a 16-inch pizza through the Route 66 Half Marathon in Tulsa for a Guinness attempt",
+      "outcome": "rejected",
+      "reason": "The event was Nov. 22. KTUL and its sister station Fox23 are one owner's reporting, and neither is on the accepted list. The UPI page could not be opened. It is also a deliberate, cheerful record attempt."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Idaho man skates 19 miles while juggling for a Guinness record",
+      "outcome": "rejected",
+      "reason": "Only UPI and a Yahoo copy were found, and the UPI page could not be opened. It is a deliberate record, not a baffling act."
+    },
+    {
+      "side": "facepalm",
+      "headline": "New Jersey pizzeria owner calls police on a neighbor over one-star reviews",
+      "outcome": "rejected",
+      "reason": "Coverage was only blog and aggregator pieces drawn from social media posts, with no accepted publisher and no local newsroom reporting."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Cincinnati Zoo's Fiona the hippo dies after swallowing a visitor's hat",
+      "outcome": "rejected",
+      "reason": "An animal died, so it is a tragedy and not eligible."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Stitt sues Drummond for $56,000 in fees after Drummond drops an election ad lawsuit",
+      "outcome": "rejected",
+      "reason": "Both officials are Republicans, and the party is not allowed today. Only KTUL covered it."
+    },
+    {
+      "side": "genius",
+      "headline": "Allen Institute-led basal ganglia atlas (NPR coverage)",
+      "outcome": "rejected",
+      "reason": "NPR's page was not fetchable, so I used STAT, Nature and Princeton's page instead."
+    },
+    {
+      "side": "genius",
+      "headline": "ScienceDaily reposts of Nov. 2026 research",
+      "outcome": "rejected",
+      "reason": "Reposts with no second accepted source and no confirmed in-window date."
+    }
+  ]
+}
