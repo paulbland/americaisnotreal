@@ -72,5 +72,39 @@
       "score": 6
     },
     "verifiedOn": "2026-11-20"
+  },
+  {
+    "story": {
+      "slug": "mass-general-patient-passes-one-year-with-pig-kidney",
+      "side": "genius",
+      "headline": "Mass General Brigham patient passes one year with a gene-edited pig kidney, the longest on record",
+      "summary": "Molly Falco, 58, of New Hampshire, reached one year on Nov. 22 with a genetically modified pig kidney transplanted at Mass General Brigham in Boston. According to The New York Times, no other patient is known to have lived longer with a pig kidney, and she has not been hospitalized since February. A 33-patient clinical trial of the kidneys is planned for January.",
+      "quote": {
+        "text": "The patient, Molly Falco, a mother of two who has worked as a chef, has lived with a kidney from a genetically modified pig for longer than any other patient is known to have so far.",
+        "sourceUrl": "https://www.inquirer.com/health/pig-kidney-transplant-milestone-20261123.html"
+      },
+      "state": "MA",
+      "city": "Boston",
+      "category": "medicine",
+      "subject": "official-or-institution",
+      "party": null,
+      "eventDate": "2026-11-22",
+      "sources": [
+        {
+          "url": "https://www.inquirer.com/health/pig-kidney-transplant-milestone-20261123.html",
+          "publisher": "The Philadelphia Inquirer (New York Times)",
+          "title": "Patient marks one year living with pig kidney, a transplant milestone",
+          "date": "2026-11-23"
+        },
+        {
+          "url": "https://www.wcvb.com/article/patient-at-boston-hospital-sets-new-record-after-one-year-with-pig-kidney-transplant/74481454",
+          "publisher": "WCVB",
+          "title": "Patient at Boston hospital sets new record after one year with pig kidney transplant",
+          "date": "2026-11-23"
+        }
+      ],
+      "score": 6
+    },
+    "verifiedOn": "2026-11-24"
   }
 ]
