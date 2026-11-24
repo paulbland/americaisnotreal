@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-24",
+  "startedAt": "2026-11-24T20:26:34.885Z",
+  "finishedAt": "2026-11-24T20:29:21.640Z",
+  "model": "claude-sonnet-5-5 (discovery), claude-opus-5-5 (verifier)",
+  "searches": 69,
+  "summary": "Facepalm: No facepalm candidate cleared the sourcing rules for 2026-11-24 after about 30 searches. The search tool surfaced few recent articles from accepted publishers. Genius: One strong, fully sourced genius candidate found: a New Hampshire woman reached one year with a gene-edited pig kidney at Mass General, a record. Other searches turned up no further qualifying in-window stories with two accepted sources. No facepalm story met the standard; nothing published. The verified genius story is on the bench for a later day.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "Mass General patient passes one year with a gene-edited pig kidney, the longest on record",
+      "outcome": "benched",
+      "reason": "passed every check; kept for a later day because the other side had no story"
+    },
+    {
+      "side": "facepalm",
+      "headline": "South Carolina business owner's Meta AI agent files lawsuit against Meta",
+      "outcome": "rejected",
+      "reason": "The suit was filed Nov. 16, inside the window. Only 404 Media (accepted) was found. Its page is partly paywalled, and the DocumentCloud complaint could not be fetched. The other coverage was Dexerto, FindLaw, Raw Story and aggregators, none acceptable. No valid second source."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Atlanta demolishes the wrong house and sues the owner for $68,000",
+      "outcome": "rejected",
+      "reason": "The story dates from 2023. A recent aggregator copy resurfaced it, so it is not within the 7-day window."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Little Falls, N.J., school board incumbent loses by two votes after mail ballot error",
+      "outcome": "rejected",
+      "reason": "A routine ballot error. Only New Jersey Globe and TAPinto were found, neither accepted, and the voters are on the receiving end of the error."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Seattle City Council tussle over a flipped vote on the RV veto",
+      "outcome": "rejected",
+      "reason": "The vote was Nov. 12, with no clear blunder or absurd act. The Capitol Hill Seattle page could not be fetched."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Man calls and texts 911 more than 1,000 times in three days",
+      "outcome": "rejected",
+      "reason": "The behaviour may point to a mental-health issue, which is excluded. The coverage was on station video pages with no verified quote."
+    },
+    {
+      "side": "facepalm",
+      "headline": "UPI Odd News Nov. 23-24 items (pizza half-marathon record, Maryland lottery, England cat statue)",
+      "outcome": "rejected",
+      "reason": "These are cheerful records, lottery wins or non-US items. None is a baffling act, and some are outside the US."
+    },
+    {
+      "side": "genius",
+      "headline": "ScienceDaily reposts and STAT items from Nov. 21-24",
+      "outcome": "rejected",
+      "reason": "Reposts or opinion pieces with no second accepted source and no confirmed in-window date."
+    }
+  ]
+}
