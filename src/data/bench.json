@@ -106,5 +106,45 @@
       "score": 6
     },
     "verifiedOn": "2026-11-24"
+  },
+  {
+    "story": {
+      "slug": "boston-university-team-finds-blood-marker-for-cte-in-living-patients",
+      "side": "genius",
+      "headline": "Boston University-led study finds a blood protein is elevated in former football players with high-stage CTE",
+      "summary": "A study in JAMA led by Boston University and Banner Health measured a blood protein, eMTBR-tau, in samples drawn in life from 21 former football players who later donated their brains. Levels were significantly higher in those found at autopsy to have high-stage CTE, a disease that can currently be diagnosed only after death. The researchers say the test is not FDA-approved and the findings are preliminary.",
+      "quote": {
+        "text": "Researchers found that levels of a blood protein called eMTBR-tau were significantly higher in participants with high-stage CTE than in those with low-stage CTE or no CTE.",
+        "sourceUrl": "https://www.wcvb.com/article/blood-test-may-help-detect-cte-boston-university-study-finds/74478831"
+      },
+      "state": "MA",
+      "city": "Boston",
+      "category": "medicine",
+      "subject": "official-or-institution",
+      "party": null,
+      "eventDate": "2026-11-19",
+      "sources": [
+        {
+          "url": "https://www.wcvb.com/article/blood-test-may-help-detect-cte-boston-university-study-finds/74478831",
+          "publisher": "WCVB",
+          "title": "Blood test may help detect CTE, Boston University study finds",
+          "date": "2026-11-20"
+        },
+        {
+          "url": "https://www.cbsnews.com/boston/news/new-cte-blood-test-study/",
+          "publisher": "CBS News Boston",
+          "title": "New CTE blood test a \"game changer,\" Boston University researchers say",
+          "date": "2026-11-19"
+        },
+        {
+          "url": "https://www.bu.edu/articles/2026/blood-test-detect-cte-in-life/",
+          "publisher": "Boston University",
+          "title": "Boston University–Led Study Identifies Blood Test That May Detect Brain Disease CTE",
+          "date": "2026-11-20"
+        }
+      ],
+      "score": 5
+    },
+    "verifiedOn": "2026-11-25"
   }
 ]
