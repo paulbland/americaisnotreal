@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-25",
+  "startedAt": "2026-11-25T19:40:26.755Z",
+  "finishedAt": "2026-11-25T19:44:40.570Z",
+  "model": "claude-sonnet-5-5 (discovery), claude-opus-5-5 (verifier)",
+  "searches": 105,
+  "summary": "Facepalm: No facepalm candidates for 2026-11-25. Searches turned up only stories that broke the rules: events older than 7 days, non-US events, crimes with victims, injuries, Republican subjects (not allowed today), or no accepted second source. The search tool hit its usage limit before I could open a second source for any remaining lead. Genius: One genius candidate submitted: the BU-led CTE blood-marker study (JAMA, ~Nov 19), with WCVB, CBS Boston and BU pages. Other leads were set aside for lack of a second accepted source or a non-US origin. No facepalm story met the standard; nothing published. The verified genius story is on the bench for a later day.",
+  "published": false,
+  "candidates": [
+    {
+      "side": "genius",
+      "headline": "Boston University-led team finds a blood marker that tracks CTE in living former football players",
+      "outcome": "benched",
+      "reason": "passed every check; kept for a later day because the other side had no story"
+    },
+    {
+      "side": "facepalm",
+      "headline": "Seabeck, Wash., man crashes into a tree and calls 911 to report his car stolen",
+      "outcome": "rejected",
+      "reason": "KIRO 7 reported it on Nov. 25, but the man had a facial injury and was arrested for DUI, which raises the injury and impairment exclusions. No second accepted source was opened."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Anthem singer botches O Canada lyrics before Leafs-Islanders NHL game",
+      "outcome": "rejected",
+      "reason": "The game was in Toronto, so it did not happen in the United States."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Rep. Lauren Boebert makes a spelling error in a farewell message",
+      "outcome": "rejected",
+      "reason": "Boebert is a Republican, and that party is not allowed today. The only page seen was LGBTQ Nation, and the date was not confirmed."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Polk County, Fla., man arrested for burglary after telling deputies a door-banging prank was funny",
+      "outcome": "rejected",
+      "reason": "The act is a crime with a victim, and no accepted publisher was found."
+    },
+    {
+      "side": "facepalm",
+      "headline": "News of the Weird items (Bean push, Detroit bus horses, Benders Bar $5 theft)",
+      "outcome": "rejected",
+      "reason": "All the events date from before the 7-day window, and the page is a syndicated roundup from a source that is not accepted."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Waymo recalls cars over driving into closed freeway lanes",
+      "outcome": "rejected",
+      "reason": "This is a regulatory and software recall, not an absurd act. Only an Insurance Journal item was seen, and nothing was opened to verify it."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Man arrested for destroying a license plate reader camera",
+      "outcome": "rejected",
+      "reason": "The act is a crime with a victim, and only a local page was found."
+    },
+    {
+      "side": "facepalm",
+      "headline": "Searches for other lead stories",
+      "outcome": "rejected",
+      "reason": "The search tool hit its usage limit before I could open and verify a second source for any other lead. Nothing met the rules, so I propose nothing today."
+    },
+    {
+      "side": "genius",
+      "headline": "FDA approves Welgemda, first drug for limb-girdle muscular dystrophy",
+      "outcome": "rejected",
+      "reason": "Only STAT (paywalled) is an accepted source; no FDA page or second accepted outlet found; new drug approval."
+    },
+    {
+      "side": "genius",
+      "headline": "Whale genome sequenced from drone-collected snot",
+      "outcome": "rejected",
+      "reason": "Led by UK institution (St Andrews); not clearly US."
+    },
+    {
+      "side": "genius",
+      "headline": "ALMA detects dying star's final nuclear pulse",
+      "outcome": "rejected",
+      "reason": "International work, no accepted source opened."
+    }
+  ]
+}
