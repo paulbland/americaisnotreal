@@ -654,11 +654,11 @@ export function containsQuote(text: string, quote: string): boolean {
 
 /**
  * Words that mark a story we never run on the facepalm side: anyone hurt,
- * anyone under 18, anyone in crisis. Deliberately broad; a false positive only
+ * anyone under 18, anyone in crisis, drunk or drugged driving, drugs. Deliberately broad; a false positive only
  * defers a candidate so the next one is tried.
  */
 const FACEPALM_BLOCK_TERMS =
-  /\b(died|death|dead|killed|fatal(ly)?|injur(ed|y|ies)|hospitali[sz]ed|critical condition|suicide|overdose|minor|teen(ager)?s?|child(ren)?|toddler|infant|baby|(?:\d|1[0-7])-year-old|year-old (boy|girl)|student|homeless|disabilit(y|ies)|disabled|mental(ly)? (ill|health)|dementia|undocumented|immigrant|rape|sexual|assault(ed)?|abuse|victim)\b/i;
+  /\b(died|death|dead|killed|fatal(ly)?|injur(ed|y|ies)|hospitali[sz]ed|critical condition|suicide|overdose|minor|teen(ager)?s?|child(ren)?|toddler|infant|baby|(?:\d|1[0-7])-year-old|year-old (boy|girl)|student|homeless|disabilit(y|ies)|disabled|mental(ly)? (ill|health)|dementia|undocumented|immigrant|rape|sexual|assault(ed)?|abuse|victim|drunk(en)?|DUI|DWI|OWI|intoxicated|meth(amphetamine)?|cocaine|fentanyl|heroin)\b/i;
 
 export function facepalmBlockedTerms(text: string): string[] {
   const found = new Set<string>();

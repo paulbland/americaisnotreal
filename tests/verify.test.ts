@@ -107,6 +107,11 @@ describe("editorial lints", () => {
     expect(facepalmBlockedTerms("A 17-year-old tried to")).toContain("17-year-old");
     expect(facepalmBlockedTerms("A 9-year-old tried to")).toContain("9-year-old");
   });
+  it("blocks drunk driving and drug cases but not an arrest on its own", () => {
+    expect(facepalmBlockedTerms("He was charged with DUI after the crash")).toContain("dui");
+    expect(facepalmBlockedTerms("Deputies found meth in the safe")).toContain("meth");
+    expect(facepalmBlockedTerms("He was arrested after commenting on the wanted post")).toEqual([]);
+  });
   it("lets an adult's age through", () => {
     expect(facepalmBlockedTerms("A 42-year-old man married a pig in a ceremony")).toEqual([]);
     expect(facepalmBlockedTerms("An 18-year-old sued the sun")).toEqual([]);

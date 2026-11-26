@@ -32,8 +32,9 @@ The methodology is enforced in code, not just described:
 - `scripts/lib/verify.ts`: the publisher allowlist, banned hosts, official hosts, quote
   matching, the no-victims lint and the loaded-wording lint.
 - `scripts/lib/integrity.ts`: repo-wide checks (run by validate, tests and the scan).
-- `src/lib/score.ts`: what the story score does: the weekly limit on routine administrative
-  errors and the no-repeat rule for facepalm categories. Applied by the scan only, never by
+- `src/lib/score.ts`: what the story score does: the facepalm score floor (5, in
+  `FACEPALM_MIN_SCORE`), the no-repeat rule for facepalm categories, and the freshness window
+  (`FRESH_DAYS`: 7 days for genius, 14 for facepalm). Applied by the scan only, never by
   validate, because the first month of days breaks both.
 - `src/lib/weeks.ts`: how the pair of the week is chosen.
 - `scripts/lib/prompts.ts`: the rules as the scan's models see them.
@@ -46,8 +47,8 @@ Change one and you almost certainly need to change the others.
 - `src/data/days/{date}.json`: one file per published day. Dates are permanent URLs (`/2026-10-09`).
 - `src/data/scans/{date}.json`: one log per scan run, published or not; the newest sets "last checked".
 - `src/data/bench.json`: stories that passed every check but had no partner that day. The next
-  scan may pair one with a fresh story on the other side while its event is still inside the
-  seven-day window; older entries are pruned on every write. Never rendered on its own.
+  scan may pair one with a fresh story on the other side while its event is still inside its
+  side's window; older entries are pruned on every write. Never rendered on its own.
 - Files must be canonical `JSON.stringify(x, null, 2) + "\n"` (validate enforces it; Prettier ignores `src/data/`).
 - Story slugs are unique across all days; a source URL may be cited on only one day.
 - `score` (1 to 10) on a story is the verifier's rating of how strongly it shows its side. It
@@ -61,8 +62,8 @@ Change one and you almost certainly need to change the others.
 
 10:00 UTC (6am Eastern in summer). Claude Sonnet 5.5 with web search, at medium effort, runs once per side, in
 parallel, each with its own search budget, and proposes up to four ranked candidates, each with a score. Facepalm candidates are tried highest score first. Each candidate, in order, must pass: the schema and repo rules; the
-party-balance rule; the variety rules (at most one routine administrative error, score 1 to 3, in any
-seven days, and no facepalm category two days running); an independent adversarial review by Claude Opus 5.5 (which may supply corrected headline or summary
+party-balance rule; the freshness window (7 days for genius, 14 for facepalm); the variety rules (no facepalm
+story scored below 5, and no facepalm category two days running); an independent adversarial review by Claude Opus 5.5 (which may supply corrected headline or summary
 wording, re-checked by the same lints; gives the score that is published; and must vouch by
 hostname for any local newsroom the story cites); and a mechanical check that
 its quote and a corroborating quote appear verbatim on two different publishers' live
@@ -72,13 +73,13 @@ published, any verified story on the other side goes to the bench, and the log s
 publish time. The workflow re-runs validate/check/test/build, opens a PR and merges it
 itself. After the merge, `scripts/indexnow.ts` waits for the deploy and pings IndexNow.
 
-Budget: 60 facepalm and 45 genius discovery searches (facepalm is the harder side to source;
+Budget: 90 facepalm and 45 genius discovery searches (facepalm is the harder side to source;
 each discovery task tells the model its number, so it can plan them)
 plus up to 3 verifications per side at 8 searches each. Discovery runs on Sonnet 5.5 and the
 verifier on Opus 5.5; the repository variables `SCAN_DISCOVERY_MODEL` and `SCAN_VERIFIER_MODEL`
 change either without a code change (unset means the default; defaults and list prices are in
 `scripts/lib/models.ts`). With both jobs on Opus 5.5 a run cost roughly $2 to $4: up to about
-$0.90 in search fees ($0.01 a search) and the rest tokens. Sonnet 5.5's token prices are half of
+$1.80 in search fees ($0.01 a search) and the rest tokens. Sonnet 5.5's token prices are half of
 Opus 5.5's, so discovery's share of the tokens should cost about half; no run on the split had
 been measured when this was written. The footer of each scan PR is the only cost record: models,
 searches, fetches and total on its first line, then each model's token split. The first real
@@ -93,10 +94,12 @@ costs more than not caching.
 
 - Both stories happened in the United States. Americans abroad don't count.
 - Facepalm, in order of preference: a person's own voluntary, baffling act; an official or
-  institutional decision that is absurd on its face; and only as a last resort a routine
-  administrative error (misprint, typo, wrong mailing, payroll mistake), capped at one a week.
-  The first month ran a ballot error nearly every day because they pass every check; that is
-  the failure the score and the cap exist to prevent. Don't loosen either without Paul. Nobody killed, injured or hospitalised; no minors; no crime victims; no
+  institutional decision that is absurd on its face. A crime whose only victim is the perpetrator
+  counts (an arrest alone is no reason to pass), except drunk or drugged driving and drug cases.
+  Routine administrative errors (misprint, typo, wrong mailing, payroll mistake) never run: the
+  scan publishes no facepalm scored below 5. The first month ran a ballot error nearly every day
+  because they pass every check; that is the failure the floor exists to prevent. Don't loosen
+  it without Paul. Nobody killed, injured or hospitalised; no minors; no crime victims; no
   mental-health, addiction or disability; no jokes about poverty, immigration, religion or
   groups. Private individuals only if adults, their own act, already named by both cited
   sources; otherwise "unnamed" with a city.

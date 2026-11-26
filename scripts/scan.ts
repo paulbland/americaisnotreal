@@ -7,9 +7,9 @@
  *      ranked candidates for each side (SCAN_DISCOVERY_MODEL, Claude Sonnet 5.5
  *      by default).
  *   2. Each candidate, in rank order (facepalm candidates highest score first), must
- *      pass: the schema and repo rules, the party-balance and variety rules (at most
- *      one routine administrative error a week, no facepalm category two days
- *      running), an independent adversarial Claude review that also scores the story
+ *      pass: the schema and repo rules, the freshness window (7 days for genius, 14
+ *      for facepalm), the party-balance and variety rules (a facepalm score of at
+ *      least 5, no facepalm category two days running), an independent adversarial Claude review that also scores the story
  *      and vouches for any local newsroom it cites
  *      (SCAN_VERIFIER_MODEL, Claude Opus 5.5 by default), and a mechanical check
  *      that its quote and corroboration appear verbatim on two different
@@ -38,7 +38,7 @@ import {
   type Side,
   type Story,
 } from "../src/data/schema.ts";
-import { facepalmLimits, varietyProblem } from "../src/lib/score.ts";
+import { facepalmLimits, freshnessProblem, varietyProblem } from "../src/lib/score.ts";
 import { partyBalance } from "../src/lib/stats.ts";
 import { archiveUrl } from "./lib/archive.ts";
 import { fetchPageText, urlKey } from "./lib/fetch.ts";
@@ -520,6 +520,11 @@ async function pickSide(
       continue;
     }
     // Checked before a verification is spent on it, and again with the verifier's score.
+    const stale = freshnessProblem({ ...parsed.data, side }, DATE);
+    if (stale) {
+      log.push({ side, headline, outcome: "rejected", reason: stale });
+      continue;
+    }
     const blocked = varietyProblem({ ...parsed.data, side }, DATE, days);
     if (blocked) {
       log.push({ side, headline, outcome: "deferred", reason: blocked });
@@ -575,9 +580,8 @@ async function main() {
     throw new Error(`${DATE} is already published; corrections are made by hand.`);
   }
   const days = [...repo.days].sort((a, b) => b.date.localeCompare(a.date));
-  // Bench entries are usable while their event is still inside the window for this date.
-  const weekAgo = new Date(Date.parse(DATE) - 7 * 86_400_000).toISOString().slice(0, 10);
-  const usable = (b: BenchEntry) => b.story.eventDate >= weekAgo && b.story.eventDate <= DATE;
+  // Bench entries are usable while their event is still inside their side's window for this date.
+  const usable = (b: BenchEntry) => !freshnessProblem(b.story, DATE);
   const bench = repo.bench;
   const since = new Date(Date.parse(DATE) - 14 * 86_400_000).toISOString().slice(0, 10);
   // Days on both sides of the date, so a backfill run also avoids stories already used later.
@@ -589,7 +593,7 @@ async function main() {
   // One discovery run per side, each with its own search budget, so neither side can
   // starve the other. Facepalm gets more: it is the harder side to source.
   const budgets: Record<Side, number> = {
-    facepalm: Number(process.env.SCAN_MAX_SEARCHES_FACEPALM ?? 60),
+    facepalm: Number(process.env.SCAN_MAX_SEARCHES_FACEPALM ?? 90),
     genius: Number(process.env.SCAN_MAX_SEARCHES_GENIUS ?? 45),
   };
   const discoverWith = (side: Side, model: string) => {
@@ -686,9 +690,9 @@ async function main() {
   // A bench entry leaves the bench only when it is actually published; a day that
   // borrowed it and still found no partner must leave it for the next day.
   const usedSlugs = new Set(published ? Object.values(fromBench).map((b) => b.story.slug) : []);
-  // Prune only entries whose event is more than a week before this date. An entry whose
-  // event is after a backfill date must survive for the live scans that can still use it.
-  const keep = (b: BenchEntry) => b.story.eventDate >= weekAgo;
+  // Prune only entries outside their side's window for this date. An entry whose event is
+  // after a backfill date must survive for the live scans that can still use it.
+  const keep = (b: BenchEntry) => b.story.eventDate > DATE || !freshnessProblem(b.story, DATE);
   const nextBench = [...bench.filter((b) => !usedSlugs.has(b.story.slug) && keep(b)), ...benched];
 
   let day: Day | null = null;
