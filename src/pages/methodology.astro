@@ -7,7 +7,7 @@ import { LABELS, SITE } from "../lib/site.ts";
 const faqs = [
   {
     q: "How are the two stories chosen?",
-    a: "Every morning an automated scan searches accepted US news publishers and the odd-news wires for stories from the previous seven days. It proposes up to four candidates for each side, ranked; on the facepalm side the most absurd is tried first. Each candidate is then checked independently; the first on each side to pass every check is published. A story qualifies if the event happened, was announced or was published within the previous seven days, whatever the date on the news pages. If either side has no survivor, nothing is published that day.",
+    a: "Every morning an automated scan searches accepted US news publishers and the odd-news wires for recent stories. It proposes up to four candidates for each side, ranked; on the facepalm side the most absurd is tried first. Each candidate is then checked independently; the first on each side to pass every check is published. A story qualifies if the event happened, was announced or was published within the previous seven days for genius, or fourteen days for facepalm, whatever the date on the news pages. Odd news is often picked up by the wires a week or more after a local outlet breaks it. If either side has no survivor, nothing is published that day.",
   },
   {
     q: "What counts as a genius story?",
@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "What counts as a facepalm story?",
-    a: "A specific, verifiable act of human absurdity in the United States that was its own consequence, reported straight by credible outlets: first a person's own baffling act, then an official decision that is absurd on its face. Routine administrative errors such as ballot misprints are a last resort, limited to one a week. Never a story where anyone was killed, injured or hospitalised, where the subject is under 18 or a victim of a crime, where the behaviour suggests a mental-health crisis, addiction or disability, or where the joke is poverty, immigration status, religion or a group of people.",
+    a: "A specific, verifiable act of human absurdity in the United States that was its own consequence, reported straight by credible outlets: first a person's own baffling act, then an official decision that is absurd on its face. Routine administrative errors such as ballot misprints no longer run. Never a story where anyone was killed, injured or hospitalised, where the subject is under 18 or a victim of a crime, where the behaviour suggests a mental-health crisis, addiction or disability, or where the joke is poverty, immigration status, religion or a group of people.",
   },
   {
     q: "Who fact-checks the stories?",
@@ -71,18 +71,19 @@ const faqs = [
       own consequence, reported straight by credible outlets, that a reader will recognise without
       being told. In order of preference: a person's own voluntary, baffling act; then an official
       or institutional decision that is absurd on its face, such as a council that bans something
-      that doesn't exist or a bill that misspells the state; and only as a last resort a routine
-      administrative error, such as a ballot misprint or a payroll mistake.
+      that doesn't exist or a bill that misspells the state. A crime counts when the only person it
+      harms is the one who committed it. Routine administrative errors, such as a ballot misprint or
+      a payroll mistake, do not count.
     </p>
 
     <h2>Variety</h2>
     <p>
       For its first month the site ran a county's ballot error almost every day, because those
       stories pass every check easily. They are now limited in code. The fact-checker scores every
-      story from 1 to 10 for how strongly it shows its side, and a facepalm story scored as a
-      routine administrative error may run at most once in any seven days. No facepalm category may
-      run two days in a row. On the facepalm side the candidates are tried in order of score, the
-      most absurd first. A day when nothing clears these limits publishes nothing.
+      story from 1 to 10 for how strongly it shows its side, and no facepalm story scored below 5 is
+      published, which rules out routine administrative errors and mild blunders. No facepalm
+      category may run two days in a row. On the facepalm side the candidates are tried in order of
+      score, the most absurd first. A day when nothing clears these limits publishes nothing.
     </p>
 
     <h2>What is never run on the facepalm side</h2>
@@ -91,7 +92,7 @@ const faqs = [
       <li>Any story whose subject is under 18.</li>
       <li>
         Any story whose subject is the victim of a crime, or any crime with a victim other than the
-        perpetrator.
+        perpetrator. Drunk or drugged driving and drug cases never run.
       </li>
       <li>
         Any behaviour that suggests a mental-health crisis, addiction, dementia or disability.

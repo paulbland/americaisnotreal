@@ -3,7 +3,37 @@
  * facepalm side, keeping categories from repeating day after day, and choosing the
  * pair of the week. Pure functions over the data, shared by the scan and the site.
  */
-import { ROUTINE_MAX_SCORE, type Category, type Day, type Story } from "../data/schema.ts";
+import {
+  FACEPALM_MIN_SCORE,
+  ROUTINE_MAX_SCORE,
+  type Category,
+  type Day,
+  type Side,
+  type Story,
+} from "../data/schema.ts";
+
+/**
+ * How many days, up to and including the scan date, a story's event may be old. Odd news is
+ * picked up late, often a week or more after a local station breaks it, so facepalm gets longer.
+ */
+export const FRESH_DAYS: Record<Side, number> = { genius: 7, facepalm: 14 };
+
+/** The earliest event date a story on `side` may have to run on `date`. */
+export function freshSince(side: Side, date: string): string {
+  return new Date(Date.parse(date) - FRESH_DAYS[side] * 86_400_000).toISOString().slice(0, 10);
+}
+
+/** Why this story's event is outside the window for `date`, or null if it is inside it. */
+export function freshnessProblem(
+  story: Pick<Story, "side" | "eventDate">,
+  date: string,
+): string | null {
+  if (story.eventDate > date) return "the event is after the scan date";
+  if (story.eventDate < freshSince(story.side, date)) {
+    return `the event is more than ${FRESH_DAYS[story.side]} days before the scan date`;
+  }
+  return null;
+}
 
 /** Days published before stories were scored get a neutral score. */
 const UNSCORED = 5;
@@ -58,6 +88,10 @@ export function varietyProblem(
   days: Day[],
 ): string | null {
   if (story.side !== "facepalm") return null;
+  const score = effectiveScore(story);
+  if (score < FACEPALM_MIN_SCORE) {
+    return `scored ${score}; a facepalm story needs at least ${FACEPALM_MIN_SCORE}`;
+  }
   const limits = facepalmLimits(date, days);
   if (isRoutine(story) && !limits.routineAllowed) {
     return "a routine administrative error already ran within a week of this date";

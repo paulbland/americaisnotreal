@@ -97,6 +97,8 @@ export type Source = z.infer<typeof SourceSchema>;
 export const ScoreSchema = z.number().int().min(1).max(10);
 /** A facepalm story scored at or below this is a routine administrative error. */
 export const ROUTINE_MAX_SCORE = 3;
+/** The scan publishes no facepalm story scored below this: a routine error or a mild blunder never runs. */
+export const FACEPALM_MIN_SCORE = 5;
 
 export const MIN_QUOTE_CHARS = 25;
 export const MAX_QUOTE_CHARS = 280;

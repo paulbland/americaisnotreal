@@ -3,6 +3,7 @@ import type { Day, Story } from "../src/data/schema.ts";
 import {
   effectiveScore,
   facepalmLimits,
+  freshnessProblem,
   isRoutine,
   pairScore,
   varietyProblem,
@@ -44,17 +45,22 @@ describe("variety rules", () => {
   const routine = { side: "facepalm", category: "government", score: 2 } as const;
   const absurd = { side: "facepalm", category: "animals", score: 8 } as const;
 
-  it("allows one routine administrative error in any seven days", () => {
-    const days = [day("2026-11-10", { score: 2 })];
-    expect(facepalmLimits("2026-11-12", days).routineAllowed).toBe(false);
-    expect(varietyProblem(routine, "2026-11-16", days)).toMatch(/routine administrative error/);
-    expect(varietyProblem(routine, "2026-11-17", days)).toBeNull();
-    expect(varietyProblem(absurd, "2026-11-12", days)).toBeNull();
+  it("never runs a facepalm story scored below 5", () => {
+    expect(varietyProblem(routine, "2026-11-16", [])).toMatch(/needs at least 5/);
+    expect(varietyProblem({ ...absurd, score: 4 }, "2026-11-16", [])).toMatch(/scored 4/);
+    expect(varietyProblem({ ...absurd, score: 5 }, "2026-11-16", [])).toBeNull();
+    // An unscored government facepalm counts as routine.
+    expect(varietyProblem({ side: "facepalm", category: "government" }, "2026-11-16", [])).toMatch(
+      /scored 3/,
+    );
   });
 
-  it("counts days after the date too, for backfill runs", () => {
+  it("still records a routine error within seven days, before and after the date", () => {
     const days = [day("2026-11-10", { score: 2 })];
-    expect(varietyProblem(routine, "2026-11-06", days)).toMatch(/routine/);
+    expect(facepalmLimits("2026-11-12", days).routineAllowed).toBe(false);
+    expect(facepalmLimits("2026-11-06", days).routineAllowed).toBe(false);
+    expect(facepalmLimits("2026-11-17", days).routineAllowed).toBe(true);
+    expect(varietyProblem(absurd, "2026-11-12", days)).toBeNull();
   });
 
   it("never runs the same facepalm category two days running", () => {
@@ -72,6 +78,18 @@ describe("variety rules", () => {
     expect(
       varietyProblem({ side: "genius", category: "government", score: 2 }, "2026-11-11", days),
     ).toBeNull();
+  });
+});
+
+describe("freshness", () => {
+  it("gives genius 7 days and facepalm 14", () => {
+    const g = (eventDate: string) => ({ side: "genius", eventDate }) as const;
+    const f = (eventDate: string) => ({ side: "facepalm", eventDate }) as const;
+    expect(freshnessProblem(g("2026-11-18"), "2026-11-25")).toBeNull();
+    expect(freshnessProblem(g("2026-11-17"), "2026-11-25")).toMatch(/7 days/);
+    expect(freshnessProblem(f("2026-11-11"), "2026-11-25")).toBeNull();
+    expect(freshnessProblem(f("2026-11-10"), "2026-11-25")).toMatch(/14 days/);
+    expect(freshnessProblem(f("2026-11-26"), "2026-11-25")).toMatch(/after the scan date/);
   });
 });
 
