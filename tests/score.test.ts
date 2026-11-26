@@ -91,6 +91,19 @@ describe("freshness", () => {
     expect(freshnessProblem(f("2026-11-10"), "2026-11-25")).toMatch(/14 days/);
     expect(freshnessProblem(f("2026-11-26"), "2026-11-25")).toMatch(/after the scan date/);
   });
+
+  it("accepts an old event first reported inside the window", () => {
+    const src = (...dates: (string | null)[]) => dates.map((date) => ({ date }));
+    const old = { side: "facepalm", eventDate: "2026-11-01" } as const;
+    expect(
+      freshnessProblem({ ...old, sources: src("2026-11-24", "2026-11-25") }, "2026-11-25"),
+    ).toBeNull();
+    expect(freshnessProblem({ ...old, sources: src("2026-11-24", null) }, "2026-11-25")).toBeNull();
+    expect(
+      freshnessProblem({ ...old, sources: src("2026-11-24", "2026-11-02") }, "2026-11-25"),
+    ).toMatch(/first report/);
+    expect(freshnessProblem({ ...old, sources: src(null, null) }, "2026-11-25")).toMatch(/14 days/);
+  });
 });
 
 describe("weeks", () => {

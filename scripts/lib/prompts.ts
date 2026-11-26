@@ -48,7 +48,7 @@ Never cite: ${BANNED_HOSTS.join(", ")}, satire sites, tabloids, aggregators, con
 - category: one of ${CATEGORIES.join(", ")}.
 - subject: public-figure (politician, celebrity, executive, athlete), official-or-institution (an agency, court, legislature, university, hospital), business, private-individual, group (a team, a crowd), or unnamed.
 - party: "democratic", "republican", "independent" or "other" ONLY when the subject is a politician or party official acting as one; otherwise null.
-- eventDate: when it happened or was announced (YYYY-MM-DD), never later than the scan date.
+- eventDate: when it happened or was announced (YYYY-MM-DD), never later than the scan date. A story whose event is older than its window still qualifies if every cited source was published inside the window, so give each source its real publication date.
 - slug: kebab-case, descriptive, unique, e.g. "florida-woman-marries-oak-tree" or "mit-team-edits-dna-in-living-patient".
 - sources: every page cited, with url, publisher name, title and publication date (or null). Add "local": true to the one local newsroom, if there is one, and to nothing else.
 - score: 1 to 10, from the rubric below.
@@ -143,7 +143,7 @@ ${variety}
 ## Published days near this date (before and after), to avoid repeats and keep variety
 ${recent.map(recentLine).join("\n") || "(none yet)"}
 
-## ${side} candidates set aside in the last 14 days, so you don't re-propose them without new facts
+## ${side} candidates set aside in the last 14 days. Don't re-propose them without new facts, unless every reason given no longer applies under today's rules (a lead set aside as too old under an earlier, shorter window may now qualify; a sourcing, safety or factual reason still stands)
 ${passed.join("\n") || "(none)"}
 
 Finish by calling submit_candidates.`;

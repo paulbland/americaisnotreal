@@ -23,16 +23,21 @@ export function freshSince(side: Side, date: string): string {
   return new Date(Date.parse(date) - FRESH_DAYS[side] * 86_400_000).toISOString().slice(0, 10);
 }
 
-/** Why this story's event is outside the window for `date`, or null if it is inside it. */
+/**
+ * Why this story is outside the window for `date`, or null if it is inside it. A story qualifies
+ * if its event is inside the window, or if it was first reported inside it: an act from three
+ * weeks ago that no outlet covered until this week is still news.
+ */
 export function freshnessProblem(
-  story: Pick<Story, "side" | "eventDate">,
+  story: Pick<Story, "side" | "eventDate"> & { sources?: { date: string | null }[] },
   date: string,
 ): string | null {
   if (story.eventDate > date) return "the event is after the scan date";
-  if (story.eventDate < freshSince(story.side, date)) {
-    return `the event is more than ${FRESH_DAYS[story.side]} days before the scan date`;
-  }
-  return null;
+  const since = freshSince(story.side, date);
+  if (story.eventDate >= since) return null;
+  const reported = (story.sources ?? []).map((s) => s.date).filter((d): d is string => !!d);
+  if (reported.length && reported.every((d) => d >= since && d <= date)) return null;
+  return `the event and its first report are more than ${FRESH_DAYS[story.side]} days before the scan date`;
 }
 
 /** Days published before stories were scored get a neutral score. */

@@ -38,7 +38,7 @@ import {
   type Side,
   type Story,
 } from "../src/data/schema.ts";
-import { facepalmLimits, freshSince, freshnessProblem, varietyProblem } from "../src/lib/score.ts";
+import { facepalmLimits, freshnessProblem, varietyProblem } from "../src/lib/score.ts";
 import { partyBalance } from "../src/lib/stats.ts";
 import { archiveUrl } from "./lib/archive.ts";
 import { fetchPageText, urlKey } from "./lib/fetch.ts";
@@ -690,9 +690,9 @@ async function main() {
   // A bench entry leaves the bench only when it is actually published; a day that
   // borrowed it and still found no partner must leave it for the next day.
   const usedSlugs = new Set(published ? Object.values(fromBench).map((b) => b.story.slug) : []);
-  // Prune only entries whose event is before their side's window for this date. An entry
-  // whose event is after a backfill date must survive for the live scans that can still use it.
-  const keep = (b: BenchEntry) => b.story.eventDate >= freshSince(b.story.side, DATE);
+  // Prune only entries outside their side's window for this date. An entry whose event is
+  // after a backfill date must survive for the live scans that can still use it.
+  const keep = (b: BenchEntry) => b.story.eventDate > DATE || !freshnessProblem(b.story, DATE);
   const nextBench = [...bench.filter((b) => !usedSlugs.has(b.story.slug) && keep(b)), ...benched];
 
   let day: Day | null = null;
